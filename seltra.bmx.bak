@@ -12,13 +12,14 @@ Include "block.bmx"
 Include "bgroup.bmx"
 Include "substrate.bmx"
 Include "sgroup.bmx"
+Include "btemplate.bmx"
+Include "ggroup.bmx"
 
 Graphics 1024,768
 Global gw=GraphicsWidth()
 Global gh=GraphicsHeight()
 
 Global imagelist:TImage[200]
-
 
 SetMaskColor 0,0,0
 
@@ -36,7 +37,6 @@ Global blockb:TImage=loadimage3("blocks2\blockb.png")
 
 Global btarray:btemplate[100]
 
-
 SetMaskColor 0,0,0
 Global mousep:TImage = LoadImage(MaskPixmap(LoadPixmap("mouse.png"),0,0,0))
 Global mousec:TImage = LoadImage(MaskPixmap(LoadPixmap("mousecell.png"),0,0,0))
@@ -48,21 +48,19 @@ Global arrowe:TImage=LoadImage("arrowe.png")
 Global arrown:TImage=LoadImage("arrown.png")
 Global arrows:TImage=LoadImage("arrows.png")
 
-
 Global noi ' number of images ( not strictly true if arrows don't appear in list )
 
 Global frame:Byte=0
 SeedRnd 1' MilliSecs()
 
 Global mox,moy,moz:Int '  ' mousex,y
-Global moxo[2],moyo[2]
+Global moxo[2],moyo[2] ' seem to be snapshots of mouse co-ords for drawing to canvas
 Global smi:TImage=imagelist[0] ' selected mouse image
 Global smt ' selected mouse thing
 Global zoom:Float=30.0 '  mouse wheel controls map zoom
 Global mozo,mozu:Float ' modified and Used mouse z position
 Global moxc,moyc:Int ' mousex,y cell
-Global moxco[2]
-Global moyco[2]
+Global moxco[2],moyco[2] ' 
 Global redraw_map:Int=3
 Global bgc,bc     'blockgroup counter, blovk counter
 Global sgc,sc 'substrategroup counter, substrate counter
@@ -82,7 +80,7 @@ Global barray:blockarray=New blockarray ' active blocks
 Global sarray:subarray=New subarray ' we'll try put substrate groups on
 Global sgarray:subgrouparray = New subgrouparray
 
-barray.ba=barray.ba[..999999]                  '     *** wtf is this notation ? ans: Slice : a sub array of an existing array'
+barray.ba=barray.ba[..999999]               ' *** wtf is this notation ? ans: Slice : a sub array of an existing array'
 Global wallgroup:blockarray'=New blockarray ' wall blocks
 'wallgroup.ba=wallgroup.ba[..999999]
 Global rarray:redrawarray=New redrawarray
@@ -92,7 +90,9 @@ Global bmap:fastblockmap=New fastblockmap
 Global thingmap:fastintmap=New fastintmap ' arrows and generators
 Global smap:substratemap=New substratemap
 
-
+Type cell ' sometimes just need this
+ Field x,y
+End Type 
 
 Function loadimage2:TImage(fn$)
 
@@ -496,7 +496,7 @@ wallgroup.add(b)
 End Function
 
 
-
+' mouse functions, currently only 3 functions so maybe don't need to objectify
 Function get_mouse_input()
 
 mozo=moz
@@ -512,9 +512,16 @@ End Function
 
 Function mouse_input_editbar()
 
+Local w = 25 ' paint block width
+Local margin = 20
+Local n = 30 ' paint box number of cells per column
+
 If MouseHit(1)
- If mox<gw-70 Then smt=(moy-10)/20;smi=imagelist[smt];Return
- If mox<gw-45 Then smt=30+((moy-10)/20);smi=imagelist[smt];Return
+ 
+ If mox<gw-(margin+w*2) Then smt=0*n+(moy-10)/20;smi=imagelist[smt];Return
+ If mox<gw-(margin+w*1) Then smt=1*n+(moy-10)/20;smi=imagelist[smt];Return
+ If mox<gw-(margin+w*0) Then smt=2*n+(moy-10)/20;smi=imagelist[smt];Return
+
 EndIf
 
 End Function
@@ -547,7 +554,7 @@ If moxc<0 Then moxc=0
 If moyc<0 Then moyc=0
 
 If MouseHit(1)
- If smt<=43
+ If smt<=55
   b=bmap.fetch(moxc+moyc Shl 10)
   If Not b
    If smi=sub0 Then createsinglesubstrate(moxc,moyc);Return
@@ -593,7 +600,7 @@ If MouseHit(3)
 EndIf
 
 End Function
-
+' end mouse functions
 
 
 Function createsingleSubstrate:sgroup(x,y)
@@ -829,117 +836,6 @@ End Function
 
 
 
-Type btemplate
-
-Field btype,ch,id,maxbonds
-Field bonds2  ' bit bank for potential bonds and actual bonds %aaaapppp
-
-
-Method create_block_image(grey)
-
-Local bred,bgre,bblu
-Local blockart:TImage
-
-bred=100.0*colfunc(Float(maxbonds)/7.0)+Rand(20)+120
-bgre=150.0*colfunc((2.3+Float(maxbonds))/7.0)+30
-bblu=150.0*colfunc((4.7+Float(maxbonds))/7.0)+50
-
-If grey
- bred=(bred+bgre+bblu)/3
- bgre=(bred+bgre+bblu)/3
- bblu=(bred+bgre+bblu)/3
-EndIf
-
-SetViewport 0,0,30,30
-SetMaskColor 0,0,0
-SetColor 0,0,0
-DrawRect 0,0,30,30
-blockart=LoadImage(MaskPixmap(LoadPixmap("blocks2\blockart"+ch+".png"),255,255,255))
-SetColor (bred+20,bgre+40,bblu+40)
-DrawRect 0,0,30,30
-
-DrawImage blockart,0,0
-SetMaskColor 0,0,0
-GrabImage blockart,0,0
-
-Cls
-imagelist[noi]=CreateImage(30,30,1,dynamicimage=1)
-SetColor (bred,bgre,bblu)
-DrawRect (0,0,30,30)
-DrawImage blockart,0,0
-DrawImage imagelist[btype],0,0  ' draw the block shape here. But where To get it?
-
-SetColor 200,50,50
-If bonds2 & %0001 Then DrawRect 13 ,0,3,10
-If bonds2 & %0100 Then DrawRect 13,20,3,10
-If bonds2 & %0010 Then DrawRect  0,13,10,3
-If bonds2 & %1000 Then DrawRect 20,13,10,3
-
-GrabImage imagelist[noi],0,0
-
-noi=noi+1
-
-End Method
-
-
-
-Method createsingleblock:bgroup(x,y,xv,yv)
-
-If bmap.fetch(x+y Shl 10) Then Return
-If btype=0 Then wallblock(x,y,id);Return
-
-Local bg:bgroup=New bgroup
-bg.xv=xv
-bg.yv=yv
-bgc=bgc+1
-garray.add(bg)
-
-Local b:block=New block
-b.x=x
-b.y=y
-b.btype=btype
-b.bt=id
-b.maxbonds=maxbonds
-b.bonds=maxbonds
-b.bonds2=bonds2
-
-b.image=imagelist[id]
-bg.add(b)
-barray.add(b)
-bmap.insert(b.x+b.y Shl 10,b)
-
-Return bg
-
-End Method
-
-
-Method setbindingblock(x,y)
-
-Local bg:bgroup
-Local b:block=bmap.fetch(x+y Shl 10)
-Local b2:block
-
-If b=Null Then bg=createsingleblock(x,y,0,0) Else bg=b.group
-
-b=bg.blist.ba[0]
-
-If x>0 Then b2=bmap.fetch((x-1)+y Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-If y>0 Then b2=bmap.fetch(x+(y-1) Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-b2=bmap.fetch(x+1+y Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-b2=bmap.fetch(x+(y+1) Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-
-' consider binding to the strongest bind 1st rather than this arbitrary directional order
-
-End Method
-
-End Type
-
-
-
 Function create_block_mix()
 ' this function is then sent to create block image, to make a random mix of blocks for this game
 Local i,j,k,grey
@@ -965,6 +861,8 @@ For i=0 To 5
  Wend
 
 Next
+
+DebugStop
 
 End Function
 

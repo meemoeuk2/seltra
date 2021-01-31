@@ -13,13 +13,13 @@ Include "bgroup.bmx"
 Include "substrate.bmx"
 Include "sgroup.bmx"
 Include "btemplate.bmx"
+Include "ggroup.bmx"
 
 Graphics 1024,768
 Global gw=GraphicsWidth()
 Global gh=GraphicsHeight()
 
 Global imagelist:TImage[200]
-
 
 SetMaskColor 0,0,0
 
@@ -37,7 +37,6 @@ Global blockb:TImage=loadimage3("blocks2\blockb.png")
 
 Global btarray:btemplate[100]
 
-
 SetMaskColor 0,0,0
 Global mousep:TImage = LoadImage(MaskPixmap(LoadPixmap("mouse.png"),0,0,0))
 Global mousec:TImage = LoadImage(MaskPixmap(LoadPixmap("mousecell.png"),0,0,0))
@@ -49,21 +48,19 @@ Global arrowe:TImage=LoadImage("arrowe.png")
 Global arrown:TImage=LoadImage("arrown.png")
 Global arrows:TImage=LoadImage("arrows.png")
 
-
 Global noi ' number of images ( not strictly true if arrows don't appear in list )
 
 Global frame:Byte=0
 SeedRnd 1' MilliSecs()
 
 Global mox,moy,moz:Int '  ' mousex,y
-Global moxo[2],moyo[2]
+Global moxo[2],moyo[2] ' seem to be snapshots of mouse co-ords for drawing to canvas
 Global smi:TImage=imagelist[0] ' selected mouse image
 Global smt ' selected mouse thing
 Global zoom:Float=30.0 '  mouse wheel controls map zoom
 Global mozo,mozu:Float ' modified and Used mouse z position
 Global moxc,moyc:Int ' mousex,y cell
-Global moxco[2]
-Global moyco[2]
+Global moxco[2],moyco[2] ' 
 Global redraw_map:Int=3
 Global bgc,bc     'blockgroup counter, blovk counter
 Global sgc,sc 'substrategroup counter, substrate counter
@@ -83,7 +80,7 @@ Global barray:blockarray=New blockarray ' active blocks
 Global sarray:subarray=New subarray ' we'll try put substrate groups on
 Global sgarray:subgrouparray = New subgrouparray
 
-barray.ba=barray.ba[..999999]                  '     *** wtf is this notation ? ans: Slice : a sub array of an existing array'
+barray.ba=barray.ba[..999999]               ' *** wtf is this notation ? ans: Slice : a sub array of an existing array'
 Global wallgroup:blockarray'=New blockarray ' wall blocks
 'wallgroup.ba=wallgroup.ba[..999999]
 Global rarray:redrawarray=New redrawarray
@@ -93,7 +90,9 @@ Global bmap:fastblockmap=New fastblockmap
 Global thingmap:fastintmap=New fastintmap ' arrows and generators
 Global smap:substratemap=New substratemap
 
-
+Type cell ' sometimes just need this
+ Field x,y
+End Type 
 
 Function loadimage2:TImage(fn$)
 
@@ -497,7 +496,7 @@ wallgroup.add(b)
 End Function
 
 
-
+' mouse functions, currently only 3 functions so maybe don't need to objectify
 Function get_mouse_input()
 
 mozo=moz
@@ -513,9 +512,16 @@ End Function
 
 Function mouse_input_editbar()
 
+Local w = 25 ' paint block width
+Local margin = 20
+Local n = 30 ' paint box number of cells per column
+
 If MouseHit(1)
- If mox<gw-70 Then smt=(moy-10)/20;smi=imagelist[smt];Return
- If mox<gw-45 Then smt=30+((moy-10)/20);smi=imagelist[smt];Return
+ 
+ If mox<gw-(margin+w*2) Then smt=0*n+(moy-10)/20;smi=imagelist[smt];Return
+ If mox<gw-(margin+w*1) Then smt=1*n+(moy-10)/20;smi=imagelist[smt];Return
+ If mox<gw-(margin+w*0) Then smt=2*n+(moy-10)/20;smi=imagelist[smt];Return
+
 EndIf
 
 End Function
@@ -548,7 +554,7 @@ If moxc<0 Then moxc=0
 If moyc<0 Then moyc=0
 
 If MouseHit(1)
- If smt<=43
+ If smt<=55
   b=bmap.fetch(moxc+moyc Shl 10)
   If Not b
    If smi=sub0 Then createsinglesubstrate(moxc,moyc);Return
@@ -594,7 +600,7 @@ If MouseHit(3)
 EndIf
 
 End Function
-
+' end mouse functions
 
 
 Function createsingleSubstrate:sgroup(x,y)

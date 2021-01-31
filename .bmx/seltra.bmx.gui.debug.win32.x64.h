@@ -65,6 +65,8 @@ struct _m_seltra_substrate_obj;
 struct _m_seltra_redraw_obj;
 struct _m_seltra_bgroup_obj;
 struct _m_seltra_gen_obj;
+struct _m_seltra_gGroup_obj;
+struct _m_seltra_cell_obj;
 extern BBINT _m_seltra_gw;
 extern BBINT _m_seltra_gh;
 extern BBARRAY _m_seltra_imagelist;
@@ -747,8 +749,12 @@ struct _m_seltra_bgroup_obj {
 extern struct BBClass__m_seltra_bgroup _m_seltra_bgroup;
 BBINT _m_seltra_update_bgroups();
 void __m_seltra_gen_New(struct _m_seltra_gen_obj* o);
-typedef BBINT (*_m_seltra_gen_genblock_m)(struct _m_seltra_gen_obj*);
-BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj*);
+typedef struct _m_seltra_bgroup_obj* (*_m_seltra_gen_genIsolatedBlock_m)(struct _m_seltra_gen_obj*);
+struct _m_seltra_bgroup_obj* __m_seltra_gen_genIsolatedBlock(struct _m_seltra_gen_obj*);
+typedef BBINT (*_m_seltra_gen_addRandomBlock_Tbgroup_m)(struct _m_seltra_gen_obj*,struct _m_seltra_bgroup_obj*);
+BBINT __m_seltra_gen_addRandomBlock_Tbgroup(struct _m_seltra_gen_obj*,struct _m_seltra_bgroup_obj*);
+typedef BBINT (*_m_seltra_gen_genRandomBlockGroup_i_m)(struct _m_seltra_gen_obj*,BBINT);
+BBINT __m_seltra_gen_genRandomBlockGroup_i(struct _m_seltra_gen_obj*,BBINT);
 typedef BBINT (*_m_seltra_gen_update_m)(struct _m_seltra_gen_obj*);
 BBINT __m_seltra_gen_update(struct _m_seltra_gen_obj*);
 struct BBClass__m_seltra_gen {
@@ -764,7 +770,9 @@ struct BBClass__m_seltra_gen {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
-	_m_seltra_gen_genblock_m m_genblock;
+	_m_seltra_gen_genIsolatedBlock_m m_genIsolatedBlock;
+	_m_seltra_gen_addRandomBlock_Tbgroup_m m_addRandomBlock_Tbgroup;
+	_m_seltra_gen_genRandomBlockGroup_i_m m_genRandomBlockGroup_i;
 	_m_seltra_gen_update_m m_update;
 };
 
@@ -775,10 +783,10 @@ struct _m_seltra_gen_obj {
 	BBARRAY __m_seltra_gen_bglist;
 	BBINT __m_seltra_gen_le;
 	BBINT __m_seltra_gen_rate;
-	BBINT __m_seltra_gen_n;
 	BBINT __m_seltra_gen_t;
-	BBINT __m_seltra_gen_id;
 	BBINT __m_seltra_gen_bitflags;
+	BBINT __m_seltra_gen_n;
+	BBINT __m_seltra_gen_id;
 };
 extern struct BBClass__m_seltra_gen _m_seltra_gen;
 BBINT _m_seltra_update_gens();
@@ -802,6 +810,54 @@ BBINT _m_seltra_draw_barray();
 BBINT _m_seltra_draw_walls();
 BBINT _m_seltra_draw_editbar();
 BBINT _m_seltra_update_display();
+void __m_seltra_gGroup_New(struct _m_seltra_gGroup_obj* o);
+struct BBClass__m_seltra_gGroup {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+};
+
+struct _m_seltra_gGroup_obj {
+	struct BBClass__m_seltra_gGroup* clas;
+	BBARRAY __m_seltra_ggroup_celllist;
+	BBINT __m_seltra_ggroup_rate;
+	BBINT __m_seltra_ggroup_n;
+	BBINT __m_seltra_ggroup_t;
+	BBINT __m_seltra_ggroup_id;
+	BBINT __m_seltra_ggroup_bitflags;
+};
+extern struct BBClass__m_seltra_gGroup _m_seltra_gGroup;
+void __m_seltra_cell_New(struct _m_seltra_cell_obj* o);
+struct BBClass__m_seltra_cell {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+};
+
+struct _m_seltra_cell_obj {
+	struct BBClass__m_seltra_cell* clas;
+	BBINT __m_seltra_cell_x;
+	BBINT __m_seltra_cell_y;
+};
+extern struct BBClass__m_seltra_cell _m_seltra_cell;
 BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT bbt_y2);
 BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x);
 BBINT _m_seltra_demo_color_spread();

@@ -2,12 +2,10 @@ Type gen ' generator
 
 Field x,y:Int
 Field bglist:bgroup[100]
-Field le:Int ' length of bglist
-Field rate,n,t,id:Int 
-Field bitflags:Int ' 1 randon, 2 ordered cycle, 4 infinite
+Field le:Int ' length of bglist  
+Field rate,t,bitflags,n,id         
 
-
-Method genblock()
+Method genIsolatedBlock:bgroup()
 
 Local bg:bgroup=New bgroup
 Local bg2:bgroup
@@ -32,12 +30,31 @@ EndIf
 
 n=n-1
 
+Return bg
+
+End Method
+
+
+
+Method addRandomBlock(bg:bgroup)
+
+Select Rand(4)
+ Case 0 ;
+End Select
+
+End Method
+
+
+Method genRandomBlockGroup(n)
+
+Local bg:bgroup = genIsolatedBlock()
+
 End Method
 
 
 Method update()
 
-If time Mod rate=t Then genblock()
+If time Mod rate=t Then genIsolatedBlock()
 
 End Method
 

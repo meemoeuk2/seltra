@@ -4,6 +4,5 @@ currently the code is configged towards 'lego bricks' rather than 'chemical bric
 
 try move code towards that falling trash game we had in blitzplus
 
- structure code towards one object per file
-  seltra.bmx becomes more of a linker file
+ get a handle on the paintbox
 
