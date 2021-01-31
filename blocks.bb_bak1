@@ -1,0 +1,1211 @@
+Include "H:\myotherdoc\jamesblitz\mylibrary\mystringlib.bb"
+Include "H:\myotherdoc\jamesblitz\mylibrary\mymathslib.bb"
+;Include "E:\mylibrary\mystringlib.bb"
+;Include "E:\mylibrary\mymathslib.bb"
+
+Dim stores(10) ; players store of blocks
+
+Type block
+Field subx[99]
+Field suby[99]
+Field image
+Field btype
+Field xv,yv,bit_tags
+End Type
+; bit_tags : 1 -> squashed horizontally, rdy for fusion
+;          : 2 -> squashed vertically, rdy for fusion
+;          : 4 -> pushed up
+;          : 8 -> pushed down
+;          : 16 -> pushed left
+;          : 32 -> pushed right
+;          : 64 -> rotated once
+
+Type flood
+Field x,y
+End Type
+
+
+Type pushq ; some block push each other
+Field block[100]
+Field xv,yv
+End Type
+
+Type redraw
+Field x,y,rd,xs,ys
+End Type
+
+Type gen
+Field x,y,btype ; ; 1 -> pusher (red)     3 -> bouncer (green)
+Field n,freq       ; 2 -> dociles (grey)   4 -> slow ( black )
+Field gtype ; 0 set, 1 rand, 2 rand outside gen area
+Field edit_state ; user can edit which blocks are generated
+End Type
+
+Dim cell(100,80)
+Dim bcell.block(100,80)
+; 1 = block , 2 = arrow up , 4, arrow down , 6 arrow west, 8 arrow east
+; 16 = pushup , 32 = push down ; 64 = push east , 128 push west
+
+Graphics 1024,768,32,1
+SetBuffer BackBuffer()
+
+Global mouse=LoadImage("mouse.png")
+Global mousecell=LoadImage("mousecell.png")
+
+Global block0=LoadImage("block.png")
+Global blockgrey=LoadImage("blockgrey.png")
+Global blockdark=LoadImage("blockdark.png")
+Global blockgreen=LoadImage("blockgreen.png")
+Global blockblack=LoadImage("blockblack.png")
+Global blockcold=LoadImage("blockcold.png")
+Global arrown=LoadImage("arrown.png")
+Global arrows=LoadImage("arrows.png")
+Global arroww=LoadImage("arroww.png")
+Global arrowe=LoadImage("arrowe.png")
+Global genera=LoadImage("gene.png")
+Global hole=LoadImage("hole.png")
+Global coldwall=LoadImage("coldwall.png")
+Global rotate=LoadImage("rotate.png")
+Global rotatec=LoadImage("rotatec.png")
+Global fusor=LoadImage("fusor.png")
+Global spliter=LoadImage("spliter.png")
+
+Global gen_rand_set=LoadAnimImage("gen_rand_set.png",15,15,0,3)
+Global gen_freq_set=LoadAnimImage("gen_set_freq.png",15,15,0,5)
+
+Global playx=99,playy=70,frame
+Global user_thing,g_edit.gen ; gen being edited
+Global md1,kdls,game_speed=200
+Global camposx,camposy,rdm ; redraw map
+Global gi,gb.block ; a global int usually used for counting, & a pointer to current block
+
+While Not KeyDown(1)
+ update_user()
+ If MilliSecs() Mod game_speed<40 And ok=1
+  ;  If Rand(2)=1 Then random_blocks()
+  update_blocks()
+  update_gens()
+  ok=0
+  frame=frame+1
+ EndIf
+ update_display()
+ If MilliSecs() Mod game_speed>game_speed/2 Then ok=1
+Wend
+End
+
+
+
+Function update_display()
+
+;Cls
+Viewport 0,0,899,767
+If rdm
+ redraw_map()
+ rdm=rdm-1
+ For r.redraw=Each redraw
+  r\rd=r\rd-1
+  If r\rd<1 Then Delete r
+ Next
+ Flip
+ Return
+EndIf
+
+For r.redraw=Each redraw
+ c=cell(r\x,r\y)
+ If c
+  im=thing_to_image2(c)
+  If c>4 And c<10 Then DrawBlock genera,(camposx+r\x)*15,(camposy+r\y)*15
+  If im DrawImage im,(camposx+r\x)*15,(camposy+r\y)*15
+
+ Else
+  Color 0,0,0
+  Rect (camposx+r\x)*15,(camposy+r\y)*15,15,15,1
+ EndIf
+ r\rd=r\rd-1
+ If r\rd<1 Then Delete r
+Next
+
+For b.block=Each block
+ i=0
+ While b\subx[i]<>0
+  DrawImage b\image,(camposx+b\subx[i])*15,(camposy+b\suby[i])*15
+  i=i+1
+ Wend
+Next
+
+If g_edit<>Null
+ g.gen=g_edit
+ x2=g\x*15+camposx
+ y2=g\y*15+camposy+15
+ Color 0,0,0
+ Rect x2,y2,75,60
+ Color 222,222,222
+ Rect x2,y2,75,60,0
+ 
+ DrawImage block0,x2+5,y2+5
+ DrawImage blockgrey,x2+20,y2+5
+ DrawImage blockgreen,x2+35,y2+5
+ DrawImage blockdark,x2+50,y2+5
+ DrawImage gen_rand_set,x2,y2+25,g\gtype
+ DrawImage gen_freq_set,x2+15,y2+25,g\freq
+EndIf
+
+x=-camposx+MouseX()/15
+y=-camposy+MouseY()/15
+If x>0 And y>0 And x<100 And y<80 Then c=cell(x,y)
+
+im=thing_to_image(user_thing)
+DrawImage mouse,MouseX(),MouseY()
+DrawImage mousecell,discrete(MouseX(),15),discrete(MouseY(),15)
+If im Then DrawImage im,MouseX()+10,MouseY()+10
+
+Color 0,0,0
+Rect 0,0,100,50,1
+Color 222,222,222
+Text 5,5,frame
+Text 10,20,x+" "+y+"  "+c
+
+Viewport 900,0,1023,767
+
+Color 222,222,222
+Line 900,0,900,767
+i=0
+While i<12
+ DrawBlock thing_to_image(i),905,i*15
+ i=i+1
+Wend
+
+Flip
+
+End Function
+
+
+
+Function thing_to_image(c)
+
+Select c
+ Case 0:im=block0
+ Case 1:im=blockgrey
+ Case 2:im=blockgreen
+ Case 3:im=blockdark
+ Case 4:im=blockblack
+ Case 5:im=genera
+ Case 6:im=hole
+ Case 7:im=coldwall
+ Case 8:im=rotate
+ Case 9:im=rotatec
+ Case 10:im=fusor
+ Case 11:im=spliter
+End Select
+
+Return im
+
+End Function
+
+
+
+Function thing_to_image2(c)
+
+Select c
+ Case 1:im=arrown
+ Case 2:im=arrows
+ Case 3:im=arroww
+ Case 4:im=arrowe
+ Case 5:;DrawBlock genera,r\x*15,r\y*15
+ Case 6:im=arrown;DrawBlock genera,r\x*15,r\y*15:DrawImage arrown,r\x*15,r\y*15
+ Case 7:im=arrows;:DrawBlock genera,r\x*15,r\y*15:DrawImage arrows,r\x*15,r\y*15
+ Case 8:im=arroww;:DrawBlock genera,r\x*15,r\y*15:DrawImage arroww,r\x*15,r\y*15
+ Case 9:im=arrowe; DrawBlock genera,r\x*15,r\y*15:DrawImage arrowe,r\x*15,r\y*15
+ Case 10:im=blockblack
+ Case 11:im=coldwall
+ Case 12:im=rotate
+ Case 13:im=rotatec
+ Case 14:im=fusor
+ Case 15:im=spliter
+ Case 64:im=hole
+End Select
+
+Return im
+
+End Function
+
+
+
+Function remove_cell_register(b.block)
+
+i=0
+While b\subx[i]<>0 ; remove cell register
+ If bcell(b\subx[i],b\suby[i])=b 
+  bcell(b\subx[i],b\suby[i])=Null
+ Else
+ ; Stop ; wtf how can cell not be registered to block? something gone wrong
+ EndIf
+ i=i+1
+Wend
+
+End Function
+
+
+
+Function check_arrow_direction_change(b.block)
+
+If b<>Null ; arrows direction change check
+
+ i=0
+ c2=0
+ ok=1
+ While b\subx[i]<>0
+  x=b\subx[i]
+  y=b\suby[i]
+  c=cell(b\subx[i],b\suby[i])
+  If c<10 Then c=c Mod 5
+
+  If c>0 And c<5
+   If c2=0 
+    c2=c
+   Else
+    If c<>c2 Then b\xv=0:b\yv=0:ok=0:Exit
+   EndIf
+  EndIf
+
+  i=i+1
+ Wend
+ If ok=1 And c2>0
+  Select c2
+   Case 1:b\xv=0:b\yv=-1
+   Case 2:b\xv=0:b\yv=1
+   Case 3:b\xv=-1:b\yv=0
+   Case 4:b\xv=1:b\yv=0 
+   Case 6:b\xv=0:b\yv=-1
+   Case 7:b\xv=0:b\yv=1
+   Case 8:b\xv=-1:b\yv=0
+   Case 9:b\xv=1:b\yv=0
+  End Select
+  If b\image=blockcold
+   b\image=blockgreen
+   b\btype=2
+  EndIf
+ EndIf
+
+EndIf
+
+Return c2
+; need to stash the result in block for pushcheck, likely in block bit_tags
+
+End Function
+
+
+
+Function check_rotation(b.block)
+
+If b\bit_tags And 64 ; can't rotate twice on same w/o checking move
+ b\bit_tags=b\bit_tags-64
+ Return 0
+EndIf
+
+While b\subx[i]
+ c=cell(b\subx[i],b\suby[i])
+ If c=13 Then If k=0 Then k=13:j=i Else k=-1
+ If c=12 Then If k=0 Then k=12:j=i Else k=-1
+
+ i=i+1
+Wend
+
+If k=12 Or k=13
+ xp=b\subx[j] ; get pivot cell
+ yp=b\suby[j]
+ i=0
+ While b\subx[i]
+  If i<>j
+   xd=b\subx[i]-xp
+   yd=b\suby[i]-yp
+   If k=12 Then xn=xp-yd:yn=yp+xd
+   If k=13 Then xn=xp+yd:yn=yp-xd
+   If xn>0 And xn<playx And yn>0 And yn<playy
+    If cell(xn,yn)=4 Or cell(xn,yn)=7 Then Return 0; impassible
+    If bcell(xn,yn)<>Null Then Return 0
+   Else
+    Return 0
+   EndIf
+  EndIf
+  i=i+1
+ Wend
+
+ remove_cell_register(b)
+ i=0
+ While b\subx[i]
+  r.redraw=New redraw
+  r\x=b\subx[i]
+  r\y=b\suby[i]
+  r\rd=2
+
+  xd=b\subx[i]-xp
+  yd=b\suby[i]-yp
+  If k=12 Then xn=xp-yd:yn=yp+xd
+  If k=13 Then xn=xp+yd:yn=yp-xd
+  b\subx[i]=xn
+  b\suby[i]=yn
+  bcell(xn,yn)=b
+  b\bit_tags=b\bit_Tags Or 64
+ 
+  r.redraw=New redraw
+  r\x=b\subx[i]
+  r\y=b\suby[i]
+  r\rd=2
+
+  i=i+1
+ Wend
+
+ Return 1
+EndIf
+
+Return 0
+
+End Function
+
+
+
+Function push_check(b.block,ar)
+; need results from arrow check
+
+If (b\bit_tags Mod 64) Shr 2 ; 16 , 32 ,64, 128
+ If b\image=blockdark Or b\image=blockgrey Or b\image=blockgreen
+ ; If b\image=blockgrey Then xvo=b\xv:yvo=b\yv ; if blocks cant move in new direction they revert to old direction
+  ; blocks cant move thru opposing arrows
+  c=(b\bit_tags Mod 64) Shr 2
+  Select c
+   Case 1:If ar<>2 Then b\xv=0:b\yv=-1
+   Case 2:If ar<>1 Then b\xv=0:b\yv=1
+   Case 4:If ar<>4 Then b\xv=-1:b\yv=0
+   Case 8:If ar<>3 Then b\xv=1:b\yv=0
+   
+   Case 3:b\bit_tags=b\bit_Tags Or 1:try_fusion(b,b\subx[i],b\suby[i]);b\bit_tags=b\bit_tags Or 1 ; pushed in opposing directions
+   Case 12:b\bit_tags=b\bit_Tags Or 2:try_fusion(b,b\subx[i],b\suby[i]); b\bit_tags=b\bit_tags Or 2
+   Default : ; possible, have to decide what to do later, likely just prefer one perp direction over another
+  End Select
+ EndIf
+EndIf
+
+If b\bit_tags And 4 Then b\bit_tags=b\bit_tags-4
+If b\bit_tags And 8 Then b\bit_tags=b\bit_tags-8
+If b\bit_tags And 16 Then b\bit_tags=b\bit_tags-16
+If b\bit_tags And 32 Then b\bit_tags=b\bit_tags-32
+i=i+1
+
+End Function
+
+
+
+Function check_move_block(b.block)
+
+ok=1:i=0
+While b\subx[i]<>0 ; check if new cell is vacant
+ c=cell(b\subx[i]+b\xv,b\suby[i]+b\yv)
+ If c=10 Then ok=0
+
+ b2.block=bcell(b\subx[i]+b\xv,b\suby[i]+b\yv)
+ If b2<>Null; impassible (c And 1)
+  ; push flags
+  If b\yv=-1 Then b2\bit_tags=b2\bit_tags Or 4
+  If b\yv=1 Then b2\bit_tags=b2\bit_tags Or 8
+  If b\xv=-1 Then b2\bit_tags=b2\bit_tags Or 16
+  If b\xv=1 Then b2\bit_tags=b2\bit_tags Or 32
+
+  If b2\btype=4 ; coldblock
+   b\btype=4
+   b\image=blockcold
+   b\xv=0
+   b\yv=0
+  EndIf
+
+  ok=0
+  If b\image=blockgrey And (xvo<>b\xv Or yvo<>b\yv) ;And (xvo<>-b\xv And yvo<>-b\yv)
+   If b\xv=xvo And b\yv=yvo
+    b\xv=0
+    b\yv=0
+   Else
+    b\xv=xvo
+    b\yv=yvo
+   EndIf
+   ok=1
+   i=-1
+  Else
+   Exit
+  EndIf
+ EndIf
+
+ If c=11
+  b\btype=4
+  b\image=blockcold
+  b\xv=0
+  b\yv=0
+ EndIf
+ i=i+1
+Wend
+
+If Not ok Then If b\image=blockgreen Then b\xv=-b\xv:b\yv=-b\yv
+
+Return ok
+
+End Function
+
+
+
+Function move_block(b.block)
+
+While b\subx[i]<>0
+ r.redraw=New redraw
+ r\x=b\subx[i]
+ r\y=b\suby[i]
+ r\rd=4
+ b\subx[i]=b\subx[i]+b\xv
+ b\suby[i]=b\suby[i]+b\yv
+ If b\subx[i]>playx Or b\subx[i]<1 Or b\suby[i]>playy Or b\suby[i]<1 Then Del=1
+ i=i+1
+ If b=Null Then Exit
+ r.redraw=New redraw
+ r\x=b\subx[i]
+ r\y=b\suby[i]
+ r\rd=4
+Wend
+
+If del Then Delete b
+del=0
+
+End Function
+
+
+
+Function hole_check(b.block)
+
+While b\subx[i]<>0
+ If cell(b\subx[i],b\suby[i])<>64 Then Return 0
+ i=i+1
+Wend
+
+Delete b
+
+End Function
+
+
+
+Function update_blocks()
+
+If KeyHit(2) Then Stop
+
+For b.block=Each block
+ xvo=b\xv
+ yvo=b\yv
+ try_fusion5(b)
+ try_split2(b)
+
+ If b<>Null
+  remove_cell_register(b)
+  ar=check_arrow_direction_change(b)
+  push_check(b,ar)
+
+  If Not check_rotation(b) 
+   If check_move_block(b) 
+    move_block(b)
+   Else
+    check_rotation(b)
+   EndIf
+  EndIf
+ EndIf
+
+
+ If b<>Null
+
+  i=0
+  While b\subx[i]<>0
+ ;  cell(b\subx[i],b\suby[i])=cell(b\subx[i],b\suby[i]) Or 1
+   bcell(b\subx[i],b\suby[i])=b
+   i=i+1
+  Wend
+
+  If b\image=blockdark
+   b\xv=0
+   b\yv=0
+  EndIf
+
+  hole_check(b)
+ EndIf
+
+Next
+
+End Function
+
+
+
+Function random_blocks()
+
+a=Rand(1,140+80)
+n=Rand(1,4)
+
+If a<=playx 
+ x=a:y=1:yv=1
+ElseIf a<=playx*2 
+ x=a-playx:y=playy:yv=-1
+ElseIf a<=playx*2+playy 
+ x=1:y=a-playx*2:xv=1
+Else
+ x=playx:y=a-(playx*2+playy):yv=-1
+EndIf
+
+create_block(x,y,n)
+r.redraw=New redraw
+r\x=x
+r\y=y
+r\rd=4
+
+End Function
+
+
+
+Function create_block(x,y,n,Typ=0)
+
+ DebugLog " check 0 "+cell(20,15)
+; If cell(x,y)<>0 Then Return  ; shouldnt be needing cell register for blocks now
+If bcell(x,y)<>Null Then Return
+
+b.block=New block
+Select typ
+ Case 0:b\image=block0
+ Case 1:b\image=blockgrey
+ Case 2:b\image=blockgreen
+ Case 3:b\image=blockdark
+ Case 4:b\image=blockcold
+End Select
+b\btype=typ
+b\subx[0]=x
+b\suby[0]=y
+n=n-1
+nb=0
+;cell(x,y)=cell(x,y) Or 1
+bcell(x,y)=b
+
+While n>0
+ t=t+1
+ If t>50 Then Exit
+ a=Rand(0,nb)     ; choose sunblock
+ Select Rand(0,3) ; choose direction to add subblokc
+  Case 0:x=b\subx[a]-1:y=b\suby[a]
+  Case 1:x=b\subx[a]+1:y=b\suby[a]
+  Case 2:x=b\subx[a]:y=b\suby[a]-1
+  Case 3:x=b\subx[a]:y=b\suby[a]+1
+ End Select
+ 
+ If x>0 And x<playx And y>0 And y<playy
+  If cell(x,y)=0 And bcell(x,y)=Null
+   n=n-1
+   nb=nb+1
+   b\subx[nb]=x
+   b\suby[nb]=y
+  ; cell(x,y)=1
+   bcell(x,y)=b
+  EndIf
+ EndIf
+Wend
+
+ DebugLog " check 1 "+cell(20,15)
+
+End Function
+
+
+
+Function user_update_keys(x,y)
+
+If KeyHit(key_f9) Then save_map()
+If KeyHit(key_f8) Then load_map()
+If KeyHit(key_f4) Then Delete Each block
+If KeyHit(key_f5) ; build perimeter
+ For x=0 To playx
+  cell(x,1)=11
+  cell(x,playy)=11
+ Next
+ For y=0 To playy
+  cell(1,y)=11
+  cell(playx,y)=11
+ Next
+ rdm=2
+EndIf
+
+If x>0 And x<100 And y>0 And y<80 Then c=cell(x,y)
+
+If KeyDown(key_space)
+ If c=10
+  cell(x,y)=0
+  c=1
+ EndIf
+EndIf
+
+If KeyHit(key_space)
+
+ If c>5 And c<10
+  cell(x,y)=5:c=1 
+ ElseIf cell(x,y)=5
+  cell(x,y)=0
+  For g.gen=Each gen
+   If g\x=x And g\y=y Then Delete g
+  Next
+  c=2
+ Else
+  cell(x,y)=0
+  c=1
+ EndIf
+ 
+ If bcell(x,y)<>Null
+  b.block=bcell(x,y)
+  i=0
+  While b\subx[i]<>0
+;   cell(b\subx[i],b\suby[i])=0
+   r.redraw=New redraw
+   r\x=b\subx[i]
+   r\y=b\suby[i]
+   r\rd=4
+   i=i+1
+  Wend
+  Delete bcell(x,y)
+ EndIf
+EndIf
+
+If Not KeyDown(key_left_SHift)
+ If KeyDown(key_w) Then If c>=5 And c<=9 Then cell(x,y)=6:c=1 Else cell(x,y)=1:c=1
+ If KeyDown(key_s) Then If c>=5 And c<=9 Then cell(x,y)=7:c=1 Else cell(x,y)=2:c=1
+ If KeyDown(key_a) Then If c>=5 And c<=9 Then cell(x,y)=8:c=1 Else cell(x,y)=3:c=1
+ If KeyDown(key_d) Then If c>=5 And c<=9 Then cell(x,y)=9:c=1 Else cell(x,y)=4:c=1
+Else
+ If KeyDown(key_w) Then camposy=camposy+1:rdm=2
+ If KeyDown(key_s) Then camposy=camposy-1:rdm=2
+ If KeyDown(key_a) Then camposx=camposx+1:rdm=2
+ If KeyDown(key_d) Then camposx=camposx-1:rdm=2
+EndIf
+
+Return c
+
+End Function
+
+
+
+Function update_user()
+
+x=-camposx+MouseX()/15
+y=-camposy+MouseY()/15
+
+c=user_update_keys(x,y)
+
+user_thing=mod2(user_thing+KeyHit(key_e)-KeyHit(key_q),12)
+If MouseDown(1)
+ If MouseX()<900
+  If md1=0
+   If g_edit=Null
+    If user_thing<=3 Then create_block(x,y,Rand(4),user_thing)
+    If user_thing=4
+     If KeyDown(key_left_shift)
+      kdls=1
+     ElseIf kdls=0
+      cell(x,y)=10
+     Else
+      kdls=0
+      ; do square
+     EndIf
+    EndIf
+    If user_thing=5
+     If cell(x,y)<5 Or cell(x,y)>9 ; need to add this code to load function
+      g.gen=New gen
+      g\x=x
+      g\y=y
+      g\gtype=2
+      cell(x,y)=5
+      c=1
+         
+     EndIf
+    EndIf
+    If user_thing=6 Then cell(x,y)=64:c=1
+    If user_thing=7 Then cell(x,y)=11:c=1
+    md1=1
+    If user_thing=4 Then md1=0
+    If user_thing=8 Then cell(x,y)=12:c=1
+    If user_thing=9 Then cell(x,y)=13:c=1
+    If user_thing=10 Then cell(x,y)=14:c=1
+    If user_thing=11 Then cell(x,y)=15:c=1
+   Else
+    xt=g_edit\x*15+camposx ; generator editbox
+    yt=g_edit\y*15+camposy
+    xm=MouseX()
+    ym=MouseY()
+    If xm>xt And xm<xt+100 And ym>yt+20 And ym<yt+35
+     spread_btype(g_edit\x,g_edit\y,(xm-xt)/15)
+     For xx=0 To 5
+     For yy=0 To 2
+      r.redraw=New redraw
+      r\x=g_edit\x+xx
+      r\y=g_edit\y+yy
+      r\rd=2
+     Next
+     Next
+     g_edit=Null
+    ElseIf ym>yt+35 And ym<yt+50
+     If xm>xt And xm<xt+15
+      g_edit\gtype=(g_edit\gtype+1) Mod 3
+      md1=1
+     ElseIf xm>xt+15 And xm<xt+30
+      g_edit\freq=(g_edit\freq+1) Mod 5
+      md1=1
+     EndIf
+    Else
+     r.redraw=New redraw
+     r\x=g_edit\x
+     r\y=g_edit\y
+     r\xs=7
+     r\ys=3
+     r\rd=2
+
+     g_edit=Null
+     rdgeb=1
+    EndIf
+   EndIf
+  EndIf
+ ElseIf MouseX()<920
+  user_thing=y+camposy
+ EndIf
+Else
+  md1=0
+EndIf
+
+If c
+ r.redraw=New redraw
+ r\x=x
+ r\y=y
+ r\rd=3
+EndIf
+
+game_speed=game_speed+KeyDown(key_equals)-KeyDown(key_minus)
+
+For xx=0 To 2
+For yy=0 To 2
+ r.redraw=New redraw
+ r\x=-camposx+xx+MouseX()/15:r\y=-camposy+yy+MouseY()/15:r\rd=2
+ If r\x<0 Or r\x>playx Or r\y<0 Or r\y>playy Then Delete r
+Next
+Next
+
+If MouseHit(2)
+ If cell(x,y)=5
+  For g.gen=Each gen
+   If g\x=x And g\y=y Then g_edit=g:Exit
+  Next
+;  edit_state=1 ; edit gen
+ EndIf
+EndIf
+
+End Function
+
+
+
+Function update_gens()
+
+f=300-(frame/500)
+If f<20 Then f=20
+
+For g.gen=Each gen
+ If g\gtype=0
+  If (frame Mod (g\freq*g\freq+2))=1 Then f=1
+ Else
+  f=Rand(10*g\freq)
+ EndIf
+  
+ If f=1
+ ; b.block=Null
+  gi=0
+  Select g\gtype
+   Case 0 :If block_gen(g\x,g\y,Null,g\btype)=0 And gb<>Null Then Delete gb
+   Case 2 :create_block(g\x,g\y,Rand(1,4),g\btype)
+  End Select
+ EndIf
+Next
+
+End Function
+
+
+
+Function try_fusion2(b.block,x,y)
+
+If (b\bit_Tags And 1)=1 Or (b\bit_tags And 2)=2
+ If x>0 And x<playx And y>0 And y<playy
+  If bcell(x,y)<>Null
+   If bcell(x,y)<>b
+    If bcell(x,y)\bit_tags=b\bit_tags
+     While b\subx[i]<>0:i=i+1:Wend
+     While bcell(x,y)\subx[j]<>0
+      b\subx[i]=bcell(x,y)\subx[j]
+      b\suby[i]=bcell(x,y)\suby[j]
+      j=j+1
+      i=i+1
+     Wend
+     Delete bcell(x,y)
+     Return 1
+    EndIf
+   EndIf
+  EndIf
+ EndIf
+EndIf
+
+Return 0
+
+End Function
+
+
+
+Function try_fusion(b.block,x,y)
+
+If try_fusion2(b,x,y-1) Then Return
+If try_fusion2(b,x,y+1) Then Return
+If try_fusion2(b,x-1,y) Then Return
+If try_fusion2(b,x+1,y) Then Return
+
+End Function
+
+
+Function save_map()
+; to do ; light grey blocks don't seem to lose momentum when slopped
+; green blocks sometimes don't bounce of grey blocks? requires 2 and 2 blocks
+
+out=OpenFile("blocklevel.bm")
+If out=0 Then out=WriteFile("blocklevel.bm")
+
+For y=1 To 80
+For x=1 To 100
+ WriteByte out,cell(x,y)
+Next
+Next
+
+For b.block=Each block:n=n+1:Next
+WriteInt out,n
+
+For b=Each block
+ m=0
+ While b\subx[m]<>0:m=m+1:Wend
+ WriteByte out,m
+ If m>0
+  For i=0 To m-1
+   WriteByte out,b\subx[i]
+   WriteByte out,b\suby[i]
+  Next
+ Else
+  Stop ; wtf a block with no subblocks
+ EndIf
+ WriteByte out,b\btype
+ WriteByte out,b\xv
+ WriteByte out,b\yv
+Next
+
+n=0
+For g.gen=Each gen:n=n+1:Next
+WriteInt out,n
+For g.gen=Each gen:WriteByte out,g\btype:Next
+
+CloseFile out
+
+End Function
+
+
+
+Function load_map()
+
+in=ReadFile("blocklevel.bm")
+
+Delete Each block
+Delete Each gen
+Delete Each pushq
+
+For y=1 To 80
+For x=1 To 100
+ cell(x,y)=ReadByte(in)
+Next
+Next
+
+n=ReadInt(in)
+
+While j<n
+ b.block=New block
+ m=ReadByte(in)
+ i=0
+ While i<m
+  b\subx[i]=ReadByte(in)
+  b\suby[i]=ReadByte(in)
+  bcell(b\subx[i],b\suby[i])=b
+  sx=b\subx[i]
+  sy=b\suby[i]
+  i=i+1
+ Wend
+ b\btype=ReadByte(in)
+ Select b\btype
+  Case 0:b\image=block0
+  Case 1:b\image=blockgrey
+  Case 2:b\image=blockgreen
+  Case 3:b\image=blockdark
+  Case 4:b\image=blockcold
+  Default:b\image=blockcold
+ End Select
+ b\xv=mod_dif(0,ReadByte(in),8) ; 8 is aribtrary, the point is to get proximity to 0 in modulo 64, so that negative numbers 
+ b\yv=mod_dif(0,ReadByte(in),8) ; can be save and loaded easy. e.g. distance between 255 and 0 is -1 in mod 64
+ j=j+1
+Wend
+
+For y=1 To 80 ; remove gen markers
+For x=1 To 100
+ If cell(x,y) And 1024 Then cell(x,y)=cell(x,y)-1024
+Next
+Next
+
+n=ReadInt(in)
+For g.gen=Each gen:g\btype=ReadByte(in):Next
+
+redraw_map()
+rdm=3
+
+End Function
+
+
+
+Function is_gen(c)
+ If c>4 And c<10 Then Return 1
+ Return 0
+End Function
+
+
+
+Function lookforgen.gen(g.gen,x,y,n=0)
+
+If cell(x,y) And 1024 Then Return Null
+If g=Null Then g=New gen
+
+g\x=x
+g\y=y
+n=n+1
+cell(x,y)=cell(x,y) Or 1024
+
+If x>1 And is_gen(cell(x-1,y))   Then lookforgen(g,x-1,y,n)
+If x<100 And is_gen(cell(x+1,y)) Then lookforgen(g,x+1,y,n)
+If y>1 And is_gen(cell(x,y-1))   Then lookforgen(g,x,y-1,n)
+If y<80 And is_gen(cell(x,y+1))  Then lookforgen(g,x,y+1,n)
+
+Return g
+
+End Function
+
+
+
+Function redraw_map()
+
+Color 0,0,0
+Cls
+
+For y=1 To 80
+For x=1 To 100
+ im=0
+ c=cell(x,y)
+ im=thing_to_image2(c)
+ If c>4 And c<10 Then DrawImage genera,(x+camposx)*15,(y+camposy)*15
+ If im Then DrawImage im,(x+camposx)*15,(y+camposy)*15 Else Rect (x+camposx)*15,(y+camposy)*15,15,15,1
+ 
+Next
+Next
+
+For b.block=Each block
+ While b\subx[i]<>0
+  DrawBlock b\image,(camposx+b\subx[i])*15,(camposy+b\suby[i])*15
+  i=i+1
+ Wend
+Next
+
+End Function
+
+
+
+Function block_gen(x,y,b.block,t) ; t = block type
+; an alternative to the top down managment approach of the 1st gen functions
+
+gb=b
+If is_gen(cell(x,y)) 
+ If bcell(x,y)=Null 
+  If b=Null 
+   b=New block
+   b\btype=t
+   Select t
+    Case 0:b\image=block0
+    Case 1:b\image=blockgrey
+    Case 2:b\image=blockgreen
+    Case 3:b\image=blockdark
+   End Select
+  EndIf
+  b\subx[gi]=x
+  b\suby[gi]=y
+  bcell(x,y)=b
+ ElseIf bcell(x,y)=b
+  Return 1 ; we've already done this one
+ Else
+  Return 0 ; different block in way, fail
+ EndIf
+Else
+ Return 1 ; not a gencell so don't do here
+EndIf
+
+gi=gi+1
+If x>1   Then If block_gen(x-1,y,b,t)=0 Then Return 0
+If x<100 Then If block_gen(x+1,y,b,t)=0 Then Return 0
+If y>1   Then If block_gen(x,y-1,b,t)=0 Then Return 0 
+If y<80  Then If block_gen(x,y+1,b,t)=0 Then Return 0
+
+Return 1
+
+End Function
+
+
+
+Function spread_btype(x,y,btype)
+
+For g.gen=Each gen
+ If g\x=x And g\y=y
+  If g\btype<>btype
+   g\btype=btype
+   If x>1   Then If is_gen(cell(x-1,y)) Then spread_btype(x-1,y,btype)
+   If x<100 Then If is_gen(cell(x+1,y)) Then spread_btype(x+1,y,btype)
+   If y>1   Then If is_gen(cell(x,y-1)) Then spread_btype(x,y-1,btype)
+   If y<80  Then If is_gen(cell(x,y+1)) Then spread_btype(x,y+1,btype)
+   Return 1
+  EndIf
+ EndIf
+Next
+
+End Function
+
+
+
+Function try_fusion3(x,y)
+
+b.block=bcell(x,y)
+If b=Null Then Return
+
+If x>1   Then If cell(x-1,y)=14 Then If bcell(x-1,y)<>Null And bcell(x-1,y)<>b Then try_fusion4(b,bcell(x-1,y))
+If x<100 Then If cell(x+1,y)=14 Then If bcell(x+1,y)<>Null And bcell(x+1,y)<>b Then try_fusion4(b,bcell(x+1,y))
+If y>1   Then If cell(x,y-1)=14 Then If bcell(x,y-1)<>Null And bcell(x,y-1)<>b Then try_fusion4(b,bcell(x,y-1))
+If y<80  Then If cell(x,y+1)=14 Then If bcell(x,y+1)<>Null And bcell(x,y+1)<>b Then try_fusion4(b,bcell(x,y+1))
+
+End Function
+
+
+
+Function try_fusion4(b.block,b2.block)
+
+If b\btype=b2\btype
+ While b\subx[i]<>0:i=i+1:Wend
+ While b2\subx[j]<>0
+  b\subx[i]=b2\subx[j]
+  b\suby[i]=b2\suby[j]
+  j=j+1
+  i=i+1
+ Wend
+ Delete b2
+ Return 1
+EndIf
+
+Return 0
+
+End Function
+
+
+
+Function try_fusion5(b.block)
+; if hundreds of blocks, this is slow. better to have list of fusors
+While b\subx[i]>0
+ x=b\subx[i]
+ y=b\suby[i]
+ If cell(x,y)=14 Then try_fusion3(x,y)
+ i=i+1
+Wend
+
+End Function
+
+
+
+
+
+
+Function try_split(x,y,bs.block)
+
+b.block=bcell(x,y)
+If b<>bs Then Return ; not b then this subblock has already split
+
+If x>1   Then If cell(x-1,y)=15 And bcell(x-1,y)=b Then st=1;try_split2(x,y,x-1,y)
+If x<100 Then If cell(x+1,y)=15 And bcell(x+1,y)=b Then st=st+%10
+If y>1   Then If cell(x,y-1)=15 And bcell(x,y-1)=b Then st=st+%100
+If y<80  Then If cell(x,y+1)=15 And bcell(x,y+1)=b Then st=st+%1000
+
+If st Then block_detect_flood(x,y)
+Return Sgn(st)
+
+End Function
+
+
+
+Function try_split2(b.block)
+
+While b\subx[i]>0
+ If cell(b\subx[i],b\suby[i])=15 Then sp=sp+try_split(b\subx[i],b\suby[i],b)
+ i=i+1
+Wend
+
+If sp Then Delete b
+
+End Function
+
+
+
+Function block_detect_flood(x,y,flag=0) ; flag, 0 for 1st side of split, 1 for 2nd
+; if get here then a split has happened. quantify the split
+f2.flood=Null
+f.flood=New flood
+f\x=x
+f\y=y
+b.block=bcell(x,y)
+b2.block=New block
+b2\bType=b\bType
+b2\image=b\image
+b2\xv=b\xv
+b2\yv=b\yv
+
+For f=Each flood
+ x=f\x
+ y=f\y
+ b2\subx[i]=x
+ b2\suby[i]=y
+ bcell(x,y)=b2
+
+ If x>1   Then If cell(x-1,y)<>15 And bcell(x-1,y)=b Then f2=New flood:f2\x=x-1:f2\y=y
+ If x<100 Then If cell(x+1,y)<>15 And bcell(x+1,y)=b Then f2=New flood:f2\x=x+1:f2\y=y
+ If y>1   Then If cell(x,y-1)<>15 And bcell(x,y-1)=b Then f2=New flood:f2\x=x:f2\y=y-1
+ If y<80  Then If cell(x,y+1)<>15 And bcell(x,y+1)=b Then f2=New flood:f2\x=x:f2\y=y+1
+ 
+ Delete f
+ i=i+1 
+Next
+
+If Not flag
+ While b\subx[i]<>0
+  x=b\subx[i]
+  y=b\suby[i]
+  If bcell(x,y)<>b2 ; split detected
+   block_detect_flood(x,y,1)
+   sp=1
+  EndIf 
+  i=i+1
+ Wend
+EndIf
+
+;If b<>Null Then Delete b
+
+End Function
+; todo
+; once traveled over, block pointer is not removed from rotation cells slop THAT!
