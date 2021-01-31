@@ -1,0 +1,158 @@
+
+Type sgroup
+
+Field slist:subarray=New subarray
+Field xv,yv,bittags,id ' bittags 1 -> tagged for deletion
+
+Method add(s:substrate)
+ slist.add(s)
+ s.group=Self
+End Method
+
+
+Method move()
+
+Local s:substrate=slist.sa[0]
+Local s2:substrate=Null
+Local xt,yt:Int
+Local n:Int=thingmap.le
+Local i,t,t2
+Local ti ' thing in adjacent cell 
+Local bi:block
+Local si:substrate
+
+If Abs(xv)+Abs(yv)>1 Then RuntimeError(" sgroup, move, xv and yv both non zero ")
+
+While s ' old out of bounds check? seems redundant
+ xt=s.x+xv
+ yt=s.y+yv
+ If xt>=0 And yt>=0 
+  ti=thingmap.fetch(xt+yt Shl 10) 
+  bi=bmap.fetch(xt+yt Shl 10)
+  si=smap.fetch(xt+yt Shl 10)
+ Else
+  remove();Return 
+ EndIf
+
+ If bi
+  If bi.btype=0 Then xv=-xv;yv=-yv;Return
+ EndIf
+
+ If si
+  If si.group<>s.group Then xv=-xv;yv=-yv;Return
+ EndIf
+
+ i=i+1
+ s=slist.sa[i]
+Wend
+
+' now lets actually move the substrate
+i=0
+s=slist.sa[0]
+While s
+ smap.remove(s.x+s.y Shl 10)
+ i=i+1
+ s=slist.sa[i]
+Wend
+
+i=0
+s=slist.sa[0]
+While s
+ s.x=s.x+xv
+ s.y=s.y+yv
+ smap.insert(s.x+s.y Shl 10,s)
+ i=i+1
+ s=slist.sa[i]
+Wend
+
+End Method
+
+
+Method remove()
+
+Local s:substrate=slist.sa[0]
+Local i
+
+While s
+ smap.remove(s.x+s.y Shl 10)
+
+ Local re:redraw=New redraw
+ re.x=s.oldx[frame]
+ re.y=s.oldy[frame]
+ re.redraws=2
+ rarray.add(re)
+ re:redraw=New redraw
+ re.x=s.oldx[1-frame]
+ re.y=s.oldy[1-frame]
+ re.redraws=2
+ rarray.add(re)
+
+ sarray.sa[s.id]=Null ' ********** this should be deleting block from barray ****
+ i=i+1
+ s=slist.sa[i]
+Wend
+sgarray.sga[id]=Null
+sgarray.ordered_sort(0,0)
+
+End Method
+
+
+
+Method out_of_bounds_check()
+
+Local i
+Local s:substrate=slist.sa[0]
+
+If s<>Null
+ Repeat
+  If Not s.out_of_bounds() Return 0
+  i=i+1
+  s=slist.sa[i]
+ Until s=Null
+EndIf
+
+Return 1
+
+End Method
+
+
+Method checkarrows()
+
+Local s:substrate=slist.sa[0]
+Local i
+
+While s
+ If s.image=subd
+  Select thingmap.fetch(s.x+(s.y Shl 10)) Mod 8
+   Case 1 ; xv=0 ; yv=-1
+   Case 2 ; xv=0 ; yv=1
+   Case 3 ; xv=-1; yv=0
+   Case 4 ; xv=1 ; yv=0
+  End Select
+ EndIf
+
+ i=i+1
+ s=slist.sa[i]
+Wend
+
+End Method
+
+
+Method draw()
+
+Local s:substrate=slist.sa[0]
+Local i
+
+If s<>Null
+ Repeat
+  s.draw()
+  i=i+1
+  s=slist.sa[i]
+ Until s=Null
+EndIf
+
+End Method
+
+
+End Type
+

@@ -4,19 +4,19 @@ static BBString _s20={
 	1,
 	{32}
 };
-static BBString _s16={
+static BBString _s1={
 	&bbStringClass,
 	2,
 	{32,32}
 };
-static BBString _s18={
+static BBString _s3={
 	&bbStringClass,
 	34,
 	{32,98,103,114,111,117,112,32,58,32,98,111,116,104,32,120,118
 	,32,97,110,100,32,121,118,32,110,111,110,32,122,101,114,111
 	,32}
 };
-static BBString _s17={
+static BBString _s2={
 	&bbStringClass,
 	40,
 	{32,98,103,114,111,117,112,44,32,109,111,118,101,32,44,32,98
@@ -28,7 +28,7 @@ static BBString _s24={
 	8,
 	{32,108,101,32,102,105,110,32}
 };
-static BBString _s19={
+static BBString _s4={
 	&bbStringClass,
 	39,
 	{32,115,103,114,111,117,112,44,32,109,111,118,101,44,32,120,118
@@ -47,27 +47,27 @@ static BBString _s0={
 	,97,115,101,32,100,101,113,117,101,32,99,97,112,97,99,105
 	,116,121}
 };
-static BBString _s13={
+static BBString _s17={
 	&bbStringClass,
 	10,
 	{97,114,114,111,119,101,46,112,110,103}
 };
-static BBString _s14={
+static BBString _s18={
 	&bbStringClass,
 	10,
 	{97,114,114,111,119,110,46,112,110,103}
 };
-static BBString _s15={
+static BBString _s19={
 	&bbStringClass,
 	10,
 	{97,114,114,111,119,115,46,112,110,103}
 };
-static BBString _s12={
+static BBString _s16={
 	&bbStringClass,
 	10,
 	{97,114,114,111,119,119,46,112,110,103}
 };
-static BBString _s11={
+static BBString _s15={
 	&bbStringClass,
 	9,
 	{98,108,97,110,107,46,112,110,103}
@@ -77,49 +77,49 @@ static BBString _s21={
 	16,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,97,114,116}
 };
-static BBString _s8={
+static BBString _s12={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,98,46,112,110
 	,103}
 };
-static BBString _s3={
+static BBString _s7={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,99,46,112,110
 	,103}
 };
-static BBString _s7={
+static BBString _s11={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,100,46,112,110
 	,103}
 };
-static BBString _s2={
+static BBString _s6={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,111,46,112,110
 	,103}
 };
-static BBString _s5={
+static BBString _s9={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,113,46,112,110
 	,103}
 };
-static BBString _s4={
+static BBString _s8={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,115,46,112,110
 	,103}
 };
-static BBString _s1={
+static BBString _s5={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,119,46,112,110
 	,103}
 };
-static BBString _s6={
+static BBString _s10={
 	&bbStringClass,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,120,46,112,110
@@ -135,12 +135,12 @@ static BBString _s28={
 	8,
 	{103,101,110,101,46,112,110,103}
 };
-static BBString _s9={
+static BBString _s13={
 	&bbStringClass,
 	9,
 	{109,111,117,115,101,46,112,110,103}
 };
-static BBString _s10={
+static BBString _s14={
 	&bbStringClass,
 	13,
 	{109,111,117,115,101,99,101,108,108,46,112,110,103}
@@ -197,13 +197,13 @@ struct brl_max2d_image_TImage_obj* _m_seltra_loadimage3(BBSTRING bbt_fn){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 103, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 108, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_noi)))[((BBUINT)_m_seltra_noi)]=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbt_fn),255,255,255),-1);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 104, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 109, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	_m_seltra_noi=(_m_seltra_noi+1);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 105, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 110, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbOnDebugLeaveScope();
 	return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)(_m_seltra_noi-1))))[((BBUINT)(_m_seltra_noi-1))];
@@ -274,28 +274,28 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1921, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 840, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_bred=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1921, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 840, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_bgre=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1921, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 840, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_bblu=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1922, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 841, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_blockart=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1924, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 843, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_bred=((BBINT)(((100.0f*_m_seltra_colfunc(((BBFLOAT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_maxbonds )/7.0f))+((BBFLOAT)brl_random_Rand(20,1)))+120.000000f));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1925, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 844, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_bgre=((BBINT)((150.0f*_m_seltra_colfunc((2.3f+((BBFLOAT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_maxbonds ))/7.0f))+30.0000000f));
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1926, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 845, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_bblu=((BBINT)((150.0f*_m_seltra_colfunc((4.7f+((BBFLOAT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_maxbonds ))/7.0f))+50.0000000f));
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1928, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 847, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if(bbt_grey!=0){
 		struct BBDebugScope __scope = {
@@ -306,69 +306,69 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1929, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 848, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bred=(((bbt_bred+bbt_bgre)+bbt_bblu)/3);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1930, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 849, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_bgre=(((bbt_bred+bbt_bgre)+bbt_bblu)/3);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1931, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 850, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_bblu=(((bbt_bred+bbt_bgre)+bbt_bblu)/3);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1934, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 853, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	brl_max2d_SetViewport(0,0,30,30);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1935, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 854, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	brl_max2d_SetMaskColor(0,0,0);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1936, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 855, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	brl_max2d_SetColor(0,0,0);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1937, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 856, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	brl_max2d_DrawRect(0.000000000f,0.000000000f,30.0000000f,30.0000000f);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1938, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 857, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	bbt_blockart=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbStringConcat(bbStringConcat(&_s21,bbStringFromInt(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_ch )),&_s22)),255,255,255),-1);
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1939, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 858, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	brl_max2d_SetColor((bbt_bred+20),(bbt_bgre+40),(bbt_bblu+40));
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1940, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 859, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	brl_max2d_DrawRect(0.000000000f,0.000000000f,30.0000000f,30.0000000f);
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1942, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 861, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_blockart,0.000000000f,0.000000000f,0);
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1943, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 862, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	brl_max2d_SetMaskColor(0,0,0);
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1944, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 863, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	brl_max2d_GrabImage((struct brl_max2d_image_TImage_obj*)bbt_blockart,0,0,0);
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1946, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 865, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	brl_max2d_Cls();
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1947, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 866, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_noi)))[((BBUINT)_m_seltra_noi)]=(struct brl_max2d_image_TImage_obj*)brl_max2d_CreateImage(30,30,1,0);
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1948, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 867, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	brl_max2d_SetColor(bbt_bred,bbt_bgre,bbt_bblu);
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1949, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 868, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	brl_max2d_DrawRect(0.000000000f,0.000000000f,30.0000000f,30.0000000f);
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1950, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 869, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_blockart,0.000000000f,0.000000000f,0);
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1951, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 870, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_btype )))[((BBUINT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_btype )],0.000000000f,0.000000000f,0);
-	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1953, 0};
+	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 872, 0};
 	bbOnDebugEnterStm(&__stmt_24);
 	brl_max2d_SetColor(200,50,50);
-	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1954, 0};
+	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 873, 0};
 	bbOnDebugEnterStm(&__stmt_25);
 	if(((unsigned int)(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_bonds2 )&(unsigned int)(1))!=0){
 		struct BBDebugScope __scope = {
@@ -379,12 +379,12 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1954, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 873, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawRect(13.0000000f,0.000000000f,3.00000000f,10.0000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1955, 0};
+	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 874, 0};
 	bbOnDebugEnterStm(&__stmt_26);
 	if(((unsigned int)(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_bonds2 )&(unsigned int)(4))!=0){
 		struct BBDebugScope __scope = {
@@ -395,12 +395,12 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1955, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 874, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawRect(13.0000000f,20.0000000f,3.00000000f,10.0000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1956, 0};
+	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 875, 0};
 	bbOnDebugEnterStm(&__stmt_27);
 	if(((unsigned int)(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_bonds2 )&(unsigned int)(2))!=0){
 		struct BBDebugScope __scope = {
@@ -411,12 +411,12 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1956, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 875, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawRect(0.000000000f,13.0000000f,10.0000000f,3.00000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1957, 0};
+	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 876, 0};
 	bbOnDebugEnterStm(&__stmt_28);
 	if(((unsigned int)(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_bonds2 )&(unsigned int)(8))!=0){
 		struct BBDebugScope __scope = {
@@ -427,15 +427,15 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1957, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 876, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawRect(20.0000000f,13.0000000f,10.0000000f,3.00000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1959, 0};
+	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 878, 0};
 	bbOnDebugEnterStm(&__stmt_29);
 	brl_max2d_GrabImage((struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_noi)))[((BBUINT)_m_seltra_noi)],0,0,0);
-	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1961, 0};
+	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 880, 0};
 	bbOnDebugEnterStm(&__stmt_30);
 	_m_seltra_noi=(_m_seltra_noi+1);
 	bbOnDebugLeaveScope();
@@ -495,7 +495,7 @@ struct _m_seltra_bgroup_obj* __m_seltra_btemplate_createsingleblock_iiii(struct 
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1969, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 888, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(((BBObject*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10))))!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -506,13 +506,13 @@ struct _m_seltra_bgroup_obj* __m_seltra_btemplate_createsingleblock_iiii(struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1969, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 888, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (struct _m_seltra_bgroup_obj*)(&bbNullObject);
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1970, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 889, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_btype ==0){
 		struct BBDebugScope __scope = {
@@ -523,67 +523,67 @@ struct _m_seltra_bgroup_obj* __m_seltra_btemplate_createsingleblock_iiii(struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1970, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 889, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_wallblock(bbt_x,bbt_y,((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_id );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1970, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 889, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (struct _m_seltra_bgroup_obj*)(&bbNullObject);
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1972, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 891, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1973, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 892, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_xv =bbt_xv;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1974, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 893, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_yv =bbt_yv;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1975, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 894, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	_m_seltra_bgc=(_m_seltra_bgc+1);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1976, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 895, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->clas->m_add_Tbgroup((struct _m_seltra_grouparray_obj*)_m_seltra_garray,(struct _m_seltra_bgroup_obj*)bbt_bg);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1978, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 897, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1979, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 898, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x =bbt_x;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1980, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 899, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y =bbt_y;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1981, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 900, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype =((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_btype ;
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1982, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 901, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bt =((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_id ;
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1983, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 902, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_maxbonds =((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_maxbonds ;
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1984, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 903, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds =((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_maxbonds ;
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1985, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 904, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 =((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_bonds2 ;
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1987, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 906, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_id )))[((BBUINT)((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o))->__m_seltra_btemplate_id )];
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1988, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 907, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_add_Tblock((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1989, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 908, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_barray,(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1990, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 909, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1992, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 911, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	bbOnDebugLeaveScope();
 	return (struct _m_seltra_bgroup_obj*)bbt_bg;
@@ -637,16 +637,16 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1999, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 918, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2000, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 919, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2001, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 920, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2003, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 922, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(bbt_b==&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -657,7 +657,7 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2003, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 922, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_btemplate_obj*)bbNullObjectTest(o));
 		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_btemplate_obj*)o)->clas->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)o,bbt_x,bbt_y,0,0);
@@ -671,15 +671,15 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2003, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 922, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2005, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 924, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2007, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 926, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(bbt_x>0){
 		struct BBDebugScope __scope = {
@@ -690,12 +690,12 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2007, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 926, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_x-1)+(bbt_y<<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2008, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 927, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype >0)) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
 		struct BBDebugScope __scope = {
@@ -706,18 +706,18 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2008, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 927, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2008, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 927, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2008, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 927, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2009, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 928, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if(bbt_y>0){
 		struct BBDebugScope __scope = {
@@ -728,12 +728,12 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2009, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 928, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+((bbt_y-1)<<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2010, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 929, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype >0)) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
 		struct BBDebugScope __scope = {
@@ -744,21 +744,21 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2010, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 929, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2010, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 929, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2010, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 929, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2011, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 930, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_x+1)+(bbt_y<<10)));
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2012, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 931, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype >0)) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
 		struct BBDebugScope __scope = {
@@ -769,21 +769,21 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2012, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 931, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2012, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 931, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2012, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 931, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2013, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 932, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+((bbt_y+1)<<10)));
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2014, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 933, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype >0)) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
 		struct BBDebugScope __scope = {
@@ -794,13 +794,13 @@ BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2014, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 933, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2014, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 933, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2014, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 933, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
 		bbOnDebugLeaveScope();
@@ -1802,43 +1802,43 @@ BBINT __m_seltra_block_Del(struct _m_seltra_block_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 176, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 21, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ))->clas->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ,(struct _m_seltra_block_obj*)o);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 177, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 22, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba )->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_id )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_id )]=(struct _m_seltra_block_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 178, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 23, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 180, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 25, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 181, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 26, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 182, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 27, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 183, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 28, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 184, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 29, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 185, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 30, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 186, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 31, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 187, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 32, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 188, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 33, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 189, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 34, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
 	bbOnDebugLeaveScope();
@@ -1860,16 +1860,16 @@ BBINT __m_seltra_block_draw(struct _m_seltra_block_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 196, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 41, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_blank,(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposy))*_m_seltra_zoom),0);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 197, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 42, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_image ,(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 198, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 43, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x ;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 199, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 44, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y ;
 	bbOnDebugLeaveScope();
@@ -1891,7 +1891,7 @@ BBINT __m_seltra_block_out_of_bounds(struct _m_seltra_block_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 203, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 48, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if((((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x <1) || (((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x >1000)) || (((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <1)) || (((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y >1000)){
 		struct BBDebugScope __scope = {
@@ -1902,7 +1902,7 @@ BBINT __m_seltra_block_out_of_bounds(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 203, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 48, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
@@ -1946,37 +1946,37 @@ struct _m_seltra_block_obj* __m_seltra_block_spawn_ii(struct _m_seltra_block_obj
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 208, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 53, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 209, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 54, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype =((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_btype ;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 210, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 55, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bit_tags =(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bit_tags -1);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 211, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 56, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_image ;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 212, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 57, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +bbt_xs);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 213, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 58, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +bbt_ys);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 214, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 59, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_barray,(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 215, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 60, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 216, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 61, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id =_m_seltra_bc;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 217, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 62, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	_m_seltra_bc=(_m_seltra_bc+1);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 218, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 63, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	bbOnDebugLeaveScope();
 	return (struct _m_seltra_block_obj*)bbt_b;
@@ -2024,19 +2024,19 @@ BBINT __m_seltra_block_checkchem_Tblock(struct _m_seltra_block_obj* o,struct _m_
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 69, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_d1=((BBFLOAT)_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 69, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_d2=((BBFLOAT)_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_ch ));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 69, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_dc=((BBFLOAT)_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_ch ));
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 225, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 70, 0};
 	bbOnDebugEnterStm(&__stmt_3);
-	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromFloat(bbt_d1),&_s16),bbStringFromFloat(bbt_d2)),&_s16),bbStringFromFloat(bbt_dc)),&_s16),bbStringFromFloat((bbt_d1+bbt_d2)/2.0f)));
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 227, 0};
+	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromFloat(bbt_d1),&_s1),bbStringFromFloat(bbt_d2)),&_s1),bbStringFromFloat(bbt_dc)),&_s1),bbStringFromFloat((bbt_d1+bbt_d2)/2.0f)));
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 72, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(bbt_dc<(bbt_d1+bbt_d2)){
 		struct BBDebugScope __scope = {
@@ -2047,7 +2047,7 @@ BBINT __m_seltra_block_checkchem_Tblock(struct _m_seltra_block_obj* o,struct _m_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 227, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 72, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
@@ -2079,13 +2079,13 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 235, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 80, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 236, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 81, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch =((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 238, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 83, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x >0){
 		struct BBDebugScope __scope = {
@@ -2096,12 +2096,12 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 238, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 83, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 239, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 84, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2112,15 +2112,15 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 239, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 84, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 240, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 85, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 241, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 86, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2131,12 +2131,12 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 241, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 86, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 242, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 87, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y >0){
 		struct BBDebugScope __scope = {
@@ -2147,12 +2147,12 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 242, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 87, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -1)<<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 243, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 88, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2163,15 +2163,15 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 243, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 88, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 244, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 89, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +1)<<10)));
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 245, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 90, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2182,7 +2182,7 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 245, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 90, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch =(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
@@ -2212,7 +2212,7 @@ BBINT __m_seltra_block_bondcheck_Tblock(struct _m_seltra_block_obj* o,struct _m_
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 257, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 102, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(((((((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(1))!=0) && (((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(4))!=0)) && ((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_y )>0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(16))!=0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(32))!=0)){
 		struct BBDebugScope __scope = {
@@ -2223,13 +2223,13 @@ BBINT __m_seltra_block_bondcheck_Tblock(struct _m_seltra_block_obj* o,struct _m_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 257, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 102, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1;
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 258, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 103, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(((((((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(4))!=0) && (((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(1))!=0)) && ((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_y )<0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(64))!=0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(8))!=0)){
 		struct BBDebugScope __scope = {
@@ -2240,13 +2240,13 @@ BBINT __m_seltra_block_bondcheck_Tblock(struct _m_seltra_block_obj* o,struct _m_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 258, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 103, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1;
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 259, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 104, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((((((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(2))!=0) && (((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(8))!=0)) && ((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_x )>0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(32))!=0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(64))!=0)){
 		struct BBDebugScope __scope = {
@@ -2257,13 +2257,13 @@ BBINT __m_seltra_block_bondcheck_Tblock(struct _m_seltra_block_obj* o,struct _m_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 259, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 104, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1;
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 260, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 105, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(((((((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(8))!=0) && (((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(2))!=0)) && ((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_x )<0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bonds2 )&(unsigned int)(128))!=0)) && !(((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )&(unsigned int)(16))!=0)){
 		struct BBDebugScope __scope = {
@@ -2274,13 +2274,13 @@ BBINT __m_seltra_block_bondcheck_Tblock(struct _m_seltra_block_obj* o,struct _m_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 260, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 105, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1;
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 262, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 107, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbOnDebugLeaveScope();
 	return 0;
@@ -2328,22 +2328,22 @@ BBINT __m_seltra_block_checkchem2_Tblock(struct _m_seltra_block_obj* o,struct _m
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 271, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 116, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_ud=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 271, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 116, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_bd=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 271, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 116, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_diff=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 273, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 118, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_ud=(brl_blitz_Abs(_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch ))+brl_blitz_Abs(_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_mch )));
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 274, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 119, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_bd=(brl_blitz_Abs(_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_ch ))+brl_blitz_Abs(_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch )));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 276, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 121, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(bbt_bd<bbt_ud){
 		struct BBDebugScope __scope = {
@@ -2354,7 +2354,7 @@ BBINT __m_seltra_block_checkchem2_Tblock(struct _m_seltra_block_obj* o,struct _m
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 276, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 121, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
@@ -2420,22 +2420,22 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 286, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 131, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_bw=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 286, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 131, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_be=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 286, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 131, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_bn=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 286, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 131, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_bs=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 289, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 134, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_d=(_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_ch )+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 290, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 135, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(bbt_d==0){
 		struct BBDebugScope __scope = {
@@ -2446,13 +2446,13 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 290, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 135, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (&bbEmptyArray);
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 295, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 140, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x >0){
 		struct BBDebugScope __scope = {
@@ -2463,15 +2463,15 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 295, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 140, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bw=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 296, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 141, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_be=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 297, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 142, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y >0){
 		struct BBDebugScope __scope = {
@@ -2482,15 +2482,15 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 297, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 142, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bn=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -1)<<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 298, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 143, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_bs=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +1)<<10)));
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 301, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 146, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2501,12 +2501,12 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 301, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 146, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bw=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 302, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 147, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if((((BBObject*)bbt_be)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2517,12 +2517,12 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 302, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 147, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_be=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 303, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 148, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if((((BBObject*)bbt_bn)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2533,12 +2533,12 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 303, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 148, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bn=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 304, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 149, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	if((((BBObject*)bbt_bs)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2549,7 +2549,7 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 304, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 149, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bs=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
@@ -2663,37 +2663,37 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 317, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 162, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_d=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 317, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 162, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_mch2=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 318, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 163, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 318, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 163, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_b3=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 319, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 164, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_ba=bbArrayNew1D(":block", 5);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 320, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 165, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_bw=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 320, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 165, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_be=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 320, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 165, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_bn=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 320, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 165, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_bs=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 322, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 167, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_mch2=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch ;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 323, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 168, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	if(((BBObject*)bbt_b2)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -2704,15 +2704,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 323, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 168, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_mch2=(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_mch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 324, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 169, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbt_ldsf=_m_seltra_chem_dist(bbt_mch2);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 326, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 171, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x >0){
 		struct BBDebugScope __scope = {
@@ -2723,15 +2723,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 326, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 171, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bw=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 327, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 172, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	bbt_be=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 328, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 173, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y >0){
 		struct BBDebugScope __scope = {
@@ -2742,15 +2742,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 328, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 173, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bn=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -1)<<10)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 329, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 174, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	bbt_bs=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +1)<<10)));
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 331, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 176, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2761,12 +2761,12 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 331, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 176, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bw=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 332, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 177, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	if((((BBObject*)bbt_be)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2777,12 +2777,12 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 332, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 177, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_be=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 333, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 178, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	if((((BBObject*)bbt_bn)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2793,12 +2793,12 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 333, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 178, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bn=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 334, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 179, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	if((((BBObject*)bbt_bs)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -2809,12 +2809,12 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 334, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 179, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bs=(struct _m_seltra_block_obj*)&bbNullObject;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 336, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 181, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	if(((BBObject*)bbt_bw)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -2825,10 +2825,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 337, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 182, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=_m_seltra_chem_dist(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_ch );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 338, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 183, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -2839,17 +2839,17 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 338, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 183, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bw;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 338, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 183, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 341, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 186, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	if(((BBObject*)bbt_be)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -2860,10 +2860,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 342, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 187, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=_m_seltra_chem_dist(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_ch );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 343, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 188, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -2874,17 +2874,17 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 343, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 188, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_be;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 343, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 188, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 346, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 191, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	if(((BBObject*)bbt_bn)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -2895,10 +2895,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 347, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 192, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=_m_seltra_chem_dist(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_ch );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 348, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 193, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -2909,17 +2909,17 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 348, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 193, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bn;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 348, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 193, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 351, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 196, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	if(((BBObject*)bbt_bs)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -2930,10 +2930,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 352, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 197, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=_m_seltra_chem_dist(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_ch );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 353, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 198, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -2944,17 +2944,17 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 353, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 198, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bs;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 353, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 198, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 356, 0};
+	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 201, 0};
 	bbOnDebugEnterStm(&__stmt_24);
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (((BBObject*)bbt_be)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -2965,10 +2965,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 357, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 202, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 358, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 203, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -2979,20 +2979,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 358, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 203, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bw;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 358, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 203, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_be;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 358, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 203, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 361, 0};
+	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 206, 0};
 	bbOnDebugEnterStm(&__stmt_25);
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (((BBObject*)bbt_bn)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -3003,10 +3003,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 362, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 207, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 363, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 208, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -3017,20 +3017,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 363, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 208, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bw;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 363, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 208, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_bn;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 363, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 208, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 366, 0};
+	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 211, 0};
 	bbOnDebugEnterStm(&__stmt_26);
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (((BBObject*)bbt_bs)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -3041,10 +3041,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 367, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 212, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 368, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 213, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -3055,20 +3055,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 368, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 213, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bw;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 368, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 213, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_bs;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 368, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 213, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 371, 0};
+	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 216, 0};
 	bbOnDebugEnterStm(&__stmt_27);
 	if((((BBObject*)bbt_bn)!= &bbNullObject) && (((BBObject*)bbt_be)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -3079,10 +3079,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 372, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 217, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 373, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 218, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -3093,20 +3093,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 373, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 218, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bn;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 373, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 218, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_be;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 373, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 218, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 376, 0};
+	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 221, 0};
 	bbOnDebugEnterStm(&__stmt_28);
 	if((((BBObject*)bbt_bn)!= &bbNullObject) && (((BBObject*)bbt_bs)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -3117,10 +3117,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 377, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 222, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 378, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 223, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -3131,20 +3131,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 378, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 223, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bn;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 378, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 223, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_bs;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 378, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 223, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 381, 0};
+	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 226, 0};
 	bbOnDebugEnterStm(&__stmt_29);
 	if((((BBObject*)bbt_bs)!= &bbNullObject) && (((BBObject*)bbt_be)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -3155,10 +3155,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 382, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 227, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=(((2*_m_seltra_chem_dist(bbt_mch2-(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_ch +((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_ch )))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ))+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 383, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 228, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_ldsf>bbt_d){
 			struct BBDebugScope __scope = {
@@ -3169,26 +3169,26 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 383, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 228, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bs;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 383, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 228, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,1U))[1U]=(struct _m_seltra_block_obj*)bbt_be;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 383, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 228, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_ldsf=bbt_d;
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 386, 0};
+	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 231, 0};
 	bbOnDebugEnterStm(&__stmt_30);
 	bbt_ch2=0;
-	struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 386, 0};
+	struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 231, 0};
 	bbOnDebugEnterStm(&__stmt_31);
 	bbt_i=0;
-	struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 387, 0};
+	struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 232, 0};
 	bbOnDebugEnterStm(&__stmt_32);
 	if(((BBObject*)bbt_bw)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3199,15 +3199,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 387, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 232, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_ch2=_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 387, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 232, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_mch2=(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bw))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 388, 0};
+	struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 233, 0};
 	bbOnDebugEnterStm(&__stmt_33);
 	if(((BBObject*)bbt_be)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3218,15 +3218,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 388, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 233, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_ch2=(bbt_ch2+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 388, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 233, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_mch2=(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_be))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_34 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 389, 0};
+	struct BBDebugStm __stmt_34 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 234, 0};
 	bbOnDebugEnterStm(&__stmt_34);
 	if(((BBObject*)bbt_bn)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3237,15 +3237,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 389, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 234, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_ch2=(bbt_ch2+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 389, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 234, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_mch2=(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bn))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_35 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 390, 0};
+	struct BBDebugStm __stmt_35 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 235, 0};
 	bbOnDebugEnterStm(&__stmt_35);
 	if(((BBObject*)bbt_bs)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3256,18 +3256,18 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 390, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 235, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_ch2=(bbt_ch2+_m_seltra_chem_dist(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_mch -((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_ch ));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 390, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 235, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_mch2=(bbt_mch2-((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bs))->__m_seltra_block_ch );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_36 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 391, 0};
+	struct BBDebugStm __stmt_36 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 236, 0};
 	bbOnDebugEnterStm(&__stmt_36);
 	bbt_d=(bbt_ch2+_m_seltra_chem_dist(bbt_mch2));
-	struct BBDebugStm __stmt_37 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 392, 0};
+	struct BBDebugStm __stmt_37 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 237, 0};
 	bbOnDebugEnterStm(&__stmt_37);
 	if(bbt_ldsf>bbt_d){
 		struct BBDebugScope __scope = {
@@ -3278,10 +3278,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 393, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 238, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_ba=bbArraySlice(":block",bbt_ba,0,5);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 394, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 239, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_bw)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -3292,15 +3292,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 394, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 239, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_bw;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 394, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 239, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 395, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 240, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(((BBObject*)bbt_be)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -3311,15 +3311,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 395, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 240, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct _m_seltra_block_obj*)bbt_be;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 395, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 240, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 241, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if(((BBObject*)bbt_bn)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -3330,15 +3330,15 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 241, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct _m_seltra_block_obj*)bbt_bn;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 241, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 242, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		if(((BBObject*)bbt_bs)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -3349,17 +3349,17 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 242, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct _m_seltra_block_obj*)bbt_bs;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 242, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_38 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 402, 0};
+	struct BBDebugStm __stmt_38 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 247, 0};
 	bbOnDebugEnterStm(&__stmt_38);
 	if(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3370,10 +3370,10 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 403, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 248, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_i=0;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 404, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 249, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -3384,20 +3384,20 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 405, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 250, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj*)bbNullObjectTest(o));
 			((struct _m_seltra_block_obj*)o)->clas->m_try_flood_split_Tblock((struct _m_seltra_block_obj*)o,(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 406, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 251, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_block_obj* bbt_;
 			(((struct _m_seltra_block_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])))->clas)->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 407, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 252, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_i=(bbt_i+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 409, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 254, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o));
 		((struct _m_seltra_block_obj*)o)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)o);
@@ -3463,22 +3463,22 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 419, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 264, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 419, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 264, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_m=1;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 420, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 265, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_ba=bbArrayNew1D(":block", 100);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 420, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 265, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 421, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 266, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,0U))[0U]=(struct _m_seltra_block_obj*)bbt_b;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 422, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 267, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(!(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -3489,13 +3489,13 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 422, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 267, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 424, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 269, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3506,7 +3506,7 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 425, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 270, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x >0){
 			struct BBDebugScope __scope = {
@@ -3517,10 +3517,10 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 426, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 271, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x -1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 427, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 272, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )) && (bbt_b2!=o)){
 				struct BBDebugScope __scope = {
@@ -3531,24 +3531,24 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 427, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 272, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_m)))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 427, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 272, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				struct _m_seltra_bgroup_obj* bbt_;
 				(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))))->clas)->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)bbt_,(struct _m_seltra_block_obj*)bbt_b2);
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 427, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 272, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbt_m=(bbt_m+1);
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 274, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 430, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 275, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )) && (bbt_b2!=o)){
 			struct BBDebugScope __scope = {
@@ -3559,19 +3559,19 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 430, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 275, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_m)))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 430, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 275, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_bgroup_obj* bbt_2;
 			(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_2 = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))))->clas)->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)bbt_2,(struct _m_seltra_block_obj*)bbt_b2);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 430, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 275, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_m=(bbt_m+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 431, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 276, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y >0){
 			struct BBDebugScope __scope = {
@@ -3582,10 +3582,10 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 432, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 277, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y -1)<<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 278, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )) && (bbt_b2!=o)){
 				struct BBDebugScope __scope = {
@@ -3596,24 +3596,24 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 278, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_m)))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 278, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				struct _m_seltra_bgroup_obj* bbt_3;
 				(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_3 = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))))->clas)->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)bbt_3,(struct _m_seltra_block_obj*)bbt_b2);
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 278, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbt_m=(bbt_m+1);
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 435, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 280, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y +1)<<10)));
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 281, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		if(((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group )) && (bbt_b2!=o)){
 			struct BBDebugScope __scope = {
@@ -3624,34 +3624,34 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 281, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_m)))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 281, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_bgroup_obj* bbt_4;
 			(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_4 = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))))->clas)->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)bbt_4,(struct _m_seltra_block_obj*)bbt_b2);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 281, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_m=(bbt_m+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 438, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 283, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 441, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 286, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 442, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 287, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_i=0;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 443, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 288, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	struct _m_seltra_bgroup_obj* bbt_5;
 	(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_5 = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ))))->clas)->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)bbt_5,(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 445, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 290, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -3662,15 +3662,15 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 447, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 292, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_add_Tblock((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((bbt_ba),(bbt_ba)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 448, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 293, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 450, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 295, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->clas->m_add_Tbgroup((struct _m_seltra_grouparray_obj*)_m_seltra_garray,(struct _m_seltra_bgroup_obj*)bbt_bg);
 	bbOnDebugLeaveScope();
@@ -3706,13 +3706,13 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 458, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 303, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_ok=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 458, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 303, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 460, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 305, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ))->__m_seltra_bgroup_xv !=0){
 		struct BBDebugScope __scope = {
@@ -3723,7 +3723,7 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 461, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 306, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y >0){
 			struct BBDebugScope __scope = {
@@ -3734,10 +3734,10 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 462, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 307, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -1)<<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 463, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 308, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 				struct BBDebugScope __scope = {
@@ -3748,17 +3748,17 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 463, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 308, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_ok=1;
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 465, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 310, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +1)<<10)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 466, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 311, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 			struct BBDebugScope __scope = {
@@ -3769,14 +3769,14 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 466, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 311, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_ok=(bbt_ok+1);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 469, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 314, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ))->__m_seltra_bgroup_yv !=0){
 		struct BBDebugScope __scope = {
@@ -3787,7 +3787,7 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 470, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 315, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x >0){
 			struct BBDebugScope __scope = {
@@ -3798,10 +3798,10 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 471, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 316, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 472, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 317, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 				struct BBDebugScope __scope = {
@@ -3812,17 +3812,17 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 472, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 317, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_ok=1;
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 474, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 319, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +1)+(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y <<10)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 475, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 320, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 			struct BBDebugScope __scope = {
@@ -3833,14 +3833,14 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 475, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 320, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_ok=(bbt_ok+1);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 478, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 323, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(bbt_ok==2){
 		struct BBDebugScope __scope = {
@@ -3851,7 +3851,7 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 480, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 325, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_btemplate_obj*)bbNullObjectTest(((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )]))->__m_seltra_btemplate_btype ==((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_btype ){
 			struct BBDebugScope __scope = {
@@ -3862,7 +3862,7 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 481, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 326, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ))->__m_seltra_bgroup_xv !=0){
 				struct BBDebugScope __scope = {
@@ -3873,17 +3873,17 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 482, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 327, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				struct _m_seltra_btemplate_obj* bbt_;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_,((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x ,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y -1),0,-1);
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 483, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 328, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				struct _m_seltra_btemplate_obj* bbt_2;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_2 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_2,((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x ,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y +1),0,1);
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 485, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 330, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_group ))->__m_seltra_bgroup_yv !=0){
 				struct BBDebugScope __scope = {
@@ -3894,11 +3894,11 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 486, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 331, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				struct _m_seltra_btemplate_obj* bbt_3;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_3 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_3,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x -1),((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y ,-1,0);
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 487, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 332, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				struct _m_seltra_btemplate_obj* bbt_4;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_4 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_bt )])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_4,(((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_x +1),((struct _m_seltra_block_obj*)bbNullObjectTest(o))->__m_seltra_block_y ,1,0);
@@ -3906,7 +3906,7 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 491, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/block.bmx", 336, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(o));
 		((struct _m_seltra_block_obj*)o)->clas->m_Del((struct _m_seltra_block_obj*)o);
@@ -6214,16 +6214,16 @@ BBINT _m_seltra_create_chem_numbers(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1884, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 803, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,0U))[0U]=4;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1885, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 804, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,1U))[1U]=10;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1886, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 805, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,2U))[2U]=(((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,1U))[1U]+brl_random_Rand(5,7));
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1887, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 806, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,3U))[3U]=(((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,2U))[2U]+brl_random_Rand(6,8));
 	bbOnDebugLeaveScope();
@@ -6244,7 +6244,7 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2074, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 993, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	while(bbt_x>1.00000000f){
 		struct BBDebugScope __scope = {
@@ -6255,12 +6255,12 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2075, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 994, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_x=(bbt_x-1.00000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2078, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 997, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(bbt_x<0.333333343f){
 		struct BBDebugScope __scope = {
@@ -6271,16 +6271,16 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2078, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 997, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0.0f;
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2079, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 998, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_x=(bbt_x-0.333333343f);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2080, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 999, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(bbt_x<0.0833333358f){
 		struct BBDebugScope __scope = {
@@ -6291,16 +6291,16 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2080, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 999, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (bbt_x*9.0f);
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2081, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1000, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_x=(bbt_x-0.0833333358f);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2082, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1001, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(bbt_x<0.0833333358f){
 		struct BBDebugScope __scope = {
@@ -6311,16 +6311,16 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2082, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1001, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (0.75f+(bbt_x*3.00000000f));
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2083, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1002, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_x=(bbt_x-0.0833333358f);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2084, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1003, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if(bbt_x<0.333333343f){
 		struct BBDebugScope __scope = {
@@ -6331,16 +6331,16 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2084, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1003, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1.0f;
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2085, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1004, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_x=(bbt_x-0.333333343f);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2086, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1005, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	if(bbt_x<0.0833333358f){
 		struct BBDebugScope __scope = {
@@ -6351,16 +6351,16 @@ BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2086, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1005, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (1.0f-(bbt_x*3.00000000f));
 	}
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2087, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1006, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	bbt_x=(bbt_x-0.0833333358f);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2088, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1007, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbOnDebugLeaveScope();
 	return (0.75f-(bbt_x*9.0f));
@@ -6409,22 +6409,22 @@ BBINT _m_seltra_create_block_mix(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2026, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 945, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2026, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 945, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_j=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2026, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 945, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_k=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2026, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 945, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_grey=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2027, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 946, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_bt=(struct _m_seltra_btemplate_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2030, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 949, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	for(bbt_i=0;(bbt_i<=5);bbt_i=(bbt_i+1)){
 		struct BBDebugScope __scope = {
@@ -6435,10 +6435,10 @@ BBINT _m_seltra_create_block_mix(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2031, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 950, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_j=0;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2032, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 951, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_i==0){
 			struct BBDebugScope __scope = {
@@ -6449,7 +6449,7 @@ BBINT _m_seltra_create_block_mix(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2032, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 951, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_grey=1;
 			bbOnDebugLeaveScope();
@@ -6462,12 +6462,12 @@ BBINT _m_seltra_create_block_mix(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2032, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 951, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_grey=0;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2034, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 953, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		while(bbt_j<16){
 			struct BBDebugScope __scope = {
@@ -6478,31 +6478,31 @@ BBINT _m_seltra_create_block_mix(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2035, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 954, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_bt=(struct _m_seltra_btemplate_obj*)(struct _m_seltra_btemplate_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_btemplate);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2036, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 955, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_btemplate_obj*)bbNullObjectTest(bbt_bt))->__m_seltra_btemplate_btype =bbt_i;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2037, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 956, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)bbt_k)))[((BBUINT)bbt_k)]=(struct _m_seltra_btemplate_obj*)bbt_bt;
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2038, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 957, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			((struct _m_seltra_btemplate_obj*)bbNullObjectTest(bbt_bt))->__m_seltra_btemplate_id =bbt_k;
-			struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2040, 0};
+			struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 959, 0};
 			bbOnDebugEnterStm(&__stmt_4);
 			((struct _m_seltra_btemplate_obj*)bbNullObjectTest(bbt_bt))->__m_seltra_btemplate_bonds2 =bbt_j;
-			struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2041, 0};
+			struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 960, 0};
 			bbOnDebugEnterStm(&__stmt_5);
 			((struct _m_seltra_btemplate_obj*)bbNullObjectTest(bbt_bt))->clas->m_create_block_image_i((struct _m_seltra_btemplate_obj*)bbt_bt,bbt_grey);
-			struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2043, 0};
+			struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 962, 0};
 			bbOnDebugEnterStm(&__stmt_6);
 			bbt_k=(bbt_k+1);
-			struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2044, 0};
+			struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 963, 0};
 			bbOnDebugEnterStm(&__stmt_7);
 			bbt_j=(bbt_j+1);
-			struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2045, 0};
+			struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 964, 0};
 			bbOnDebugEnterStm(&__stmt_8);
 			if(bbt_grey==1){
 				struct BBDebugScope __scope = {
@@ -6513,7 +6513,7 @@ BBINT _m_seltra_create_block_mix(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2045, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 964, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -6542,10 +6542,10 @@ BBINT _m_seltra_remove_block_image_templates(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2117, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1036, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2118, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1037, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	for(bbt_i=0;(bbt_i<=60);bbt_i=(bbt_i+1)){
 		struct BBDebugScope __scope = {
@@ -6556,15 +6556,15 @@ BBINT _m_seltra_remove_block_image_templates(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2119, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1038, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)(bbt_i+8))))[((BBUINT)(bbt_i+8))];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2123, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1042, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_i=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2124, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1043, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(((BBObject*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -6575,12 +6575,12 @@ BBINT _m_seltra_remove_block_image_templates(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2125, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1044, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2127, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1046, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	_m_seltra_noi=bbt_i;
 	bbOnDebugLeaveScope();
@@ -6602,13 +6602,13 @@ struct brl_max2d_image_TImage_obj* _m_seltra_loadimage2(BBSTRING bbt_fn){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 94, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 99, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_noi)))[((BBUINT)_m_seltra_noi)]=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbt_fn),0,0,0),-1);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 95, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 100, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	_m_seltra_noi=(_m_seltra_noi+1);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 96, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 101, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbOnDebugLeaveScope();
 	return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)(_m_seltra_noi-1))))[((BBUINT)(_m_seltra_noi-1))];
@@ -6649,25 +6649,25 @@ BBINT _m_seltra_wallblock(BBINT bbt_x,BBINT bbt_y,BBINT bbt_u){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1569, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 488, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1570, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 489, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x =bbt_x;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1571, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 490, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y =bbt_y;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1572, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 491, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype =0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1573, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 492, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)bbt_u)))[((BBUINT)bbt_u)];
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1574, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 493, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)),(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1575, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 494, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_wallgroup,(struct _m_seltra_block_obj*)bbt_b);
 	bbOnDebugLeaveScope();
@@ -6816,103 +6816,103 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1503, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 422, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	_m_seltra_wallgroup=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1504, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 423, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba =bbArraySlice(":block",((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ,0,999999);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1505, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 424, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1506, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 425, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1508, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 427, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_m=bbArrayNew1D("b", (bbt_mx*bbt_my));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1509, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 428, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_d=0;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1509, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 428, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_ok=0;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1509, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 428, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_k=0;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_xv=0;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_yv=0;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	bbt_x=0;
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbt_y=0;
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	bbt_x2=0;
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	bbt_y2=0;
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	bbt_i=0;
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1510, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 429, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	bbt_j=0;
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1511, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 430, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	bbt_xs2=bbArrayNew1D("i", 6);
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1512, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 431, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	bbt_ys2=bbArrayNew1D("i", 6);
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1513, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 432, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,0U))[0U]=bbt_xs;
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1513, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 432, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,0U))[0U]=bbt_ys;
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1514, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,1U))[1U]=bbt_xf;
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1514, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 433, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,1U))[1U]=bbt_yf;
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1515, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 434, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,2U))[2U]=1;
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1515, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 434, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,2U))[2U]=1;
-	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1516, 0};
+	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 435, 0};
 	bbOnDebugEnterStm(&__stmt_24);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,3U))[3U]=(bbt_mx-1);
-	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1516, 0};
+	struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 435, 0};
 	bbOnDebugEnterStm(&__stmt_25);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,3U))[3U]=1;
-	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1517, 0};
+	struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
 	bbOnDebugEnterStm(&__stmt_26);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,4U))[4U]=1;
-	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1517, 0};
+	struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 436, 0};
 	bbOnDebugEnterStm(&__stmt_27);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,4U))[4U]=(bbt_my-1);
-	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1518, 0};
+	struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 437, 0};
 	bbOnDebugEnterStm(&__stmt_28);
 	((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,5U))[5U]=(bbt_mx-1);
-	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1518, 0};
+	struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 437, 0};
 	bbOnDebugEnterStm(&__stmt_29);
 	((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,5U))[5U]=(bbt_my-1);
-	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1520, 0};
+	struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 439, 0};
 	bbOnDebugEnterStm(&__stmt_30);
 	bbt_x=bbt_xs;
-	struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1520, 0};
+	struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 439, 0};
 	bbOnDebugEnterStm(&__stmt_31);
 	bbt_y=bbt_ys;
-	struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1522, 0};
+	struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 441, 0};
 	bbOnDebugEnterStm(&__stmt_32);
 	while(((BBINT)bbt_k)<6){
 		struct BBDebugScope __scope = {
@@ -6923,19 +6923,19 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1523, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 442, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_x=((BBINT*)BBARRAYDATAINDEX((bbt_xs2),(bbt_xs2)->dims,((BBUINT)bbt_k)))[((BBUINT)bbt_k)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1523, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 442, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_y=((BBINT*)BBARRAYDATAINDEX((bbt_ys2),(bbt_ys2)->dims,((BBUINT)bbt_k)))[((BBUINT)bbt_k)];
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1524, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 443, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=0;
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1524, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 443, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_j=0;
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1526, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 445, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		while(((bbt_i<100) || (bbt_ok==0)) && (bbt_j<1024)){
 			struct BBDebugScope __scope = {
@@ -6946,13 +6946,13 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1528, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 447, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_d=brl_random_Rand(0,3);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1529, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 448, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			BBINT bbt_=bbt_d;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1530, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 449, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			if(bbt_==0){
 				struct BBDebugScope __scope = {
@@ -6963,10 +6963,10 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1530, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 449, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_xv=1;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1530, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 449, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				bbt_yv=0;
 				bbOnDebugLeaveScope();
@@ -6979,7 +6979,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1531, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 450, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_==1){
 					struct BBDebugScope __scope = {
@@ -6990,10 +6990,10 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1531, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 450, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_xv=-1;
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1531, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 450, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					bbt_yv=0;
 					bbOnDebugLeaveScope();
@@ -7006,7 +7006,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1532, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 451, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==2){
 						struct BBDebugScope __scope = {
@@ -7017,10 +7017,10 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1532, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 451, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						bbt_xv=0;
-						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1532, 0};
+						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 451, 0};
 						bbOnDebugEnterStm(&__stmt_1);
 						bbt_yv=1;
 						bbOnDebugLeaveScope();
@@ -7033,7 +7033,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1533, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 452, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_==3){
 							struct BBDebugScope __scope = {
@@ -7044,10 +7044,10 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1533, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 452, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							bbt_xv=0;
-							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1533, 0};
+							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 452, 0};
 							bbOnDebugEnterStm(&__stmt_1);
 							bbt_yv=-1;
 							bbOnDebugLeaveScope();
@@ -7058,7 +7058,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 				}
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1536, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 455, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			while(1){
 				struct BBDebugScope __scope = {
@@ -7069,16 +7069,16 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1537, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 456, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((BBBYTE*)BBARRAYDATAINDEX((bbt_m),(bbt_m)->dims,((BBUINT)(bbt_x+(bbt_y*bbt_mx)))))[((BBUINT)(bbt_x+(bbt_y*bbt_mx)))]=1;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1539, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 458, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				bbt_x2=(bbt_x+bbt_xv);
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1540, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 459, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbt_y2=(bbt_y+bbt_yv);
-				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1542, 0};
+				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 461, 0};
 				bbOnDebugEnterStm(&__stmt_3);
 				if((((bbt_x2>0) && (bbt_x2<(bbt_mx-1))) && (bbt_y2>0)) && (bbt_y2<(bbt_my-1))){
 					struct BBDebugScope __scope = {
@@ -7089,7 +7089,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1543, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 462, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if((((BBINT)((BBBYTE*)BBARRAYDATAINDEX((bbt_m),(bbt_m)->dims,((BBUINT)((bbt_x2+bbt_xv)+((bbt_y2+bbt_yv)*bbt_mx)))))[((BBUINT)((bbt_x2+bbt_xv)+((bbt_y2+bbt_yv)*bbt_mx)))])==0) || (((BBINT)((BBBYTE*)BBARRAYDATAINDEX((bbt_m),(bbt_m)->dims,((BBUINT)(bbt_x2+(bbt_y2*bbt_mx)))))[((BBUINT)(bbt_x2+(bbt_y2*bbt_mx)))])==1)){
 						struct BBDebugScope __scope = {
@@ -7100,10 +7100,10 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1543, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 462, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						bbt_x=(bbt_x+bbt_xv);
-						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1543, 0};
+						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 462, 0};
 						bbOnDebugEnterStm(&__stmt_1);
 						bbt_y=(bbt_y+bbt_yv);
 						bbOnDebugLeaveScope();
@@ -7118,13 +7118,13 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1545, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 464, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbOnDebugLeaveScope();
 					bbOnDebugLeaveScope();
 					break;
 				}
-				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1548, 0};
+				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 467, 0};
 				bbOnDebugEnterStm(&__stmt_4);
 				if((bbt_x==bbt_xf) && (bbt_y==bbt_yf)){
 					struct BBDebugScope __scope = {
@@ -7135,15 +7135,15 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1548, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 467, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_ok=1;
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1550, 0};
+				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 469, 0};
 				bbOnDebugEnterStm(&__stmt_5);
 				bbt_i=(bbt_i+1);
-				struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1551, 0};
+				struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 470, 0};
 				bbOnDebugEnterStm(&__stmt_6);
 				if(brl_random_Rand(0,2)==1){
 					struct BBDebugScope __scope = {
@@ -7154,7 +7154,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1551, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 470, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbOnDebugLeaveScope();
 					bbOnDebugLeaveScope();
@@ -7162,17 +7162,17 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 				}
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1554, 0};
+			struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 473, 0};
 			bbOnDebugEnterStm(&__stmt_4);
 			bbt_j=(bbt_j+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1556, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 475, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		bbt_k=((BBBYTE)(((BBINT)bbt_k)+1));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1559, 0};
+	struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 478, 0};
 	bbOnDebugEnterStm(&__stmt_33);
 	BBINT bbt_2=((bbt_mx*bbt_my)-1);
 	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
@@ -7184,7 +7184,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1560, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 479, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((BBINT)((BBBYTE*)BBARRAYDATAINDEX((bbt_m),(bbt_m)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])==0){
 			struct BBDebugScope __scope = {
@@ -7195,7 +7195,7 @@ BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1560, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 479, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_wallblock((bbt_i % bbt_mx),(bbt_i/bbt_mx),0);
 			bbOnDebugLeaveScope();
@@ -7236,10 +7236,10 @@ BBINT __m_seltra_sgroup_add_Tsubstrate(struct _m_seltra_sgroup_obj* o,struct _m_
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1079, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 8, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1080, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 9, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group =(struct _m_seltra_sgroup_obj*)o;
 	bbOnDebugLeaveScope();
@@ -7338,40 +7338,40 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1086, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 15, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1087, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 16, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s2=(struct _m_seltra_substrate_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1088, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 17, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_xt=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1088, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 17, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_yt=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1089, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 18, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_n=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->__m_seltra_fastintmap_le ;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1090, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 19, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_i=0;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1090, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 19, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_t=0;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1090, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 19, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_t2=0;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1091, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 20, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_ti=0;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1092, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 21, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_bi=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1093, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 22, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	bbt_si=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1095, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if((brl_blitz_Abs(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv )+brl_blitz_Abs(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv ))>1){
 		struct BBDebugScope __scope = {
@@ -7382,12 +7382,12 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1095, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 24, 0};
 		bbOnDebugEnterStm(&__stmt_0);
-		brl_blitz_RuntimeError(&_s19);
+		brl_blitz_RuntimeError(&_s4);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1097, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 26, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -7398,13 +7398,13 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1098, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 27, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_xt=(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1099, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 28, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_yt=(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y +((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv );
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1100, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 29, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if((bbt_xt>=0) && (bbt_yt>=0)){
 			struct BBDebugScope __scope = {
@@ -7415,13 +7415,13 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1101, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 30, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_ti=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_xt+(bbt_yt<<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1102, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 31, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_bi=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1103, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 32, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_si=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_xt+(bbt_yt<<10)));
 			bbOnDebugLeaveScope();
@@ -7434,18 +7434,18 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1105, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 34, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o));
 			((struct _m_seltra_sgroup_obj*)o)->clas->m_remove((struct _m_seltra_sgroup_obj*)o);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1105, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 34, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			return 0;
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1108, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 37, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if(((BBObject*)bbt_bi)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -7456,7 +7456,7 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1109, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 38, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_bi))->__m_seltra_block_btype ==0){
 				struct BBDebugScope __scope = {
@@ -7467,13 +7467,13 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1109, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 38, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =-((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv ;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1109, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 38, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =-((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv ;
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1109, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 38, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -7483,7 +7483,7 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1112, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 41, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		if(((BBObject*)bbt_si)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -7494,7 +7494,7 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1113, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 42, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_si))->__m_seltra_substrate_group !=((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ){
 				struct BBDebugScope __scope = {
@@ -7505,13 +7505,13 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1113, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 42, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =-((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv ;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1113, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 42, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =-((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv ;
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1113, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 42, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -7521,21 +7521,21 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1116, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 45, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1117, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 46, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1121, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 50, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	bbt_i=0;
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1122, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 51, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1123, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 52, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -7546,24 +7546,24 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1124, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 53, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_remove_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1125, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 54, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1126, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 55, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1129, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 58, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	bbt_i=0;
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1130, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 59, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1131, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 60, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -7574,19 +7574,19 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1132, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 61, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x =(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1133, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 62, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y =(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y +((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv );
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1134, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 63, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1135, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 64, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1136, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 65, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
@@ -7624,13 +7624,13 @@ BBINT __m_seltra_sgroup_remove(struct _m_seltra_sgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1144, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 73, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1145, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 74, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1147, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 76, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		struct _m_seltra_redraw_obj* bbt_re=(struct _m_seltra_redraw_obj*)(&bbNullObject);
@@ -7648,54 +7648,54 @@ BBINT __m_seltra_sgroup_remove(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1148, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 77, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_remove_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1150, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 79, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1151, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 80, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1152, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 81, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1153, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 82, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1154, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 83, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1155, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 84, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1156, 0};
+		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 85, 0};
 		bbOnDebugEnterStm(&__stmt_7);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1157, 0};
+		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 86, 0};
 		bbOnDebugEnterStm(&__stmt_8);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1158, 0};
+		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 87, 0};
 		bbOnDebugEnterStm(&__stmt_9);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1159, 0};
+		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 88, 0};
 		bbOnDebugEnterStm(&__stmt_10);
 		((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1161, 0};
+		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 90, 0};
 		bbOnDebugEnterStm(&__stmt_11);
 		((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa )->dims,((BBUINT)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_id )))[((BBUINT)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_id )]=(struct _m_seltra_substrate_obj*)&bbNullObject;
-		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1162, 0};
+		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 91, 0};
 		bbOnDebugEnterStm(&__stmt_12);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1163, 0};
+		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 92, 0};
 		bbOnDebugEnterStm(&__stmt_13);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1165, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 94, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_sgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->__m_seltra_subgrouparray_sga ),(((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->__m_seltra_subgrouparray_sga )->dims,((BBUINT)((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_id )))[((BBUINT)((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_id )]=(struct _m_seltra_sgroup_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1166, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 95, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->clas->m_ordered_sort_ii((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,0,0);
 	bbOnDebugLeaveScope();
@@ -7731,13 +7731,13 @@ BBINT __m_seltra_sgroup_out_of_bounds_check(struct _m_seltra_sgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1174, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 103, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1175, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 104, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1177, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 106, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(bbt_s!=&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -7748,7 +7748,7 @@ BBINT __m_seltra_sgroup_out_of_bounds_check(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1182, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 111, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		do{
 			struct BBDebugScope __scope = {
@@ -7759,7 +7759,7 @@ BBINT __m_seltra_sgroup_out_of_bounds_check(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1179, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 108, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(!(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->clas->m_out_of_bounds((struct _m_seltra_substrate_obj*)bbt_s)!=0)){
 				struct BBDebugScope __scope = {
@@ -7770,7 +7770,7 @@ BBINT __m_seltra_sgroup_out_of_bounds_check(struct _m_seltra_sgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1179, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 108, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -7778,17 +7778,17 @@ BBINT __m_seltra_sgroup_out_of_bounds_check(struct _m_seltra_sgroup_obj* o){
 				bbOnDebugLeaveScope();
 				return 0;
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1180, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 109, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1181, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 110, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 			bbOnDebugLeaveScope();
 		}while(!(bbt_s==&bbNullObject));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1185, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 114, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return 1;
@@ -7823,13 +7823,13 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1192, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 121, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1193, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 122, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1195, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 124, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -7840,7 +7840,7 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1196, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 125, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_image ==_m_seltra_subd){
 			struct BBDebugScope __scope = {
@@ -7851,10 +7851,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1197, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 126, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			BBINT bbt_=(((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10))) % 8);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1198, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 127, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(bbt_==1){
 				struct BBDebugScope __scope = {
@@ -7865,10 +7865,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1198, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 127, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =0;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1198, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 127, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =-1;
 				bbOnDebugLeaveScope();
@@ -7881,7 +7881,7 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1199, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 128, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_==2){
 					struct BBDebugScope __scope = {
@@ -7892,10 +7892,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1199, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 128, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =0;
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1199, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 128, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =1;
 					bbOnDebugLeaveScope();
@@ -7908,7 +7908,7 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1200, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 129, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==3){
 						struct BBDebugScope __scope = {
@@ -7919,10 +7919,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1200, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 129, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =-1;
-						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1200, 0};
+						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 129, 0};
 						bbOnDebugEnterStm(&__stmt_1);
 						((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =0;
 						bbOnDebugLeaveScope();
@@ -7935,7 +7935,7 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1201, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 130, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_==4){
 							struct BBDebugScope __scope = {
@@ -7946,10 +7946,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1201, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 130, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_xv =1;
-							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1201, 0};
+							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 130, 0};
 							bbOnDebugEnterStm(&__stmt_1);
 							((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_yv =0;
 							bbOnDebugLeaveScope();
@@ -7962,10 +7962,10 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1205, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 134, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1206, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 135, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
@@ -8003,13 +8003,13 @@ BBINT __m_seltra_sgroup_draw(struct _m_seltra_sgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1214, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 143, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1215, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 144, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1217, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 146, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(bbt_s!=&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -8020,7 +8020,7 @@ BBINT __m_seltra_sgroup_draw(struct _m_seltra_sgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1222, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 151, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		do{
 			struct BBDebugScope __scope = {
@@ -8031,13 +8031,13 @@ BBINT __m_seltra_sgroup_draw(struct _m_seltra_sgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1219, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 148, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->clas->m_draw((struct _m_seltra_substrate_obj*)bbt_s);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1220, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 149, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1221, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/sgroup.bmx", 150, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(o))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 			bbOnDebugLeaveScope();
@@ -8190,16 +8190,16 @@ void __m_seltra_substrate_New_iiTTImageTsgroup(struct _m_seltra_substrate_obj* o
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 997, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 11, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x =bbt_xs;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 997, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 11, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y =bbt_ys;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1000, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 14, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_image =(struct brl_max2d_image_TImage_obj*)bbt_im;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1002, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 16, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(bbt_sg==&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -8210,18 +8210,18 @@ void __m_seltra_substrate_New_iiTTImageTsgroup(struct _m_seltra_substrate_obj* o
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1003, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 17, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1004, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 18, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1007, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 21, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)o);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1008, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 22, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)o);
 	bbOnDebugLeaveScope();
@@ -8259,7 +8259,7 @@ BBINT __m_seltra_substrate_out_of_bounds(struct _m_seltra_substrate_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1014, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 28, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if((((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x <1) || (((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x >1000)) || (((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y <1)) || (((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y >1000)){
 		struct BBDebugScope __scope = {
@@ -8270,7 +8270,7 @@ BBINT __m_seltra_substrate_out_of_bounds(struct _m_seltra_substrate_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1014, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 28, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
@@ -8295,16 +8295,16 @@ BBINT __m_seltra_substrate_draw(struct _m_seltra_substrate_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1019, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 33, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_blank,(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposy))*_m_seltra_zoom),0);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1020, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 34, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_image ,(((BBFLOAT)(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1021, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 35, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x ;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1022, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 36, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y ;
 	bbOnDebugLeaveScope();
@@ -8333,43 +8333,43 @@ BBINT __m_seltra_substrate_Del(struct _m_seltra_substrate_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1028, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 42, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1029, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 43, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1030, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 44, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1031, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 45, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1032, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 46, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1033, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 47, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1034, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 48, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldx )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1035, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 49, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_oldy )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1036, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 50, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1037, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 51, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1039, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 53, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_sgroup_obj*)bbNullObjectTest(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_group ))->clas->m_remove((struct _m_seltra_sgroup_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_group );
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1040, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 54, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa )->dims,((BBUINT)((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_id )))[((BBUINT)((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_id )]=(struct _m_seltra_substrate_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1041, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/substrate.bmx", 55, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_remove_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(o))->__m_seltra_substrate_y <<10)));
 	bbOnDebugLeaveScope();
@@ -8554,13 +8554,13 @@ BBINT _m_seltra_update_sgroups(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1052, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 128, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1053, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 129, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_sg=(struct _m_seltra_sgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1055, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 131, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(bbt_i<((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->__m_seltra_subgrouparray_le ){
 		struct BBDebugScope __scope = {
@@ -8571,10 +8571,10 @@ BBINT _m_seltra_update_sgroups(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1056, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 132, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_sg=(struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->__m_seltra_subgrouparray_sga ),(((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->__m_seltra_subgrouparray_sga )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1057, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 133, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_sg)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -8585,13 +8585,13 @@ BBINT _m_seltra_update_sgroups(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1058, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 134, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_checkarrows((struct _m_seltra_sgroup_obj*)bbt_sg);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1059, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 135, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_move((struct _m_seltra_sgroup_obj*)bbt_sg);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1060, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 136, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			if(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_out_of_bounds_check((struct _m_seltra_sgroup_obj*)bbt_sg)!=0){
 				struct BBDebugScope __scope = {
@@ -8602,14 +8602,14 @@ BBINT _m_seltra_update_sgroups(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1062, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 138, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_remove((struct _m_seltra_sgroup_obj*)bbt_sg);
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1066, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 142, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -8650,10 +8650,10 @@ BBINT __m_seltra_bgroup_add_Tblock(struct _m_seltra_bgroup_obj* o,struct _m_selt
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 522, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 16, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ,(struct _m_seltra_block_obj*)bbt_b);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 523, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 17, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group =(struct _m_seltra_bgroup_obj*)o;
 	bbOnDebugLeaveScope();
@@ -8729,25 +8729,25 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_e=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_m=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_e2=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_m2=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 24, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_cv=0;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 532, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 26, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	BBINT bbt_=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 533, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 27, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(bbt_==3){
 		struct BBDebugScope __scope = {
@@ -8758,10 +8758,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 533, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 27, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_e=1;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 533, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 27, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_m=0;
 		bbOnDebugLeaveScope();
@@ -8774,7 +8774,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 28, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(bbt_==4){
 			struct BBDebugScope __scope = {
@@ -8785,10 +8785,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 28, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_e=0;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 28, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_m=1;
 			bbOnDebugLeaveScope();
@@ -8801,7 +8801,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 535, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 29, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(bbt_==5){
 				struct BBDebugScope __scope = {
@@ -8812,10 +8812,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 535, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 29, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_e=0;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 535, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 29, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				bbt_m=-1;
 				bbOnDebugLeaveScope();
@@ -8824,10 +8824,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 538, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 32, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	BBINT bbt_2=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype ;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 539, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 33, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	if(bbt_2==3){
 		struct BBDebugScope __scope = {
@@ -8838,10 +8838,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 539, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 33, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_e2=1;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 539, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 33, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_m2=0;
 		bbOnDebugLeaveScope();
@@ -8854,7 +8854,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 540, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 34, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(bbt_2==4){
 			struct BBDebugScope __scope = {
@@ -8865,10 +8865,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 540, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 34, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_e2=0;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 540, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 34, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_m2=1;
 			bbOnDebugLeaveScope();
@@ -8881,7 +8881,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 541, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 35, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(bbt_2==5){
 				struct BBDebugScope __scope = {
@@ -8892,10 +8892,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 541, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 35, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_e2=0;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 541, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 35, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				bbt_m2=-1;
 				bbOnDebugLeaveScope();
@@ -8904,13 +8904,13 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 544, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 38, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_g2=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 548, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 42, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	BBINT bbt_3=((((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv )+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv ));
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 549, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 43, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if(bbt_3==0){
 		struct BBDebugScope __scope = {
@@ -8921,7 +8921,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 550, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 44, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv )+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv ))!=0){
 			struct BBDebugScope __scope = {
@@ -8932,13 +8932,13 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 551, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 45, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 551, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 45, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *bbt_e)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_m));
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 551, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 45, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =((bbt_cv*bbt_m)-(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_e));
 			bbOnDebugLeaveScope();
@@ -8951,16 +8951,16 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 553, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 47, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv =((((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *bbt_e2)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_m2));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 553, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 47, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv =((((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *bbt_m2)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_e2));
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 554, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 48, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =0;
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 554, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 48, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =0;
 			bbOnDebugLeaveScope();
@@ -8975,7 +8975,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 556, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 50, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(bbt_3==1){
 			struct BBDebugScope __scope = {
@@ -8986,13 +8986,13 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 556, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 50, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 556, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 50, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *bbt_e)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_m));
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 556, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 50, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_e)+(bbt_cv*bbt_m));
 			bbOnDebugLeaveScope();
@@ -9005,7 +9005,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 557, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 51, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(bbt_3==-1){
 				struct BBDebugScope __scope = {
@@ -9016,22 +9016,22 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 558, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 52, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 558, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 52, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv *bbt_e)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_m));
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 558, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 52, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv *bbt_e)+(bbt_cv*bbt_m));
-				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 559, 0};
+				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 53, 0};
 				bbOnDebugEnterStm(&__stmt_3);
 				bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv ;
-				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 559, 0};
+				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 53, 0};
 				bbOnDebugEnterStm(&__stmt_4);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv =((-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_xv *bbt_e2)+(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv *bbt_m2));
-				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 559, 0};
+				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 53, 0};
 				bbOnDebugEnterStm(&__stmt_5);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv =((bbt_cv*bbt_m2)-(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g2))->__m_seltra_bgroup_yv *bbt_e2));
 				bbOnDebugLeaveScope();
@@ -9040,7 +9040,7 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 562, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 56, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if((brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv )+brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ))>1){
 		struct BBDebugScope __scope = {
@@ -9051,12 +9051,12 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 562, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 56, 0};
 		bbOnDebugEnterStm(&__stmt_0);
-		brl_blitz_RuntimeError(&_s17);
+		brl_blitz_RuntimeError(&_s2);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 563, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 57, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	if((brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))->__m_seltra_bgroup_xv )+brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group ))->__m_seltra_bgroup_yv ))>1){
 		struct BBDebugScope __scope = {
@@ -9067,9 +9067,9 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 563, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 57, 0};
 		bbOnDebugEnterStm(&__stmt_0);
-		brl_blitz_RuntimeError(&_s17);
+		brl_blitz_RuntimeError(&_s2);
 		bbOnDebugLeaveScope();
 	}
 	bbOnDebugLeaveScope();
@@ -9117,13 +9117,13 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 571, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 65, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_m2=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 571, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 65, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_cv=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 573, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 67, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype ==0){
 		struct BBDebugScope __scope = {
@@ -9134,7 +9134,7 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 574, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 68, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==3){
 			struct BBDebugScope __scope = {
@@ -9145,15 +9145,15 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 574, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 68, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 574, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 68, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 575, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 69, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==4){
 			struct BBDebugScope __scope = {
@@ -9164,18 +9164,18 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 575, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 69, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 575, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 69, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =-((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 575, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 69, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =bbt_cv;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 576, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 70, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==5){
 			struct BBDebugScope __scope = {
@@ -9186,18 +9186,18 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 576, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 70, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_cv=((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 576, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 70, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ;
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 576, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 70, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =-bbt_cv;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 577, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 71, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==6){
 			struct BBDebugScope __scope = {
@@ -9208,25 +9208,25 @@ BBINT __m_seltra_bgroup_collision_manager_TblockTblock(struct _m_seltra_bgroup_o
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 577, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 71, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =0;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 577, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 71, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =0;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 578, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 72, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 580, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 74, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 	((struct _m_seltra_bgroup_obj*)o)->clas->m_collide_TblockTblock((struct _m_seltra_bgroup_obj*)o,(struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 581, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 75, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbOnDebugLeaveScope();
 	return 0;
@@ -9338,22 +9338,22 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 688, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 182, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 689, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 183, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 690, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 184, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_xt=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 690, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 184, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_yt=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 690, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 184, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_i=0;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 692, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 186, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -9364,13 +9364,13 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 693, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 187, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_xt=(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +bbt_xm);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 694, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 188, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_yt=(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y +bbt_ym);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 696, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 190, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if((bbt_xt>=0) && (bbt_yt>=0)){
 			struct BBDebugScope __scope = {
@@ -9381,7 +9381,7 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 697, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 191, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
 			bbOnDebugLeaveScope();
@@ -9394,14 +9394,14 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 699, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 193, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			return (struct _m_seltra_block_obj*)&bbNullObject;
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 703, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 197, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if((((BBObject*)bbt_b2)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group !=o)){
 			struct BBDebugScope __scope = {
@@ -9412,25 +9412,25 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 704, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 198, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_bref =(struct _m_seltra_block_obj*)bbt_b;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 705, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 199, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			return (struct _m_seltra_block_obj*)bbt_b2;
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 708, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 202, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 709, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 203, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 712, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 206, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbOnDebugLeaveScope();
 	return (struct _m_seltra_block_obj*)&bbNullObject;
@@ -9451,7 +9451,7 @@ BBINT __m_seltra_bgroup_move(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 718, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 212, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 	((struct _m_seltra_bgroup_obj*)o)->clas->m_move_ii((struct _m_seltra_bgroup_obj*)o,((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ,((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv );
@@ -9549,34 +9549,34 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 724, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 218, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 725, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 219, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b2=(struct _m_seltra_block_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 726, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 220, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_xt=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 726, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 220, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_yt=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 727, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 221, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_n=((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->__m_seltra_fastblockmap_le ;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 728, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 222, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_cv=0;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 728, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 222, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_i=0;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 729, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 223, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_xv2=0;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 729, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 223, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_yv2=0;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 731, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 225, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	if((brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv )+brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ))>1){
 		struct BBDebugScope __scope = {
@@ -9587,12 +9587,12 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 731, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 225, 0};
 		bbOnDebugEnterStm(&__stmt_0);
-		brl_blitz_RuntimeError(&_s17);
+		brl_blitz_RuntimeError(&_s2);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 732, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 226, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_lastmove ==_m_seltra_time){
 		struct BBDebugScope __scope = {
@@ -9603,17 +9603,17 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 732, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 226, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 734, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 228, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 	bbt_b2=(struct _m_seltra_block_obj*)((struct _m_seltra_bgroup_obj*)o)->clas->m_check_collision_ii((struct _m_seltra_bgroup_obj*)o,bbt_xm,bbt_ym);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 735, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 229, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(((BBObject*)bbt_b2)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -9624,12 +9624,12 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 735, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 229, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_bref ;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 737, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 231, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	if(((bbt_b2!=&bbNullObject) && (bbt_b2!=bbt_b)) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group !=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group )){
 		struct BBDebugScope __scope = {
@@ -9640,7 +9640,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 738, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 232, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype !=0){
 			struct BBDebugScope __scope = {
@@ -9651,7 +9651,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 740, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 234, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_bondcheck_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0){
 				struct BBDebugScope __scope = {
@@ -9662,11 +9662,11 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 742, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 236, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 				((struct _m_seltra_bgroup_obj*)o)->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)o,(struct _m_seltra_bgroup_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_group );
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 745, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 239, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				if((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_x )==1){
 					struct BBDebugScope __scope = {
@@ -9677,15 +9677,15 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 745, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 239, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 )|(unsigned int)(16));
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 745, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 239, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )|(unsigned int)(64));
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 746, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 240, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				if((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_y )==1){
 					struct BBDebugScope __scope = {
@@ -9696,15 +9696,15 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 746, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 240, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 )|(unsigned int)(8));
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 746, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 240, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )|(unsigned int)(32));
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 747, 0};
+				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 241, 0};
 				bbOnDebugEnterStm(&__stmt_3);
 				if((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_x )==-1){
 					struct BBDebugScope __scope = {
@@ -9715,15 +9715,15 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 747, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 241, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 )|(unsigned int)(64));
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 747, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 241, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )|(unsigned int)(16));
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 748, 0};
+				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 242, 0};
 				bbOnDebugEnterStm(&__stmt_4);
 				if((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y -((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_y )==-1){
 					struct BBDebugScope __scope = {
@@ -9734,15 +9734,15 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 748, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 242, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_bonds2 )|(unsigned int)(32));
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 748, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 242, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 =((unsigned int)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_bonds2 )|(unsigned int)(8));
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 750, 0};
+				struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 244, 0};
 				bbOnDebugEnterStm(&__stmt_5);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -9752,7 +9752,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 755, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 249, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==2) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b2))->__m_seltra_block_btype ==0)){
 			struct BBDebugScope __scope = {
@@ -9763,28 +9763,28 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 755, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 249, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_repblock((struct _m_seltra_block_obj*)bbt_b);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 756, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 250, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 		((struct _m_seltra_bgroup_obj*)o)->clas->m_collision_manager_TblockTblock((struct _m_seltra_bgroup_obj*)o,(struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2);
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 758, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 252, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 762, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 256, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	bbt_i=0;
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 763, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 257, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 767, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 261, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -9795,7 +9795,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 768, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 262, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)))==bbt_b){
 			struct BBDebugScope __scope = {
@@ -9806,29 +9806,29 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 768, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 262, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 769, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 263, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x =(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +bbt_xm);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 770, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 264, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y =(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y +bbt_ym);
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 771, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 265, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 773, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 267, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 774, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 268, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 777, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 271, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	if((((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv ==0) && (((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv ==0)){
 		struct BBDebugScope __scope = {
@@ -9839,22 +9839,22 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 777, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 271, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 778, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 272, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_lastmove =_m_seltra_time;
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 780, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 274, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	bbt_i=0;
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 781, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 275, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 783, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 277, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -9865,7 +9865,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 784, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 278, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype !=7){
 			struct BBDebugScope __scope = {
@@ -9876,25 +9876,25 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 784, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 278, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			return 0;
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 785, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 279, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 786, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 280, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 788, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 282, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =0;
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 788, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 282, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =0;
 	bbOnDebugLeaveScope();
@@ -9923,13 +9923,13 @@ BBINT _m_seltra_bgroup_check_group_vel_i(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 795, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 289, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 795, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 289, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_g=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 797, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 291, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(bbt_i<((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_le ){
 		struct BBDebugScope __scope = {
@@ -9940,10 +9940,10 @@ BBINT _m_seltra_bgroup_check_group_vel_i(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 798, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 292, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_g=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga ),(((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 799, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 293, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if((brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_xv )+brl_blitz_Abs(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_yv ))>1){
 			struct BBDebugScope __scope = {
@@ -9954,12 +9954,12 @@ BBINT _m_seltra_bgroup_check_group_vel_i(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 799, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 293, 0};
 			bbOnDebugEnterStm(&__stmt_0);
-			brl_blitz_RuntimeError(&_s18);
+			brl_blitz_RuntimeError(&_s3);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 800, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 294, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -10032,28 +10032,28 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 808, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 302, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 808, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 302, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_j=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 808, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 302, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_k=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 808, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 302, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_ok=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 809, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 303, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 810, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 304, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_s=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 811, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 305, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_sl=bbArrayNew1D(":substrate", 10);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 813, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 307, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -10064,13 +10064,13 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 814, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 308, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 815, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 309, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 816, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 310, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(((BBObject*)bbt_s)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -10081,10 +10081,10 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 817, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 311, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_ok=1;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 818, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 312, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			BBINT bbt_=bbt_k;
 			for(bbt_j=0;(bbt_j<=bbt_);bbt_j=(bbt_j+1)){
@@ -10096,7 +10096,7 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 819, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 313, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((bbt_sl),(bbt_sl)->dims,((BBUINT)bbt_j)))[((BBUINT)bbt_j)]==bbt_s){
 					struct BBDebugScope __scope = {
@@ -10107,14 +10107,14 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 819, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 313, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_ok=0;
 					bbOnDebugLeaveScope();
 				}
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 821, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 315, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			if(bbt_ok!=0){
 				struct BBDebugScope __scope = {
@@ -10125,21 +10125,21 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 822, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 316, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o));
 				((struct _m_seltra_bgroup_obj*)o)->clas->m_move_ii((struct _m_seltra_bgroup_obj*)o,((struct _m_seltra_sgroup_obj*)bbNullObjectTest(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))->__m_seltra_sgroup_xv ,((struct _m_seltra_sgroup_obj*)bbNullObjectTest(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))->__m_seltra_sgroup_yv );
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 823, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 317, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((bbt_sl),(bbt_sl)->dims,((BBUINT)bbt_k)))[((BBUINT)bbt_k)]=(struct _m_seltra_substrate_obj*)bbt_s;
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 824, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 318, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				bbt_k=(bbt_k+1);
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 828, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 322, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -10176,10 +10176,10 @@ BBINT __m_seltra_bgroup_remove_block_Tblock(struct _m_seltra_bgroup_obj* o,struc
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 837, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 331, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 838, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 332, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	while(bbt_i<((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_le ){
 		struct BBDebugScope __scope = {
@@ -10190,7 +10190,7 @@ BBINT __m_seltra_bgroup_remove_block_Tblock(struct _m_seltra_bgroup_obj* o,struc
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 839, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 333, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]==bbt_b){
 			struct BBDebugScope __scope = {
@@ -10201,17 +10201,17 @@ BBINT __m_seltra_bgroup_remove_block_Tblock(struct _m_seltra_bgroup_obj* o,struc
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 839, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 333, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct _m_seltra_block_obj*)&bbNullObject;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 840, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 334, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 842, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 336, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group =(struct _m_seltra_bgroup_obj*)&bbNullObject;
 	bbOnDebugLeaveScope();
@@ -10247,13 +10247,13 @@ BBINT __m_seltra_bgroup_remove(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 849, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 343, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 850, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 344, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 852, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 346, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		struct _m_seltra_redraw_obj* bbt_re=(struct _m_seltra_redraw_obj*)(&bbNullObject);
@@ -10271,54 +10271,54 @@ BBINT __m_seltra_bgroup_remove(struct _m_seltra_bgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 853, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 347, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 855, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 349, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 856, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 350, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 857, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 351, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)];
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 858, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 352, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 859, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 353, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 860, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 354, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
-		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 861, 0};
+		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 355, 0};
 		bbOnDebugEnterStm(&__stmt_7);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_x =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 862, 0};
+		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 356, 0};
 		bbOnDebugEnterStm(&__stmt_8);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_y =((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)(1-((BBINT)_m_seltra_frame)))))[((BBUINT)(1-((BBINT)_m_seltra_frame)))];
-		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 863, 0};
+		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 357, 0};
 		bbOnDebugEnterStm(&__stmt_9);
 		((struct _m_seltra_redraw_obj*)bbNullObjectTest(bbt_re))->__m_seltra_redraw_redraws =2;
-		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 864, 0};
+		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 358, 0};
 		bbOnDebugEnterStm(&__stmt_10);
 		((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_add_Tredraw((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray,(struct _m_seltra_redraw_obj*)bbt_re);
-		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 866, 0};
+		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 360, 0};
 		bbOnDebugEnterStm(&__stmt_11);
 		((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba )->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id )]=(struct _m_seltra_block_obj*)&bbNullObject;
-		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 867, 0};
+		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 361, 0};
 		bbOnDebugEnterStm(&__stmt_12);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 868, 0};
+		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 362, 0};
 		bbOnDebugEnterStm(&__stmt_13);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 870, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 364, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_bgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga ),(((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga )->dims,((BBUINT)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_id )))[((BBUINT)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_id )]=(struct _m_seltra_bgroup_obj*)&bbNullObject;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 871, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 365, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->clas->m_ordered_sort_ii((struct _m_seltra_grouparray_obj*)_m_seltra_garray,0,0);
 	bbOnDebugLeaveScope();
@@ -10379,16 +10379,16 @@ BBINT __m_seltra_bgroup_split_aTblockii(struct _m_seltra_bgroup_obj* o,BBARRAY b
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 878, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 372, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 878, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 372, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 878, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 372, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 880, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 374, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(bbt_i<((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_le ){
 		struct BBDebugScope __scope = {
@@ -10399,7 +10399,7 @@ BBINT __m_seltra_bgroup_split_aTblockii(struct _m_seltra_bgroup_obj* o,BBARRAY b
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 881, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 375, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]==bbt_b){
 			struct BBDebugScope __scope = {
@@ -10410,36 +10410,36 @@ BBINT __m_seltra_bgroup_split_aTblockii(struct _m_seltra_bgroup_obj* o,BBARRAY b
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 881, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 375, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]=(struct _m_seltra_block_obj*)&bbNullObject;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 881, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 375, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			break;
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 882, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 376, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 884, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 378, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 885, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 379, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_xv =bbt_xvn;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 886, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 380, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_yv =bbt_yvn;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 887, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 381, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba =bbArraySlice(":block",((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ,0,10);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 888, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 382, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba =bbt_bl;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 889, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 383, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	_m_seltra_bgc=(_m_seltra_bgc+1);
 	bbOnDebugLeaveScope();
@@ -10494,16 +10494,16 @@ struct _m_seltra_bgroup_obj* __m_seltra_bgroup_spawn_ii(struct _m_seltra_bgroup_
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 895, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 389, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_bgn=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 896, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 390, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 897, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 391, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_m=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 899, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 393, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(((BBObject*)bbt_m)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -10514,18 +10514,18 @@ struct _m_seltra_bgroup_obj* __m_seltra_bgroup_spawn_ii(struct _m_seltra_bgroup_
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 901, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 395, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 902, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 396, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_m=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 904, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 398, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bgn))->__m_seltra_bgroup_id =_m_seltra_bgc;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 905, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 399, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	_m_seltra_bgc=(_m_seltra_bgc+1);
 	bbOnDebugLeaveScope();
@@ -10561,13 +10561,13 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 911, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 405, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 912, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 406, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 914, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 408, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -10578,7 +10578,7 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 915, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 409, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype !=0){
 			struct BBDebugScope __scope = {
@@ -10589,10 +10589,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 916, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 410, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			BBINT bbt_=(((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10))) % 8);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 917, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 411, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(bbt_==1){
 				struct BBDebugScope __scope = {
@@ -10603,10 +10603,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 917, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 411, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =0;
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 917, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 411, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =-1;
 				bbOnDebugLeaveScope();
@@ -10619,7 +10619,7 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 918, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 412, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_==2){
 					struct BBDebugScope __scope = {
@@ -10630,10 +10630,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 918, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 412, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =0;
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 918, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 412, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =1;
 					bbOnDebugLeaveScope();
@@ -10646,7 +10646,7 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 919, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 413, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==3){
 						struct BBDebugScope __scope = {
@@ -10657,10 +10657,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 919, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 413, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =-1;
-						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 919, 0};
+						struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 413, 0};
 						bbOnDebugEnterStm(&__stmt_1);
 						((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =0;
 						bbOnDebugLeaveScope();
@@ -10673,7 +10673,7 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 920, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 414, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_==4){
 							struct BBDebugScope __scope = {
@@ -10684,10 +10684,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 920, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 414, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_xv =1;
-							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 920, 0};
+							struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 414, 0};
 							bbOnDebugEnterStm(&__stmt_1);
 							((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_yv =0;
 							bbOnDebugLeaveScope();
@@ -10700,10 +10700,10 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 924, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 418, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 925, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 419, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
@@ -10741,13 +10741,13 @@ BBINT __m_seltra_bgroup_out_of_bounds(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 933, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 427, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 934, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 428, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 936, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 430, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(bbt_b!=&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -10758,7 +10758,7 @@ BBINT __m_seltra_bgroup_out_of_bounds(struct _m_seltra_bgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 941, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 435, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		do{
 			struct BBDebugScope __scope = {
@@ -10769,7 +10769,7 @@ BBINT __m_seltra_bgroup_out_of_bounds(struct _m_seltra_bgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 938, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 432, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(!(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_out_of_bounds((struct _m_seltra_block_obj*)bbt_b)!=0)){
 				struct BBDebugScope __scope = {
@@ -10780,7 +10780,7 @@ BBINT __m_seltra_bgroup_out_of_bounds(struct _m_seltra_bgroup_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 938, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 432, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -10788,17 +10788,17 @@ BBINT __m_seltra_bgroup_out_of_bounds(struct _m_seltra_bgroup_obj* o){
 				bbOnDebugLeaveScope();
 				return 0;
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 939, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 433, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 940, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 434, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 			bbOnDebugLeaveScope();
 		}while(!(bbt_b==&bbNullObject));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 944, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 438, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbOnDebugLeaveScope();
 	return 1;
@@ -10833,13 +10833,13 @@ BBINT __m_seltra_bgroup_draw(struct _m_seltra_bgroup_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 951, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 445, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 952, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 446, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 954, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 448, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(bbt_b!=&bbNullObject){
 		struct BBDebugScope __scope = {
@@ -10850,7 +10850,7 @@ BBINT __m_seltra_bgroup_draw(struct _m_seltra_bgroup_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 959, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 453, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		do{
 			struct BBDebugScope __scope = {
@@ -10861,13 +10861,13 @@ BBINT __m_seltra_bgroup_draw(struct _m_seltra_bgroup_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 956, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 450, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_draw((struct _m_seltra_block_obj*)bbt_b);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 957, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 451, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_i=(bbt_i+1);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 958, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 452, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 			bbOnDebugLeaveScope();
@@ -10913,7 +10913,7 @@ BBINT __m_seltra_bgroup_merge_Tbgroup(struct _m_seltra_bgroup_obj* o,struct _m_s
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 968, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 462, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(bbt_g==o){
 		struct BBDebugScope __scope = {
@@ -10924,19 +10924,19 @@ BBINT __m_seltra_bgroup_merge_Tbgroup(struct _m_seltra_bgroup_obj* o,struct _m_s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 968, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 462, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 969, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 463, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,0U))[0U];
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 970, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 464, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_i=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 972, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 466, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(bbt_i<((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_le ){
 		struct BBDebugScope __scope = {
@@ -10947,7 +10947,7 @@ BBINT __m_seltra_bgroup_merge_Tbgroup(struct _m_seltra_bgroup_obj* o,struct _m_s
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 973, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 467, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((BBObject*)bbt_b)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -10958,23 +10958,23 @@ BBINT __m_seltra_bgroup_merge_Tbgroup(struct _m_seltra_bgroup_obj* o,struct _m_s
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 973, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 467, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ))->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(o))->__m_seltra_bgroup_blist ,(struct _m_seltra_block_obj*)bbt_b);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 973, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 467, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group =(struct _m_seltra_bgroup_obj*)o;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 974, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 468, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 975, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 469, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_blist ))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 978, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/bgroup.bmx", 472, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_bgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga ),(((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga )->dims,((BBUINT)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_id )))[((BBUINT)((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_g))->__m_seltra_bgroup_id )]=(struct _m_seltra_bgroup_obj*)&bbNullObject;
 	bbOnDebugLeaveScope();
@@ -11199,16 +11199,16 @@ BBINT _m_seltra_update_bgroups(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1406, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 325, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1407, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 326, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1409, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 328, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_i=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1410, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 329, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(bbt_i<((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_le ){
 		struct BBDebugScope __scope = {
@@ -11219,10 +11219,10 @@ BBINT _m_seltra_update_bgroups(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1411, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 330, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga ),(((struct _m_seltra_grouparray_obj*)bbNullObjectTest(_m_seltra_garray))->__m_seltra_grouparray_ga )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1412, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 331, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_bg)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -11233,16 +11233,16 @@ BBINT _m_seltra_update_bgroups(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1413, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 332, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_checkarrows((struct _m_seltra_bgroup_obj*)bbt_bg);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1414, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 333, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_check_substrates((struct _m_seltra_bgroup_obj*)bbt_bg);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1415, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 334, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_move((struct _m_seltra_bgroup_obj*)bbt_bg);
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1416, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 335, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			if(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_out_of_bounds((struct _m_seltra_bgroup_obj*)bbt_bg)!=0){
 				struct BBDebugScope __scope = {
@@ -11253,14 +11253,14 @@ BBINT _m_seltra_update_bgroups(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1416, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 335, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_bgroup_obj*)bbNullObjectTest(bbt_bg))->clas->m_remove((struct _m_seltra_bgroup_obj*)bbt_bg);
 				bbOnDebugLeaveScope();
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1420, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 339, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -11339,25 +11339,25 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 122, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 12, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 123, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 13, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_bg2=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 124, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 14, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_r=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 125, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 15, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_xv=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 125, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 15, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_yv=0;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 126, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 16, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_tm=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_x +(((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_y <<10)));
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 128, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 18, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if((bbt_tm<10) && (bbt_tm>0)){
 		struct BBDebugScope __scope = {
@@ -11368,10 +11368,10 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 129, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 19, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		BBINT bbt_=(bbt_tm % 8);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 130, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 20, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_==1){
 			struct BBDebugScope __scope = {
@@ -11382,7 +11382,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 130, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 20, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_yv=-1;
 			bbOnDebugLeaveScope();
@@ -11395,7 +11395,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 131, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 21, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(bbt_==2){
 				struct BBDebugScope __scope = {
@@ -11406,7 +11406,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 131, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 21, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_yv=1;
 				bbOnDebugLeaveScope();
@@ -11419,7 +11419,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 132, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 22, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_==3){
 					struct BBDebugScope __scope = {
@@ -11430,7 +11430,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 132, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 22, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_xv=-1;
 					bbOnDebugLeaveScope();
@@ -11443,7 +11443,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 133, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 23, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==4){
 						struct BBDebugScope __scope = {
@@ -11454,7 +11454,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 133, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 23, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						bbt_xv=1;
 						bbOnDebugLeaveScope();
@@ -11465,7 +11465,7 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 138, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 28, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if((((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_bitflags !=0) && 1){
 			struct BBDebugScope __scope = {
@@ -11476,14 +11476,14 @@ BBINT __m_seltra_gen_genblock(struct _m_seltra_gen_obj* o){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 139, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 29, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_bg2=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATAINDEX((((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_bglist ),(((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_bglist )->dims,((BBUINT)brl_random_Rand(0,((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_le ))))[((BBUINT)brl_random_Rand(0,((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_le ))];
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 143, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 33, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_n =(((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_n -1);
 	bbOnDebugLeaveScope();
@@ -11505,7 +11505,7 @@ BBINT __m_seltra_gen_update(struct _m_seltra_gen_obj* o){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 150, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 40, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if((_m_seltra_time % ((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_rate )==((struct _m_seltra_gen_obj*)bbNullObjectTest(o))->__m_seltra_gen_t ){
 		struct BBDebugScope __scope = {
@@ -11516,7 +11516,7 @@ BBINT __m_seltra_gen_update(struct _m_seltra_gen_obj* o){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 150, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/gen.bmx", 40, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_gen_obj*)bbNullObjectTest(o));
 		((struct _m_seltra_gen_obj*)o)->clas->m_genblock((struct _m_seltra_gen_obj*)o);
@@ -11637,10 +11637,10 @@ BBINT _m_seltra_update_gens(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1870, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 789, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1872, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 791, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	while(bbt_i<((struct _m_seltra_generatorarray_obj*)bbNullObjectTest(_m_seltra_genarray))->__m_seltra_generatorarray_le ){
 		struct BBDebugScope __scope = {
@@ -11651,11 +11651,11 @@ BBINT _m_seltra_update_gens(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1873, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 792, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		struct _m_seltra_gen_obj* bbt_;
 		(((struct _m_seltra_gen_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_gen_obj**)BBARRAYDATAINDEX((((struct _m_seltra_generatorarray_obj*)bbNullObjectTest(_m_seltra_genarray))->__m_seltra_generatorarray_ga ),(((struct _m_seltra_generatorarray_obj*)bbNullObjectTest(_m_seltra_genarray))->__m_seltra_generatorarray_ga )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])))->clas)->m_update((struct _m_seltra_gen_obj*)bbt_);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1874, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 793, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -11678,7 +11678,7 @@ BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2135, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1054, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->__m_seltra_fastblockmap_rc >1000){
 		struct BBDebugScope __scope = {
@@ -11689,24 +11689,24 @@ BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2135, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1054, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_orderedsort((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2136, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1055, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	_m_seltra_update_sgroups();
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2137, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1056, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	_m_seltra_update_bgroups();
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2138, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1057, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	_m_seltra_update_gens();
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2139, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1058, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	_m_seltra_time=(_m_seltra_time+1);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2141, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1060, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbOnDebugLeaveScope();
 	return (BBOBJECT)&_s23;
@@ -11753,13 +11753,13 @@ struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT b
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1682, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 601, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1683, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 602, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1685, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 604, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -11770,7 +11770,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT b
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1685, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 604, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==0){
 			struct BBDebugScope __scope = {
@@ -11781,7 +11781,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT b
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1685, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 604, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -11790,7 +11790,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT b
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1686, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 605, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -11801,34 +11801,34 @@ struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT b
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1686, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 605, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1688, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 607, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1690, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 609, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	_m_seltra_sgc=(_m_seltra_sgc+1);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1691, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 610, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_s=(struct _m_seltra_substrate_obj*)__m_seltra_substrate_New_iiTTImageTsgroup_ObjectNew((struct _m_seltra_substrate_obj*)&_m_seltra_substrate,bbt_x,bbt_y,(struct brl_max2d_image_TImage_obj*)_m_seltra_sub0,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1693, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 612, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1694, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 613, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1695, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 614, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1696, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 615, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1698, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 617, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbOnDebugLeaveScope();
 	return (struct _m_seltra_sgroup_obj*)bbt_sg;
@@ -11875,13 +11875,13 @@ struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1706, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 625, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1707, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 626, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1709, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 628, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	if(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -11892,7 +11892,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1709, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 628, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==0){
 			struct BBDebugScope __scope = {
@@ -11903,7 +11903,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1709, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 628, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -11912,7 +11912,7 @@ struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1710, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 629, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -11923,46 +11923,46 @@ struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1710, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 629, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1712, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 631, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1713, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 632, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa =bbArraySlice(":substrate",((struct _m_seltra_subarray_obj*)bbNullObjectTest(((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->__m_seltra_sgroup_slist ))->__m_seltra_subarray_sa ,0,10);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1714, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 633, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	_m_seltra_sgc=(_m_seltra_sgc+1);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1715, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 634, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_s=(struct _m_seltra_substrate_obj*)(struct _m_seltra_substrate_obj*)bbObjectNew((BBClass *)&_m_seltra_substrate);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1716, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 635, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x =bbt_x;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1717, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 636, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y =bbt_y;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1719, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 638, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_image =(struct brl_max2d_image_TImage_obj*)_m_seltra_subd;
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1720, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 639, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	((struct _m_seltra_sgroup_obj*)bbNullObjectTest(bbt_sg))->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1721, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 640, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	((struct _m_seltra_subgrouparray_obj*)bbNullObjectTest(_m_seltra_sgarray))->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1722, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 641, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1723, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 642, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1725, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 644, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	bbOnDebugLeaveScope();
 	return (struct _m_seltra_sgroup_obj*)bbt_sg;
@@ -12002,10 +12002,10 @@ BBINT _m_seltra_placegene(BBINT bbt_x,BBINT bbt_y){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1803, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 722, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_tm=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1804, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 723, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if((bbt_tm>0) && (bbt_tm<5)){
 		struct BBDebugScope __scope = {
@@ -12016,27 +12016,27 @@ BBINT _m_seltra_placegene(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1804, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 723, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)),(1 || (bbt_tm!=0)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1805, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 724, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_g=(struct _m_seltra_gen_obj*)(struct _m_seltra_gen_obj*)bbObjectNew((BBClass *)&_m_seltra_gen);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1806, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 725, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	((struct _m_seltra_gen_obj*)bbNullObjectTest(bbt_g))->__m_seltra_gen_x =bbt_x;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1807, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 726, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	((struct _m_seltra_gen_obj*)bbNullObjectTest(bbt_g))->__m_seltra_gen_y =bbt_y;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1808, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 727, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	((struct _m_seltra_gen_obj*)bbNullObjectTest(bbt_g))->__m_seltra_gen_rate =5;
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1809, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 728, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_gen_obj*)bbNullObjectTest(bbt_g))->__m_seltra_gen_bitflags =4;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1810, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 729, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_generatorarray_obj*)bbNullObjectTest(_m_seltra_genarray))->clas->m_add_Tgen((struct _m_seltra_generatorarray_obj*)_m_seltra_genarray,(struct _m_seltra_gen_obj*)bbt_g);
 	bbOnDebugLeaveScope();
@@ -12085,22 +12085,22 @@ BBINT _m_seltra_chem_dist(BBINT bbt_x){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1895, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 814, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_d2=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1896, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 815, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1896, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 815, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_d=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1896, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 815, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_s=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1898, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 817, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_d2=9999;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1900, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 819, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	while(bbt_i<4){
 		struct BBDebugScope __scope = {
@@ -12111,10 +12111,10 @@ BBINT _m_seltra_chem_dist(BBINT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1901, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 820, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_d=brl_blitz_Abs(bbt_x-((BBINT*)BBARRAYDATAINDEX((_m_seltra_chem),(_m_seltra_chem)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1903, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 822, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_d<brl_blitz_Abs(bbt_d2)){
 			struct BBDebugScope __scope = {
@@ -12125,17 +12125,17 @@ BBINT _m_seltra_chem_dist(BBINT bbt_x){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1903, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 822, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_d2=bbt_d;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1904, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 823, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1907, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 826, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbOnDebugLeaveScope();
 	return bbt_d2;
@@ -12188,16 +12188,16 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1733, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 652, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1734, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 653, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1735, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 654, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_s2=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1737, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 656, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -12208,7 +12208,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1737, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 656, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ==0){
 			struct BBDebugScope __scope = {
@@ -12219,7 +12219,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1737, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 656, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12228,7 +12228,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1738, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 657, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -12239,31 +12239,31 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1738, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 657, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1740, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 659, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbt_s=(struct _m_seltra_substrate_obj*)(struct _m_seltra_substrate_obj*)bbObjectNew((BBClass *)&_m_seltra_substrate);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1741, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 660, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x =bbt_x;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1742, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 661, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y =bbt_y;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1743, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 662, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_image =(struct brl_max2d_image_TImage_obj*)bbt_image;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1744, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 663, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1745, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 664, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x +(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1747, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 666, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if(bbt_x>0){
 		struct BBDebugScope __scope = {
@@ -12274,10 +12274,10 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1748, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 667, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_s2=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,((_m_seltra_moxc+1)+(_m_seltra_moyc<<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1749, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 668, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_s2)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -12288,14 +12288,14 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1750, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 669, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group =(struct _m_seltra_sgroup_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s2))->__m_seltra_substrate_group ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1751, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 670, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_sgroup_obj* bbt_;
 			(((struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))))->clas)->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_,(struct _m_seltra_substrate_obj*)bbt_s);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1752, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 671, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12304,7 +12304,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1756, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 675, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(bbt_y>0){
 		struct BBDebugScope __scope = {
@@ -12315,10 +12315,10 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1757, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 676, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_s2=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+((_m_seltra_moyc+1)<<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1758, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 677, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_s2)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -12329,14 +12329,14 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1759, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 678, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group =(struct _m_seltra_sgroup_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s2))->__m_seltra_substrate_group ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1760, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 679, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_sgroup_obj* bbt_2;
 			(((struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj*)bbNullObjectTest((bbt_2 = ((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))))->clas)->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_2,(struct _m_seltra_substrate_obj*)bbt_s);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1761, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 680, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12345,7 +12345,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1765, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 684, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	if(bbt_x<1000){
 		struct BBDebugScope __scope = {
@@ -12356,10 +12356,10 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1766, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 685, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_s2=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,((_m_seltra_moxc-1)+(_m_seltra_moyc<<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1767, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 686, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_s2)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -12370,14 +12370,14 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1768, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 687, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group =(struct _m_seltra_sgroup_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s2))->__m_seltra_substrate_group ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1769, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 688, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_sgroup_obj* bbt_3;
 			(((struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj*)bbNullObjectTest((bbt_3 = ((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))))->clas)->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_3,(struct _m_seltra_substrate_obj*)bbt_s);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1770, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 689, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12386,7 +12386,7 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1774, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 693, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	if(bbt_y<1000){
 		struct BBDebugScope __scope = {
@@ -12397,10 +12397,10 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1775, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 694, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_s2=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+((_m_seltra_moyc-1)<<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1776, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 695, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_s2)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -12411,14 +12411,14 @@ BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_im
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1777, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 696, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group =(struct _m_seltra_sgroup_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s2))->__m_seltra_substrate_group ;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1778, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 697, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			struct _m_seltra_sgroup_obj* bbt_4;
 			(((struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj*)bbNullObjectTest((bbt_4 = ((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_group ))))->clas)->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_4,(struct _m_seltra_substrate_obj*)bbt_s);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1779, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 698, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12467,28 +12467,28 @@ BBINT _m_seltra_mouse_input_map(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1607, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 526, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_mozd=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1607, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 526, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_mozn=.00000000f;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1608, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 527, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1609, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 528, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_prox=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1611, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 530, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	_m_seltra_moxc=((BBINT)((((BBFLOAT)_m_seltra_mox)/_m_seltra_zoom)+((BBFLOAT)_m_seltra_camposx)));
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1612, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 531, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	_m_seltra_moyc=((BBINT)((((BBFLOAT)_m_seltra_moy)/_m_seltra_zoom)+((BBFLOAT)_m_seltra_camposy)));
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1614, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 533, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_mozd=(_m_seltra_moz-_m_seltra_mozo);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1615, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if((_m_seltra_mozu+((BBFLOAT)bbt_mozd))<-9.00000000f){
 		struct BBDebugScope __scope = {
@@ -12499,7 +12499,7 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1615, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_mozn=-9.00000000f;
 		bbOnDebugLeaveScope();
@@ -12512,12 +12512,12 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1615, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 534, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_mozn=(_m_seltra_mozu+((BBFLOAT)bbt_mozd));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1617, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 536, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	if(_m_seltra_mozu!=bbt_mozn){
 		struct BBDebugScope __scope = {
@@ -12528,30 +12528,30 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1618, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 537, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_mozu=bbt_mozn;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1619, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 538, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		_m_seltra_zoom=(30.0000000f*(1.0f+(_m_seltra_mozu/10.0f)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1620, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 539, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		_m_seltra_redraw_map=3;
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1621, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 540, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		brl_max2d_SetScale((_m_seltra_zoom/30.0f),(_m_seltra_zoom/30.0f));
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1622, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 541, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		_m_seltra_camposx=((BBINT)(((BBFLOAT)_m_seltra_moxc)-(((BBFLOAT)brl_graphics_GraphicsWidth())/(2.0f*_m_seltra_zoom))));
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1623, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 542, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		_m_seltra_camposy=((BBINT)(((BBFLOAT)_m_seltra_moyc)-(((BBFLOAT)brl_graphics_GraphicsHeight())/(2.0f*_m_seltra_zoom))));
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1624, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 543, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		brl_system_MoveMouse((brl_graphics_GraphicsWidth()/2),(brl_graphics_GraphicsHeight()/2));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1627, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 546, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	if(_m_seltra_moxc<0){
 		struct BBDebugScope __scope = {
@@ -12562,12 +12562,12 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1627, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 546, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_moxc=0;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1628, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 547, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	if(_m_seltra_moyc<0){
 		struct BBDebugScope __scope = {
@@ -12578,12 +12578,12 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1628, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 547, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_moyc=0;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1630, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 549, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if(brl_polledinput_MouseHit(1)!=0){
 		struct BBDebugScope __scope = {
@@ -12594,7 +12594,7 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1631, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 550, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(_m_seltra_smt<=43){
 			struct BBDebugScope __scope = {
@@ -12605,10 +12605,10 @@ BBINT _m_seltra_mouse_input_map(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1632, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 551, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1633, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 552, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(!(((BBObject*)bbt_b)!= &bbNullObject)){
 				struct BBDebugScope __scope = {
@@ -12619,7 +12619,7 @@ BBINT _m_seltra_mouse_input_map(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1634, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 553, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(_m_seltra_smi==_m_seltra_sub0){
 					struct BBDebugScope __scope = {
@@ -12630,10 +12630,10 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1634, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 553, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					_m_seltra_createsingleSubstrate(_m_seltra_moxc,_m_seltra_moyc);
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1634, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 553, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					bbOnDebugLeaveScope();
 					bbOnDebugLeaveScope();
@@ -12642,7 +12642,7 @@ BBINT _m_seltra_mouse_input_map(){
 					bbOnDebugLeaveScope();
 					return 0;
 				}
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1635, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 554, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				if(_m_seltra_smi==_m_seltra_subd){
 					struct BBDebugScope __scope = {
@@ -12653,10 +12653,10 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1635, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 554, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					_m_seltra_placeSubstrateGuide(_m_seltra_moxc,_m_seltra_moyc);
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1635, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 554, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					bbOnDebugLeaveScope();
 					bbOnDebugLeaveScope();
@@ -12665,7 +12665,7 @@ BBINT _m_seltra_mouse_input_map(){
 					bbOnDebugLeaveScope();
 					return 0;
 				}
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1636, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 555, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				if(_m_seltra_smi==_m_seltra_gene){
 					struct BBDebugScope __scope = {
@@ -12676,13 +12676,13 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1636, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 555, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					brl_blitz_DebugStop();
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1636, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 555, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					_m_seltra_placegene(_m_seltra_moxc,_m_seltra_moyc);
-					struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1636, 0};
+					struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 555, 0};
 					bbOnDebugEnterStm(&__stmt_2);
 					bbOnDebugLeaveScope();
 					bbOnDebugLeaveScope();
@@ -12691,7 +12691,7 @@ BBINT _m_seltra_mouse_input_map(){
 					bbOnDebugLeaveScope();
 					return 0;
 				}
-				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1637, 0};
+				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 556, 0};
 				bbOnDebugEnterStm(&__stmt_3);
 				struct _m_seltra_btemplate_obj* bbt_;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_,_m_seltra_moxc,_m_seltra_moyc,0,0);
@@ -12705,7 +12705,7 @@ BBINT _m_seltra_mouse_input_map(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1639, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 558, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem3_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)&bbNullObject);
 				bbOnDebugLeaveScope();
@@ -12714,7 +12714,7 @@ BBINT _m_seltra_mouse_input_map(){
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1645, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 564, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(brl_polledinput_MouseHit(2)!=0){
 		struct BBDebugScope __scope = {
@@ -12725,10 +12725,10 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1646, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 565, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1647, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 566, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(!(((BBObject*)bbt_b)!= &bbNullObject)){
 			struct BBDebugScope __scope = {
@@ -12739,7 +12739,7 @@ BBINT _m_seltra_mouse_input_map(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1648, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 567, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(_m_seltra_smt<=3){
 				struct BBDebugScope __scope = {
@@ -12750,10 +12750,10 @@ BBINT _m_seltra_mouse_input_map(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1648, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 567, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				_m_seltra_wallblock(_m_seltra_moxc,_m_seltra_moyc,0);
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1648, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 567, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				bbOnDebugLeaveScope();
 				bbOnDebugLeaveScope();
@@ -12761,13 +12761,13 @@ BBINT _m_seltra_mouse_input_map(){
 				bbOnDebugLeaveScope();
 				return 0;
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1649, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 568, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_prox=((((BBObject*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject) || (((BBObject*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((-1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject));
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1650, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 569, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbt_prox=(((bbt_prox!=0) || (((BBObject*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+((_m_seltra_moyc+1)<<10))))!= &bbNullObject)) || (((BBObject*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(+_m_seltra_moxc+((_m_seltra_moyc-1)<<10))))!= &bbNullObject));
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1651, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 570, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			if((bbt_prox!=0) && (_m_seltra_smt<=30)){
 				struct BBDebugScope __scope = {
@@ -12778,7 +12778,7 @@ BBINT _m_seltra_mouse_input_map(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1652, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 571, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				struct _m_seltra_btemplate_obj* bbt_2;
 				(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_2 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)])))->clas)->m_setbindingblock_ii((struct _m_seltra_btemplate_obj*)bbt_2,_m_seltra_moxc,_m_seltra_moyc);
@@ -12792,7 +12792,7 @@ BBINT _m_seltra_mouse_input_map(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1654, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 573, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(_m_seltra_smt<=31){
 					struct BBDebugScope __scope = {
@@ -12803,10 +12803,10 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1655, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 574, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1656, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 575, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					if(!(((BBObject*)bbt_b)!= &bbNullObject)){
 						struct BBDebugScope __scope = {
@@ -12817,7 +12817,7 @@ BBINT _m_seltra_mouse_input_map(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1657, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 576, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						struct _m_seltra_btemplate_obj* bbt_3;
 						(((struct _m_seltra_btemplate_obj*)bbNullObjectTest((bbt_3 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATAINDEX((_m_seltra_btarray),(_m_seltra_btarray)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)])))->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_3,_m_seltra_moxc,_m_seltra_moyc,0,0);
@@ -12831,14 +12831,14 @@ BBINT _m_seltra_mouse_input_map(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1659, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 578, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->clas->m_checkchem3_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)&bbNullObject);
 						bbOnDebugLeaveScope();
 					}
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1662, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 581, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				if(_m_seltra_smi==_m_seltra_sub0){
 					struct BBDebugScope __scope = {
@@ -12849,12 +12849,12 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1662, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 581, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					_m_seltra_mergeSingleSubstrate(_m_seltra_moxc,_m_seltra_moyc,(struct brl_max2d_image_TImage_obj*)_m_seltra_smi);
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1663, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 582, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				if(_m_seltra_smi==_m_seltra_subd){
 					struct BBDebugScope __scope = {
@@ -12865,7 +12865,7 @@ BBINT _m_seltra_mouse_input_map(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1663, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 582, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					_m_seltra_placeSubstrateGuide(_m_seltra_moxc,_m_seltra_moyc);
 					bbOnDebugLeaveScope();
@@ -12876,7 +12876,7 @@ BBINT _m_seltra_mouse_input_map(){
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1668, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 587, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	if(brl_polledinput_MouseHit(3)!=0){
 		struct BBDebugScope __scope = {
@@ -12887,16 +12887,16 @@ BBINT _m_seltra_mouse_input_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1669, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 588, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_camposx=((BBINT)(((BBFLOAT)_m_seltra_moxc)-(((BBFLOAT)brl_graphics_GraphicsWidth())/(2.0f*_m_seltra_zoom))));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1670, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 589, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		_m_seltra_camposy=((BBINT)(((BBFLOAT)_m_seltra_moyc)-(((BBFLOAT)brl_graphics_GraphicsHeight())/(2.0f*_m_seltra_zoom))));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1671, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 590, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		_m_seltra_redraw_map=3;
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1672, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 591, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		brl_system_MoveMouse((brl_graphics_GraphicsWidth()/2),(brl_graphics_GraphicsHeight()/2));
 		bbOnDebugLeaveScope();
@@ -12913,7 +12913,7 @@ BBINT _m_seltra_mouse_input_editbar(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1596, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 515, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	if(brl_polledinput_MouseHit(1)!=0){
 		struct BBDebugScope __scope = {
@@ -12924,7 +12924,7 @@ BBINT _m_seltra_mouse_input_editbar(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1597, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 516, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if(_m_seltra_mox<(_m_seltra_gw-70)){
 			struct BBDebugScope __scope = {
@@ -12935,20 +12935,20 @@ BBINT _m_seltra_mouse_input_editbar(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1597, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 516, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_smt=((_m_seltra_moy-10)/20);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1597, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 516, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)];
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1597, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 516, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
 			return 0;
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1598, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 517, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(_m_seltra_mox<(_m_seltra_gw-45)){
 			struct BBDebugScope __scope = {
@@ -12959,13 +12959,13 @@ BBINT _m_seltra_mouse_input_editbar(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1598, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 517, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_smt=(30+((_m_seltra_moy-10)/20));
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1598, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 517, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)];
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1598, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 517, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			bbOnDebugLeaveScope();
 			bbOnDebugLeaveScope();
@@ -12986,19 +12986,19 @@ BBINT _m_seltra_get_mouse_input(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1583, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 502, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	_m_seltra_mozo=_m_seltra_moz;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1584, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 503, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	_m_seltra_mox=brl_polledinput_MouseX();
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1585, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 504, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	_m_seltra_moy=brl_polledinput_MouseY();
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1586, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 505, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	_m_seltra_moz=brl_polledinput_MouseZ();
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1588, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 507, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(_m_seltra_mox<(_m_seltra_gw-100)){
 		struct BBDebugScope __scope = {
@@ -13009,7 +13009,7 @@ BBINT _m_seltra_get_mouse_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1588, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 507, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_mouse_input_map();
 		bbOnDebugLeaveScope();
@@ -13022,7 +13022,7 @@ BBINT _m_seltra_get_mouse_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1588, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 507, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_mouse_input_editbar();
 		bbOnDebugLeaveScope();
@@ -13053,10 +13053,10 @@ BBINT _m_seltra_save_map(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2167, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1086, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s25);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2168, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1087, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(!(((BBObject*)bbt_out)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -13067,21 +13067,21 @@ BBINT _m_seltra_save_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2168, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1087, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_filesystem_CreateFile(&_s25);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2168, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1087, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s25);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2171, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1090, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_i=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2173, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1092, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_le );
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2175, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1094, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	BBINT bbt_=(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_le -1);
 	for(bbt_i=0;(bbt_i<=bbt_);bbt_i=(bbt_i+1)){
@@ -13093,18 +13093,18 @@ BBINT _m_seltra_save_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2176, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1095, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_block_obj*)bbNullObjectTest(((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]))->__m_seltra_block_x );
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2177, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1096, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_block_obj*)bbNullObjectTest(((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)]))->__m_seltra_block_y );
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2180, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1099, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->__m_seltra_fastintmap_le );
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2182, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1101, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	BBINT bbt_2=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->__m_seltra_fastintmap_le ;
 	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
@@ -13116,15 +13116,15 @@ BBINT _m_seltra_save_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2183, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1102, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_kfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2184, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1103, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_vfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2187, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1106, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	brl_filesystem_CloseFile((struct brl_stream_TStream_obj*)bbt_out);
 	bbOnDebugLeaveScope();
@@ -13188,22 +13188,22 @@ BBINT _m_seltra_load_map(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2196, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1115, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	_m_seltra_wallgroup=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2197, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1116, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba =bbArraySlice(":block",((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ,0,999999);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2200, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1119, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2201, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1120, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2203, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1122, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_in=(struct brl_stream_TStream_obj*)brl_filesystem_ReadFile((BBOBJECT)&_s25);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2204, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1123, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(!(((BBObject*)bbt_in)!= &bbNullObject)){
 		struct BBDebugScope __scope = {
@@ -13214,25 +13214,25 @@ BBINT _m_seltra_load_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2204, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1123, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2206, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1125, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_i=0;
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2206, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1125, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbt_x=0;
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2206, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1125, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	bbt_y=0;
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2207, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1126, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_n=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2209, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1128, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	BBINT bbt_=(bbt_n-1);
 	for(bbt_i=0;(bbt_i<=bbt_);bbt_i=(bbt_i+1)){
@@ -13244,27 +13244,27 @@ BBINT _m_seltra_load_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2210, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1129, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_x=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2211, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1130, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_y=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2212, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1131, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		_m_seltra_wallblock(bbt_x,bbt_y,0);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2215, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1134, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	bbt_n=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2216, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1135, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	bbt_k=0;
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2216, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1135, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	bbt_v=0;
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2218, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1137, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	BBINT bbt_2=(bbt_n-1);
 	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
@@ -13276,13 +13276,13 @@ BBINT _m_seltra_load_map(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2219, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1138, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_k=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2220, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1139, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_v=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2221, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1140, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(bbt_v!=0){
 			struct BBDebugScope __scope = {
@@ -13293,14 +13293,14 @@ BBINT _m_seltra_load_map(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2221, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1140, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_k,bbt_v);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2224, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1143, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	brl_filesystem_CloseFile((struct brl_stream_TStream_obj*)bbt_in);
 	bbOnDebugLeaveScope();
@@ -13350,19 +13350,19 @@ BBINT _m_seltra_get_user_input(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1818, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 737, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1819, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 738, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1820, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 739, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_t=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1821, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 740, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_p=0;
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1823, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 742, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(brl_polledinput_KeyHit(112)!=0){
 		struct BBDebugScope __scope = {
@@ -13373,12 +13373,12 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1823, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 742, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_save_map();
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1824, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 743, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(brl_polledinput_KeyHit(113)!=0){
 		struct BBDebugScope __scope = {
@@ -13389,12 +13389,12 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1824, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 743, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_load_map();
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1825, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 744, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(brl_polledinput_KeyHit(114)!=0){
 		struct BBDebugScope __scope = {
@@ -13405,12 +13405,12 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1825, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 744, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_gen_maze_map(1,1,40,1,40,40);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1828, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 747, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if(!(((BBObject*)bbt_b)!= &bbNullObject) || ((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype !=0))){
 		struct BBDebugScope __scope = {
@@ -13421,10 +13421,10 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1829, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 748, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_p=(bbt_t-(bbt_t % 8));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1830, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 749, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(brl_polledinput_KeyHit(87)!=0){
 			struct BBDebugScope __scope = {
@@ -13435,12 +13435,12 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1830, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 749, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(1)));
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1831, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 750, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(brl_polledinput_KeyHit(83)!=0){
 			struct BBDebugScope __scope = {
@@ -13451,12 +13451,12 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1831, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 750, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(2)));
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1832, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 751, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if(brl_polledinput_KeyHit(65)!=0){
 			struct BBDebugScope __scope = {
@@ -13467,12 +13467,12 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1832, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 751, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(3)));
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1833, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 752, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		if(brl_polledinput_KeyHit(68)!=0){
 			struct BBDebugScope __scope = {
@@ -13483,14 +13483,14 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1833, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 752, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(4)));
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1836, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 755, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	if(brl_polledinput_KeyHit(32)!=0){
 		struct BBDebugScope __scope = {
@@ -13501,7 +13501,7 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1837, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 756, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if((bbt_t>=5) && (bbt_t<=9)){
 			struct BBDebugScope __scope = {
@@ -13514,10 +13514,10 @@ BBINT _m_seltra_get_user_input(){
 			bbOnDebugEnterScope(&__scope);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1840, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 759, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_remove_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1841, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 760, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype !=0)){
 			struct BBDebugScope __scope = {
@@ -13528,13 +13528,13 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1841, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 760, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			struct _m_seltra_bgroup_obj* bbt_;
 			(((struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj*)bbNullObjectTest((bbt_ = ((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ))))->clas)->m_remove((struct _m_seltra_bgroup_obj*)bbt_);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1842, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 761, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image ==((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,1U))[1U])){
 			struct BBDebugScope __scope = {
@@ -13545,15 +13545,15 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1842, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 761, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba )->dims,((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id )))[((BBUINT)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id )]=(struct _m_seltra_block_obj*)&bbNullObject;
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1842, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 761, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x +(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y <<10)));
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1843, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 762, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		if(((BBObject*)bbt_s)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -13564,20 +13564,20 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1843, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 762, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->clas->m_Del((struct _m_seltra_substrate_obj*)bbt_s);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1846, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 765, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_old_gamespeedbrake_setting=_m_seltra_gamespeedbrake_setting;
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1847, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 766, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	_m_seltra_gamespeedbrake_setting=((_m_seltra_gamespeedbrake_setting+brl_polledinput_KeyHit(219))-brl_polledinput_KeyHit(221));
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1848, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 767, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if(_m_seltra_gamespeedbrake_setting!=bbt_old_gamespeedbrake_setting){
 		struct BBDebugScope __scope = {
@@ -13588,10 +13588,10 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1849, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 768, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		BBINT bbt_2=_m_seltra_gamespeedbrake_setting;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1850, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 769, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(bbt_2==-1){
 			struct BBDebugScope __scope = {
@@ -13602,7 +13602,7 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1850, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 769, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_gamespeedbrake_setting=0;
 			bbOnDebugLeaveScope();
@@ -13615,7 +13615,7 @@ BBINT _m_seltra_get_user_input(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1851, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 770, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(bbt_2==0){
 				struct BBDebugScope __scope = {
@@ -13636,7 +13636,7 @@ BBINT _m_seltra_get_user_input(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1852, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 771, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_2==1){
 					struct BBDebugScope __scope = {
@@ -13647,7 +13647,7 @@ BBINT _m_seltra_get_user_input(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1852, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 771, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					_m_seltra_gamespeedbrake=500;
 					bbOnDebugLeaveScope();
@@ -13660,7 +13660,7 @@ BBINT _m_seltra_get_user_input(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1853, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 772, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_2==2){
 						struct BBDebugScope __scope = {
@@ -13671,7 +13671,7 @@ BBINT _m_seltra_get_user_input(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1853, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 772, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						_m_seltra_gamespeedbrake=100;
 						bbOnDebugLeaveScope();
@@ -13684,7 +13684,7 @@ BBINT _m_seltra_get_user_input(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1854, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 773, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_2==3){
 							struct BBDebugScope __scope = {
@@ -13695,7 +13695,7 @@ BBINT _m_seltra_get_user_input(){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1854, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 773, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							_m_seltra_gamespeedbrake=20;
 							bbOnDebugLeaveScope();
@@ -13708,7 +13708,7 @@ BBINT _m_seltra_get_user_input(){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1855, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 774, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							if(bbt_2==4){
 								struct BBDebugScope __scope = {
@@ -13729,7 +13729,7 @@ BBINT _m_seltra_get_user_input(){
 									}
 								};
 								bbOnDebugEnterScope(&__scope);
-								struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1856, 0};
+								struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 775, 0};
 								bbOnDebugEnterStm(&__stmt_0);
 								if(bbt_2==5){
 									struct BBDebugScope __scope = {
@@ -13740,7 +13740,7 @@ BBINT _m_seltra_get_user_input(){
 										}
 									};
 									bbOnDebugEnterScope(&__scope);
-									struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1856, 0};
+									struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 775, 0};
 									bbOnDebugEnterStm(&__stmt_0);
 									_m_seltra_gamespeedbrake_setting=4;
 									bbOnDebugLeaveScope();
@@ -13759,7 +13759,7 @@ BBINT _m_seltra_get_user_input(){
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1860, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 779, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	if(_m_seltra_gamespeedbrake<4){
 		struct BBDebugScope __scope = {
@@ -13770,12 +13770,12 @@ BBINT _m_seltra_get_user_input(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1860, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 779, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_gamespeedbrake=4;
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1862, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 781, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	brl_polledinput_FlushKeys(1);
 	bbOnDebugLeaveScope();
@@ -13830,19 +13830,19 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1471, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 390, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1472, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 391, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_v=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1473, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 392, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1475, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 394, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_im=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1477, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	if(((BBObject*)bbt_b)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -13853,16 +13853,16 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1477, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image ,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1477, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 396, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1478, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(!(bbt_v!=0)){
 		struct BBDebugScope __scope = {
@@ -13873,16 +13873,16 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1478, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_blank,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1478, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 397, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0;
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1481, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 400, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(bbt_v!=0){
 		struct BBDebugScope __scope = {
@@ -13893,7 +13893,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1482, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 401, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		if((bbt_v % 8)!=0){
 			struct BBDebugScope __scope = {
@@ -13904,10 +13904,10 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1483, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 402, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			BBINT bbt_=(bbt_v % 8);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1484, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 403, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(bbt_==1){
 				struct BBDebugScope __scope = {
@@ -13918,7 +13918,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1484, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 403, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrown;
 				bbOnDebugLeaveScope();
@@ -13931,7 +13931,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1485, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 404, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(bbt_==2){
 					struct BBDebugScope __scope = {
@@ -13942,7 +13942,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1485, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 404, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrows;
 					bbOnDebugLeaveScope();
@@ -13955,7 +13955,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1486, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 405, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==3){
 						struct BBDebugScope __scope = {
@@ -13966,7 +13966,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1486, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 405, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arroww;
 						bbOnDebugLeaveScope();
@@ -13979,7 +13979,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1487, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 406, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_==4){
 							struct BBDebugScope __scope = {
@@ -13990,7 +13990,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1487, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 406, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrowe;
 							bbOnDebugLeaveScope();
@@ -14001,14 +14001,14 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 				}
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1490, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 409, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_im,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
 			bbOnDebugLeaveScope();
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1495, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 414, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -14019,7 +14019,7 @@ BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1495, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 414, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_image ,(_m_seltra_zoom*((BBFLOAT)(bbt_x-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(bbt_y-_m_seltra_camposy))),0);
 		bbOnDebugLeaveScope();
@@ -14083,22 +14083,22 @@ BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1272, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 191, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_x2=bbt_x;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1273, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 192, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_y2=bbt_y;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1274, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 193, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_v=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1275, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 194, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1276, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 195, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_im=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1278, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 197, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	while(bbt_x2<(bbt_x+3)){
 		struct BBDebugScope __scope = {
@@ -14109,10 +14109,10 @@ BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1279, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 198, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_y2=bbt_y;
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1280, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 199, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		while(bbt_y2<(bbt_y+3)){
 			struct BBDebugScope __scope = {
@@ -14123,15 +14123,15 @@ BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1281, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 200, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_redraw_cell(bbt_x2,bbt_y2);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1282, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 201, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			bbt_y2=(bbt_y2+1);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1284, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 203, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_x2=(bbt_x2+1);
 		bbOnDebugLeaveScope();
@@ -14183,22 +14183,22 @@ BBINT _m_seltra_draw_things(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1234, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 153, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_m=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1234, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 153, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_v=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1234, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 153, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_i=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1236, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 155, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	bbt_im=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1237, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 156, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_n=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->__m_seltra_fastintmap_le ;
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1239, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 158, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	while(bbt_i<bbt_n){
 		struct BBDebugScope __scope = {
@@ -14209,13 +14209,13 @@ BBINT _m_seltra_draw_things(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1240, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 159, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_m=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_kfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1241, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 160, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_v=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_m);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1243, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 162, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		if(bbt_v!=0){
 			struct BBDebugScope __scope = {
@@ -14226,7 +14226,7 @@ BBINT _m_seltra_draw_things(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1244, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 163, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if((bbt_v % 8)!=0){
 				struct BBDebugScope __scope = {
@@ -14237,10 +14237,10 @@ BBINT _m_seltra_draw_things(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1245, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 164, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				BBINT bbt_=(bbt_v % 8);
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1246, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 165, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				if(bbt_==1){
 					struct BBDebugScope __scope = {
@@ -14251,7 +14251,7 @@ BBINT _m_seltra_draw_things(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1246, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 165, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrown;
 					bbOnDebugLeaveScope();
@@ -14264,7 +14264,7 @@ BBINT _m_seltra_draw_things(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1247, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 166, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					if(bbt_==2){
 						struct BBDebugScope __scope = {
@@ -14275,7 +14275,7 @@ BBINT _m_seltra_draw_things(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1247, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 166, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrows;
 						bbOnDebugLeaveScope();
@@ -14288,7 +14288,7 @@ BBINT _m_seltra_draw_things(){
 							}
 						};
 						bbOnDebugEnterScope(&__scope);
-						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1248, 0};
+						struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 167, 0};
 						bbOnDebugEnterStm(&__stmt_0);
 						if(bbt_==3){
 							struct BBDebugScope __scope = {
@@ -14299,7 +14299,7 @@ BBINT _m_seltra_draw_things(){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1248, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 167, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arroww;
 							bbOnDebugLeaveScope();
@@ -14312,7 +14312,7 @@ BBINT _m_seltra_draw_things(){
 								}
 							};
 							bbOnDebugEnterScope(&__scope);
-							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1249, 0};
+							struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 168, 0};
 							bbOnDebugEnterStm(&__stmt_0);
 							if(bbt_==4){
 								struct BBDebugScope __scope = {
@@ -14323,7 +14323,7 @@ BBINT _m_seltra_draw_things(){
 									}
 								};
 								bbOnDebugEnterScope(&__scope);
-								struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1249, 0};
+								struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 168, 0};
 								bbOnDebugEnterStm(&__stmt_0);
 								bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrowe;
 								bbOnDebugLeaveScope();
@@ -14334,10 +14334,10 @@ BBINT _m_seltra_draw_things(){
 					}
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1251, 0};
+				struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 170, 0};
 				bbOnDebugEnterStm(&__stmt_2);
 				brl_max2d_SetMaskColor(255,255,230);
-				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1252, 0};
+				struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 171, 0};
 				bbOnDebugEnterStm(&__stmt_3);
 				if((bbt_v % 8)!=0){
 					struct BBDebugScope __scope = {
@@ -14348,12 +14348,12 @@ BBINT _m_seltra_draw_things(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1252, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 171, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_im,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
 					bbOnDebugLeaveScope();
 				}
-				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1253, 0};
+				struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 172, 0};
 				bbOnDebugEnterStm(&__stmt_4);
 				if(bbt_v==5){
 					struct BBDebugScope __scope = {
@@ -14364,14 +14364,14 @@ BBINT _m_seltra_draw_things(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1253, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 172, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_gene,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
 					bbOnDebugLeaveScope();
 				}
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1255, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 174, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			if(((unsigned int)(bbt_v)&(unsigned int)(136))==136){
 				struct BBDebugScope __scope = {
@@ -14382,10 +14382,10 @@ BBINT _m_seltra_draw_things(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1256, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 175, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				brl_max2d_SetMaskColor(0,0,0);
-				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1257, 0};
+				struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 176, 0};
 				bbOnDebugEnterStm(&__stmt_1);
 				brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_subd,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
 				bbOnDebugLeaveScope();
@@ -14398,7 +14398,7 @@ BBINT _m_seltra_draw_things(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1255, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 174, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				if(((unsigned int)(bbt_v)&(unsigned int)(128))!=0){
 					struct BBDebugScope __scope = {
@@ -14409,10 +14409,10 @@ BBINT _m_seltra_draw_things(){
 						}
 					};
 					bbOnDebugEnterScope(&__scope);
-					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1259, 0};
+					struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 178, 0};
 					bbOnDebugEnterStm(&__stmt_0);
 					brl_max2d_SetMaskColor(0,0,0);
-					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1260, 0};
+					struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 179, 0};
 					bbOnDebugEnterStm(&__stmt_1);
 					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_sub0,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
 					bbOnDebugLeaveScope();
@@ -14421,7 +14421,7 @@ BBINT _m_seltra_draw_things(){
 			}
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1263, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 182, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -14452,13 +14452,13 @@ BBINT _m_seltra_draw_sarray(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1450, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 369, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1451, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 370, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_s=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1453, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 372, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(bbt_i<((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_le ){
 		struct BBDebugScope __scope = {
@@ -14469,10 +14469,10 @@ BBINT _m_seltra_draw_sarray(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1454, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 373, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATAINDEX((((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa ),(((struct _m_seltra_subarray_obj*)bbNullObjectTest(_m_seltra_sarray))->__m_seltra_subarray_sa )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1455, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 374, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_s)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -14483,21 +14483,21 @@ BBINT _m_seltra_draw_sarray(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1456, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 375, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1457, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 376, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_image ,(((BBFLOAT)(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1458, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 377, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_x ;
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1459, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 378, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy ),(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_y ;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1462, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 381, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -14528,13 +14528,13 @@ BBINT _m_seltra_draw_barray(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1429, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 348, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1430, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 349, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1432, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 351, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(bbt_i<((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_le ){
 		struct BBDebugScope __scope = {
@@ -14545,10 +14545,10 @@ BBINT _m_seltra_draw_barray(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1433, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 352, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1434, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 353, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_b)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -14559,21 +14559,21 @@ BBINT _m_seltra_draw_barray(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1435, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 354, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1436, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 355, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image ,(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1437, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 356, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x ;
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1438, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 357, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y ;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1441, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 360, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -14604,13 +14604,13 @@ BBINT _m_seltra_draw_walls(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1387, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 306, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1387, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 306, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_i=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1389, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 308, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	while(bbt_i<((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_le ){
 		struct BBDebugScope __scope = {
@@ -14621,10 +14621,10 @@ BBINT _m_seltra_draw_walls(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1390, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 309, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATAINDEX((((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba ),(((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_wallgroup))->__m_seltra_blockarray_ba )->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)];
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1391, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 310, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		if(((BBObject*)bbt_b)!= &bbNullObject){
 			struct BBDebugScope __scope = {
@@ -14635,21 +14635,21 @@ BBINT _m_seltra_draw_walls(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1392, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 311, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_blank,(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]-_m_seltra_camposy))*_m_seltra_zoom),0);
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1393, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 312, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_image ,(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1394, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 313, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldx )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_x ;
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1395, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 314, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			((BBINT*)BBARRAYDATAINDEX((((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy ),(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_oldy )->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_y ;
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1397, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 316, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
@@ -14708,58 +14708,58 @@ BBINT _m_seltra_draw_editbar(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1337, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 256, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_i=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1337, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 256, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_x=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1337, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 256, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_y=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1339, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 258, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	brl_max2d_SetColor(0,0,0);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1340, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 259, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	brl_max2d_DrawRect(((BBFLOAT)_m_seltra_mox),((BBFLOAT)_m_seltra_moy),90.0000000f,90.0000000f);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1341, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 260, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	brl_max2d_SetMaskColor(0,0,0);
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1343, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 262, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	brl_max2d_SetMaskColor(255,255,230);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1344, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 263, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	brl_max2d_SetColor(222,222,222);
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1345, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 264, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	brl_max2d_SetScale(1.0f,1.0f);
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1347, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 266, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substratemap_obj*)bbNullObjectTest(_m_seltra_smap))->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1348, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 267, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	bbt_t=((struct _m_seltra_fastintmap_obj*)bbNullObjectTest(_m_seltra_thingmap))->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1350, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 269, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	brl_max2d_DrawLine(((BBFLOAT)(_m_seltra_gw-100)),0.000000000f,((BBFLOAT)(_m_seltra_gw-100)),((BBFLOAT)_m_seltra_gh),1);
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1351, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 270, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	brl_max2d_SetColor(0,0,0);
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1352, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 271, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-70)),100.000000f,20.0000000f);
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1353, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 272, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	brl_max2d_SetColor(222,222,222);
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1354, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 273, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(_m_seltra_moxc),&_s20),bbStringFromInt(_m_seltra_moyc)),&_s20),bbStringFromInt(bbt_t)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-65)));
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1356, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 275, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_fastblockmap_obj*)bbNullObjectTest(_m_seltra_bmap))->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1357, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 276, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype !=0)){
 		struct BBDebugScope __scope = {
@@ -14770,27 +14770,27 @@ BBINT _m_seltra_draw_editbar(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1358, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 277, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_SetColor(0,0,0);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1359, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 278, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-45)),100.000000f,40.0000000f);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1360, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 279, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		brl_max2d_SetColor(222,222,222);
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1361, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 280, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_btype ),&_s20),bbStringFromInt(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_id )),&_s20),bbStringFromInt(((struct _m_seltra_bgroup_obj*)bbNullObjectTest(((struct _m_seltra_block_obj*)bbNullObjectTest(bbt_b))->__m_seltra_block_group ))->__m_seltra_bgroup_id )),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-45)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1364, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 283, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	brl_max2d_SetColor(0,0,0);
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1365, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 284, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-20)),100.000000f,20.0000000f);
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1366, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 285, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -14801,21 +14801,21 @@ BBINT _m_seltra_draw_editbar(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1367, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 286, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_SetColor(222,222,222);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1368, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 287, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringFromInt(((struct _m_seltra_substrate_obj*)bbNullObjectTest(bbt_s))->__m_seltra_substrate_id +1),&_s20),bbStringFromInt(bbt_t)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-20)));
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1370, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 289, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	brl_max2d_SetColor(222,222,222);
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1372, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 291, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	brl_max2d_SetScale(0.67f,0.67f);
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1373, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 292, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	while(((BBObject*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)])!= &bbNullObject){
 		struct BBDebugScope __scope = {
@@ -14826,21 +14826,21 @@ BBINT _m_seltra_draw_editbar(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1374, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 293, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_x=(25*(bbt_i/30));
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1375, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 294, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_y=((bbt_i*20) % 600);
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1376, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 295, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)bbt_i)))[((BBUINT)bbt_i)],((BBFLOAT)((bbt_x+_m_seltra_gw)-96)),((BBFLOAT)(bbt_y+10)),0);
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1377, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 296, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_i=(bbt_i+1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1379, 0};
+	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 298, 0};
 	bbOnDebugEnterStm(&__stmt_24);
 	brl_max2d_SetScale((_m_seltra_zoom/30.0f),(_m_seltra_zoom/30.0f));
 	bbOnDebugLeaveScope();
@@ -14855,22 +14855,22 @@ BBINT _m_seltra_update_display(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1293, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 212, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	brl_max2d_SetViewport(0,0,_m_seltra_gw,_m_seltra_gh);
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1294, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 213, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	brl_max2d_SetColor(0,0,0);
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1295, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 214, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	brl_max2d_DrawRect(((BBFLOAT)((BBINT*)BBARRAYDATAINDEX((_m_seltra_moxo),(_m_seltra_moxo)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]),((BBFLOAT)((BBINT*)BBARRAYDATAINDEX((_m_seltra_moyo),(_m_seltra_moyo)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]),50.0000000f,50.0000000f);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1296, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 215, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	brl_max2d_SetColor(255,255,255);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1298, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 217, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	brl_max2d_SetViewport(0,0,(_m_seltra_gw-100),_m_seltra_gh);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1299, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 218, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(_m_seltra_mox<(_m_seltra_gw-100)){
 		struct BBDebugScope __scope = {
@@ -14881,12 +14881,12 @@ BBINT _m_seltra_update_display(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1299, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 218, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_redraw3x3(((BBINT*)BBARRAYDATAINDEX((_m_seltra_moxco),(_m_seltra_moxco)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATAINDEX((_m_seltra_moyco),(_m_seltra_moyco)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1300, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 219, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	if(_m_seltra_redraw_map>0){
 		struct BBDebugScope __scope = {
@@ -14897,24 +14897,24 @@ BBINT _m_seltra_update_display(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1300, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 219, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_max2d_Cls();
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1301, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 220, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	_m_seltra_draw_things();
-	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1302, 0};
+	struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 221, 0};
 	bbOnDebugEnterStm(&__stmt_8);
 	_m_seltra_draw_sarray();
-	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1303, 0};
+	struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 222, 0};
 	bbOnDebugEnterStm(&__stmt_9);
 	_m_seltra_draw_barray();
-	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1304, 0};
+	struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 223, 0};
 	bbOnDebugEnterStm(&__stmt_10);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_mousec,(((BBFLOAT)(_m_seltra_moxc-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(_m_seltra_moyc-_m_seltra_camposy))*_m_seltra_zoom),0);
-	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1305, 0};
+	struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
 	bbOnDebugEnterStm(&__stmt_11);
 	if(_m_seltra_redraw_map>0){
 		struct BBDebugScope __scope = {
@@ -14925,48 +14925,48 @@ BBINT _m_seltra_update_display(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1305, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_draw_walls();
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1305, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 224, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		_m_seltra_redraw_map=(_m_seltra_redraw_map-1);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1306, 0};
+	struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 225, 0};
 	bbOnDebugEnterStm(&__stmt_12);
 	((struct _m_seltra_redrawarray_obj*)bbNullObjectTest(_m_seltra_rarray))->clas->m_do_redraws((struct _m_seltra_redrawarray_obj*)_m_seltra_rarray);
-	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1308, 0};
+	struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 227, 0};
 	bbOnDebugEnterStm(&__stmt_13);
 	brl_max2d_SetViewport((_m_seltra_gw-100),0,_m_seltra_gw,_m_seltra_gh);
-	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1309, 0};
+	struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 228, 0};
 	bbOnDebugEnterStm(&__stmt_14);
 	_m_seltra_draw_editbar();
-	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1311, 0};
+	struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 230, 0};
 	bbOnDebugEnterStm(&__stmt_15);
 	brl_max2d_SetViewport(0,0,_m_seltra_gw,_m_seltra_gh);
-	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1313, 0};
+	struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 232, 0};
 	bbOnDebugEnterStm(&__stmt_16);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_smi,((BBFLOAT)(_m_seltra_mox+15)),((BBFLOAT)(_m_seltra_moy+15)),0);
-	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1314, 0};
+	struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 233, 0};
 	bbOnDebugEnterStm(&__stmt_17);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_mousep,((BBFLOAT)_m_seltra_mox),((BBFLOAT)_m_seltra_moy),0);
-	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1315, 0};
+	struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 234, 0};
 	bbOnDebugEnterStm(&__stmt_18);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_moxco),(_m_seltra_moxco)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=_m_seltra_moxc;
-	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1316, 0};
+	struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 235, 0};
 	bbOnDebugEnterStm(&__stmt_19);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_moyco),(_m_seltra_moyco)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=_m_seltra_moyc;
-	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1317, 0};
+	struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 236, 0};
 	bbOnDebugEnterStm(&__stmt_20);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_moxo),(_m_seltra_moxo)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=_m_seltra_mox;
-	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1318, 0};
+	struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 237, 0};
 	bbOnDebugEnterStm(&__stmt_21);
 	((BBINT*)BBARRAYDATAINDEX((_m_seltra_moyo),(_m_seltra_moyo)->dims,((BBUINT)_m_seltra_frame)))[((BBUINT)_m_seltra_frame)]=_m_seltra_moy;
-	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1320, 0};
+	struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 239, 0};
 	bbOnDebugEnterStm(&__stmt_22);
 	brl_graphics_Flip(0);
-	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1322, 0};
+	struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 241, 0};
 	bbOnDebugEnterStm(&__stmt_23);
 	if((_m_seltra_gamespeedbrake_setting!=0) && (_m_seltra_gamespeedbrake_setting!=4)){
 		struct BBDebugScope __scope = {
@@ -14977,7 +14977,7 @@ BBINT _m_seltra_update_display(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1323, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 242, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		while((bbMilliSecs() % _m_seltra_gamespeedbrake)!=0){
 			struct BBDebugScope __scope = {
@@ -14990,7 +14990,7 @@ BBINT _m_seltra_update_display(){
 			bbOnDebugEnterScope(&__scope);
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1325, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 244, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		while(brl_blitz_Abs(bbMilliSecs() % _m_seltra_gamespeedbrake)!=1){
 			struct BBDebugScope __scope = {
@@ -15005,7 +15005,7 @@ BBINT _m_seltra_update_display(){
 		}
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1329, 0};
+	struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 248, 0};
 	bbOnDebugEnterStm(&__stmt_24);
 	_m_seltra_frame=((BBBYTE)(1-((BBINT)_m_seltra_frame)));
 	bbOnDebugLeaveScope();
@@ -15065,16 +15065,16 @@ BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT b
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1789, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 708, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_x=0;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1789, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 708, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	bbt_y=0;
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1789, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 708, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_t=0;
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1791, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 710, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	BBINT bbt_=bbt_y2;
 	for(bbt_y=bbt_y1;(bbt_y<=bbt_);bbt_y=(bbt_y+1)){
@@ -15086,7 +15086,7 @@ BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT b
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1792, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 711, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		BBINT bbt_2=bbt_x2;
 		for(bbt_x=bbt_x1;(bbt_x<=bbt_2);bbt_x=(bbt_x+1)){
@@ -15120,7 +15120,7 @@ BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2056, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 975, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	while(bbt_x>1.00000000f){
 		struct BBDebugScope __scope = {
@@ -15131,12 +15131,12 @@ BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2057, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 976, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_x=(bbt_x-1.00000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2060, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 979, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	if(bbt_x<0.333333343f){
 		struct BBDebugScope __scope = {
@@ -15147,16 +15147,16 @@ BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2060, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 979, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 0.0f;
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2061, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 980, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	bbt_x=(bbt_x-0.333333343f);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2062, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 981, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	if(bbt_x<0.166666672f){
 		struct BBDebugScope __scope = {
@@ -15167,16 +15167,16 @@ BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2062, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 981, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return (bbt_x*6.0f);
 	}
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2063, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 982, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	bbt_x=(bbt_x-0.166666672f);
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2064, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 983, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	if(bbt_x<0.333333343f){
 		struct BBDebugScope __scope = {
@@ -15187,16 +15187,16 @@ BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2064, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 983, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbOnDebugLeaveScope();
 		bbOnDebugLeaveScope();
 		return 1.0f;
 	}
-	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2065, 0};
+	struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 984, 0};
 	bbOnDebugEnterStm(&__stmt_6);
 	bbt_x=(bbt_x-0.333333343f);
-	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2066, 0};
+	struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 985, 0};
 	bbOnDebugEnterStm(&__stmt_7);
 	bbOnDebugLeaveScope();
 	return (1.0f-(bbt_x*6.0f));
@@ -15217,10 +15217,10 @@ BBINT _m_seltra_demo_color_spread(){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2096, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1015, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	bbt_w=.00000000f;
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2097, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1016, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	while(bbt_w<255.0f){
 		BBFLOAT bbt_w2=0;
@@ -15259,33 +15259,33 @@ BBINT _m_seltra_demo_color_spread(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2098, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1017, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		bbt_w2=(bbt_w/255.0f);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2099, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1018, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		bbt_red=(255.0f*_m_seltra_colfunc(bbt_w2));
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2100, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1019, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		bbt_gre=(255.0f*_m_seltra_colfunc((85.0f+bbt_w)/255.0f));
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2101, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1020, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		bbt_blu=(255.0f*_m_seltra_colfunc((170.0f+bbt_w)/255.0f));
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2102, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1021, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		brl_max2d_SetColor(((BBINT)bbt_red),((BBINT)bbt_gre),((BBINT)bbt_blu));
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2103, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1022, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		brl_max2d_DrawRect(bbt_w,50.0000000f,1.00000000f,150.000000f);
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2104, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1023, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		bbt_w=(bbt_w+1.00000000f);
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2106, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1025, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	brl_graphics_Flip(-1);
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2108, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1027, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	while(!(brl_polledinput_MouseHit(1)!=0)){
 		struct BBDebugScope __scope = {
@@ -15316,19 +15316,19 @@ BBOBJECT _m_seltra_io_and_display_thread(BBOBJECT bbt_data){
 		}
 	};
 	bbOnDebugEnterScope(&__scope);
-	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2148, 0};
+	struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1067, 0};
 	bbOnDebugEnterStm(&__stmt_0);
 	_m_seltra_create_chem_numbers();
-	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2149, 0};
+	struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1068, 0};
 	bbOnDebugEnterStm(&__stmt_1);
 	_m_seltra_create_block_mix();
-	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2150, 0};
+	struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1069, 0};
 	bbOnDebugEnterStm(&__stmt_2);
 	_m_seltra_remove_block_image_templates();
-	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2151, 0};
+	struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1070, 0};
 	bbOnDebugEnterStm(&__stmt_3);
 	_m_seltra_gen_maze_map(1,1,40,1,40,40);
-	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2153, 0};
+	struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1072, 0};
 	bbOnDebugEnterStm(&__stmt_4);
 	while(!(brl_polledinput_KeyDown(27)!=0)){
 		struct BBDebugScope __scope = {
@@ -15339,18 +15339,18 @@ BBOBJECT _m_seltra_io_and_display_thread(BBOBJECT bbt_data){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2154, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1073, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		_m_seltra_get_mouse_input();
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2155, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1074, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		_m_seltra_get_user_input();
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2156, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1075, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		_m_seltra_update_display();
 		bbOnDebugLeaveScope();
 	}
-	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2159, 0};
+	struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1078, 0};
 	bbOnDebugEnterStm(&__stmt_5);
 	bbOnDebugLeaveScope();
 	return (BBOBJECT)&_s24;
@@ -15791,201 +15791,201 @@ int _bb_main(){
 			}
 		};
 		bbOnDebugEnterScope(&__scope);
-		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 11, 0};
+		struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 16, 0};
 		bbOnDebugEnterStm(&__stmt_0);
 		brl_graphics_Graphics(1024,768,0,60,0);
-		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 12, 0};
+		struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 17, 0};
 		bbOnDebugEnterStm(&__stmt_1);
 		_m_seltra_gw=brl_graphics_GraphicsWidth();
-		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 13, 0};
+		struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 18, 0};
 		bbOnDebugEnterStm(&__stmt_2);
 		_m_seltra_gh=brl_graphics_GraphicsHeight();
-		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 15, 0};
+		struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 20, 0};
 		bbOnDebugEnterStm(&__stmt_3);
 		_m_seltra_imagelist=bbArrayNew1D(":TImage", 200);
-		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 18, 0};
+		struct BBDebugStm __stmt_4 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 23, 0};
 		bbOnDebugEnterStm(&__stmt_4);
 		brl_max2d_SetMaskColor(0,0,0);
-		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 20, 0};
+		struct BBDebugStm __stmt_5 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 25, 0};
 		bbOnDebugEnterStm(&__stmt_5);
 		_m_seltra_blockart=bbArrayNew1D(":TImage", 10);
-		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 22, 0};
+		struct BBDebugStm __stmt_6 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 27, 0};
 		bbOnDebugEnterStm(&__stmt_6);
 		brl_max2d_SetMaskColor(255,255,255);
-		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 23, 0};
+		struct BBDebugStm __stmt_7 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 28, 0};
 		bbOnDebugEnterStm(&__stmt_7);
-		_m_seltra_blockw=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s1);
-		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 24, 0};
+		_m_seltra_blockw=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s5);
+		struct BBDebugStm __stmt_8 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 29, 0};
 		bbOnDebugEnterStm(&__stmt_8);
-		_m_seltra_blocko=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s2);
-		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 25, 0};
+		_m_seltra_blocko=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s6);
+		struct BBDebugStm __stmt_9 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 30, 0};
 		bbOnDebugEnterStm(&__stmt_9);
-		_m_seltra_blockc=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s3);
-		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 26, 0};
+		_m_seltra_blockc=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s7);
+		struct BBDebugStm __stmt_10 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 31, 0};
 		bbOnDebugEnterStm(&__stmt_10);
-		_m_seltra_blocks=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s4);
-		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 27, 0};
+		_m_seltra_blocks=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s8);
+		struct BBDebugStm __stmt_11 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 32, 0};
 		bbOnDebugEnterStm(&__stmt_11);
-		_m_seltra_blockq=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s5);
-		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 28, 0};
+		_m_seltra_blockq=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s9);
+		struct BBDebugStm __stmt_12 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 33, 0};
 		bbOnDebugEnterStm(&__stmt_12);
-		_m_seltra_blockx=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s6);
-		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 29, 0};
+		_m_seltra_blockx=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s10);
+		struct BBDebugStm __stmt_13 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 34, 0};
 		bbOnDebugEnterStm(&__stmt_13);
-		_m_seltra_blockd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s7);
-		struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 30, 0};
+		_m_seltra_blockd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s11);
+		struct BBDebugStm __stmt_14 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 35, 0};
 		bbOnDebugEnterStm(&__stmt_14);
-		_m_seltra_blockb=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s8);
-		struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 32, 0};
+		_m_seltra_blockb=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s12);
+		struct BBDebugStm __stmt_15 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 37, 0};
 		bbOnDebugEnterStm(&__stmt_15);
 		_m_seltra_btarray=bbArrayNew1D(":btemplate", 100);
-		struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 35, 0};
+		struct BBDebugStm __stmt_16 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 40, 0};
 		bbOnDebugEnterStm(&__stmt_16);
 		brl_max2d_SetMaskColor(0,0,0);
-		struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 36, 0};
+		struct BBDebugStm __stmt_17 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 41, 0};
 		bbOnDebugEnterStm(&__stmt_17);
-		_m_seltra_mousep=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s9),0,0,0),-1);
-		struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 37, 0};
+		_m_seltra_mousep=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s13),0,0,0),-1);
+		struct BBDebugStm __stmt_18 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 42, 0};
 		bbOnDebugEnterStm(&__stmt_18);
-		_m_seltra_mousec=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s10),0,0,0),-1);
-		struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 39, 0};
+		_m_seltra_mousec=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s14),0,0,0),-1);
+		struct BBDebugStm __stmt_19 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 44, 0};
 		bbOnDebugEnterStm(&__stmt_19);
 		brl_max2d_SetMaskColor(150,150,46);
-		struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 40, 0};
+		struct BBDebugStm __stmt_20 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 45, 0};
 		bbOnDebugEnterStm(&__stmt_20);
-		_m_seltra_blank=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s11,-1);
-		struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 41, 0};
+		_m_seltra_blank=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s15,-1);
+		struct BBDebugStm __stmt_21 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 46, 0};
 		bbOnDebugEnterStm(&__stmt_21);
-		_m_seltra_arroww=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s12,-1);
-		struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 42, 0};
+		_m_seltra_arroww=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s16,-1);
+		struct BBDebugStm __stmt_22 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 47, 0};
 		bbOnDebugEnterStm(&__stmt_22);
-		_m_seltra_arrowe=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s13,-1);
-		struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 43, 0};
+		_m_seltra_arrowe=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s17,-1);
+		struct BBDebugStm __stmt_23 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 48, 0};
 		bbOnDebugEnterStm(&__stmt_23);
-		_m_seltra_arrown=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s14,-1);
-		struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 44, 0};
+		_m_seltra_arrown=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s18,-1);
+		struct BBDebugStm __stmt_24 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 49, 0};
 		bbOnDebugEnterStm(&__stmt_24);
-		_m_seltra_arrows=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s15,-1);
-		struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 47, 0};
+		_m_seltra_arrows=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s19,-1);
+		struct BBDebugStm __stmt_25 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 52, 0};
 		bbOnDebugEnterStm(&__stmt_25);
-		struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 49, 0};
+		struct BBDebugStm __stmt_26 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 54, 0};
 		bbOnDebugEnterStm(&__stmt_26);
-		struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 50, 0};
+		struct BBDebugStm __stmt_27 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 55, 0};
 		bbOnDebugEnterStm(&__stmt_27);
 		brl_random_SeedRnd(1);
-		struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 52, 0};
+		struct BBDebugStm __stmt_28 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 57, 0};
 		bbOnDebugEnterStm(&__stmt_28);
-		struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 52, 0};
+		struct BBDebugStm __stmt_29 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 57, 0};
 		bbOnDebugEnterStm(&__stmt_29);
-		struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 52, 0};
+		struct BBDebugStm __stmt_30 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 57, 0};
 		bbOnDebugEnterStm(&__stmt_30);
-		struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 53, 0};
+		struct BBDebugStm __stmt_31 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 58, 0};
 		bbOnDebugEnterStm(&__stmt_31);
 		_m_seltra_moxo=bbArrayNew1D("i", 2);
-		struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 53, 0};
+		struct BBDebugStm __stmt_32 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 58, 0};
 		bbOnDebugEnterStm(&__stmt_32);
 		_m_seltra_moyo=bbArrayNew1D("i", 2);
-		struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 54, 0};
+		struct BBDebugStm __stmt_33 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 59, 0};
 		bbOnDebugEnterStm(&__stmt_33);
 		_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,0U))[0U];
-		struct BBDebugStm __stmt_34 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 55, 0};
+		struct BBDebugStm __stmt_34 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 60, 0};
 		bbOnDebugEnterStm(&__stmt_34);
-		struct BBDebugStm __stmt_35 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 56, 0};
+		struct BBDebugStm __stmt_35 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 61, 0};
 		bbOnDebugEnterStm(&__stmt_35);
-		struct BBDebugStm __stmt_36 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 57, 0};
+		struct BBDebugStm __stmt_36 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 62, 0};
 		bbOnDebugEnterStm(&__stmt_36);
-		struct BBDebugStm __stmt_37 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 57, 0};
+		struct BBDebugStm __stmt_37 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 62, 0};
 		bbOnDebugEnterStm(&__stmt_37);
-		struct BBDebugStm __stmt_38 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 58, 0};
+		struct BBDebugStm __stmt_38 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 63, 0};
 		bbOnDebugEnterStm(&__stmt_38);
-		struct BBDebugStm __stmt_39 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 58, 0};
+		struct BBDebugStm __stmt_39 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 63, 0};
 		bbOnDebugEnterStm(&__stmt_39);
-		struct BBDebugStm __stmt_40 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 59, 0};
+		struct BBDebugStm __stmt_40 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 64, 0};
 		bbOnDebugEnterStm(&__stmt_40);
 		_m_seltra_moxco=bbArrayNew1D("i", 2);
-		struct BBDebugStm __stmt_41 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 60, 0};
+		struct BBDebugStm __stmt_41 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 65, 0};
 		bbOnDebugEnterStm(&__stmt_41);
 		_m_seltra_moyco=bbArrayNew1D("i", 2);
-		struct BBDebugStm __stmt_42 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 61, 0};
+		struct BBDebugStm __stmt_42 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 66, 0};
 		bbOnDebugEnterStm(&__stmt_42);
-		struct BBDebugStm __stmt_43 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 62, 0};
+		struct BBDebugStm __stmt_43 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 67, 0};
 		bbOnDebugEnterStm(&__stmt_43);
-		struct BBDebugStm __stmt_44 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 62, 0};
+		struct BBDebugStm __stmt_44 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 67, 0};
 		bbOnDebugEnterStm(&__stmt_44);
-		struct BBDebugStm __stmt_45 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 63, 0};
+		struct BBDebugStm __stmt_45 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 68, 0};
 		bbOnDebugEnterStm(&__stmt_45);
-		struct BBDebugStm __stmt_46 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 63, 0};
+		struct BBDebugStm __stmt_46 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 68, 0};
 		bbOnDebugEnterStm(&__stmt_46);
-		struct BBDebugStm __stmt_47 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 64, 0};
+		struct BBDebugStm __stmt_47 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 69, 0};
 		bbOnDebugEnterStm(&__stmt_47);
-		struct BBDebugStm __stmt_48 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 64, 0};
+		struct BBDebugStm __stmt_48 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 69, 0};
 		bbOnDebugEnterStm(&__stmt_48);
-		struct BBDebugStm __stmt_49 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 65, 0};
+		struct BBDebugStm __stmt_49 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 70, 0};
 		bbOnDebugEnterStm(&__stmt_49);
-		struct BBDebugStm __stmt_50 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 65, 0};
+		struct BBDebugStm __stmt_50 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 70, 0};
 		bbOnDebugEnterStm(&__stmt_50);
-		struct BBDebugStm __stmt_51 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 65, 0};
+		struct BBDebugStm __stmt_51 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 70, 0};
 		bbOnDebugEnterStm(&__stmt_51);
-		struct BBDebugStm __stmt_52 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 73, 0};
+		struct BBDebugStm __stmt_52 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 78, 0};
 		bbOnDebugEnterStm(&__stmt_52);
 		_m_seltra_garray=(struct _m_seltra_grouparray_obj*)(struct _m_seltra_grouparray_obj*)bbObjectNew((BBClass *)&_m_seltra_grouparray);
-		struct BBDebugStm __stmt_53 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 75, 0};
+		struct BBDebugStm __stmt_53 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 80, 0};
 		bbOnDebugEnterStm(&__stmt_53);
 		_m_seltra_barray=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
-		struct BBDebugStm __stmt_54 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 77, 0};
+		struct BBDebugStm __stmt_54 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 82, 0};
 		bbOnDebugEnterStm(&__stmt_54);
 		_m_seltra_sarray=(struct _m_seltra_subarray_obj*)(struct _m_seltra_subarray_obj*)bbObjectNew((BBClass *)&_m_seltra_subarray);
-		struct BBDebugStm __stmt_55 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 78, 0};
+		struct BBDebugStm __stmt_55 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 83, 0};
 		bbOnDebugEnterStm(&__stmt_55);
 		_m_seltra_sgarray=(struct _m_seltra_subgrouparray_obj*)(struct _m_seltra_subgrouparray_obj*)bbObjectNew((BBClass *)&_m_seltra_subgrouparray);
-		struct BBDebugStm __stmt_56 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 80, 0};
+		struct BBDebugStm __stmt_56 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 85, 0};
 		bbOnDebugEnterStm(&__stmt_56);
 		((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba =bbArraySlice(":block",((struct _m_seltra_blockarray_obj*)bbNullObjectTest(_m_seltra_barray))->__m_seltra_blockarray_ba ,0,999999);
-		struct BBDebugStm __stmt_57 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 81, 0};
+		struct BBDebugStm __stmt_57 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 86, 0};
 		bbOnDebugEnterStm(&__stmt_57);
-		struct BBDebugStm __stmt_58 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 83, 0};
+		struct BBDebugStm __stmt_58 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 88, 0};
 		bbOnDebugEnterStm(&__stmt_58);
 		_m_seltra_rarray=(struct _m_seltra_redrawarray_obj*)(struct _m_seltra_redrawarray_obj*)bbObjectNew((BBClass *)&_m_seltra_redrawarray);
-		struct BBDebugStm __stmt_59 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 84, 0};
+		struct BBDebugStm __stmt_59 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 89, 0};
 		bbOnDebugEnterStm(&__stmt_59);
 		_m_seltra_genarray=(struct _m_seltra_generatorarray_obj*)(struct _m_seltra_generatorarray_obj*)bbObjectNew((BBClass *)&_m_seltra_generatorarray);
-		struct BBDebugStm __stmt_60 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 86, 0};
+		struct BBDebugStm __stmt_60 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 91, 0};
 		bbOnDebugEnterStm(&__stmt_60);
 		_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-		struct BBDebugStm __stmt_61 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 87, 0};
+		struct BBDebugStm __stmt_61 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 92, 0};
 		bbOnDebugEnterStm(&__stmt_61);
 		_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
-		struct BBDebugStm __stmt_62 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 88, 0};
+		struct BBDebugStm __stmt_62 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 93, 0};
 		bbOnDebugEnterStm(&__stmt_62);
 		_m_seltra_smap=(struct _m_seltra_substratemap_obj*)(struct _m_seltra_substratemap_obj*)bbObjectNew((BBClass *)&_m_seltra_substratemap);
-		struct BBDebugStm __stmt_63 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1881, 0};
+		struct BBDebugStm __stmt_63 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 800, 0};
 		bbOnDebugEnterStm(&__stmt_63);
 		_m_seltra_chem=bbArrayNew1D("i", 4);
-		struct BBDebugStm __stmt_64 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2233, 0};
+		struct BBDebugStm __stmt_64 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1152, 0};
 		bbOnDebugEnterStm(&__stmt_64);
 		_m_seltra_create_chem_numbers();
-		struct BBDebugStm __stmt_65 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2234, 0};
+		struct BBDebugStm __stmt_65 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1153, 0};
 		bbOnDebugEnterStm(&__stmt_65);
 		_m_seltra_create_block_mix();
-		struct BBDebugStm __stmt_66 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2235, 0};
+		struct BBDebugStm __stmt_66 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1154, 0};
 		bbOnDebugEnterStm(&__stmt_66);
 		_m_seltra_remove_block_image_templates();
-		struct BBDebugStm __stmt_67 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2236, 0};
+		struct BBDebugStm __stmt_67 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1155, 0};
 		bbOnDebugEnterStm(&__stmt_67);
 		_m_seltra_sub0=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s26);
-		struct BBDebugStm __stmt_68 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2237, 0};
+		struct BBDebugStm __stmt_68 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1156, 0};
 		bbOnDebugEnterStm(&__stmt_68);
 		_m_seltra_subd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s27);
-		struct BBDebugStm __stmt_69 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2238, 0};
+		struct BBDebugStm __stmt_69 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1157, 0};
 		bbOnDebugEnterStm(&__stmt_69);
 		_m_seltra_gene=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s28);
-		struct BBDebugStm __stmt_70 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2239, 0};
+		struct BBDebugStm __stmt_70 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1158, 0};
 		bbOnDebugEnterStm(&__stmt_70);
 		_m_seltra_gen_maze_map(1,1,40,1,40,40);
-		struct BBDebugStm __stmt_71 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2240, 0};
+		struct BBDebugStm __stmt_71 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1159, 0};
 		bbOnDebugEnterStm(&__stmt_71);
 		_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATAINDEX((_m_seltra_imagelist),(_m_seltra_imagelist)->dims,((BBUINT)_m_seltra_smt)))[((BBUINT)_m_seltra_smt)];
-		struct BBDebugStm __stmt_72 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2242, 0};
+		struct BBDebugStm __stmt_72 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1161, 0};
 		bbOnDebugEnterStm(&__stmt_72);
 		while(!(brl_polledinput_KeyDown(27)!=0)){
 			struct BBDebugScope __scope = {
@@ -15996,7 +15996,7 @@ int _bb_main(){
 				}
 			};
 			bbOnDebugEnterScope(&__scope);
-			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2243, 0};
+			struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1162, 0};
 			bbOnDebugEnterStm(&__stmt_0);
 			if(_m_seltra_gamespeedbrake_setting>0){
 				struct BBDebugScope __scope = {
@@ -16007,23 +16007,23 @@ int _bb_main(){
 					}
 				};
 				bbOnDebugEnterScope(&__scope);
-				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2243, 0};
+				struct BBDebugStm __stmt_0 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1162, 0};
 				bbOnDebugEnterStm(&__stmt_0);
 				_m_seltra_core_engine_thread((BBOBJECT)&bbEmptyString);
 				bbOnDebugLeaveScope();
 			}
-			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2244, 0};
+			struct BBDebugStm __stmt_1 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1163, 0};
 			bbOnDebugEnterStm(&__stmt_1);
 			_m_seltra_get_mouse_input();
-			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2245, 0};
+			struct BBDebugStm __stmt_2 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1164, 0};
 			bbOnDebugEnterStm(&__stmt_2);
 			_m_seltra_get_user_input();
-			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2246, 0};
+			struct BBDebugStm __stmt_3 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1165, 0};
 			bbOnDebugEnterStm(&__stmt_3);
 			_m_seltra_update_display();
 			bbOnDebugLeaveScope();
 		}
-		struct BBDebugStm __stmt_73 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 2248, 0};
+		struct BBDebugStm __stmt_73 = {"H:/myotherdoc/jamesblitzmax/seltra/seltra.bmx", 1167, 0};
 		bbOnDebugEnterStm(&__stmt_73);
 		bbEnd();
 		bbOnDebugLeaveScope();

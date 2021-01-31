@@ -1,0 +1,9 @@
+currently the code is configged towards 'lego bricks' rather than 'chemical bricks'
+ not sure this is best, but really we could use both
+
+
+try move code towards that falling trash game we had in blitzplus
+
+ structure code towards one object per file
+  seltra.bmx becomes more of a linker file
+
