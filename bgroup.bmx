@@ -5,6 +5,7 @@ Field lastmove    ' the latest move
 
 Field bref:block ' internal, used when the program needs a reference to another block
                  ' for instance collision processing
+Field n '[ a counter that counter the number of blocks in this group
 
 ' consider next place
 ' weigh up forces
@@ -15,6 +16,18 @@ Method add(b:block)
 
 blist.add(b)
 b.group=Self
+
+End Method
+
+
+
+Method addNewBlock(x,y)
+
+Local b:block = New block
+b.x=x
+b.y=y
+
+add(b)
 
 End Method
 

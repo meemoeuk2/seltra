@@ -13,7 +13,6 @@ Include "bgroup.bmx"
 Include "substrate.bmx"
 Include "sgroup.bmx"
 Include "btemplate.bmx"
-Include "ggroup.bmx"
 
 Graphics 1024,768
 Global gw=GraphicsWidth()
@@ -34,6 +33,8 @@ Global blockq:TImage=LoadImage3("blocks2\blockq.png")
 Global blockx:TImage=LoadImage3("blocks2\blockx.png")
 Global blockd:TImage=LoadImage3("blocks2\blockd.png")
 Global blockb:TImage=loadimage3("blocks2\blockb.png")
+
+Global gencell:TImage=loadimage3("gene.png")
 
 Global btarray:btemplate[100]
 
@@ -489,7 +490,7 @@ Local b:block=New block
 b.x=x
 b.y=y
 b.btype=0
-b.image=imagelist[u]
+b.image=imagelist[1] ' may need to change this value are more images are added
 bmap.insert(x+y Shl 10,b)
 wallgroup.add(b)
 
@@ -1040,14 +1041,16 @@ CloseFile in
 
 End Function
 
-
-
 ' *** start ***
 'Local threads:TThread[2]
 'threads[0]=CreateThread(core_engine_thread,"hihih")
 create_chem_numbers()
 create_block_mix()
+
 remove_block_image_templates()
+
+DebugStop
+
 Global sub0:TImage=loadimage2("sub0.png")
 Global subd:TImage=loadimage2("subd.png")
 Global gene:TImage=loadimage2("gene.png")

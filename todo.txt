@@ -6,3 +6,20 @@ try move code towards that falling trash game we had in blitzplus
 
  get a handle on the paintbox
 
+ mouse select of paintbox is currently using  blind constant to guess where
+  paintbox items end. 
+  Use a counter while items are being intiated
+
+ new block code is lacking because up till now the only block adds have been user mouse click
+
+
+ blist vs bgroup vs barray
+ are they all necessary? or can we cut back to 2, or 1?
+ a blist is another name for a barray
+  so their are only 2 types
+
+ can barrays and bgroups be combined?
+ a bgroup is a wrapper around a barray
+
+painting gene blocks sets wall blocks. STOP THAT!
+        
