@@ -45,6 +45,8 @@ import pub.nx
 import pub.opengles
 import pub.vulkan
 import pub.xmmintrin
+wallimageindex%=3
+gencode%=5
 btemplate^Object{
 .btype%&
 .ch%&
@@ -131,21 +133,21 @@ generatorarray^Object{
 -add%(g:gen)="_m_seltra_generatorarray_add_Tgen"
 -ordered_sort%(n%,i%=0)="_m_seltra_generatorarray_ordered_sort_ii"
 }="_m_seltra_generatorarray"
-fastblockmap^Object{
+FastBlockMap^Object{
 .v:block&[]&
 .k%&[]&
 .le%&
 .rc%&
--New()="__m_seltra_fastblockmap_New"
--fetch:block(key%)="_m_seltra_fastblockmap_fetch_i"
--vfetch:block(index%)="_m_seltra_fastblockmap_vfetch_i"
--kfetch%(index%)="_m_seltra_fastblockmap_kfetch_i"
--insert%(key%,b:block)="_m_seltra_fastblockmap_insert_iTblock"
--remove%(key%)="_m_seltra_fastblockmap_remove_i"
--iter%()="_m_seltra_fastblockmap_iter"
--fastsort%()="_m_seltra_fastblockmap_fastsort"
--orderedsort%()="_m_seltra_fastblockmap_orderedsort"
-}="_m_seltra_fastblockmap"
+-New()="__m_seltra_FastBlockMap_New"
+-fetch:block(key%)="_m_seltra_FastBlockMap_fetch_i"
+-vfetch:block(index%)="_m_seltra_FastBlockMap_vfetch_i"
+-kfetch%(index%)="_m_seltra_FastBlockMap_kfetch_i"
+-insert%(key%,b:block)="_m_seltra_FastBlockMap_insert_iTblock"
+-remove%(key%)="_m_seltra_FastBlockMap_remove_i"
+-iter%()="_m_seltra_FastBlockMap_iter"
+-fastsort%()="_m_seltra_FastBlockMap_fastsort"
+-orderedsort%()="_m_seltra_FastBlockMap_orderedsort"
+}="_m_seltra_FastBlockMap"
 fastintmap^Object{
 .v%&[]&
 .k%&[]&
@@ -265,11 +267,11 @@ cell^Object{
 -New()="__m_seltra_cell_New"
 }="_m_seltra_cell"
 loadimage3:TImage(fn$)="_m_seltra_loadimage3"
+loadimage2:TImage(fn$)="_m_seltra_loadimage2"
 create_chem_numbers%()="_m_seltra_create_chem_numbers"
 colfunc#(x#)="_m_seltra_colfunc"
 create_block_mix%()="_m_seltra_create_block_mix"
 remove_block_image_templates%()="_m_seltra_remove_block_image_templates"
-loadimage2:TImage(fn$)="_m_seltra_loadimage2"
 wallblock%(x%,y%,u%)="_m_seltra_wallblock"
 gen_maze_map%(xs%,ys%,xf%,yf%,mx%,my%)="_m_seltra_gen_maze_map"
 update_sgroups%()="_m_seltra_update_sgroups"
@@ -353,10 +355,9 @@ sgarray:subgrouparray&=mem:p("_m_seltra_sgarray")
 wallgroup:blockarray&=mem:p("_m_seltra_wallgroup")
 rarray:redrawarray&=mem:p("_m_seltra_rarray")
 genarray:generatorarray&=mem:p("_m_seltra_genarray")
-bmap:fastblockmap&=mem:p("_m_seltra_bmap")
+bmap:FastBlockMap&=mem:p("_m_seltra_bmap")
 thingmap:fastintmap&=mem:p("_m_seltra_thingmap")
 smap:substratemap&=mem:p("_m_seltra_smap")
 chem%&[]&=mem:p("_m_seltra_chem")
 sub0:TImage&=mem:p("_m_seltra_sub0")
 subd:TImage&=mem:p("_m_seltra_subd")
-gene:TImage&=mem:p("_m_seltra_gene")

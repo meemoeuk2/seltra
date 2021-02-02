@@ -95,6 +95,9 @@ Type cell ' sometimes just need this
  Field x,y
 End Type 
 
+Const wallimageindex = 3
+Const gencode = 5 ' gen code for thing map
+
 Function loadimage2:TImage(fn$)
 
 imagelist[noi]=LoadImage(MaskPixmap(LoadPixmap(fn),0,0,0))
@@ -170,7 +173,7 @@ While i<n
    End Select
    SetMaskColor (255,255,230)
    If (v Mod 8) Then DrawImage im,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
-   If v=5       Then DrawImage gene,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
+   If v=5       Then DrawImage gencell,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
   EndIf
   If v & 136=136
    SetMaskColor 0,0,0
@@ -406,10 +409,8 @@ If v
    Case 3 ; im=arroww
    Case 4 ; im=arrowe
   End Select
- ' If (v Mod 8) Then DrawImage blank,(x-camposx)*zoom,(y-camposy)*zoom
   DrawImage im,(x-camposx)*zoom,(y-camposy)*zoom
  EndIf
-'  If v>=5 Then DrawImage gene,(x-camposx)*zoom,(y-camposy)*zoom
 EndIf
  
 If s Then DrawImage s.image,zoom*(x-camposx),zoom*(y-camposy) 
@@ -490,7 +491,7 @@ Local b:block=New block
 b.x=x
 b.y=y
 b.btype=0
-b.image=imagelist[1] ' may need to change this value are more images are added
+b.image=imagelist[wallimageindex] ' may need to change this value are more images are added
 bmap.insert(x+y Shl 10,b)
 wallgroup.add(b)
 
@@ -558,9 +559,10 @@ If MouseHit(1)
  If smt<=55
   b=bmap.fetch(moxc+moyc Shl 10)
   If Not b
-   If smi=sub0 Then createsinglesubstrate(moxc,moyc);Return
-   If smi=subd Then placeSubstrateGuide(moxc,moyc);Return
-   If smi=gene Then DebugStop;placegene(moxc,moyc);Return   ' 42
+  ' DebugStop
+   If smi=sub0    Then createsinglesubstrate(moxc,moyc);Return
+   If smi=subd    Then placeSubstrateGuide(moxc,moyc);Return
+   If smi=gencell Then DebugStop;placegene(moxc,moyc);Return   ' 42
    btarray[smt].Createsingleblock(moxc,moyc,0,0)
   Else
    b.checkchem3(Null)
@@ -727,14 +729,29 @@ End Function
 
 Function placegene(x,y)
 
-Local tm=thingmap.fetch(x+y Shl 10)
-If tm>0 And tm<5 Then thingmap.insert(x+y Shl 10,5 Or tm)
-Local g:gen=New gen
-g.x=x
-g.y=y
-g.rate=5
-g.bitflags=4
-genarray.add(g)
+Local p = x+y Shl 10
+Local tm=thingmap.fetch(p)
+If tm>0 And tm<5 Then thingmap.insert(p,gencode Or tm)
+
+Local ag:gen ' adjacent generator
+
+' gens are now groups of gen tile
+'  need to discern if placing a gen-tile is creating a new gen or adding to an existing one
+'   also need to merge gens
+'    and split them, according to map editing
+
+'get adjacent generator
+'If thingmap.fetch(p-1) And 5 Then ag = ' at this point we either need an index 
+'If thingmap.fetch(p+1) And 5
+'If thingmap.fetch(p+1 Shl 10)   And 5
+'If thingmap.fetch(p-(1 Shl 10)) And 5
+
+'Local g:gen=New gen
+'g.x=x
+'g.y=y
+'g.rate=5
+'g.bitflags=4
+'genarray.add(g)
 
 End Function
 
@@ -1044,16 +1061,18 @@ End Function
 ' *** start ***
 'Local threads:TThread[2]
 'threads[0]=CreateThread(core_engine_thread,"hihih")
+
+Global sub0:TImage=loadimage2("sub0.png")
+Global subd:TImage=loadimage2("subd.png")
+
 create_chem_numbers()
 create_block_mix()
 
 remove_block_image_templates()
 
-DebugStop
+'DebugStop
 
-Global sub0:TImage=loadimage2("sub0.png")
-Global subd:TImage=loadimage2("subd.png")
-Global gene:TImage=loadimage2("gene.png")
+'Global gene:TImage=loadimage2("gene.png")
 gen_maze_map(1,1,40,1,40,40)
 smi=imagelist[smt]
 

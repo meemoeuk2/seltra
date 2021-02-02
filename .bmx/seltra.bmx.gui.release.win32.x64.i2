@@ -45,6 +45,7 @@ import pub.nx
 import pub.opengles
 import pub.vulkan
 import pub.xmmintrin
+gencode%=5
 btemplate^Object{
 .btype%&
 .ch%&

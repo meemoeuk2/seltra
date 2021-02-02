@@ -3721,12 +3721,6 @@ BBINT _m_seltra_placegene(BBINT bbt_x,BBINT bbt_y){
 	if((bbt_tm>0) && (bbt_tm<5)){
 		(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)),(1 || (bbt_tm!=0)));
 	}
-	struct _m_seltra_gen_obj* bbt_g=(struct _m_seltra_gen_obj*)(struct _m_seltra_gen_obj*)bbObjectNew((BBClass *)&_m_seltra_gen);
-	bbt_g->__m_seltra_gen_x =bbt_x;
-	bbt_g->__m_seltra_gen_y =bbt_y;
-	bbt_g->__m_seltra_gen_rate =5;
-	bbt_g->__m_seltra_gen_bitflags =4;
-	(_m_seltra_genarray)->clas->m_add_Tgen((struct _m_seltra_generatorarray_obj*)_m_seltra_genarray,(struct _m_seltra_gen_obj*)bbt_g);
 	return 0;
 }
 BBINT _m_seltra_chem_dist(BBINT bbt_x){

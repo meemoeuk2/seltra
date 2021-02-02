@@ -21,5 +21,5 @@ try move code towards that falling trash game we had in blitzplus
  can barrays and bgroups be combined?
  a bgroup is a wrapper around a barray
 
-painting gene blocks sets wall blocks. STOP THAT!
-        
+current gene paint doesn't work, waiting for gen place code
+

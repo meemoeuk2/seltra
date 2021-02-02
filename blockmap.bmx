@@ -2,7 +2,10 @@
 ' Field x:Int
 'End Type
 
-Type fastblockmap
+' returns the object handle
+' this needs upgrading to a thingmap
+
+Type FastBlockMap
 
 Field v:block[3000000] ' index is the keys, value is the value
 Field k[3000000] ' index is ordered , value is key
