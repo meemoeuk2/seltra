@@ -549,6 +549,7 @@ struct _m_seltra_substratemap_obj {
 };
 extern struct BBClass__m_seltra_substratemap _m_seltra_substratemap;
 extern struct _m_seltra_substratemap_obj* _m_seltra_smap;
+extern BBINT _m_seltra_dbflag;
 extern BBARRAY _m_seltra_chem;
 extern struct brl_max2d_image_TImage_obj* _m_seltra_sub0;
 struct brl_max2d_image_TImage_obj* _m_seltra_loadimage2(BBSTRING bbt_fn);

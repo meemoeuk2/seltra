@@ -1,7 +1,3 @@
-' to do
-' middle block is going missing in chem reaction  STOP THAT!
-' the blitzmax debugger won't let look at ga[2]
-
 Strict 
 
 Include "memap.bmx"
@@ -95,8 +91,11 @@ Type cell ' sometimes just need this
  Field x,y
 End Type 
 
-Const wallimageindex = 3
-Const gencode = 5 ' gen code for thing map
+Const wallimageindex:Int = 3
+Const gencode:Int = 5 ' gen code for thing map
+
+
+Global dbflag
 
 Function loadimage2:TImage(fn$)
 
@@ -170,6 +169,7 @@ While i<n
     Case 2 ; im=arrows
     Case 3 ; im=arroww
     Case 4 ; im=arrowe
+    Case 5 ; im=gencell
    End Select
    SetMaskColor (255,255,230)
    If (v Mod 8) Then DrawImage im,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
@@ -408,6 +408,7 @@ If v
    Case 2 ; im=arrows
    Case 3 ; im=arroww
    Case 4 ; im=arrowe
+   Case 5 ; im=gencell
   End Select
   DrawImage im,(x-camposx)*zoom,(y-camposy)*zoom
  EndIf
@@ -559,10 +560,9 @@ If MouseHit(1)
  If smt<=55
   b=bmap.fetch(moxc+moyc Shl 10)
   If Not b
-  ' DebugStop
    If smi=sub0    Then createsinglesubstrate(moxc,moyc);Return
    If smi=subd    Then placeSubstrateGuide(moxc,moyc);Return
-   If smi=gencell Then DebugStop;placegene(moxc,moyc);Return   ' 42
+   If smi=gencell Then placegene(moxc,moyc);Return
    btarray[smt].Createsingleblock(moxc,moyc,0,0)
   Else
    b.checkchem3(Null)
@@ -731,9 +731,8 @@ Function placegene(x,y)
 
 Local p = x+y Shl 10
 Local tm=thingmap.fetch(p)
-If tm>0 And tm<5 Then thingmap.insert(p,gencode Or tm)
-
-Local ag:gen ' adjacent generator
+If tm>=0 And tm<=4 Then thingmap.insert(p,gencode | tm)
+Local db = thingmap.fetch(p)
 
 ' gens are now groups of gen tile
 '  need to discern if placing a gen-tile is creating a new gen or adding to an existing one
@@ -746,12 +745,13 @@ Local ag:gen ' adjacent generator
 'If thingmap.fetch(p+1 Shl 10)   And 5
 'If thingmap.fetch(p-(1 Shl 10)) And 5
 
-'Local g:gen=New gen
-'g.x=x
-'g.y=y
-'g.rate=5
-'g.bitflags=4
-'genarray.add(g)
+Local g:gen=New gen
+g.x=x
+g.y=y
+g.rate=5
+g.bitflags=4
+genarray.add(g)
+dbflag=1
 
 End Function
 
@@ -1070,9 +1070,6 @@ create_block_mix()
 
 remove_block_image_templates()
 
-'DebugStop
-
-'Global gene:TImage=loadimage2("gene.png")
 gen_maze_map(1,1,40,1,40,40)
 smi=imagelist[smt]
 

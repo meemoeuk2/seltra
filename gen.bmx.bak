@@ -4,8 +4,8 @@ Field x,y:Int
 Field bglist:bgroup[100] ' this is supposed to be the list of blockgroups that the gen can generate
                          ' but shall we use this?
 Field le:Int ' length of bglist  
-Field rate,t,bitflags,n,id         
-
+Field rate,t,bitflags,n,id
+Field clist:cell[25]       
 
 Method genIsolatedBlock:bgroup()
 

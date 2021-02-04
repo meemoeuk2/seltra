@@ -82,6 +82,7 @@ Return bg
 End Method
 
 
+
 Method setbindingblock(x,y)
 
 Local bg:bgroup

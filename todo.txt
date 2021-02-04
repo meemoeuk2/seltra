@@ -23,3 +23,5 @@ try move code towards that falling trash game we had in blitzplus
 
 current gene paint doesn't work, waiting for gen place code
 
+why aren't gens being placed?
+ they aren't showing up on the tile type# either
