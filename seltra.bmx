@@ -9,6 +9,7 @@ Include "bgroup.bmx"
 Include "substrate.bmx"
 Include "sgroup.bmx"
 Include "btemplate.bmx"
+Include "ggroup.bmx"
 
 Graphics 1024,768
 Global gw=GraphicsWidth()
@@ -70,6 +71,7 @@ Global time,gamespeedbrake=100,gamespeedbrake_setting=2
 ' splity 0 = splits with zero force, 
 ' impact Type. blocks react differently To impacts ' 0 = stop, 1 = bounce , 2 turn left, 3 turn right
 
+Global unAllocatedGenTiles:cellArray=New cellArray
 Global garray:grouparray=New grouparray ' all groups, or moving groups
 
 Global barray:blockarray=New blockarray ' active blocks
@@ -562,7 +564,7 @@ If MouseHit(1)
   If Not b
    If smi=sub0    Then createsinglesubstrate(moxc,moyc);Return
    If smi=subd    Then placeSubstrateGuide(moxc,moyc);Return
-   If smi=gencell Then placegene(moxc,moyc);Return
+   If smi=gencell Then placegenTile(moxc,moyc);Return
    btarray[smt].Createsingleblock(moxc,moyc,0,0)
   Else
    b.checkchem3(Null)
@@ -727,7 +729,7 @@ End Function
 
 
 
-Function placegene(x,y)
+Function placeGenTile(x,y)
 
 Local p = x+y Shl 10
 Local tm=thingmap.fetch(p)
@@ -745,13 +747,7 @@ Local db = thingmap.fetch(p)
 'If thingmap.fetch(p+1 Shl 10)   And 5
 'If thingmap.fetch(p-(1 Shl 10)) And 5
 
-Local g:gen=New gen
-g.x=x
-g.y=y
-g.rate=5
-g.bitflags=4
-genarray.add(g)
-dbflag=1
+unAllocatedGenTiles.add(x,y)
 
 End Function
 
@@ -1058,10 +1054,17 @@ CloseFile in
 
 End Function
 
-' *** start ***
-'Local threads:TThread[2]
-'threads[0]=CreateThread(core_engine_thread,"hihih")
 
+
+Function reForgeGenerators()
+' often awkward to define generators continously
+' this function is intended to be a one off controlled by the user
+
+
+End Function
+
+
+' *** start ***
 Global sub0:TImage=loadimage2("sub0.png")
 Global subd:TImage=loadimage2("subd.png")
 

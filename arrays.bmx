@@ -1,3 +1,36 @@
+Type cellArray
+Field ca:cell[50]
+Field le
+
+Method add(x,y)
+ Local c:cell = New cell
+ c.x=x
+ c.y=y
+ ca[le]=c
+ le=le+1
+End Method
+
+Method add(c:cell)
+ ca[le]=c
+ le=le+1
+End Method
+
+Method ordered_sort(n:Int,i:Int=0)
+ If n=0 Then n=le
+ Local j=i
+
+ While j<le 
+  ca[i]=ca[j]
+  If ca[i] Then i=i+1
+  j=j+1
+ Wend
+ le=i
+End Method
+
+End Type
+
+
+
 Type blockarray
 Field ba:block[50]
 Field le:Int
@@ -35,10 +68,10 @@ End Type
 
 
 Type generatorarray
-Field ga:gen[3000]
+Field ga:ggroup[3000]
 Field le:Int
 
-Method add(g:gen)
+Method add(g:ggroup)
  ga[le]=g
  g.id=le
  le=le+1
