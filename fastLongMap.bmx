@@ -20,7 +20,7 @@ Method kfetch:Int(index) ' return key
 End Method
 
 
-Method put(key,val) ' also replace 
+Method put(key,val:Long) ' also replace 
 
  If v[key]=nl
   k[le]=key

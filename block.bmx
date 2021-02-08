@@ -342,3 +342,8 @@ End Method
 End Type
 
 
+Function ThingBlockCheckArrows()
+
+ 
+
+End Function

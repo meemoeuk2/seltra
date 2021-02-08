@@ -1,4 +1,4 @@
-Strict 
+Strict
 
 Include "memap.bmx"
 Include "blockmap.bmx"
@@ -10,6 +10,7 @@ Include "substrate.bmx"
 Include "sgroup.bmx"
 Include "btemplate.bmx"
 Include "ggroup.bmx"
+Include "fastLongMap.bmx"
 
 Graphics 1024,768
 Global gw=GraphicsWidth()
@@ -86,7 +87,7 @@ Global rarray:redrawarray=New redrawarray
 Global genarray:generatorarray=New generatorarray
 
 Global bmap:fastblockmap=New fastblockmap
-Global thingmap:fastintmap=New fastintmap ' arrows and generators
+Global thingmap:fastLongmap=New fastLongmap ' arrows and generators
 Global smap:substratemap=New substratemap
 
 Type cell ' sometimes just need this
@@ -427,7 +428,7 @@ Function gen_maze_map(xs,ys,xf,yf,mx,my)
 wallgroup:blockarray=New blockarray ' wall blocks
 wallgroup.ba=wallgroup.ba[..999999]
 bmap=New fastblockmap
-thingmap=New fastintmap
+thingmap=New fastlongmap
 
 Local m:Byte[mx*my]
 Local d,ok,k:Byte=0
@@ -733,7 +734,7 @@ Function placeGenTile(x,y)
 
 Local p = x+y Shl 10
 Local tm=thingmap.fetch(p)
-If tm>=0 And tm<=4 Then thingmap.insert(p,gencode | tm)
+If tm>=0 And tm<=4 Then thingmap.put(p,gencode | tm)
 Local db = thingmap.fetch(p)
 
 ' gens are now groups of gen tile
@@ -767,10 +768,10 @@ If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
 If (Not b) Or (b And b.btype<>0)
  p=t-(t Mod 8)
- If KeyHit(key_w) Then thingmap.insert(moxc+moyc Shl 10,p|1)
- If KeyHit(key_s) Then thingmap.insert(moxc+moyc Shl 10,p|2)
- If KeyHit(key_a) Then thingmap.insert(moxc+moyc Shl 10,p|3)
- If KeyHit(key_d) Then thingmap.insert(moxc+moyc Shl 10,p|4)
+ If KeyHit(key_w) Then thingmap.put(moxc+moyc Shl 10,p|1)
+ If KeyHit(key_s) Then thingmap.put(moxc+moyc Shl 10,p|2)
+ If KeyHit(key_a) Then thingmap.put(moxc+moyc Shl 10,p|3)
+ If KeyHit(key_d) Then thingmap.put(moxc+moyc Shl 10,p|4)
 EndIf
 
 If KeyHit(key_space)
@@ -961,6 +962,8 @@ End Function
 
 Function update_thingblocks()
 
+Local k
+
 While k<thingmap.le
  If thingmap.vfetch(k) & 5 ' blockflag
   
@@ -1029,7 +1032,7 @@ WriteInt out,thingmap.le
 
 For i=0 To thingmap.le
  WriteInt out,thingmap.kfetch(i)
- WriteInt out,thingmap.vfetch(i)
+ WriteLong out,thingmap.vfetch(i)
 Next
 
 CloseFile out
@@ -1046,7 +1049,7 @@ wallgroup.ba=wallgroup.ba[..999999]
 
 ' but gotta flush map too!
 bmap=New fastblockmap
-thingmap = New fastintmap
+thingmap = New fastLongmap
 
 Local in:TStream = ReadFile("seltraMap.sem")
 If Not in Then Return
@@ -1061,12 +1064,12 @@ For i=0 To n-1
 Next
 
 n=ReadInt(in)
-Local k,v
+Local k:Long,v:Long
 
 For i=0 To n-1
- k=ReadInt(in)
- v=ReadInt(in)
- If v Then thingmap.insert(k,v)
+ k=ReadLong(in)
+ v=ReadLong(in)
+ If v Then thingmap.put(k,v)
 Next
 
 CloseFile in
@@ -1090,7 +1093,7 @@ Repeat
  p = thingmap.fetch(c.x+ c.y Shl 10) 
  
  If p>=5 And p<=9
-  thingmap.insert(c.x+ c.y Shl 10,p-100)
+  thingmap.put(c.x+ c.y Shl 10,p-100)
  
   If k=0 Then genarray.ga[j]=New ggroup
   genarray.ga[j].clist[k] = New cell
@@ -1104,7 +1107,7 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x+1
    ff[q].y=c.y
-   thingmap.insert((c.x+1) + (c.y Shl 10),-4)
+   thingmap.put((c.x+1) + (c.y Shl 10),-4)
    q=q+1
   EndIf
   p=thingmap.fetch((c.x-1) + (c.y Shl 10))
@@ -1112,7 +1115,7 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x-1
    ff[q].y=c.y
-   thingmap.insert((c.x-1) + (c.y Shl 10),-4)
+   thingmap.put((c.x-1) + (c.y Shl 10),-4)
    q=q+1
   EndIf
   p=thingmap.fetch(c.x + ((c.y+1) Shl 10) )
@@ -1120,7 +1123,7 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x
    ff[q].y=c.y+1
-   thingmap.insert(c.x + ((c.y+1) Shl 10),-4)
+   thingmap.put(c.x + ((c.y+1) Shl 10),-4)
    q=q+1
   EndIf
   p=thingmap.fetch( c.x + ((c.y-1) Shl 10) )
@@ -1128,7 +1131,7 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x
    ff[q].y=c.y-1
-   thingmap.insert(c.x + (c.y-1) Shl 10,-4)
+   thingmap.put(c.x + (c.y-1) Shl 10,-4)
    q=q+1
   EndIf  
 
@@ -1160,7 +1163,7 @@ Repeat
   c=g.clist[j]
   If c=Null Then Exit
   p=thingmap.fetch(c.x+c.y Shl 10)
-  thingmap.insert(c.x+c.y Shl 10,p+100)
+  thingmap.put(c.x+c.y Shl 10,p+100)
   j=j+1
  Forever 
 
