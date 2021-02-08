@@ -959,12 +959,31 @@ End Function
 
 
 
+Function update_thingblocks()
+
+While k<thingmap.le
+ If thingmap.vfetch(k) & 5 ' blockflag
+  
+  ThingBlockCheckArrows()
+  'bg.check_substrates()
+  'bg.move()
+  'If bg.out_of_bounds() Then bg.remove() 
+  
+ EndIf
+ k=k+1
+Wend
+
+End Function
+
+
+
 Function core_engine_thread:Object( data:Object )
 
 If bmap.rc>1000 Then bmap.orderedsort()
-update_sgroups()
-update_bgroups()
-update_gens()
+update_thingblocks()
+'update_sgroups()
+'update_bgroups()
+'update_gens()
 time=time+1
     
 Return "finished"
@@ -1059,6 +1078,94 @@ End Function
 Function reForgeGenerators()
 ' often awkward to define generators continously
 ' this function is intended to be a one off controlled by the user
+
+Local h,i,j,k,p,q ' counters
+Local ff:cell[50]
+
+Local c:cell = unAllocatedGenTiles.ca[i]
+
+Repeat
+ If c=Null Then Exit
+ 
+ p = thingmap.fetch(c.x+ c.y Shl 10) 
+ 
+ If p>=5 And p<=9
+  thingmap.insert(c.x+ c.y Shl 10,p-100)
+ 
+  If k=0 Then genarray.ga[j]=New ggroup
+  genarray.ga[j].clist[k] = New cell
+  genarray.ga[j].clist[k].x = c.x
+  genarray.ga[j].clist[k].y = c.y
+  k=k+1
+
+  'do floodfill search
+  p=thingmap.fetch((c.x+1) + (c.y Shl 10))
+  If p>=5 And p<=8
+   ff[q]=New cell
+   ff[q].x=c.x+1
+   ff[q].y=c.y
+   thingmap.insert((c.x+1) + (c.y Shl 10),-4)
+   q=q+1
+  EndIf
+  p=thingmap.fetch((c.x-1) + (c.y Shl 10))
+  If p>=5 And p<=8 
+   ff[q]=New cell
+   ff[q].x=c.x-1
+   ff[q].y=c.y
+   thingmap.insert((c.x-1) + (c.y Shl 10),-4)
+   q=q+1
+  EndIf
+  p=thingmap.fetch(c.x + ((c.y+1) Shl 10) )
+  If p>=5 And p<=8 
+   ff[q]=New cell
+   ff[q].x=c.x
+   ff[q].y=c.y+1
+   thingmap.insert(c.x + ((c.y+1) Shl 10),-4)
+   q=q+1
+  EndIf
+  p=thingmap.fetch( c.x + ((c.y-1) Shl 10) )
+  If p>=5 And p<=8 
+   ff[q]=New cell
+   ff[q].x=c.x
+   ff[q].y=c.y-1
+   thingmap.insert(c.x + (c.y-1) Shl 10,-4)
+   q=q+1
+  EndIf  
+
+  ff[h]=Null
+  h=h+1
+  c=ff[h]
+
+  If c=Null 
+   i=i+1
+   c=unAllocatedGenTiles.ca[i]
+   h=0
+  EndIf
+ Else ' cell is not a unallocated gen cell
+  i=i+1
+  c=unAllocatedGenTiles.ca[i]
+  j=j+1 ' start new group
+  k=0
+ EndIf
+
+Forever
+
+i=0
+Repeat
+ Local g:ggroup = genarray.ga[i]
+ If g=Null Then Exit
+
+ j=0
+ Repeat
+  c=g.clist[j]
+  If c=Null Then Exit
+  p=thingmap.fetch(c.x+c.y Shl 10)
+  thingmap.insert(c.x+c.y Shl 10,p+100)
+  j=j+1
+ Forever 
+
+ i=i+1
+Forever
 
 
 End Function

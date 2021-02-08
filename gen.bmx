@@ -1,6 +1,7 @@
 Type genTile ' generator
 
 Field x,y:Int
+Field ggroup
 
 Method addRandomBlock(bg:bgroup)
 ' the primary intended use of this method is building a blockgroup to randomly generate

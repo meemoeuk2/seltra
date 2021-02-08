@@ -3,7 +3,7 @@
 'End Type
 
 ' returns the object handle
-' this needs upgrading to a thingmap
+' this needs upgrading to an objectmap ; except all objects are likely blocks
 
 Type FastBlockMap
 

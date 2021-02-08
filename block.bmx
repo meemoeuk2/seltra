@@ -7,7 +7,7 @@ Field btype
 Field image:TImage
 Field x,y,bit_tags,id ' bit_tags 1 = prototype for generators  ' %10 for right angle double bonder ( double bonder w/o tag = straight bonder )
 Field oldx[2],oldy[2]
-Field group:bgroup ' super class
+Field group:bgroup ' parent class
 Field ch, mch ' atomic chemistry number, molicule chemestry number
 Field bt ' block template id
 Field bonds
