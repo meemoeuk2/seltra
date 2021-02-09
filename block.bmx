@@ -344,6 +344,139 @@ End Type
 
 Function ThingBlockCheckArrows()
 
- 
+Local i,key
+Local val:Long
+
+While thingmap.k[i]>0
+ val = thingmap.vfetch(i)
+ key = thingmap.kfetch(i)
+ If val & 8 ' if block
+  Select val Mod 8
+   Case 1 ;   thingmap.put(key,(val ~ %1110000) | %0010000 )
+   Case 2 ;   thingmap.put(key,(val ~ %1110000) | %0110000 )
+   Case 3 ;   thingmap.put(key,(val ~ %1110000) | %1010000 )
+   Case 4 ;   thingmap.put(key,(val ~ %1110000) | %1110000 )
+  End Select
+ EndIf
+
+ i=i+1
+Wend ' this will have to be redone for multi blocks, which use a separate array
 
 End Function
+
+
+
+Function ThingBlockMove()
+
+Local i,key,key2
+Local val:Long
+
+While thingmap.k[i]>0
+
+   DebugStop
+
+
+ val = thingmap.vfetch(i)
+ key = thingmap.kfetch(i)
+
+
+ If val & isMovingBlock ' if block
+  key2 = thingBlockCheckCollision(key,val)
+  If key2>0 Then thingBlockCollisionManager(key,key2)
+  
+' ***** actual move code
+'While b
+' If bmap.fetch(b.x+b.y Shl 10)=b Then bmap.remove(b.x+b.y Shl 10) ' conditional cos new block in same group may have moved in already
+' b.x=b.x+xm
+' b.y=b.y+ym
+' bmap.insert(b.x+b.y Shl 10,b)
+
+' i=i+1
+' b=blist.ba[i]
+'Wend
+  thingmap.put(key,val-( val & blockflags ))
+
+  Select (val & directionFlags)
+   Case movingUp   ; thingmap.put(key-(1 Shl 10),val)
+   Case movingDown ; thingmap.put(key+(1 Shl 10),val)
+   Case movingLeft ; thingmap.put(key-1,val)
+   Case movingRight; thingmap.put(key+1,val)
+  End Select
+ EndIf
+
+ i=i+1
+Wend
+
+End Function
+
+
+
+
+
+
+Function ThingBlockCheckCollision(key,val:Long)
+' -1 means no collision
+' -2 means block has moved out of play area
+
+'Local b:block=blist.ba[0]
+'Local b2:block
+Local xt,yt
+
+'While b
+' xt=b.x+xm
+' yt=b.y+ym
+ 
+' If xt>=0 And yt>=0 
+'  b2=bmap.fetch(xt+yt Shl 10) 
+' Else
+'  Return Null
+' EndIf
+
+ 
+' If b2 And b2.group<>Self
+'  bref=b
+'  Return b2
+' EndIf
+
+' i=i+1
+' b=blist.ba[i]
+'Wend
+ 
+'Return Null
+
+' down scaled for single blocks
+
+' %111 arrows
+' %1000 is block 
+' %10000 is moving block
+' %1100000 direction up, down, left , right
+
+xt = (key Mod 1024)
+yt = (key Shr 10)
+Select val & %1100000
+ Case %0000000 ; xt = (key Mod 1024) ; yt = (key Shr 10)-1
+ Case %0100000 ; xt = (key Mod 1024) ; yt = (key Shr 10)+1
+ Case %1000000 ; xt = (key Mod 1024)-1 ; yt = (key Shr 10)
+ Case %1100000 ; xt = (key Mod 1024)+1 ; yt = (key Shr 10)
+End Select
+
+If xt>=0 And yt>=0
+ If thingmap.fetch(xt+yt Shl 10) & isBlock Then Return (xt+yt Shl 10) ' return key for collision block
+Else 
+ Return -2
+EndIf
+
+Return -1
+
+End Function
+
+
+
+
+Function thingBlockCollisionManager(key1,key2)
+
+End Function
+
+
+
+

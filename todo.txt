@@ -21,7 +21,21 @@ try move code towards that falling trash game we had in blitzplus
  can barrays and bgroups be combined?
  a bgroup is a wrapper around a barray
 
-current gene paint doesn't work, waiting for gen place code
+actually realtime generator adding will not be as hard as 1st thought, to 
 
-why aren't gens being placed?
- they aren't showing up on the tile type# either
+
+we are using an map type that is remembering all its keys and values
+ this essentially can give access to all thing and objects 
+ yet we are also using objects to remember the keys and values
+  could we trim somthing down?
+
+ could all data of an object be stored in a single int?
+  - wouldn't need to use objects
+  - just a single thingmap
+  - things would have to be processed out of order of object type, which may lead to problems
+  - would need to write a encoder and a decoder to get info in and out of the int
+    - but this should be pretty simple, and worth it for a single intmap
+  - also this would make use of the key array, which is currently redundant due to object lists
+  - there are a lot of object lists and this is complicated
+
+ thingmaps block handling won't work until blockgroup arrays are implemented

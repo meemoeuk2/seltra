@@ -54,7 +54,11 @@ End Method
 
 Method createsingleblock:bgroup(x,y,xv,yv)
 
+Local val:Long
+
 If bmap.fetch(x+y Shl 10) Then Return
+val = thingmap.fetch(x+y Shl 10)
+If val & isBlock Then Return
 If btype=0 Then wallblock(x,y,id);Return
 
 Local bg:bgroup=New bgroup
@@ -76,6 +80,8 @@ b.image=imagelist[id]
 bg.add(b)
 barray.add(b)
 bmap.insert(b.x+b.y Shl 10,b)
+
+thingmap.putNew(x + y Shl 10, val | isBlock )
 
 Return bg
 

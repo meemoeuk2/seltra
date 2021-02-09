@@ -1,5 +1,21 @@
 Strict
 
+
+Const arrowflags=%111 ' consider is arrow flag
+Const upArrow=   %001  ' except current way gives 3 other possible objects
+Const downArrow =%010 
+Const leftArrow =%011
+Const rightArrow=%100
+Const isBlock   =%1000
+Const isMovingBlock=%10000
+Const directionFlagsX=%11000000 ' used to reset direction
+Const directionFlags =%11100000 ' used to work with direction
+Const movingUp       =%00100000 ' blockMovingUp
+Const movingDown     =%01100000 ' we'll need to be more specific when substrates are added
+Const movingLeft     =%10100000
+Const movingRight    =%11100000
+Const blockflags     =%11111000 ' all flags used by blocks
+
 Include "memap.bmx"
 Include "blockmap.bmx"
 Include "arrays.bmx"
@@ -13,6 +29,9 @@ Include "ggroup.bmx"
 Include "fastLongMap.bmx"
 
 Graphics 1024,768
+
+
+
 Global gw=GraphicsWidth()
 Global gh=GraphicsHeight()
 
@@ -311,6 +330,8 @@ End Function
 Function draw_walls()
 
 Local b:block,i
+
+If wallgroup=Null Then Return
 
 While i<wallgroup.le
  b=wallgroup.ba[i]
@@ -768,10 +789,10 @@ If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
 If (Not b) Or (b And b.btype<>0)
  p=t-(t Mod 8)
- If KeyHit(key_w) Then thingmap.put(moxc+moyc Shl 10,p|1)
- If KeyHit(key_s) Then thingmap.put(moxc+moyc Shl 10,p|2)
- If KeyHit(key_a) Then thingmap.put(moxc+moyc Shl 10,p|3)
- If KeyHit(key_d) Then thingmap.put(moxc+moyc Shl 10,p|4)
+ If KeyHit(key_w) Then thingmap.putNew(moxc+moyc Shl 10,p|1)
+ If KeyHit(key_s) Then thingmap.putNew(moxc+moyc Shl 10,p|2)
+ If KeyHit(key_a) Then thingmap.putNew(moxc+moyc Shl 10,p|3)
+ If KeyHit(key_d) Then thingmap.putNew(moxc+moyc Shl 10,p|4)
 EndIf
 
 If KeyHit(key_space)
@@ -964,17 +985,10 @@ Function update_thingblocks()
 
 Local k
 
-While k<thingmap.le
- If thingmap.vfetch(k) & 5 ' blockflag
-  
-  ThingBlockCheckArrows()
+ThingBlockCheckArrows()
   'bg.check_substrates()
-  'bg.move()
+ThingBlockMove()
   'If bg.out_of_bounds() Then bg.remove() 
-  
- EndIf
- k=k+1
-Wend
 
 End Function
 
@@ -1064,7 +1078,7 @@ For i=0 To n-1
 Next
 
 n=ReadInt(in)
-Local k:Long,v:Long
+Local k:Int,v:Long
 
 For i=0 To n-1
  k=ReadLong(in)
@@ -1183,7 +1197,7 @@ create_block_mix()
 
 remove_block_image_templates()
 
-gen_maze_map(1,1,40,1,40,40)
+'gen_maze_map(1,1,40,1,40,40)
 smi=imagelist[smt]
 
 While Not KeyDown(key_escape)

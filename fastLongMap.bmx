@@ -2,8 +2,8 @@ Type fastLongMap
 
 Field v:Long[3000000] ' index is the keys, value is the value
 Field k:Int [3000000] ' index is ordered , value is key
-Field le:Int  ' length
-Field nl:Int=0 ' null value
+Field nl:Long=0 ' null value
+Field le
 
 Method fetch:Long(key) ' or just type v[key] 
  Return v[key]
@@ -20,27 +20,32 @@ Method kfetch:Int(index) ' return key
 End Method
 
 
-Method put(key,val:Long) ' also replace 
-
- If v[key]=nl
-  k[le]=key
-  le=le+1 
- EndIf
- v[key]=val 
- 
+Method putNew(key,val:Long) ' also replace 
+ v[key]=val
+ k[le]=key
+ le=le+1
 End Method
 
 
-Method remove(key) ' or just type v[key]=0
+Method put(key,val:Long) 
+ v[key]=val
+End Method
+
+
+Method LazyRemove(key) ' or just type v[key]=0
  v[key]=nl
+ le=le-1
+End Method
+
+
+Method Remove(i)
+ v[k[i]]=nl
+ k[i]=0
+ le=le-1
 End Method
 
 
 Method bump(key,val:Long)
- If v[key]=nl
-  k[le]=key
-  le=le+1
- EndIf
  v[key]=v[key]+val
 End Method
 
