@@ -20,14 +20,11 @@ Method kfetch:Int(index) ' return key
 End Method
 
 
-Method putNew(key,val:Long) ' also replace 
- v[key]=val
- k[le]=key
- le=le+1
-End Method
-
-
 Method put(key,val:Long) 
+ If v[key]=nl
+  k[le]=key
+  le=le+1 
+ EndIf
  v[key]=val
 End Method
 

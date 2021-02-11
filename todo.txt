@@ -39,3 +39,7 @@ we are using an map type that is remembering all its keys and values
   - there are a lot of object lists and this is complicated
 
  thingmaps block handling won't work until blockgroup arrays are implemented
+
+
+ thingblocks shouldn't use new map index if they are moving to an empty block
+ thing value needs a 'hasmoved this frame' flag

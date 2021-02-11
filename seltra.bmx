@@ -807,19 +807,21 @@ Function get_user_input()
 Local b:block=bmap.fetch(moxc+moyc Shl 10)
 Local s:substrate=smap.fetch(moxc+moyc Shl 10)
 Local t=thingmap.fetch(moxc+moyc Shl 10)
-Local p
+Local p,key
+Local val:Long
+
+key = moxc + moyc Shl 10
+val = thingmap.fetch(key)
 
 If KeyHit(key_f1) Then save_map()
 If KeyHit(key_f2) Then load_map()
 If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
-
 If (Not b) Or (b And b.btype<>0)
- p=t-(t Mod 8)
- If KeyHit(key_w) Then thingmap.putNew(moxc+moyc Shl 10,p|1)
- If KeyHit(key_s) Then thingmap.putNew(moxc+moyc Shl 10,p|2)
- If KeyHit(key_a) Then thingmap.putNew(moxc+moyc Shl 10,p|3)
- If KeyHit(key_d) Then thingmap.putNew(moxc+moyc Shl 10,p|4)
+ If KeyHit(key_w) Then thingmap.put(key,val|upArrow)
+ If KeyHit(key_s) Then thingmap.put(key,val|downArrow)
+ If KeyHit(key_a) Then thingmap.put(key,val|leftArrow)
+ If KeyHit(key_d) Then thingmap.put(key,val|rightArrow)
 EndIf
 
 If KeyHit(key_space)
