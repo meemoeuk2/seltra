@@ -138,9 +138,6 @@ End Function
 
 
 
-
-
-
 Type redraw
 Field x,y
 Field redraws:Byte ' %11 = redraws 1~3
@@ -168,8 +165,6 @@ While i<sgarray.le
 Wend
 
 End Function
-
-
 
 
 
@@ -212,6 +207,37 @@ End Function
 
 
 
+Function draw_everything()
+
+Local i,key
+Local val:Long
+Local x,y
+
+While i<thingmap.le
+
+ key = thingmap.kfetch(i)
+ val = thingmap.vfetch(i)
+ x= (key Mod 1024) - camposx
+ y= (key Shr 10)   - camposy
+ If val & 8
+  DrawImage imagelist[5],zoom*x,zoom*y
+ ElseIf val Mod 8 = 1 
+  DrawImage arrown,zoom*x,zoom*y
+ ElseIf val Mod 8 = 2
+  DrawImage arrows,zoom*x,zoom*y
+ ElseIf val Mod 8 = 3
+  DrawImage arroww,zoom*x,zoom*y
+ ElseIf val Mod 8 = 4
+  DrawImage arrowe,zoom*x,zoom*y
+ EndIf
+
+ i=i+1
+Wend
+
+End Function
+
+
+
 Function redraw3x3(x,y)
 
 Local x2:Int=x
@@ -240,12 +266,13 @@ SetColor 0,0,0
 DrawRect moxo[frame],moyo[frame],50,50
 SetColor 255,255,255 '        what in the unholy feck!?! this color call is controling the alpha of all images drawn
 
-SetViewport 0,0,gw-100,gh
-If mox<gw-100 Then redraw3x3(moxco[frame],moyco[frame])
-If redraw_map>0 Then Cls
-draw_things()
-draw_sarray()
-draw_barray()
+SetViewport 0,0,gw-100,gh ' map
+'If mox<gw-100 Then redraw3x3(moxco[frame],moyco[frame])
+Cls 'If redraw_map>0 Then Cls
+'draw_things()
+'draw_sarray()
+'draw_barray()
+draw_everything() ' everything on the map
 DrawImage mousec,(moxc-camposx)*zoom,(moyc-camposy)*zoom
 If redraw_map>0 Then draw_walls();redraw_map=redraw_map-1
 rarray.do_redraws()
@@ -1206,4 +1233,5 @@ While Not KeyDown(key_escape)
  get_user_input()
  update_display()
 Wend
+
 End

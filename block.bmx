@@ -1,5 +1,3 @@
-
-
 Type block ' ********************* type block ****************************
 Field btype 
 ' 0 = wall , 1 = force block 2 = ? 
@@ -351,6 +349,7 @@ While thingmap.k[i]>0
  val = thingmap.vfetch(i)
  key = thingmap.kfetch(i)
  If val & 8 ' if block
+
   Select val Mod 8
    Case 1 ;   thingmap.put(key,(val ~ %1110000) | %0010000 )
    Case 2 ;   thingmap.put(key,(val ~ %1110000) | %0110000 )
@@ -373,17 +372,15 @@ Local val:Long
 
 While thingmap.k[i]>0
 
-   DebugStop
-
-
  val = thingmap.vfetch(i)
  key = thingmap.kfetch(i)
 
+ If val & isBlock 
 
- If val & isMovingBlock ' if block
-  key2 = thingBlockCheckCollision(key,val)
-  If key2>0 Then thingBlockCollisionManager(key,key2)
-  
+  If val & isMovingBlock ' if block
+   key2 = thingBlockCheckCollision(key,val)
+   If key2>0 Then thingBlockCollisionManager(key,key2)
+    
 ' ***** actual move code
 'While b
 ' If bmap.fetch(b.x+b.y Shl 10)=b Then bmap.remove(b.x+b.y Shl 10) ' conditional cos new block in same group may have moved in already
@@ -394,16 +391,19 @@ While thingmap.k[i]>0
 ' i=i+1
 ' b=blist.ba[i]
 'Wend
-  thingmap.put(key,val-( val & blockflags ))
 
-  Select (val & directionFlags)
-   Case movingUp   ; thingmap.put(key-(1 Shl 10),val)
-   Case movingDown ; thingmap.put(key+(1 Shl 10),val)
-   Case movingLeft ; thingmap.put(key-1,val)
-   Case movingRight; thingmap.put(key+1,val)
-  End Select
+   thingmap.put(key,val-( val & blockflags ))
+
+   Select (val & directionFlags)
+    Case movingUp   ; thingmap.put(key-(1 Shl 10),val)
+    Case movingDown ; thingmap.put(key+(1 Shl 10),val)
+    Case movingLeft ; thingmap.put(key-1,val)
+    Case movingRight; thingmap.put(key+1,val)
+   End Select
+  EndIf
+ 
  EndIf
-
+ 
  i=i+1
 Wend
 
