@@ -82,8 +82,11 @@ Global moxco[2],moyco[2] '
 Global redraw_map:Int=3
 Global bgc,bc     'blockgroup counter, blovk counter
 Global sgc,sc 'substrategroup counter, substrate counter
-Global camposx,camposy :Int
+Global camposx,camposy
 Global time,gamespeedbrake=100,gamespeedbrake_setting=2
+
+Global actives:longArray = New longArray ' a list of active, mobile things that need updating every tick.
+                            ' at minimum this is an array  of keys, an alternative index to the map indicies
 
 ' block interactions , randomized with seed
 ' b-b interactions are particular to world
@@ -818,16 +821,17 @@ If KeyHit(key_f2) Then load_map()
 If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
 If (Not b) Or (b And b.btype<>0)
- If KeyHit(key_w) Then thingmap.put(key,val|upArrow)
- If KeyHit(key_s) Then thingmap.put(key,val|downArrow)
- If KeyHit(key_a) Then thingmap.put(key,val|leftArrow)
- If KeyHit(key_d) Then thingmap.put(key,val|rightArrow)
+ If KeyHit(key_w) Then thingmap.put(key,(val &~ arrowflags) |upArrow)
+ If KeyHit(key_s) Then thingmap.put(key,(val &~ arrowflags) |downArrow)
+ If KeyHit(key_a) Then thingmap.put(key,(val &~ arrowflags) |leftArrow)
+ If KeyHit(key_d) Then thingmap.put(key,(val &~ arrowflags) |rightArrow)
 EndIf
 
 If KeyHit(key_space)
  If t>=5 And t<=9 
   'garray.remove(moxc+moyc Shl 10) 'remove generator
  EndIf
+
  thingmap.remove(moxc+moyc Shl 10)
  If b And b.btype<>0 Then b.group.remove()
  If b And b.image=imagelist[1] Then wallgroup.ba[b.id]=Null; bmap.remove(b.x+b.y Shl 10)

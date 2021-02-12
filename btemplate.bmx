@@ -81,8 +81,8 @@ bg.add(b)
 barray.add(b)
 bmap.insert(b.x+b.y Shl 10,b)
 
-DebugStop
 thingmap.put(x + y Shl 10, val | isBlock )
+actives.add(x + y Shl 10)
 
 Return bg
 

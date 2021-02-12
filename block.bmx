@@ -345,16 +345,15 @@ Function ThingBlockCheckArrows()
 Local i,key
 Local val:Long
 
-While thingmap.k[i]>0
- val = thingmap.vfetch(i)
- key = thingmap.kfetch(i)
+While i<actives.le
+ val = thingmap.fetch(actives.la[i])
+ key = actives.la[i]
  If val & 8 ' if block
-
   Select val Mod 8
-   Case 1 ;   thingmap.put(key,(val ~ %1110000) | %0010000 )
-   Case 2 ;   thingmap.put(key,(val ~ %1110000) | %0110000 )
-   Case 3 ;   thingmap.put(key,(val ~ %1110000) | %1010000 )
-   Case 4 ;   thingmap.put(key,(val ~ %1110000) | %1110000 )
+   Case upArrow    ;   thingmap.put(key,(val &~ directionFlags) | movingUp )
+   Case downArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingDown )
+   Case leftArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingLeft )
+   Case rightArrow ;   thingmap.put(key,(val &~ directionFlags) | movingRight )
   End Select
  EndIf
 
@@ -389,7 +388,7 @@ While thingmap.k[i]>0
     Case movingRight; key2 = key+1
    End Select
 
-   debugstop
+   DebugStop
    val2 = thingmap.fetch(key2)
 
    Select (val & directionFlags)

@@ -207,3 +207,39 @@ Method ordered_sort(n,i)
 End Method
 
 End Type
+
+
+
+
+Type longArray
+
+Field la[300000]
+Field le
+
+Method add(key)
+ la[le]=key
+ le=le+1
+End Method
+
+
+Method putLast(i)
+ la[le]=la[i]
+ la[i]=0 ' non key
+ le=le+1
+End Method
+
+
+Method ordered_sort(n,i)
+ If n=0 Then n=le
+ Local j=i
+
+ While j<le 
+  la[i]=la[j]
+  If la[i]>0 Then i=i+1
+  j=j+1
+ Wend
+ le=i
+
+End Method
+
+End Type

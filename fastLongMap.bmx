@@ -29,16 +29,14 @@ Method put(key,val:Long)
 End Method
 
 
-Method LazyRemove(key) ' or just type v[key]=0
+Method Remove(key) ' or just type v[key]=0
  v[key]=nl
- le=le-1
 End Method
 
 
-Method Remove(i)
+Method Removei(i)
  v[k[i]]=nl
  k[i]=0
- le=le-1
 End Method
 
 
