@@ -88,7 +88,7 @@ Global time,gamespeedbrake=100,gamespeedbrake_setting=2
 ' block interactions , randomized with seed
 ' b-b interactions are particular to world
 ' sticky 0 = stick with ajcent block, 1 sticky with 1 force ( momemntum of single block colliding blocks ), 999999 unreactive
-' splity 0 = splits with zero force, 
+' splity 0 = splits with szero force, 
 ' impact Type. blocks react differently To impacts ' 0 = stop, 1 = bounce , 2 turn left, 3 turn right
 
 Global unAllocatedGenTiles:cellArray=New cellArray
@@ -267,8 +267,9 @@ DrawRect moxo[frame],moyo[frame],50,50
 SetColor 255,255,255 '        what in the unholy feck!?! this color call is controling the alpha of all images drawn
 
 SetViewport 0,0,gw-100,gh ' map
-'If mox<gw-100 Then redraw3x3(moxco[frame],moyco[frame])
+
 Cls 'If redraw_map>0 Then Cls
+If mox<gw-100 Then redraw3x3(moxco[frame],moyco[frame])
 'draw_things()
 'draw_sarray()
 'draw_barray()
@@ -818,10 +819,10 @@ If KeyHit(key_f2) Then load_map()
 If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
 If (Not b) Or (b And b.btype<>0)
- If KeyHit(key_w) Then thingmap.put(key,(val &~ arrowflags) |upArrow)
- If KeyHit(key_s) Then thingmap.put(key,(val &~ arrowflags) |downArrow)
- If KeyHit(key_a) Then thingmap.put(key,(val &~ arrowflags) |leftArrow)
- If KeyHit(key_d) Then thingmap.put(key,(val &~ arrowflags) |rightArrow)
+ If KeyHit(key_w) Then thingmap.putq(key,(val &~ arrowflags) |upArrow)
+ If KeyHit(key_s) Then thingmap.putq(key,(val &~ arrowflags) |downArrow)
+ If KeyHit(key_a) Then thingmap.putq(key,(val &~ arrowflags) |leftArrow)
+ If KeyHit(key_d) Then thingmap.putq(key,(val &~ arrowflags) |rightArrow)
 EndIf
 
 If KeyHit(key_space)

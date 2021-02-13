@@ -43,3 +43,7 @@ we are using an map type that is remembering all its keys and values
 
  thingblocks shouldn't use new map index if they are moving to an empty block
  thing value needs a 'hasmoved this frame' flag
+
+ now that arrows and other passives are not listed 
+  we need a position rather than list based drawing routine.
+
