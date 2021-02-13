@@ -20,6 +20,11 @@ Method kfetch:Int(index) ' return key
 End Method
 
 
+Method putq(key,val:Long) ' quiet put, a key index is not added, and the length of the key-array is not incremented
+ v[key]=val
+End Method
+
+
 Method put(key,val:Long) 
  If v[key]=nl
   k[le]=key

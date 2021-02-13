@@ -345,15 +345,16 @@ Function ThingBlockCheckArrows()
 Local i,key
 Local val:Long
 
-While i<actives.le
- val = thingmap.fetch(actives.la[i])
- key = actives.la[i]
+While i<thingmap.le
+ key = thingmap.k[i]
+ val = thingmap.fetch(key)
+
  If val & 8 ' if block
   Select val Mod 8
-   Case upArrow    ;   thingmap.put(key,(val &~ directionFlags) | movingUp )
+   Case upArrow    ;   thingmap.put(key,(val &~ directionFlags) | movingUp   )
    Case downArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingDown )
    Case leftArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingLeft )
-   Case rightArrow ;   thingmap.put(key,(val &~ directionFlags) | movingRight )
+   Case rightArrow ;   thingmap.put(key,(val &~ directionFlags) | movingRight)
   End Select
  EndIf
 
@@ -369,17 +370,16 @@ Function ThingBlockMove()
 Local i,key,key2
 Local val:Long,val2:Long ' does this mean both val an val2 are longs?
 
-While thingmap.k[i]>0
+While i>thingmap.le
 
- val = thingmap.vfetch(i)
- key = thingmap.kfetch(i)
+ key = thingmap.k[i]
+ val = thingmap.fetch(key)
 
  If val & isBlock 
 
   If val & isMovingBlock ' if block
    key2 = thingBlockCheckCollision(key,val)
    If key2>=0 Then thingBlockCollisionManager(key,key2)   
-'   thingmap.put(key,val & arrowFlags)
 
    Select (val & directionFlags)
     Case movingUp   ; key2 = key-(1 Shl 10)
@@ -388,15 +388,8 @@ While thingmap.k[i]>0
     Case movingRight; key2 = key+1
    End Select
 
-   DebugStop
    val2 = thingmap.fetch(key2)
-
-   Select (val & directionFlags)
-    Case movingUp   ; thingmap.put(key-(1 Shl 10),val2 | (val & BlockFlags))
-    Case movingDown ; thingmap.put(key+(1 Shl 10),val2 | (val & BlockFlags))
-    Case movingLeft ; thingmap.put(key-1,val2 | (val & BlockFlags))
-    Case movingRight; thingmap.put(key+1,val2 | (val & BlockFlags))
-   End Select
+   thingmap.put(key2,val2 | (val & BlockFlags))
 
   EndIf
  

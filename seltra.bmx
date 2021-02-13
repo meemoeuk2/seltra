@@ -85,9 +85,6 @@ Global sgc,sc 'substrategroup counter, substrate counter
 Global camposx,camposy
 Global time,gamespeedbrake=100,gamespeedbrake_setting=2
 
-Global actives:longArray = New longArray ' a list of active, mobile things that need updating every tick.
-                            ' at minimum this is an array  of keys, an alternative index to the map indicies
-
 ' block interactions , randomized with seed
 ' b-b interactions are particular to world
 ' sticky 0 = stick with ajcent block, 1 sticky with 1 force ( momemntum of single block colliding blocks ), 999999 unreactive
