@@ -24,14 +24,19 @@ Method putq(key,val:Long) ' quiet put, a key index is not added, and the length 
  v[key]=val
 End Method
 
-
-Method put(key,val:Long) 
- If v[key]=nl
-  k[le]=key
-  le=le+1 
- EndIf
+Method putq:Long(index,key,val:Long)
+ k[index]=key
  v[key]=val
 End Method
+
+
+Method put:Long(key,val:Long) 
+ k[le]=key
+ le=le+1 
+ v[key]=val
+ Return le-1
+End Method
+
 
 
 Method Remove(key) ' or just type v[key]=0
@@ -39,7 +44,7 @@ Method Remove(key) ' or just type v[key]=0
 End Method
 
 
-Method Removei(i)
+Method Removei:Long(i:long)
  v[k[i]]=nl
  k[i]=0
 End Method
@@ -48,6 +53,9 @@ End Method
 Method bump(key,val:Long)
  v[key]=v[key]+val
 End Method
+
+
+
 
 ' template function
 Method iter()

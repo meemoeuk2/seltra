@@ -39,11 +39,23 @@ we are using an map type that is remembering all its keys and values
   - there are a lot of object lists and this is complicated
 
  thingmaps block handling won't work until blockgroup arrays are implemented
+  - we have 3 longs per block
+   - the index ( pref not used )
+   - the key ( can use )
+   - the value ( can use )
+   so do we need a seperate a blockgroup array?
+   - the index can be just used for block groups, since blocks can never act independantly of their groups
+    - a reference to the index can be in the value or key
+     -  of course index cannot reference many values
 
 
  thingblocks shouldn't use new map index if they are moving to an empty block
  thing value needs a 'hasmoved this frame' flag
 
- now that arrows and other passives are not listed 
-  we need a position rather than list based drawing routine.
-
+ jumping problem with  'grave' cells
+  because index list array entry is not being deleted, so when a foreign block enters the grave cell
+   its updated by the ghost of the dead block
+    
+   adding the index to the key will allow deletion of indexed blocks from selected cells
+    ok do it, key long is highly redundant
+ 

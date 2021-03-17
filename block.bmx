@@ -340,6 +340,19 @@ End Method
 End Type
 
 
+
+Function thingBlockDeleteCheck()
+
+Local i
+
+While i<thingmap.le
+ 
+ i=i+1
+Wend
+
+End Function
+
+
 Function ThingBlockCheckArrows()
 
 Local i,key
@@ -349,12 +362,14 @@ While i<thingmap.le
  key = thingmap.k[i]
  val = thingmap.fetch(key)
 
- If val & 8 ' if block
+ ' this method is primitve, for blockgroups with one block only
+ ' later for multi block groups will need direction setter management for multiple arrow inputs
+ If val & isBlock ' if block
   Select val Mod 8
-   Case upArrow    ;   thingmap.put(key,(val &~ directionFlags) | movingUp   )
-   Case downArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingDown )
-   Case leftArrow  ;   thingmap.put(key,(val &~ directionFlags) | movingLeft )
-   Case rightArrow ;   thingmap.put(key,(val &~ directionFlags) | movingRight)
+   Case upArrow    ;   thingmap.putq(key,(val &~ directionFlags) | movingUp   )
+   Case downArrow  ;   thingmap.putq(key,(val &~ directionFlags) | movingDown )
+   Case leftArrow  ;   thingmap.putq(key,(val &~ directionFlags) | movingLeft )
+   Case rightArrow ;   thingmap.putq(key,(val &~ directionFlags) | movingRight)
   End Select
  EndIf
 
@@ -365,36 +380,54 @@ End Function
 
 
 
+Function thingblockRemove(key)
+
+' either indexed (master) block or slave block
+Local val=thingmap.fetch(key)
+If val & indexrefflags
+ thingmap.removei((thingmap.fetch(key) Shr 8) Mod (1 Shl 16))
+Else
+ thingmap.remove(key)
+EndIf
+
+End Function
+
+
+
 Function ThingBlockMove()
 
 Local i,key,key2
 Local val:Long,val2:Long ' does this mean both val an val2 are longs?
 
-While i>thingmap.le
+While i<thingmap.le
 
  key = thingmap.k[i]
  val = thingmap.fetch(key)
 
- If val & isBlock 
+ If val & isMovingBlock ' if block
+  key2 = thingBlockCheckCollision(key,val)
+  If key2>=0 Then thingBlockCollisionManager(key,key2)   
 
-  If val & isMovingBlock ' if block
-   key2 = thingBlockCheckCollision(key,val)
-   If key2>=0 Then thingBlockCollisionManager(key,key2)   
+  Select (val & directionFlags)
+   Case movingUp   ; key2 = key-(1 Shl 10)
+   Case movingDown ; key2 = key+(1 Shl 10)
+   Case movingLeft ; key2 = key-1
+   Case movingRight; key2 = key+1
+  End Select
 
-   Select (val & directionFlags)
-    Case movingUp   ; key2 = key-(1 Shl 10)
-    Case movingDown ; key2 = key+(1 Shl 10)
-    Case movingLeft ; key2 = key-1
-    Case movingRight; key2 = key+1
-   End Select
-
+  If key2<0 Or (key Mod 1024)<0
+   thingblockRemove(key)
+  Else
+ 
    val2 = thingmap.fetch(key2)
-   thingmap.put(key2,val2 | (val & BlockFlags))
-
+   If isBlock &~ val2 ' not a block
+    thingmap.putq(key,val & arrowFlags)
+    thingmap.putq(i,key2,val2 | (val & BlockFlags))
+   EndIf
   EndIf
- 
- EndIf
- 
+
+ EndIf 
+
  i=i+1
 Wend
 

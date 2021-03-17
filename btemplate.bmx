@@ -52,7 +52,7 @@ End Method
 
 
 
-Method createsingleblock:bgroup(x,y,xv,yv)
+Method createsingleblock:Long(x,y,xv,yv)
 
 Local val:Long
 
@@ -61,29 +61,29 @@ val = thingmap.fetch(x+y Shl 10)
 If val & isBlock Then Return
 If btype=0 Then wallblock(x,y,id);Return
 
-Local bg:bgroup=New bgroup
-bg.xv=xv
-bg.yv=yv
-bgc=bgc+1
-garray.add(bg)
+'Local bg:bgroup=New bgroup
+'bg.xv=xv
+'bg.yv=yv
+'bgc=bgc+1
+'garray.add(bg)
 
-Local b:block=New block
-b.x=x
-b.y=y
-b.btype=btype
-b.bt=id
-b.maxbonds=maxbonds
-b.bonds=maxbonds
-b.bonds2=bonds2
+'Local b:block=New block
+'b.x=x
+'b.y=y
+'b.btype=btype
+'b.bt=id
+'b.maxbonds=maxbonds
+'b.bonds=maxbonds
+'b.bonds2=bonds2
 
-b.image=imagelist[id]
-bg.add(b)
-barray.add(b)
-bmap.insert(b.x+b.y Shl 10,b)
+'b.image=imagelist[id]
+'bg.add(b)
+'barray.add(b)
+'bmap.insert(b.x+b.y Shl 10,b)
 
-thingmap.put(x + y Shl 10, val | isBlock )
-
-Return bg
+' we need to build a value to put in the map
+Return thingmap.put(x + y Shl 10, val | isBlock | (thingmap.le Shl 8) )
+ ' 
 
 End Method
 
@@ -91,22 +91,22 @@ End Method
 
 Method setbindingblock(x,y)
 
-Local bg:bgroup
-Local b:block=bmap.fetch(x+y Shl 10)
-Local b2:block
+'Local bg:bgroup
+'Local b:block=bmap.fetch(x+y Shl 10)
+'Local b2:block
 
-If b=Null Then bg=createsingleblock(x,y,0,0) Else bg=b.group
+'If b=Null Then bg=createsingleblock(x,y,0,0) Else bg=b.group
 
-b=bg.blist.ba[0]
+'b=bg.blist.ba[0]
 
-If x>0 Then b2=bmap.fetch((x-1)+y Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-If y>0 Then b2=bmap.fetch(x+(y-1) Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-b2=bmap.fetch(x+1+y Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
-b2=bmap.fetch(x+(y+1) Shl 10)
-If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
+'If x>0 Then b2=bmap.fetch((x-1)+y Shl 10)
+'If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
+'If y>0 Then b2=bmap.fetch(x+(y-1) Shl 10)
+'If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
+'b2=bmap.fetch(x+1+y Shl 10)
+'If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
+'b2=bmap.fetch(x+(y+1) Shl 10)
+'If b2 And b2.btype>0 And b.checkchem2(b2) Then bg.merge(b2.group);b.get_moli_chem();b2.get_moli_chem()
 
 ' consider binding to the strongest bind 1st rather than this arbitrary directional order
 

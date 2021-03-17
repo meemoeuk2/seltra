@@ -1,4 +1,4 @@
-Type fastintmap
+Type fastintmap ' on a 64 bit machine, longs64 are slightly faster than ints32 , so try to avoid these
 
 Field v[3000000] ' index is the keys, value is the value
 Field k[3000000] ' index is ordered , value is key

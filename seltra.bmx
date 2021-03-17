@@ -1,20 +1,23 @@
 Strict
 
-
 Const arrowflags=%111 ' consider is arrow flag
 Const upArrow=   %001  ' except current way gives 3 other possible objects
 Const downArrow =%010 
 Const leftArrow =%011
 Const rightArrow=%100
-Const isBlock   =%1000
-Const isMovingBlock=%10000
+Const isWall    =%1000
+Const isBlock        =%00010000
+Const isMovingBlock  =%00100000
 Const directionFlagsX=%11000000 ' used to reset direction
 Const directionFlags =%11100000 ' used to work with direction
 Const movingUp       =%00100000 ' blockMovingUp
 Const movingDown     =%01100000 ' we'll need to be more specific when substrates are added
 Const movingLeft     =%10100000
 Const movingRight    =%11100000
-Const blockflags     =%11111000 ' all flags used by blocks
+Const blockflags        =%111111111111111111110000 ' all flags used by blocks
+Const indexrefflags     =%111111111111111100000000 ' reference to 16bit index, hence 65,536-1 block groups max
+                         ' this may change, we've got the key long to use,
+
 
 Include "memap.bmx"
 Include "blockmap.bmx"
@@ -34,6 +37,7 @@ Graphics 1024,768
 
 Global gw=GraphicsWidth()
 Global gh=GraphicsHeight()
+Global editbarwidth=100
 
 Global imagelist:TImage[200]
 
@@ -269,11 +273,13 @@ SetColor 255,255,255 '        what in the unholy feck!?! this color call is cont
 SetViewport 0,0,gw-100,gh ' map
 
 Cls 'If redraw_map>0 Then Cls
+draw_map()
 If mox<gw-100 Then redraw3x3(moxco[frame],moyco[frame])
 'draw_things()
 'draw_sarray()
 'draw_barray()
-draw_everything() ' everything on the map
+'draw_everything() ' everything on the map
+
 DrawImage mousec,(moxc-camposx)*zoom,(moyc-camposy)*zoom
 If redraw_map>0 Then draw_walls();redraw_map=redraw_map-1
 rarray.do_redraws()
@@ -322,9 +328,10 @@ Local t=thingmap.fetch(moxc+moyc Shl 10)
 
 DrawLine gw-100,0,gw-100,gh
 SetColor 0,0,0
-DrawRect gw-90,gh-70,100,20
+DrawRect gw-90,gh-90,100,50
 SetColor 222,222,222
 DrawText (moxc+" "+moyc+" "+t,gw-90,gh-65)
+DrawText (camposx+" "+camposy,gw-90,gh-90)
 
 Local b:block=bmap.fetch(moxc+moyc Shl 10)
 If b And b.btype<>0
@@ -376,6 +383,69 @@ End Function
 
 
 
+Function draw_map()
+' needs centre cell
+' and centre pixel
+' differs from other draws because this one does not iterate thing index array 
+' instead uses map coords ( key )
+
+'start at centre ' gonna need a formula dependant on zoom and screen width + height
+
+Local x,y,xd=0,yd=-1,cd=0
+x=camposx+(gw-editbarwidth)/(2*zoom)
+y=camposy+ gh/(2*zoom)
+' get x,y ' is campos central or top left?
+' xd,yd are the xdiretion and ydrirection of the draw pen , cd is a temp hold variable that allows the pen to turn direction
+' k is a counter the pen draw length increase by 1 every 2 draw lengths
+' w counts the draw length so far
+' wmax is the max draw legnth for this length
+Local k=0,wmax=1,w,t
+
+While 1
+
+ w=0
+ While w<wmax
+  If x>=0 And y>=0
+   t=thingmap.fetch(x+(y Shl 10))
+   If t Then DrawImage thingToImage(t),(x-camposx)*zoom,(y-camposy)*zoom
+  EndIf
+
+  x=x+xd
+  y=y+yd
+  w=w+1
+  
+  If x-camposx<0 Then Return
+ Wend
+
+ cd=xd
+ xd=-yd
+ yd=cd
+
+ k=k+1
+ If k=2 Then k=0;wmax=wmax+1
+
+Wend
+
+End Function
+
+
+
+Function thingtoImage:TImage(t)
+
+If t & iswall  Then Return imagelist[wallimageindex]
+If t & isBlock Then Return imagelist[10]
+
+Select t Mod 8
+   Case 1 ; Return arrown
+   Case 2 ; Return arrows
+   Case 3 ; Return arroww
+   Case 4 ; Return arrowe
+End Select 
+
+End Function
+
+
+
 Function update_bgroups()
 
 Local i
@@ -407,7 +477,7 @@ Local b:block
 While i<barray.le
  b=barray.ba[i]
  If b
-  redraw_cell(b.oldx[frame],b.oldy[frame])'DrawImage blank,(b.oldx[frame]-camposx)*zoom,(b.oldy[frame]-camposy)*zoom ' 
+  redraw_cell(b.oldx[frame],b.oldy[frame])
   DrawImage b.image,(b.x-camposx)*zoom,(b.y-camposy)*zoom
   b.oldx[frame]=b.x
   b.oldy[frame]=b.y
@@ -443,30 +513,11 @@ End Function
 
 Function redraw_cell(x,y)
 
-Local b:block=bmap.fetch(x+y Shl 10)
 Local v=thingmap.fetch(x+y Shl 10)
-Local s:substrate=smap.fetch(x+y Shl 10)
+Local im:TImage=thingtoimage(v)
 
-Local im:TImage
-
-If b Then DrawImage b.image,(x-camposx)*zoom,(y-camposy)*zoom   ; Return
-If Not v Then DrawImage blank,(x-camposx)*zoom,(y-camposy)*zoom ; Return
-
-' no v it seems when substrate created
-If v
- If v Mod 8
-  Select v Mod 8
-   Case 1 ; im=arrown
-   Case 2 ; im=arrows
-   Case 3 ; im=arroww
-   Case 4 ; im=arrowe
-   Case 5 ; im=gencell
-  End Select
-  DrawImage im,(x-camposx)*zoom,(y-camposy)*zoom
- EndIf
-EndIf
- 
-If s Then DrawImage s.image,zoom*(x-camposx),zoom*(y-camposy) 
+If im=Null Then DrawImage blank,(x-camposx)*zoom,(y-camposy)*zoom ; Return
+DrawImage im,(x-camposx)*zoom,(y-camposy)*zoom
 
 End Function
 
@@ -551,6 +602,62 @@ wallgroup.add(b)
 End Function
 
 
+
+Function get_user_input()
+
+Local s:substrate=smap.fetch(moxc+moyc Shl 10)
+Local t=thingmap.fetch(moxc+moyc Shl 10)
+Local p,key
+Local val:Long
+
+key = moxc + moyc Shl 10
+val = thingmap.fetch(key)
+
+If KeyHit(key_f1) Then save_map()
+If KeyHit(key_f2) Then load_map()
+If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
+
+If KeyHit(key_w) Then thingmap.putq(key,(val &~ arrowflags) |upArrow   )
+If KeyHit(key_s) Then thingmap.putq(key,(val &~ arrowflags) |downArrow )
+If KeyHit(key_a) Then thingmap.putq(key,(val &~ arrowflags) |leftArrow )
+If KeyHit(key_d) Then thingmap.putq(key,(val &~ arrowflags) |rightArrow)
+
+If KeyHit(key_space)
+ If t>=5 And t<=9 
+  'garray.remove(moxc+moyc Shl 10) 'remove generator
+ EndIf
+
+ If thingmap.fetch(key) & isBlock
+  thingblockRemove(key)
+ Else
+  thingmap.remove(key)
+ EndIf
+
+ If s Then s.del()
+EndIf
+
+Local old_gamespeedbrake_setting=gamespeedbrake_setting
+gamespeedbrake_setting=gamespeedbrake_setting+KeyHit(key_openbracket)-KeyHit(key_closebracket)
+If gamespeedbrake_setting<>old_gamespeedbrake_setting 
+ Select gamespeedbrake_setting
+  Case -1; gamespeedbrake_setting=0
+  Case 0 ;' paused
+  Case 1 ; gamespeedbrake=500' slow
+  Case 2 ; gamespeedbrake=100' normal
+  Case 3 ; gamespeedbrake=20 ' fast
+  Case 4 ;' max
+  Case 5 ; gamespeedbrake_setting=4
+ End Select
+EndIf
+
+If gamespeedbrake<4 Then gamespeedbrake=4
+
+FlushKeys()
+
+End Function
+
+
+
 ' mouse functions, currently only 3 functions so maybe don't need to objectify
 Function get_mouse_input()
 
@@ -614,7 +721,7 @@ If MouseHit(1)
   If Not b
    If smi=sub0    Then createsinglesubstrate(moxc,moyc);Return
    If smi=subd    Then placeSubstrateGuide(moxc,moyc);Return
-   If smi=gencell Then placegenTile(moxc,moyc);Return
+   If smi=gencell Then Return ' placegenTile(moxc,moyc);Return
    btarray[smt].Createsingleblock(moxc,moyc,0,0)
   Else
    b.checkchem3(Null)
@@ -800,62 +907,6 @@ Local db = thingmap.fetch(p)
 unAllocatedGenTiles.add(x,y)
 
 End Function
-
-
-
-Function get_user_input()
-
-Local b:block=bmap.fetch(moxc+moyc Shl 10)
-Local s:substrate=smap.fetch(moxc+moyc Shl 10)
-Local t=thingmap.fetch(moxc+moyc Shl 10)
-Local p,key
-Local val:Long
-
-key = moxc + moyc Shl 10
-val = thingmap.fetch(key)
-
-If KeyHit(key_f1) Then save_map()
-If KeyHit(key_f2) Then load_map()
-If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
-
-If (Not b) Or (b And b.btype<>0)
- If KeyHit(key_w) Then thingmap.putq(key,(val &~ arrowflags) |upArrow)
- If KeyHit(key_s) Then thingmap.putq(key,(val &~ arrowflags) |downArrow)
- If KeyHit(key_a) Then thingmap.putq(key,(val &~ arrowflags) |leftArrow)
- If KeyHit(key_d) Then thingmap.putq(key,(val &~ arrowflags) |rightArrow)
-EndIf
-
-If KeyHit(key_space)
- If t>=5 And t<=9 
-  'garray.remove(moxc+moyc Shl 10) 'remove generator
- EndIf
-
- thingmap.remove(moxc+moyc Shl 10)
- If b And b.btype<>0 Then b.group.remove()
- If b And b.image=imagelist[1] Then wallgroup.ba[b.id]=Null; bmap.remove(b.x+b.y Shl 10)
- If s Then s.del()
-EndIf
-
-Local old_gamespeedbrake_setting=gamespeedbrake_setting
-gamespeedbrake_setting=gamespeedbrake_setting+KeyHit(key_openbracket)-KeyHit(key_closebracket)
-If gamespeedbrake_setting<>old_gamespeedbrake_setting 
- Select gamespeedbrake_setting
-  Case -1; gamespeedbrake_setting=0
-  Case 0 ;' paused
-  Case 1 ; gamespeedbrake=500' slow
-  Case 2 ; gamespeedbrake=100' normal
-  Case 3 ; gamespeedbrake=20 ' fast
-  Case 4 ;' max
-  Case 5 ; gamespeedbrake_setting=4
- End Select
-EndIf
-
-If gamespeedbrake<4 Then gamespeedbrake=4
-
-FlushKeys()
-
-End Function
-
 
 
 Function update_gens()
