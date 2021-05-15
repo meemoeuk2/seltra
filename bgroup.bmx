@@ -420,12 +420,12 @@ Local i
 
 While b
  If b.btype
-  Select thingmap.fetch(b.x+(b.y Shl 10)) Mod 8
-   Case 1 ; xv=0 ; yv=-1 
-   Case 2 ; xv=0 ; yv=1  
-   Case 3 ; xv=-1; yv=0  
-   Case 4 ; xv=1 ; yv=0  
-  End Select
+ ' Select thingmap.fetch(b.x+(b.y Shl 10)) Mod 8
+ '  Case 1 ; xv=0 ; yv=-1 
+ '  Case 2 ; xv=0 ; yv=1  
+ '  Case 3 ; xv=-1; yv=0  
+ '  Case 4 ; xv=1 ; yv=0  
+ ' End Select
  EndIf
 
  i=i+1

@@ -1,24 +1,50 @@
 Strict
+Global dblog=0
 
-Const arrowflags=%111 ' consider is arrow flag
-Const upArrow=   %001  ' except current way gives 3 other possible objects
-Const downArrow =%010 
-Const leftArrow =%011
-Const rightArrow=%100
-Const isWall    =%1000
-Const isBlock        =%00010000
-Const isMovingBlock  =%00100000
-Const directionFlagsX=%11000000 ' used to reset direction
-Const directionFlags =%11100000 ' used to work with direction
-Const movingUp       =%00100000 ' blockMovingUp
-Const movingDown     =%01100000 ' we'll need to be more specific when substrates are added
-Const movingLeft     =%10100000
-Const movingRight    =%11100000
-Const blockflags        =%111111111111111111110000 ' all flags used by blocks
-Const indexrefflags     =%111111111111111100000000 ' reference to 16bit index, hence 65,536-1 block groups max
+
+Const keyrfSh = 8
+Const bondpSh = 32
+Const bondaSh = 36
+Const btypeSh = 40
+
+Const arrowflags =%111 ' consider is arrow flag
+Const LeftArrow  =%001  ' except current way gives 3 other possible objects
+Const RightArrow =%010 
+Const UpArrow    =%011
+Const DownArrow  =%100
+Const isWall    =1 Shl 3
+Const isBlock        =   1 Shl 4
+Const isMovingBlock  =   1 Shl 5
+Const directionFlagsX=%110 Shl 5 ' used to reset direction
+Const directionFlags =%111 Shl 5 ' used to work with direction
+Const movingLeft     =%001 Shl 5 ' blockMovingUp
+Const movingRight    =%011 Shl 5 ' we'll need to be more specific when substrates are added
+Const movingUp       =%101 Shl 5
+Const movingDown     =%111 Shl 5
+Global blockflags:Long        =%11111111111100000000000000000000000011110000:Long ' all flags used by blocks * need update
+Const keyrefflags:Long       =%111111111111111111111111:Long Shl 8 ' reference to 24bit key
+Const bondpflags:Long        =%1111:Long Shl bondpsh  ' p = potential
+Const bondpWestflag:Long     =%0001:Long Shl bondpsh
+Const bondpEastflag:Long     =%0010:Long Shl bondpsh
+Const bondpNorthflag:Long    =%0100:Long Shl bondpsh
+Const bondpSouthflag:Long    =%1000:Long Shl bondpsh
+
+Const bondaflags:Long        =%1111:Long Shl bondash ' actual
+Const bondaWestflag:Long     =%0001:Long Shl bondash
+Const bondaEastflag:Long     =%0010:Long Shl bondash
+Const bondaNorthflag:Long    =%0100:Long Shl bondash
+Const bondaSouthflag:Long    =%1000:Long Shl bondash
+
+Const blocktypeflags:Long    =%1111:Long Shl btypesh ' ??? notice the right bit is not used? why not?
+Const blocktypeEngine:Long   =%0  ' is uncompromising / engine / Self powered blocks
+Const blocktypePlastic:Long  =%0010:Long Shl btypesh ' loses momentum on contact
+Const blocktypeElastic:Long  =%0100:Long Shl btypesh' bouncy ' most blocks should be this type
+Const blocktypeMagClock:Long =%0110:Long Shl btypesh' bouncy, direction rotates clockwise on impact
+Const blocktypeMagAntiC:Long =%1000:Long Shl btypesh' bouncy, direction rotates clockwise on impact
+
+
+
                          ' this may change, we've got the key long to use,
-
-
 Include "memap.bmx"
 Include "blockmap.bmx"
 Include "arrays.bmx"
@@ -29,11 +55,9 @@ Include "substrate.bmx"
 Include "sgroup.bmx"
 Include "btemplate.bmx"
 Include "ggroup.bmx"
-Include "fastLongMap.bmx"
+Include "fastlongmap3.bmx"
 
 Graphics 1024,768
-
-
 
 Global gw=GraphicsWidth()
 Global gh=GraphicsHeight()
@@ -110,7 +134,10 @@ Global rarray:redrawarray=New redrawarray
 Global genarray:generatorarray=New generatorarray
 
 Global bmap:fastblockmap=New fastblockmap
-Global thingmap:fastLongmap=New fastLongmap ' arrows and generators
+Global thingmap:fastlongmap=New fastlongmap ' arrows and generators
+Global v:Long[]=thingmap.v
+Global k[]=thingmap.k
+
 Global smap:substratemap=New substratemap
 
 Type cell ' sometimes just need this
@@ -118,9 +145,7 @@ Type cell ' sometimes just need this
 End Type 
 
 Const wallimageindex:Int = 3
-Const gencode:Int = 5 ' gen code for thing map
-
-
+Const gencode:Long = 5 ' gen code for thing map
 Global dbflag
 
 Function loadimage2:TImage(fn$)
@@ -173,39 +198,39 @@ End Function
 
 
 Function draw_things()
-
-Local m,v,i:Int
-
-Local im:TImage
-Local n:Int=thingmap.le
-
-While i<n
- m=thingmap.kfetch(i)
- v=thingmap.fetch(m)
+'
+'Local m,v,i:Int'
+'
+'Local im:TImage
+'Local n:Int=thingmap.le
+'
+'While i<n
+' m=thingmap.kfetch(i)
+' v=thingmap.fetch(m)
  
- If v
-  If v Mod 8
-   Select v Mod 8
-    Case 1 ; im=arrown
-    Case 2 ; im=arrows
-    Case 3 ; im=arroww
-    Case 4 ; im=arrowe
-    Case 5 ; im=gencell
-   End Select
-   SetMaskColor (255,255,230)
-   If (v Mod 8) Then DrawImage im,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
-   If v=5       Then DrawImage gencell,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
-  EndIf
-  If v & 136=136
-   SetMaskColor 0,0,0
-   DrawImage subd,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
-  ElseIf v & 128
-   SetMaskColor 0,0,0
-   DrawImage sub0,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
-  EndIf
- EndIf
- i=i+1
-Wend
+' If v
+'  If v Mod 8
+'   Select v Mod 8
+'    Case 1 ; im=arrown
+'    Case 2 ; im=arrows
+'    Case 3 ; im=arroww
+'    Case 4 ; im=arrowe
+'    Case 5 ; im=gencell
+'   End Select
+'   SetMaskColor (255,255,230)
+ '  If (v Mod 8) Then DrawImage im,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
+'   If v=5       Then DrawImage gencell,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
+'  EndIf
+'  If v & 136=136
+'   SetMaskColor 0,0,0
+'   DrawImage subd,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
+'  ElseIf v & 128
+'   SetMaskColor 0,0,0
+'   DrawImage sub0,zoom*((m Mod 1024)-camposx),zoom*((m Shr 10)-camposy)
+'  EndIf
+' EndIf
+' i=i+1
+'Wend
 
 End Function
 
@@ -213,30 +238,30 @@ End Function
 
 Function draw_everything()
 
-Local i,key
-Local val:Long
-Local x,y
+'Local i,key
+'Local val:long
+'Local x,y
 
-While i<thingmap.le
+'While i<thingmap.le
 
- key = thingmap.kfetch(i)
- val = thingmap.vfetch(i)
- x= (key Mod 1024) - camposx
- y= (key Shr 10)   - camposy
- If val & 8
-  DrawImage imagelist[5],zoom*x,zoom*y
- ElseIf val Mod 8 = 1 
-  DrawImage arrown,zoom*x,zoom*y
- ElseIf val Mod 8 = 2
-  DrawImage arrows,zoom*x,zoom*y
- ElseIf val Mod 8 = 3
-  DrawImage arroww,zoom*x,zoom*y
- ElseIf val Mod 8 = 4
-  DrawImage arrowe,zoom*x,zoom*y
- EndIf
+' key = thingmap.kfetch(i)
+' val = thingmap.vfetch(i)
+' x= (key Mod 1024) - camposx
+' y= (key Shr 10)   - camposy
+' If val & 8
+'  DrawImage imagelist[5],zoom*x,zoom*y
+' ElseIf val Mod 8 = 1 
+ ' DrawImage arrown,zoom*x,zoom*y
+ 'ElseIf val Mod 8 = 2
+'  DrawImage arrows,zoom*x,zoom*y
+' ElseIf val Mod 8 = 3
+'  DrawImage arroww,zoom*x,zoom*y
+' ElseIf val Mod 8 = 4
+'  DrawImage arrowe,zoom*x,zoom*y
+' EndIf
 
- i=i+1
-Wend
+' i=i+1
+'Wend
 
 End Function
 
@@ -328,9 +353,10 @@ Local t=thingmap.fetch(moxc+moyc Shl 10)
 
 DrawLine gw-100,0,gw-100,gh
 SetColor 0,0,0
-DrawRect gw-90,gh-90,100,50
+DrawRect gw-90,gh-90,100,80
 SetColor 222,222,222
-DrawText (moxc+" "+moyc+" "+t,gw-90,gh-65)
+DrawText (t        ,gw-90,gh-40)
+DrawText (moxc+" "+moyc+" "+thingmap.le, gw-90,gh-65)
 DrawText (camposx+" "+camposy,gw-90,gh-90)
 
 Local b:block=bmap.fetch(moxc+moyc Shl 10)
@@ -399,7 +425,7 @@ y=camposy+ gh/(2*zoom)
 ' k is a counter the pen draw length increase by 1 every 2 draw lengths
 ' w counts the draw length so far
 ' wmax is the max draw legnth for this length
-Local k=0,wmax=1,w,t
+Local k=0,wmax=1,w,t:Long 
 
 While 1
 
@@ -407,7 +433,22 @@ While 1
  While w<wmax
   If x>=0 And y>=0
    t=thingmap.fetch(x+(y Shl 10))
-   If t Then DrawImage thingToImage(t),(x-camposx)*zoom,(y-camposy)*zoom
+   
+
+
+   If t 
+
+   Local key= thingmap.getkey(t)
+   Local kx = key Mod 1024
+   Local ky = key Shr 10
+   If dblog Then Print "drawmap: actual xy: "+x+" "+y+" key extracted xy "+kx+" "+ky  
+
+
+   If dblog Then If (t & blockflags) Then Print "attempting to draw a block "+t+" arrowflags: "+ (t Mod 8)
+   If dblog Then  If Not (t & blockflags) Then Print " attempting To draw a non block "+t+" arrowflags: "+(t Mod 8)
+    Local tti:TImage=thingToImage(t)
+    DrawImage tti,(x-camposx)*zoom,(y-camposy)*zoom
+   EndIf
   EndIf
 
   x=x+xd
@@ -430,16 +471,24 @@ End Function
 
 
 
-Function thingtoImage:TImage(t)
+Function thingtoImage:TImage(t:Long)
 
 If t & iswall  Then Return imagelist[wallimageindex]
-If t & isBlock Then Return imagelist[10]
+If t & isBlock 
+ Local bonds = (t & bondpflags) Shr bondpsh
+ Local btype:Long = t & blocktypeflags
+ Local btf:Long = blocktypeflags
+ btype = t & btf
+ btype = btype Shr btypesh
+ If dblog Then Print " thingtoImage: returning image " +(4+bonds+16*btype)
+ Return imagelist[4+bonds+16*btype]
+EndIf
 
 Select t Mod 8
-   Case 1 ; Return arrown
-   Case 2 ; Return arrows
-   Case 3 ; Return arroww
-   Case 4 ; Return arrowe
+   Case LeftArrow  ; Return arroww
+   Case RightArrow ; Return arrowe
+   Case UpArrow    ; Return arrown
+   Case DownArrow  ; Return arrows
 End Select 
 
 End Function
@@ -513,7 +562,7 @@ End Function
 
 Function redraw_cell(x,y)
 
-Local v=thingmap.fetch(x+y Shl 10)
+Local v:Long=thingmap.fetch(x+y Shl 10)
 Local im:TImage=thingtoimage(v)
 
 If im=Null Then DrawImage blank,(x-camposx)*zoom,(y-camposy)*zoom ; Return
@@ -606,7 +655,6 @@ End Function
 Function get_user_input()
 
 Local s:substrate=smap.fetch(moxc+moyc Shl 10)
-Local t=thingmap.fetch(moxc+moyc Shl 10)
 Local p,key
 Local val:Long
 
@@ -617,19 +665,16 @@ If KeyHit(key_f1) Then save_map()
 If KeyHit(key_f2) Then load_map()
 If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
-If KeyHit(key_w) Then thingmap.putq(key,(val &~ arrowflags) |upArrow   )
-If KeyHit(key_s) Then thingmap.putq(key,(val &~ arrowflags) |downArrow )
-If KeyHit(key_a) Then thingmap.putq(key,(val &~ arrowflags) |leftArrow )
-If KeyHit(key_d) Then thingmap.putq(key,(val &~ arrowflags) |rightArrow)
+If KeyHit(key_w) Then thingmap.put(key,(val &~ arrowflags) | upArrow    )
+If KeyHit(key_s) Then thingmap.put(key,(val &~ arrowflags) | downArrow  )
+If KeyHit(key_a) Then thingmap.put(key,(val &~ arrowflags) | leftArrow  )
+If KeyHit(key_d) Then thingmap.put(key,(val &~ arrowflags) | rightArrow )
 
 If KeyHit(key_space)
- If t>=5 And t<=9 
-  'garray.remove(moxc+moyc Shl 10) 'remove generator
- EndIf
 
  If thingmap.fetch(key) & isBlock
   thingblockRemove(key)
- Else
+ ElseIf thingmap.fetch(key)
   thingmap.remove(key)
  EndIf
 
@@ -698,6 +743,7 @@ Local prox ' nearby object to mouseclick
 
 moxc=mox/zoom+camposx
 moyc=moy/zoom+camposy
+Local key = moxc + (moyc Shl 10)
 
 mozd=moz-mozo ' have to log own mouse z position cos bmax doesn't let u movemousez
 If mozu+mozd<-9 Then mozn=-9 Else mozn=mozu+mozd
@@ -717,17 +763,14 @@ If moyc<0 Then moyc=0
 
 If MouseHit(1)
  If smt<=55
-  b=bmap.fetch(moxc+moyc Shl 10)
-  If Not b
-   If smi=sub0    Then createsinglesubstrate(moxc,moyc);Return
-   If smi=subd    Then placeSubstrateGuide(moxc,moyc);Return
-   If smi=gencell Then Return ' placegenTile(moxc,moyc);Return
-   btarray[smt].Createsingleblock(moxc,moyc,0,0)
-  Else
-   b.checkchem3(Null)
-  EndIf
+  If smt=3         Then thingmap.put(key,isWall);Return
+  If smi=sub0      Then createsinglesubstrate(moxc,moyc);Return
+  If smi=subd      Then placeSubstrateGuide(moxc,moyc);Return
+  If smi=gencell   Then Return ' placegenTile(moxc,moyc);Return
+  Local bonds:Long=(smt-4) Mod 16 ' covert paintbox position or smt into bonds
+  Local btype:Long=(smt-4) Shr 4
+  btarray[smt].Createsingleblock(moxc,moyc,0,0,bonds,btype)
  EndIf
-
 EndIf
 
 If MouseHit(2)
@@ -742,7 +785,7 @@ If MouseHit(2)
    If smt<=31
     b=bmap.fetch(moxc+moyc Shl 10)
     If Not b
-     btarray[smt].Createsingleblock(moxc,moyc,0,0)
+     btarray[smt].Createsingleblock(moxc,moyc,0,0,10,0)
     Else
      b.checkchem3(Null)
     EndIf
@@ -758,7 +801,6 @@ If MouseHit(3)
  camposy=moyc-GraphicsHeight()/(2.0*zoom)
  redraw_map=3
  MoveMouse (GraphicsWidth()/2,GraphicsHeight()/2)
- 
 EndIf
 
 End Function
@@ -1127,8 +1169,8 @@ Next
 WriteInt out,thingmap.le
 
 For i=0 To thingmap.le
- WriteInt out,thingmap.kfetch(i)
- WriteLong out,thingmap.vfetch(i)
+' WriteInt out,thingmap.kfetch(i)
+' WriteLong out,thingmap.vfetch(i)
 Next
 
 CloseFile out
@@ -1145,7 +1187,7 @@ wallgroup.ba=wallgroup.ba[..999999]
 
 ' but gotta flush map too!
 bmap=New fastblockmap
-thingmap = New fastLongmap
+thingmap = New fastlongmap
 
 Local in:TStream = ReadFile("seltraMap.sem")
 If Not in Then Return
@@ -1165,7 +1207,7 @@ Local k:Int,v:Long
 For i=0 To n-1
  k=ReadLong(in)
  v=ReadLong(in)
- If v Then thingmap.put(k,v)
+ 'If v Then thingmap.put(k,v)
 Next
 
 CloseFile in
@@ -1189,7 +1231,7 @@ Repeat
  p = thingmap.fetch(c.x+ c.y Shl 10) 
  
  If p>=5 And p<=9
-  thingmap.put(c.x+ c.y Shl 10,p-100)
+'  thingmap.put(c.x+ c.y Shl 10,p-100)
  
   If k=0 Then genarray.ga[j]=New ggroup
   genarray.ga[j].clist[k] = New cell
@@ -1203,7 +1245,7 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x+1
    ff[q].y=c.y
-   thingmap.put((c.x+1) + (c.y Shl 10),-4)
+  ' thingmap.put((c.x+1) + (c.y Shl 10),-4)
    q=q+1
   EndIf
   p=thingmap.fetch((c.x-1) + (c.y Shl 10))
@@ -1211,23 +1253,23 @@ Repeat
    ff[q]=New cell
    ff[q].x=c.x-1
    ff[q].y=c.y
-   thingmap.put((c.x-1) + (c.y Shl 10),-4)
+ '  thingmap.put((c.x-1) + (c.y Shl 10),-4)
    q=q+1
   EndIf
-  p=thingmap.fetch(c.x + ((c.y+1) Shl 10) )
+' p=thingmap.fetch(c.x + ((c.y+1) Shl 10) )
   If p>=5 And p<=8 
    ff[q]=New cell
    ff[q].x=c.x
    ff[q].y=c.y+1
-   thingmap.put(c.x + ((c.y+1) Shl 10),-4)
+''  thingmap.put(c.x + ((c.y+1) Shl 10),-4)
    q=q+1
   EndIf
-  p=thingmap.fetch( c.x + ((c.y-1) Shl 10) )
+ ' p=thingmap.fetch( c.x + ((c.y-1) Shl 10) )
   If p>=5 And p<=8 
    ff[q]=New cell
    ff[q].x=c.x
    ff[q].y=c.y-1
-   thingmap.put(c.x + (c.y-1) Shl 10,-4)
+  ' thingmap.put(c.x + (c.y-1) Shl 10,-4)
    q=q+1
   EndIf  
 
@@ -1259,7 +1301,7 @@ Repeat
   c=g.clist[j]
   If c=Null Then Exit
   p=thingmap.fetch(c.x+c.y Shl 10)
-  thingmap.put(c.x+c.y Shl 10,p+100)
+ ' thingmap.put(c.x+c.y Shl 10,p+100)
   j=j+1
  Forever 
 
@@ -1276,9 +1318,8 @@ Global subd:TImage=loadimage2("subd.png")
 
 create_chem_numbers()
 create_block_mix()
-
 remove_block_image_templates()
-
+'thingmap.initkeymap()
 'gen_maze_map(1,1,40,1,40,40)
 smi=imagelist[smt]
 
