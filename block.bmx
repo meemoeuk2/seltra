@@ -361,8 +361,9 @@ While i=<thingmap.le
  ' this method is primitve, for blockgroups with one block only
  ' later for multi block groups will need direction setter management for multiple arrow inputs
  If val & isBlock ' if block ' is block may be redundant as we expand arrays in th thingmap
+  'DebugStop
   Select val Mod 8
-   Case upArrow    ;   v[i]=(val &~ directionFlags) | movingUp
+   Case upArrow    ;  DebugStop; v[i]=(val &~ directionFlags) | movingUp
    Case downArrow  ;   v[i]=(val &~ directionFlags) | movingDown
    Case leftArrow  ;   v[i]=(val &~ directionFlags) | movingLeft
    Case rightArrow ;   v[i]=(val &~ directionFlags) | movingRight
@@ -393,7 +394,9 @@ Local val2:Long
 Local n=thingmap.le
 
 While i<=n
+While i<=n
 
+ key2=-1
  val = v[i]
  key = thingmap.getkey(val)
 
@@ -406,11 +409,15 @@ While i<=n
   Case movingDown ; key2 = key+(1 Shl 10)
  End Select
 
+ ' cheap check if outside pay area, will need to improve sometime
+ If key2<0 Or key2>(1023 Shl 10) + 1023 Then Exit
+ ' this causes skewed wrap around east-west, and stoppage at the north south limits
+
  Local i2= thingmap.ifetch(key2)
  val2:Long = v[i2]
 
  If val & isMovingBlock
-  If val2 & isBlock Then thingBlockCollisionManager(i,i2)
+  If val2 & isBlock Then DebugStop; thingBlockCollisionManager(i,i2)
 
   If key2<0 Or (key Mod 1024)<0
    thingblockRemove(key)
@@ -421,6 +428,16 @@ While i<=n
      If dblog Then Print " thingmoveblock: move approved for "+key+" "+val+" block to "+key2
      moveblock(key,key2,i,i2,val,val2)     
     EndIf
+   Else ' hit wall
+    Local gbt:Long = (val & getBlockType) Shr btypeSh
+    Local bte:Long = Sgn(val & blocktypeElastic)
+    Local bf:Long = bounce*Sgn(val & blocktypeElastic)
+    Local vbf:Long = val ~ bounce*Sgn(val & blocktypeElastic)
+    v[i]= val ~ bounce*Sgn(val & blocktypeElastic)
+  '  v[i]= val + val &  clockrotate*Sgn( val & blocktypeMagClock )
+    If val & blocktypeMagClock Then  v[i] = clockRotation(val)
+    If val & blocktypeMagAntiC Then  v[i] = antiCRotation(val)
+    thingmap.v[key] = v[i]' XOR with bounceflag flips the direction
    EndIf
 
   EndIf
@@ -428,6 +445,8 @@ While i<=n
  EndIf 
 
  i=i+1
+Wend
+i=i+1
 Wend
 
 End Function
@@ -441,29 +460,29 @@ If dblog Then Print "moveblock: starting with block "+i1+" key:"+key1+" val1:"+v
 If dblog Then Print "moveblock: blockflags:"+blockflags+"input block with blockflags "+(val1 & blockflags)
 
 Local dbg1:Long  = val1 & blockflags
-Local dbg2:Long  = val1 &~ blockflags
-Local val2n:Long = (val1 & blockflags) | (key2 Shl keyrfSh) 
+Local dbg2:Long  = val1 &~ (blockflags | keyrefflags)
+Local val1b:Long = (val1 & blockflags) | (key2 Shl keyrfSh) 
+' extracting the block and keymap data, leaving behind arrow data
 
 If val1 &~ (blockflags | keyrefflags) ' something else is there, so need to split, and create new index
   ' no need for new index
   ' switch is always necessary, because block must retain order amongst themselves
   ' 'switch' is this a switch when the index is passed on?
  If val2=0
-  thingmap.put(key2,val2n)
+  thingmap.put(key2,val1b)
   i2=thingmap.ifetch(key2)
  
-  If dblog Then Print "moveblock: "+val2n+" has been put in key "+key2
+  If dblog Then Print "moveblock: "+val1b+" has been put in key "+key2
   If dblog Then Print "moveblock: "+(val1 &~ blockflags)+" has been put in key "+key1+"  "+v[k[key1]]
- Else
-  Print "error : move block was given val2 that was neither nonblock nor zero "+val2
  EndIf 
 Else
  val1=0
 EndIf
 
 ' pass on the index
+
 v[i2]=val1 &~ blockflags
-v[i1]= val2 | val2n
+v[i1]= val2 | val1b ' notice here that the indices have swaped. We wish to keep the active thing at the same index
 k[key2]=i1
 k[key1]=i2
 
@@ -503,7 +522,7 @@ Local val2:Long=v[i2]
 ' why do we have 4 inputs?
 ' are keys checked here to make sure they are adjacent and moving accordingly?
 '	 no. that is done in the check manager. if we get here its means collision is confirmed
-DebugStop
+'DebugStop
 
 'check for block join
 If (val1 & isBlock) And (val2 & isBlock) 
@@ -532,6 +551,9 @@ If (val1 & isBlock) And (val2 & isBlock)
   v[i2]=val2
  EndIf
 EndIf
+
+
+
 
 ' after join, a block needs to become master or slave
 End Function

@@ -6,12 +6,11 @@ import brl.bankstream
 import brl.base64
 import brl.basic
 import brl.bmploader
+import brl.bytebuffer
 import brl.clipboard
 import brl.collections
-import brl.crypto
 import brl.d3d7max2d
 import brl.d3d9max2d
-import brl.data
 import brl.directsoundaudio
 import brl.eventqueue
 import brl.freeaudioaudio
@@ -20,32 +19,76 @@ import brl.glgraphics
 import brl.glmax2d
 import brl.gnet
 import brl.jpgloader
-import brl.json
 import brl.map
 import brl.matrix
 import brl.maxlua
+import brl.maxunit
 import brl.maxutil
+import brl.objectlist
 import brl.oggloader
 import brl.openalaudio
+import brl.platform
 import brl.pngloader
 import brl.quaternion
+import brl.randomdefault
 import brl.retro
 import brl.tgaloader
 import brl.threadpool
 import brl.timer
 import brl.timerdefault
+import brl.uuid
 import brl.volumes
 import brl.wavloader
-import brl.xml
 import pub.freejoy
 import pub.freeprocess
 import pub.glad
-import pub.macos
+import pub.nfd
 import pub.nx
 import pub.opengles
+import pub.opengles3
 import pub.vulkan
 import pub.xmmintrin
-gencode%=5
+isBlock%=16
+UpArrow%=4
+directionFlags%=224
+movingUp%=224
+DownArrow%=2
+movingDown%=96
+LeftArrow%=3
+movingLeft%=160
+RightArrow%=1
+movingRight%=32
+keyrefflags||=4294967040
+keyrfSh%=8
+isMovingBlock%=32
+bondpSh%=32
+bondpWestflag||=4294967296
+bondpEastflag||=8589934592
+bondaSh%=36
+bondaWestflag||=68719476736
+bondaEastflag||=137438953472
+bondpNorthflag||=17179869184
+bondpSouthflag||=34359738368
+bondaNorthflag||=274877906944
+bondaSouthflag||=549755813888
+isWall%=8
+blockflags||=17587891077360
+btypeSh%=40
+getBlockType||=7696581394432
+blocktypeElastic||=2199023255552
+bounce||=128
+blocktypeMagClock||=3298534883328
+getDirection%=224
+blocktypeMagAntiC||=4398046511104
+wallimageindex%=3
+arrowflags%=7
+bondpflags||=64424509440
+gencode||=5
+directionFlagsX%=192
+clockRotate||=64
+bondaflags||=1030792151040
+blocktypeEngine||=0
+blocktypePlastic||=1099511627776
 btemplate^Object{
 .btype%&
 .ch%&
@@ -53,10 +96,18 @@ btemplate^Object{
 .maxbonds%&
 .bonds2%&
 -New()="__m_seltra_btemplate_New"
--create_block_image%(grey%)="_m_seltra_btemplate_create_block_image_i"
--createsingleblock:bgroup(x%,y%,xv%,yv%)="_m_seltra_btemplate_createsingleblock_iiii"
+-createBlockImage%(grey%)="_m_seltra_btemplate_createBlockImage_i"
+-createsingleblock%%(x%,y%,xv%,yv%,bonds%%,btype%%)="_m_seltra_btemplate_createsingleblock_iiiill"
 -setbindingblock%(x%,y%)="_m_seltra_btemplate_setbindingblock_ii"
 }="_m_seltra_btemplate"
+cellArray^Object{
+.ca:cell&[]&
+.le%&
+-New()="__m_seltra_cellArray_New"
+-add%(x%,y%)="_m_seltra_cellArray_add_ii"
+-add%(c:cell)="_m_seltra_cellArray_add_Tcell"
+-ordered_sort%(n%,i%=0)="_m_seltra_cellArray_ordered_sort_ii"
+}="_m_seltra_cellArray"
 grouparray^Object{
 .ga:bgroup&[]&
 .le%&
@@ -126,43 +177,48 @@ redrawarray^Object{
 -do_redraws%()="_m_seltra_redrawarray_do_redraws"
 }="_m_seltra_redrawarray"
 generatorarray^Object{
-.ga:gen&[]&
+.ga:Ggroup&[]&
 .le%&
 -New()="__m_seltra_generatorarray_New"
--add%(g:gen)="_m_seltra_generatorarray_add_Tgen"
+-add%(g:Ggroup)="_m_seltra_generatorarray_add_TGgroup"
 -ordered_sort%(n%,i%=0)="_m_seltra_generatorarray_ordered_sort_ii"
 }="_m_seltra_generatorarray"
-fastblockmap^Object{
+FastBlockMap^Object{
 .v:block&[]&
 .k%&[]&
 .le%&
 .rc%&
--New()="__m_seltra_fastblockmap_New"
--fetch:block(key%)="_m_seltra_fastblockmap_fetch_i"
--vfetch:block(index%)="_m_seltra_fastblockmap_vfetch_i"
--kfetch%(index%)="_m_seltra_fastblockmap_kfetch_i"
--insert%(key%,b:block)="_m_seltra_fastblockmap_insert_iTblock"
--remove%(key%)="_m_seltra_fastblockmap_remove_i"
--iter%()="_m_seltra_fastblockmap_iter"
--fastsort%()="_m_seltra_fastblockmap_fastsort"
--orderedsort%()="_m_seltra_fastblockmap_orderedsort"
-}="_m_seltra_fastblockmap"
-fastintmap^Object{
-.v%&[]&
+-New()="__m_seltra_FastBlockMap_New"
+-fetch:block(key%)="_m_seltra_FastBlockMap_fetch_i"
+-vfetch:block(index%)="_m_seltra_FastBlockMap_vfetch_i"
+-kfetch%(index%)="_m_seltra_FastBlockMap_kfetch_i"
+-insert%(key%,b:block)="_m_seltra_FastBlockMap_insert_iTblock"
+-remove%(key%)="_m_seltra_FastBlockMap_remove_i"
+-iter%()="_m_seltra_FastBlockMap_iter"
+-fastsort%()="_m_seltra_FastBlockMap_fastsort"
+-orderedsort%()="_m_seltra_FastBlockMap_orderedsort"
+}="_m_seltra_FastBlockMap"
+fastlongmap^Object{
+mnk%=9999999
+mnv%=499999
 .k%&[]&
+.v||&[]&
 .le%&
-.nl%&
--New()="__m_seltra_fastintmap_New"
--fetch%(key%)="_m_seltra_fastintmap_fetch_i"
--vfetch%(index%)="_m_seltra_fastintmap_vfetch_i"
--kfetch%(index%)="_m_seltra_fastintmap_kfetch_i"
--insert%(key%,val%)="_m_seltra_fastintmap_insert_ii"
--remove%(key%)="_m_seltra_fastintmap_remove_i"
--iter%()="_m_seltra_fastintmap_iter"
--fastsort%()="_m_seltra_fastintmap_fastsort"
--orderedsort%()="_m_seltra_fastintmap_orderedsort"
--set_null_value%(n%)="_m_seltra_fastintmap_set_null_value_i"
-}="_m_seltra_fastintmap"
+.ze%&
+.nkv%&
+-New()="__m_seltra_fastlongmap_New"
+-initKeyMap%()="_m_seltra_fastlongmap_initKeyMap"
+-fetch||(key%)="_m_seltra_fastlongmap_fetch_i"
+-vfetch||(key%)="_m_seltra_fastlongmap_vfetch_i"
+-ifetch%(key%)="_m_seltra_fastlongmap_ifetch_i"
+-kfetch%(i%)="_m_seltra_fastlongmap_kfetch_i"
+-getkey%(val||)="_m_seltra_fastlongmap_getkey_y"
+-fastput%(key%,val%,index||)="_m_seltra_fastlongmap_fastput_iiy"
+-put%(key%,val||)="_m_seltra_fastlongmap_put_iy"
+-putq%(key%,val||)="_m_seltra_fastlongmap_putq_iy"
+-put%(key%,val||,ow%)="_m_seltra_fastlongmap_put_iyi"
+-remove%(key%)="_m_seltra_fastlongmap_remove_i"
+}="_m_seltra_fastlongmap"
 substratemap^Object{
 .v:substrate&[]&
 .k%&[]&
@@ -207,12 +263,6 @@ substrate^Object{
 -draw%()="_m_seltra_substrate_draw"
 -Del%()="_m_seltra_substrate_Del"
 }="_m_seltra_substrate"
-redraw^Object{
-.x%&
-.y%&
-.redraws@&
--New()="__m_seltra_redraw_New"
-}="_m_seltra_redraw"
 bgroup^Object{
 .blist:blockarray&
 .xv%&
@@ -243,9 +293,46 @@ bgroup^Object{
 -draw%()="_m_seltra_bgroup_draw"
 -merge%(g:bgroup)="_m_seltra_bgroup_merge_Tbgroup"
 }="_m_seltra_bgroup"
-gen^Object{
+redraw^Object{
 .x%&
 .y%&
+.redraws@&
+-New()="__m_seltra_redraw_New"
+}="_m_seltra_redraw"
+fastintmap^Object{
+.v%&[]&
+.k%&[]&
+.le%&
+.nl%&
+-New()="__m_seltra_fastintmap_New"
+-fetch%(key%)="_m_seltra_fastintmap_fetch_i"
+-vfetch%(index%)="_m_seltra_fastintmap_vfetch_i"
+-kfetch%(index%)="_m_seltra_fastintmap_kfetch_i"
+-insert%(key%,val%)="_m_seltra_fastintmap_insert_ii"
+-remove%(key%)="_m_seltra_fastintmap_remove_i"
+-bump%(key%,val%)="_m_seltra_fastintmap_bump_ii"
+-iter%()="_m_seltra_fastintmap_iter"
+-fastsort%()="_m_seltra_fastintmap_fastsort"
+-orderedsort%()="_m_seltra_fastintmap_orderedsort"
+-set_null_value%(n%)="_m_seltra_fastintmap_set_null_value_i"
+}="_m_seltra_fastintmap"
+longArray^Object{
+.la%&[]&
+.le%&
+-New()="__m_seltra_longArray_New"
+-add%(key%)="_m_seltra_longArray_add_i"
+-putLast%(i%)="_m_seltra_longArray_putLast_i"
+-ordered_sort%(n%,i%)="_m_seltra_longArray_ordered_sort_ii"
+}="_m_seltra_longArray"
+genTile^Object{
+.x%&
+.y%&
+.ggroup%&
+-New()="__m_seltra_genTile_New"
+-addRandomBlock%(bg:bgroup)="_m_seltra_genTile_addRandomBlock_Tbgroup"
+-genRandomBlockGroup%(n%)="_m_seltra_genTile_genRandomBlockGroup_i"
+}="_m_seltra_genTile"
+Ggroup^Object{
 .bglist:bgroup&[]&
 .le%&
 .rate%&
@@ -254,32 +341,34 @@ gen^Object{
 .n%&
 .id%&
 .clist:cell&[]&
--New()="__m_seltra_gen_New"
--genIsolatedBlock:bgroup()="_m_seltra_gen_genIsolatedBlock"
--addRandomBlock%(bg:bgroup)="_m_seltra_gen_addRandomBlock_Tbgroup"
--genRandomBlockGroup%(n%)="_m_seltra_gen_genRandomBlockGroup_i"
--update%()="_m_seltra_gen_update"
-}="_m_seltra_gen"
+.time%&
+-New()="__m_seltra_Ggroup_New"
+-update%()="_m_seltra_Ggroup_update"
+-genIsolatedBlock:bgroup(x%,y%)="_m_seltra_Ggroup_genIsolatedBlock_ii"
+}="_m_seltra_Ggroup"
 cell^Object{
 .x%&
 .y%&
 -New()="__m_seltra_cell_New"
 }="_m_seltra_cell"
 loadimage3:TImage(fn$)="_m_seltra_loadimage3"
+loadimage2:TImage(fn$)="_m_seltra_loadimage2"
 create_chem_numbers%()="_m_seltra_create_chem_numbers"
 colfunc#(x#)="_m_seltra_colfunc"
 create_block_mix%()="_m_seltra_create_block_mix"
 remove_block_image_templates%()="_m_seltra_remove_block_image_templates"
-loadimage2:TImage(fn$)="_m_seltra_loadimage2"
-wallblock%(x%,y%,u%)="_m_seltra_wallblock"
-gen_maze_map%(xs%,ys%,xf%,yf%,mx%,my%)="_m_seltra_gen_maze_map"
-update_sgroups%()="_m_seltra_update_sgroups"
-update_bgroups%()="_m_seltra_update_bgroups"
-update_gens%()="_m_seltra_update_gens"
+ThingBlockCheckArrows%()="_m_seltra_ThingBlockCheckArrows"
+thingBlockCollisionManager%(i%,i2%)="_m_seltra_thingBlockCollisionManager"
+thingblockRemove%(key%)="_m_seltra_thingblockRemove"
+moveblock%(key1%,key2%,i1%,i2%,val1%%,val2%%)="_m_seltra_moveblock"
+clockRotation||(in||)="_m_seltra_clockRotation"
+antiCrotation||(in||)="_m_seltra_antiCrotation"
+ThingBlockMove%()="_m_seltra_ThingBlockMove"
+update_thingblocks%()="_m_seltra_update_thingblocks"
 core_engine_thread:Object(data:Object)="_m_seltra_core_engine_thread"
 createsingleSubstrate:sgroup(x%,y%)="_m_seltra_createsingleSubstrate"
 placeSubstrateGuide:sgroup(x%,y%)="_m_seltra_placeSubstrateGuide"
-placegene%(x%,y%)="_m_seltra_placegene"
+wallblock%(x%,y%,u%)="_m_seltra_wallblock"
 chem_dist%(x%)="_m_seltra_chem_dist"
 mergeSingleSubstrate%(x%,y%,image:TImage)="_m_seltra_mergeSingleSubstrate"
 mouse_input_map%()="_m_seltra_mouse_input_map"
@@ -287,21 +376,35 @@ mouse_input_editbar%()="_m_seltra_mouse_input_editbar"
 get_mouse_input%()="_m_seltra_get_mouse_input"
 save_map%()="_m_seltra_save_map"
 load_map%()="_m_seltra_load_map"
+gen_maze_map%(xs%,ys%,xf%,yf%,mx%,my%)="_m_seltra_gen_maze_map"
 get_user_input%()="_m_seltra_get_user_input"
+thingtoImage:TImage(t||)="_m_seltra_thingtoImage"
+draw_map%()="_m_seltra_draw_map"
 redraw_cell%(x%,y%)="_m_seltra_redraw_cell"
 redraw3x3%(x%,y%)="_m_seltra_redraw3x3"
-draw_things%()="_m_seltra_draw_things"
-draw_sarray%()="_m_seltra_draw_sarray"
-draw_barray%()="_m_seltra_draw_barray"
 draw_walls%()="_m_seltra_draw_walls"
 draw_editbar%()="_m_seltra_draw_editbar"
 update_display%()="_m_seltra_update_display"
+thingBlockDeleteCheck%()="_m_seltra_thingBlockDeleteCheck"
+ThingBlockCheckCollision%%(key%)="_m_seltra_ThingBlockCheckCollision"
+mergeBlocks%(key1%,key2%)="_m_seltra_mergeBlocks"
+update_sgroups%()="_m_seltra_update_sgroups"
+draw_things%()="_m_seltra_draw_things"
+draw_everything%()="_m_seltra_draw_everything"
+update_bgroups%()="_m_seltra_update_bgroups"
+draw_barray%()="_m_seltra_draw_barray"
+draw_sarray%()="_m_seltra_draw_sarray"
 placeBigSubstrate%(x1%,y1%,x2%,y2%)="_m_seltra_placeBigSubstrate"
+placeGenTile%(x%,y%)="_m_seltra_placeGenTile"
+update_gens%()="_m_seltra_update_gens"
 colfuncx#(x#)="_m_seltra_colfuncx"
 demo_color_spread%()="_m_seltra_demo_color_spread"
 io_and_display_thread:Object(data:Object)="_m_seltra_io_and_display_thread"
+reForgeGenerators%()="_m_seltra_reForgeGenerators"
+dblog%&=mem:p("_m_seltra_dblog")
 gw%&=mem:p("_m_seltra_gw")
 gh%&=mem:p("_m_seltra_gh")
+editbarwidth%&=mem:p("_m_seltra_editbarwidth")
 imagelist:TImage&[]&=mem:p("_m_seltra_imagelist")
 blockart:TImage&[]&=mem:p("_m_seltra_blockart")
 blockw:TImage&=mem:p("_m_seltra_blockw")
@@ -347,6 +450,7 @@ camposy%&=mem:p("_m_seltra_camposy")
 time%&=mem:p("_m_seltra_time")
 gamespeedbrake%&=mem:p("_m_seltra_gamespeedbrake")
 gamespeedbrake_setting%&=mem:p("_m_seltra_gamespeedbrake_setting")
+unAllocatedGenTiles:cellArray&=mem:p("_m_seltra_unAllocatedGenTiles")
 garray:grouparray&=mem:p("_m_seltra_garray")
 barray:blockarray&=mem:p("_m_seltra_barray")
 sarray:subarray&=mem:p("_m_seltra_sarray")
@@ -354,10 +458,12 @@ sgarray:subgrouparray&=mem:p("_m_seltra_sgarray")
 wallgroup:blockarray&=mem:p("_m_seltra_wallgroup")
 rarray:redrawarray&=mem:p("_m_seltra_rarray")
 genarray:generatorarray&=mem:p("_m_seltra_genarray")
-bmap:fastblockmap&=mem:p("_m_seltra_bmap")
-thingmap:fastintmap&=mem:p("_m_seltra_thingmap")
+bmap:FastBlockMap&=mem:p("_m_seltra_bmap")
+thingmap:fastlongmap&=mem:p("_m_seltra_thingmap")
+v||&[]&=mem:p("_m_seltra_v")
+k%&[]&=mem:p("_m_seltra_k")
 smap:substratemap&=mem:p("_m_seltra_smap")
+dbflag%&=mem:p("_m_seltra_dbflag")
 chem%&[]&=mem:p("_m_seltra_chem")
 sub0:TImage&=mem:p("_m_seltra_sub0")
 subd:TImage&=mem:p("_m_seltra_subd")
-gene:TImage&=mem:p("_m_seltra_gene")

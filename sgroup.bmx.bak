@@ -17,7 +17,6 @@ Local s2:substrate=Null
 Local xt,yt:Int
 Local n:Int=thingmap.le
 Local i,t,t2
-Local ti ' thing in adjacent cell 
 Local bi:block
 Local si:substrate
 
@@ -27,7 +26,6 @@ While s ' old out of bounds check? seems redundant
  xt=s.x+xv
  yt=s.y+yv
  If xt>=0 And yt>=0 
-  ti=thingmap.fetch(xt+yt Shl 10) 
   bi=bmap.fetch(xt+yt Shl 10)
   si=smap.fetch(xt+yt Shl 10)
  Else
@@ -123,7 +121,7 @@ Local i
 
 While s
  If s.image=subd
-  Select thingmap.fetch(s.x+(s.y Shl 10)) Mod 8
+  Select thingmap.fetch(v,s.x+(s.y Shl 10)) Mod 8
    Case 1 ; xv=0 ; yv=-1
    Case 2 ; xv=0 ; yv=1
    Case 3 ; xv=-1; yv=0

@@ -36,6 +36,14 @@ Method remove(key) ' or just type v[key]=0
 End Method
 
 
+Method bump(key,val)
+ If v[key]=nl
+  k[le]=key
+  le=le+1
+ EndIf
+ v[key]=v[key]+val
+End Method
+
 ' template function
 Method iter()
  
@@ -111,18 +119,18 @@ End Method
 End Type
 
 
-Local m:fastintmap=New fastintmap
+'Local m:fastintmap=New fastintmap
 'Local i:Int=1
-m.insert(1,5)
-m.insert(2,8)
-m.remove(2)
+'m.insert(1,5)
+'m.insert(2,8)
+'m.remove(2)
 
-Local i,n:Int
-n=m.le
-While i<n
- Print m.vfetch(i)
- i=i+1
-Wend
+'Local i,n:Int
+'n=m.le
+'While i<n
+' Print m.vfetch(i)
+' i=i+1
+'Wend
 
 
 'Local t=MilliSecs()

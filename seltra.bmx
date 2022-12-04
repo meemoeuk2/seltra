@@ -8,43 +8,44 @@ Const bondaSh = 36
 Const btypeSh = 40
 
 Const arrowflags =%111 ' consider is arrow flag
-Const LeftArrow  =%001  ' except current way gives 3 other possible objects
-Const RightArrow =%010 
-Const UpArrow    =%011
-Const DownArrow  =%100
-Const isWall    =1 Shl 3
+Const RightArrow =%001
+Const DownArrow  =%010
+Const LeftArrow  =%011  ' except current way gives 3 other possible objects 
+Const UpArrow    =%100
+Const isWall    	 =	 1 Shl 3
 Const isBlock        =   1 Shl 4
 Const isMovingBlock  =   1 Shl 5
 Const directionFlagsX=%110 Shl 5 ' used to reset direction
 Const directionFlags =%111 Shl 5 ' used to work with direction
-Const movingLeft     =%001 Shl 5 ' blockMovingUp
-Const movingRight    =%011 Shl 5 ' we'll need to be more specific when substrates are added
-Const movingUp       =%101 Shl 5
-Const movingDown     =%111 Shl 5
-Global blockflags:Long        =%11111111111100000000000000000000000011110000:Long ' all flags used by blocks * need update
-Const keyrefflags:Long       =%111111111111111111111111:Long Shl 8 ' reference to 24bit key
-Const bondpflags:Long        =%1111:Long Shl bondpsh  ' p = potential
-Const bondpWestflag:Long     =%0001:Long Shl bondpsh
-Const bondpEastflag:Long     =%0010:Long Shl bondpsh
-Const bondpNorthflag:Long    =%0100:Long Shl bondpsh
-Const bondpSouthflag:Long    =%1000:Long Shl bondpsh
+Const getDirection   =%111 Shl 5
+Const movingRight    =%001 Shl 5 ' we'll need to be more specific when substrates are added
+Const movingDown     =%011 Shl 5
+Const movingLeft     =%101 Shl 5 ' blockMovingUp
+Const movingUp       =%111 Shl 5
+Const bounce     :ULong=%1 Shl 7  ' ~ function
+Const clockRotate:ULong=%1 Shl 6  ' + function mod
+Global blockflags:ULong       =%11111111111100000000000000000000000011110000:ULong ' all flags used by blocks * need update
+Const keyrefflags:ULong       =%111111111111111111111111:ULong Shl 8 ' reference to 24bit key
+Const bondpflags:ULong        =%1111:ULong Shl bondpsh  ' p = potential
+Const bondpWestflag:ULong     =%0001:ULong Shl bondpsh
+Const bondpEastflag:ULong     =%0010:ULong Shl bondpsh
+Const bondpNorthflag:ULong    =%0100:ULong Shl bondpsh
+Const bondpSouthflag:ULong    =%1000:ULong Shl bondpsh
 
-Const bondaflags:Long        =%1111:Long Shl bondash ' actual
-Const bondaWestflag:Long     =%0001:Long Shl bondash
-Const bondaEastflag:Long     =%0010:Long Shl bondash
-Const bondaNorthflag:Long    =%0100:Long Shl bondash
-Const bondaSouthflag:Long    =%1000:Long Shl bondash
+Const bondaflags:ULong        =%1111:ULong Shl bondash ' actual
+Const bondaWestflag:ULong     =%0001:ULong Shl bondash
+Const bondaEastflag:ULong     =%0010:ULong Shl bondash
+Const bondaNorthflag:ULong    =%0100:ULong Shl bondash
+Const bondaSouthflag:ULong    =%1000:ULong Shl bondash
 
-Const blocktypeflags:Long    =%1111:Long Shl btypesh ' ??? notice the right bit is not used? why not?
-Const blocktypeEngine:Long   =%0  ' is uncompromising / engine / Self powered blocks
-Const blocktypePlastic:Long  =%0010:Long Shl btypesh ' loses momentum on contact
-Const blocktypeElastic:Long  =%0100:Long Shl btypesh' bouncy ' most blocks should be this type
-Const blocktypeMagClock:Long =%0110:Long Shl btypesh' bouncy, direction rotates clockwise on impact
-Const blocktypeMagAntiC:Long =%1000:Long Shl btypesh' bouncy, direction rotates clockwise on impact
+Const getBlockType:ULong      =%111:ULong Shl btypesh ' ??? notice the right bit is not used? why not?
+Const blocktypeEngine:ULong   =%0  ' is uncompromising / engine / Self powered blocks
+Const blocktypePlastic:ULong  =%001:ULong Shl btypesh ' loses momentum on contact
+Const blocktypeElastic:ULong  =%010:ULong Shl btypesh' bouncy ' most blocks should be this type
+Const blocktypeMagClock:ULong =%011:ULong Shl btypesh' bouncy, direction rotates clockwise on impact
+Const blocktypeMagAntiC:ULong =%100:ULong Shl btypesh' bouncy, direction rotates clockwise on impact
 
-
-
-                         ' this may change, we've got the key long to use,
+                         ' this may change, we've got the key ulong to use,
 Include "memap.bmx"
 Include "blockmap.bmx"
 Include "arrays.bmx"
@@ -135,8 +136,8 @@ Global genarray:generatorarray=New generatorarray
 
 Global bmap:fastblockmap=New fastblockmap
 Global thingmap:fastlongmap=New fastlongmap ' arrows and generators
-Global v:Long[]=thingmap.v
-Global k[]=thingmap.k
+Global v:ULong[]=thingmap.v
+Global k:ULong[]=thingmap.k
 
 Global smap:substratemap=New substratemap
 
@@ -145,7 +146,7 @@ Type cell ' sometimes just need this
 End Type 
 
 Const wallimageindex:Int = 3
-Const gencode:Long = 5 ' gen code for thing map
+Const gencode:ULong = 5 ' gen code for thing map
 Global dbflag
 
 Function loadimage2:TImage(fn$)
@@ -239,7 +240,7 @@ End Function
 Function draw_everything()
 
 'Local i,key
-'Local val:long
+'Local val:ulong
 'Local x,y
 
 'While i<thingmap.le
@@ -425,7 +426,8 @@ y=camposy+ gh/(2*zoom)
 ' k is a counter the pen draw length increase by 1 every 2 draw lengths
 ' w counts the draw length so far
 ' wmax is the max draw legnth for this length
-Local k=0,wmax=1,w,t:Long 
+Local k=0,wmax=1,w,t:ULong=0
+Local tti:TImage
 
 While 1
 
@@ -433,21 +435,23 @@ While 1
  While w<wmax
   If x>=0 And y>=0
    t=thingmap.fetch(x+(y Shl 10))
-   
-
 
    If t 
+    Local key= thingmap.getkey(t)
+    Local kx = key Mod 1024
+    Local ky = key Shr 10
+    If dblog Then Print "drawmap: actual xy: "+x+" "+y+" key extracted xy "+kx+" "+ky  
 
-   Local key= thingmap.getkey(t)
-   Local kx = key Mod 1024
-   Local ky = key Shr 10
-   If dblog Then Print "drawmap: actual xy: "+x+" "+y+" key extracted xy "+kx+" "+ky  
-
-
-   If dblog Then If (t & blockflags) Then Print "attempting to draw a block "+t+" arrowflags: "+ (t Mod 8)
-   If dblog Then  If Not (t & blockflags) Then Print " attempting To draw a non block "+t+" arrowflags: "+(t Mod 8)
-    Local tti:TImage=thingToImage(t)
+    If dblog Then If (t & blockflags) Then Print "attempting to draw a block "+t+" arrowflags: "+ (t Mod 8)
+    If dblog Then  If Not (t & blockflags) Then Print " attempting To draw a non block "+t+" arrowflags: "+(t Mod 8)
+    tti=thingToImage(t)
     DrawImage tti,(x-camposx)*zoom,(y-camposy)*zoom
+   Else 
+    t=thingmap.fetch2(x+(y Shl 10))
+    If t
+     tti=thingToImage(t)
+     DrawImage tti,(x-camposx)*zoom,(y-camposy)*zoom
+    EndIf
    EndIf
   EndIf
 
@@ -471,15 +475,18 @@ End Function
 
 
 
-Function thingtoImage:TImage(t:Long)
+Function thingtoImage:TImage(t:ULong)
 
+If Not t Then Return
 If t & iswall  Then Return imagelist[wallimageindex]
 If t & isBlock 
+' DebugStop
  Local bonds = (t & bondpflags) Shr bondpsh
- Local btype:Long = t & blocktypeflags
- Local btf:Long = blocktypeflags
+ Local btype:ULong = t & getBlockType
+ Local btf:ULong = getBlockType
  btype = t & btf
  btype = btype Shr btypesh
+ If dblog Then Print " thingtoImage: recieved request to get image for "+t
  If dblog Then Print " thingtoImage: returning image " +(4+bonds+16*btype)
  Return imagelist[4+bonds+16*btype]
 EndIf
@@ -562,7 +569,7 @@ End Function
 
 Function redraw_cell(x,y)
 
-Local v:Long=thingmap.fetch(x+y Shl 10)
+Local v:ULong=thingmap.fetch(x+y Shl 10)
 Local im:TImage=thingtoimage(v)
 
 If im=Null Then DrawImage blank,(x-camposx)*zoom,(y-camposy)*zoom ; Return
@@ -656,7 +663,7 @@ Function get_user_input()
 
 Local s:substrate=smap.fetch(moxc+moyc Shl 10)
 Local p,key
-Local val:Long
+Local val:ULong
 
 key = moxc + moyc Shl 10
 val = thingmap.fetch(key)
@@ -665,13 +672,12 @@ If KeyHit(key_f1) Then save_map()
 If KeyHit(key_f2) Then load_map()
 If KeyHit(key_f3) Then gen_maze_map(1,1,40,1,40,40)
 
-If KeyHit(key_w) Then thingmap.put(key,(val &~ arrowflags) | upArrow    )
-If KeyHit(key_s) Then thingmap.put(key,(val &~ arrowflags) | downArrow  )
-If KeyHit(key_a) Then thingmap.put(key,(val &~ arrowflags) | leftArrow  )
-If KeyHit(key_d) Then thingmap.put(key,(val &~ arrowflags) | rightArrow )
+If KeyHit(key_w) Then thingmap.putq(key,(val &~ arrowflags) | upArrow    )
+If KeyHit(key_s) Then thingmap.putq(key,(val &~ arrowflags) | downArrow  )
+If KeyHit(key_a) Then thingmap.putq(key,(val &~ arrowflags) | leftArrow  )
+If KeyHit(key_d) Then thingmap.putq(key,(val &~ arrowflags) | rightArrow )
 
 If KeyHit(key_space)
-
  If thingmap.fetch(key) & isBlock
   thingblockRemove(key)
  ElseIf thingmap.fetch(key)
@@ -762,13 +768,13 @@ If moxc<0 Then moxc=0
 If moyc<0 Then moyc=0
 
 If MouseHit(1)
- If smt<=55
-  If smt=3         Then thingmap.put(key,isWall);Return
+ If smt<=90
+  If smt=3         Then thingmap.putq(key,isWall);Return
   If smi=sub0      Then createsinglesubstrate(moxc,moyc);Return
   If smi=subd      Then placeSubstrateGuide(moxc,moyc);Return
   If smi=gencell   Then Return ' placegenTile(moxc,moyc);Return
-  Local bonds:Long=(smt-4) Mod 16 ' covert paintbox position or smt into bonds
-  Local btype:Long=(smt-4) Shr 4
+  Local bonds:ULong=(smt-4) Mod 16 ' covert paintbox position or smt into bonds
+  Local btype:ULong=(smt-4) Shr 4
   btarray[smt].Createsingleblock(moxc,moyc,0,0,bonds,btype)
  EndIf
 EndIf
@@ -1013,7 +1019,7 @@ For i=0 To 5
   bt.id=k
 '  bt.maxbonds=j
   bt.bonds2=j
-  bt.Create_block_image(grey)
+  bt.CreateBlockImage(grey)
 
   k=k+1
   j=j+1
@@ -1170,7 +1176,7 @@ WriteInt out,thingmap.le
 
 For i=0 To thingmap.le
 ' WriteInt out,thingmap.kfetch(i)
-' WriteLong out,thingmap.vfetch(i)
+' Writeulong out,thingmap.vfetch(i)
 Next
 
 CloseFile out
@@ -1202,7 +1208,7 @@ For i=0 To n-1
 Next
 
 n=ReadInt(in)
-Local k:Int,v:Long
+Local k:Int,v:ULong
 
 For i=0 To n-1
  k=ReadLong(in)
@@ -1309,6 +1315,40 @@ Repeat
 Forever
 
 
+End Function
+
+
+' put these rotations in proper global static LU tables
+Function clockRotation:ULong(in:ULong)
+
+ Local a:ULong
+ a =  in & getDirection
+
+ Select in & getDirection
+  Case movingRight; a = movingDown
+  Case movingDown ; a = movingLeft
+  Case movingLeft ; a = movingUp
+  Case movingUp   ; a = movingRight
+ End Select
+
+ Return (in &~ getDirection) | a
+
+End Function
+
+
+
+Function antiCrotation:ULong(in:ULong)
+ 
+ Local a:ULong
+
+ Select in & getDirection
+  Case movingRight; a = movingUp
+  Case movingUp   ; a = movingLeft
+  Case movingLeft ; a = movingDown
+  Case movingDown ; a = movingRight
+ EndSelect
+ 
+ Return (in &~ getDirection) | a
 End Function
 
 

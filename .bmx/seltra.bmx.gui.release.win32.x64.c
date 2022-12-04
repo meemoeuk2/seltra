@@ -1,169 +1,421 @@
 #include "seltra.bmx.gui.release.win32.x64.h"
-static BBString _s23={
+static BBString _s10={
 	&bbStringClass,
+	0x68eca678877a0c7c,
+	2,
+	{13,10}
+};
+static BBString _s16={
+	&bbStringClass,
+	0xfd3b9ffd685f7886,
 	1,
 	{32}
 };
-static BBString _s1={
+static BBString _s11={
 	&bbStringClass,
+	0xd080db24ebb0e205,
 	2,
 	{32,32}
 };
-static BBString _s3={
+static BBString _s25={
 	&bbStringClass,
+	0xcece748266e7efb8,
+	8,
+	{32,32,100,101,115,116,58,32}
+};
+static BBString _s53={
+	&bbStringClass,
+	0x7e1d81bb67926e9a,
+	13,
+	{32,97,114,114,111,119,102,108,97,103,115,58,32}
+};
+static BBString _s54={
+	&bbStringClass,
+	0xda48ccd742a3bd1d,
+	32,
+	{32,97,116,116,101,109,112,116,105,110,103,32,84,111,32,100,114
+	,97,119,32,97,32,110,111,110,32,98,108,111,99,107,32}
+};
+static BBString _s27={
+	&bbStringClass,
+	0xda8d1d745e0e9e7e,
 	34,
 	{32,98,103,114,111,117,112,32,58,32,98,111,116,104,32,120,118
 	,32,97,110,100,32,121,118,32,110,111,110,32,122,101,114,111
 	,32}
 };
-static BBString _s2={
+static BBString _s26={
 	&bbStringClass,
+	0x54654f0ac590125a,
 	40,
 	{32,98,103,114,111,117,112,44,32,109,111,118,101,32,44,32,98
 	,111,116,104,32,120,118,32,97,110,100,32,121,118,32,110,111
 	,110,32,122,101,114,111,32}
 };
-static BBString _s25={
+static BBString _s17={
 	&bbStringClass,
+	0x87843b90611a89a4,
+	10,
+	{32,98,108,111,99,107,32,116,111,32}
+};
+static BBString _s23={
+	&bbStringClass,
+	0xa70d5d534ddde260,
+	21,
+	{32,104,97,115,32,98,101,101,110,32,112,117,116,32,105,110,32
+	,107,101,121,32}
+};
+static BBString _s51={
+	&bbStringClass,
+	0x69c151782c22ee03,
+	18,
+	{32,107,101,121,32,101,120,116,114,97,99,116,101,100,32,120,121
+	,32}
+};
+static BBString _s14={
+	&bbStringClass,
+	0x7e11e0fe1885a5fd,
+	5,
+	{32,107,101,121,58}
+};
+static BBString _s57={
+	&bbStringClass,
+	0x46dd252ec17f4e6b,
 	8,
 	{32,108,101,32,102,105,110,32}
 };
-static BBString _s4={
+static BBString _s32={
 	&bbStringClass,
+	0x43be2318669d119c,
+	14,
+	{32,109,105,108,108,105,111,110,32,107,101,121,115,32}
+};
+static BBString _s28={
+	&bbStringClass,
+	0x73d9c1f7a3a1be2e,
 	39,
 	{32,115,103,114,111,117,112,44,32,109,111,118,101,44,32,120,118
 	,32,97,110,100,32,121,118,32,98,111,116,104,32,110,111,110
 	,32,122,101,114,111,32}
 };
-static BBString _s6={
+static BBString _s15={
 	&bbStringClass,
-	4,
-	{46,112,110,103}
-};
-static BBString _s0={
-	&bbStringClass,
+	0xf124b1fb81483a5c,
 	35,
-	{78,111,32,115,112,97,99,101,32,116,111,32,105,110,99,114,101
-	,97,115,101,32,100,101,113,117,101,32,99,97,112,97,99,105
-	,116,121}
+	{32,116,104,105,110,103,109,111,118,101,98,108,111,99,107,58,32
+	,109,111,118,101,32,97,112,112,114,111,118,101,100,32,102,111
+	,114,32}
 };
-static BBString _s20={
+static BBString _s55={
 	&bbStringClass,
-	10,
-	{97,114,114,111,119,101,46,112,110,103}
-};
-static BBString _s21={
-	&bbStringClass,
-	10,
-	{97,114,114,111,119,110,46,112,110,103}
-};
-static BBString _s22={
-	&bbStringClass,
-	10,
-	{97,114,114,111,119,115,46,112,110,103}
+	0x6fe33f395a05ffe6,
+	31,
+	{32,116,104,105,110,103,116,111,73,109,97,103,101,58,32,114,101
+	,116,117,114,110,105,110,103,32,105,109,97,103,101,32}
 };
 static BBString _s19={
 	&bbStringClass,
+	0x6acd3c20880afe21,
+	6,
+	{32,118,97,108,49,58}
+};
+static BBString _s13={
+	&bbStringClass,
+	0x586173034eaf7895,
+	7,
+	{32,118,97,108,117,101,58}
+};
+static BBString _s30={
+	&bbStringClass,
+	0xa244bb45f7b43a74,
+	4,
+	{46,112,110,103}
+};
+static BBString _s65={
+	&bbStringClass,
+	0x78174125a89d5d6,
+	6,
+	{52,57,57,57,57,57}
+};
+static BBString _s64={
+	&bbStringClass,
+	0x621916faee564201,
+	7,
+	{57,57,57,57,57,57,57}
+};
+static BBString _s0={
+	&bbStringClass,
+	0x75cdc067fd4d9b00,
+	64,
+	{65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81
+	,82,83,84,85,86,87,88,89,90,97,98,99,100,101,102,103
+	,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119
+	,120,121,122,48,49,50,51,52,53,54,55,56,57,43,47}
+};
+static BBString _s1={
+	&bbStringClass,
+	0xf25a07ea0c0e69f,
+	54,
+	{65,110,32,101,108,101,109,101,110,116,32,119,105,116,104,32,116
+	,104,101,32,115,97,109,101,32,107,101,121,32,97,108,114,101
+	,97,100,121,32,101,120,105,115,116,115,32,105,110,32,116,104
+	,101,32,109,97,112}
+};
+static BBString _s2={
+	&bbStringClass,
+	0xbfd0800945fa68b4,
+	18,
+	{84,104,101,32,113,117,101,117,101,32,105,115,32,101,109,112,116
+	,121}
+};
+static BBString _s3={
+	&bbStringClass,
+	0x5c2b786e4055ff04,
+	18,
+	{84,104,101,32,115,116,97,99,107,32,105,115,32,101,109,112,116
+	,121}
+};
+static BBString _s47={
+	&bbStringClass,
+	0xca539bc93c6d166,
+	10,
+	{97,114,114,111,119,101,46,112,110,103}
+};
+static BBString _s48={
+	&bbStringClass,
+	0xc1606c27afce3a67,
+	10,
+	{97,114,114,111,119,110,46,112,110,103}
+};
+static BBString _s49={
+	&bbStringClass,
+	0x295a12c37880e207,
+	10,
+	{97,114,114,111,119,115,46,112,110,103}
+};
+static BBString _s46={
+	&bbStringClass,
+	0x649e2bc88f9a0e08,
 	10,
 	{97,114,114,111,119,119,46,112,110,103}
 };
-static BBString _s18={
+static BBString _s52={
 	&bbStringClass,
+	0x2488587e37f9f486,
+	27,
+	{97,116,116,101,109,112,116,105,110,103,32,116,111,32,100,114,97
+	,119,32,97,32,98,108,111,99,107,32}
+};
+static BBString _s45={
+	&bbStringClass,
+	0x6b48148a7c6bf5dc,
 	9,
 	{98,108,97,110,107,46,112,110,103}
 };
-static BBString _s5={
+static BBString _s29={
 	&bbStringClass,
+	0xd93c4f363747ced9,
 	16,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,97,114,116}
 };
-static BBString _s14={
+static BBString _s41={
 	&bbStringClass,
+	0xe6375425ad4ad44c,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,98,46,112,110
 	,103}
 };
-static BBString _s9={
+static BBString _s36={
 	&bbStringClass,
+	0x443457323e472060,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,99,46,112,110
 	,103}
 };
-static BBString _s13={
+static BBString _s40={
 	&bbStringClass,
+	0xb1c31625ffb1bfcc,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,100,46,112,110
 	,103}
 };
-static BBString _s8={
+static BBString _s35={
 	&bbStringClass,
+	0xad22c8356d1305c0,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,111,46,112,110
 	,103}
 };
-static BBString _s11={
+static BBString _s38={
 	&bbStringClass,
+	0xf584aae749d4c6c6,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,113,46,112,110
 	,103}
 };
-static BBString _s10={
+static BBString _s37={
 	&bbStringClass,
+	0x29d3ddd4492347f3,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,115,46,112,110
 	,103}
 };
-static BBString _s7={
+static BBString _s34={
 	&bbStringClass,
+	0x86fc2af95560b31f,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,119,46,112,110
 	,103}
 };
-static BBString _s12={
+static BBString _s39={
 	&bbStringClass,
+	0xa235b9ba7ad8c526,
 	18,
 	{98,108,111,99,107,115,50,92,98,108,111,99,107,120,46,112,110
 	,103}
 };
-static BBString _s24={
+static BBString _s50={
 	&bbStringClass,
+	0x566b92e36a3a6d86,
+	20,
+	{100,114,97,119,109,97,112,58,32,97,99,116,117,97,108,32,120
+	,121,58,32}
+};
+static BBString _s56={
+	&bbStringClass,
+	0x9a4dd1fb64f4665d,
 	8,
 	{102,105,110,105,115,104,101,100}
 };
-static BBString _s15={
+static BBString _s42={
 	&bbStringClass,
+	0xa1ccbd9c1cf50fe8,
 	8,
 	{103,101,110,101,46,112,110,103}
 };
-static BBString _s16={
+static BBString _s31={
 	&bbStringClass,
+	0xd388e56a2c152e4a,
+	9,
+	{105,110,105,116,105,97,116,101,100}
+};
+static BBString _s4={
+	&bbStringClass,
+	0xf8c407ed2d3563fa,
+	13,
+	{108,105,115,116,32,105,115,32,101,109,112,116,121}
+};
+static BBString _s9={
+	&bbStringClass,
+	0x558220868d858e40,
+	37,
+	{108,111,119,101,114,86,97,108,117,101,32,105,115,32,103,114,101
+	,97,116,101,114,32,116,104,97,110,32,117,112,112,101,114,86
+	,97,108,117,101}
+};
+static BBString _s43={
+	&bbStringClass,
+	0x7506cab5d3af4de8,
 	9,
 	{109,111,117,115,101,46,112,110,103}
 };
-static BBString _s17={
+static BBString _s44={
 	&bbStringClass,
+	0x81208f129b0467,
 	13,
 	{109,111,117,115,101,99,101,108,108,46,112,110,103}
 };
-static BBString _s26={
+static BBString _s22={
 	&bbStringClass,
+	0x9bd859a04392c187,
+	11,
+	{109,111,118,101,98,108,111,99,107,58,32}
+};
+static BBString _s63={
+	&bbStringClass,
+	0xfbae7d639a126ac0,
+	64,
+	{109,111,118,101,98,108,111,99,107,58,32,98,108,111,99,107,102
+	,108,97,103,115,58,49,55,53,56,55,56,57,49,48,55,55
+	,51,54,48,105,110,112,117,116,32,98,108,111,99,107,32,119
+	,105,116,104,32,98,108,111,99,107,102,108,97,103,115,32}
+};
+static BBString _s24={
+	&bbStringClass,
+	0x4fe35b07c3cf687b,
+	22,
+	{109,111,118,101,98,108,111,99,107,58,32,105,110,105,116,32,105
+	,44,107,44,118,32}
+};
+static BBString _s18={
+	&bbStringClass,
+	0x53c0a4c9ca1a05db,
+	31,
+	{109,111,118,101,98,108,111,99,107,58,32,115,116,97,114,116,105
+	,110,103,32,119,105,116,104,32,98,108,111,99,107,32}
+};
+static BBString _s5={
+	&bbStringClass,
+	0x42ce070328eb2a04,
+	4,
+	{110,111,100,101}
+};
+static BBString _s7={
+	&bbStringClass,
+	0x7f0d637a59d0dd2b,
+	25,
+	{110,111,100,101,32,105,115,32,102,114,111,109,32,97,110,111,116
+	,104,101,114,32,108,105,115,116}
+};
+static BBString _s6={
+	&bbStringClass,
+	0xdf1cc2d23552cb81,
+	29,
+	{110,111,100,101,32,112,97,114,101,110,116,32,108,105,115,116,32
+	,105,115,32,100,105,102,102,101,114,101,110,116}
+};
+static BBString _s8={
+	&bbStringClass,
+	0x44dc2ffe03a7a88e,
+	5,
+	{111,116,104,101,114}
+};
+static BBString _s58={
+	&bbStringClass,
+	0xc6f66a785e90d59b,
 	13,
 	{115,101,108,116,114,97,77,97,112,46,115,101,109}
 };
-static BBString _s27={
+static BBString _s59={
 	&bbStringClass,
+	0xfc472a21775827e8,
 	8,
 	{115,117,98,48,46,112,110,103}
 };
-static BBString _s28={
+static BBString _s60={
 	&bbStringClass,
+	0xa469bbd5f7d7da04,
 	8,
 	{115,117,98,100,46,112,110,103}
 };
+static BBString _s12={
+	&bbStringClass,
+	0x4a2e58f374f6fbb2,
+	42,
+	{116,104,105,110,103,109,111,118,101,98,108,111,99,107,58,32,115
+	,116,97,114,116,105,110,103,32,119,105,116,104,32,98,108,111
+	,99,107,32,105,110,100,101,120,58}
+};
+static BBString _s33={
+	&bbStringClass,
+	0xe7808cc5ba89ee14,
+	10,
+	{118,111,108,116,116,101,115,116,48,32}
+};
 struct BBDebugScope_12{int kind; const char *name; BBDebugDecl decls[13]; };
 struct BBDebugScope_13{int kind; const char *name; BBDebugDecl decls[14]; };
-struct BBDebugScope_14{int kind; const char *name; BBDebugDecl decls[15]; };
 struct BBDebugScope_15{int kind; const char *name; BBDebugDecl decls[16]; };
+struct BBDebugScope_19{int kind; const char *name; BBDebugDecl decls[20]; };
 struct BBDebugScope_28{int kind; const char *name; BBDebugDecl decls[29]; };
 struct BBDebugScope_29{int kind; const char *name; BBDebugDecl decls[30]; };
 struct BBDebugScope_3{int kind; const char *name; BBDebugDecl decls[4]; };
@@ -171,8 +423,10 @@ struct BBDebugScope_4{int kind; const char *name; BBDebugDecl decls[5]; };
 struct BBDebugScope_5{int kind; const char *name; BBDebugDecl decls[6]; };
 struct BBDebugScope_6{int kind; const char *name; BBDebugDecl decls[7]; };
 struct BBDebugScope_9{int kind; const char *name; BBDebugDecl decls[10]; };
+BBINT _m_seltra_dblog=0;
 BBINT _m_seltra_gw=0;
 BBINT _m_seltra_gh=0;
+BBINT _m_seltra_editbarwidth=100;
 BBARRAY _m_seltra_imagelist=(&bbEmptyArray);
 BBARRAY _m_seltra_blockart=(&bbEmptyArray);
 struct brl_max2d_image_TImage_obj* _m_seltra_blockw=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
@@ -199,7 +453,7 @@ void __m_seltra_btemplate_New(struct _m_seltra_btemplate_obj* o) {
 	o->__m_seltra_btemplate_maxbonds = 0;
 	o->__m_seltra_btemplate_bonds2 = 0;
 }
-BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* o,BBINT bbt_grey){
+BBINT __m_seltra_btemplate_createBlockImage_i(struct _m_seltra_btemplate_obj* o,BBINT bbt_grey){
 	BBINT bbt_bred=0;
 	BBINT bbt_bgre=0;
 	BBINT bbt_bblu=0;
@@ -216,7 +470,7 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 	brl_max2d_SetMaskColor(0,0,0);
 	brl_max2d_SetColor(0,0,0);
 	brl_max2d_DrawRect(0.000000000f,0.000000000f,30.0000000f,30.0000000f);
-	bbt_blockart=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbStringConcat(bbStringConcat(&_s5,bbStringFromInt(o->__m_seltra_btemplate_ch )),&_s6)),255,255,255),-1);
+	bbt_blockart=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbStringConcat(bbStringConcat(&_s29,bbStringFromInt(o->__m_seltra_btemplate_ch )),&_s30)),255,255,255),-1);
 	brl_max2d_SetColor((bbt_bred+20),(bbt_bgre+40),(bbt_bblu+40));
 	brl_max2d_DrawRect(0.000000000f,0.000000000f,30.0000000f,30.0000000f);
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_blockart,0.000000000f,0.000000000f,0);
@@ -230,86 +484,33 @@ BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj* 
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)o->__m_seltra_btemplate_btype )],0.000000000f,0.000000000f,0);
 	brl_max2d_SetColor(200,50,50);
 	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(1))!=0){
-		brl_max2d_DrawRect(13.0000000f,0.000000000f,3.00000000f,10.0000000f);
-	}
-	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(4))!=0){
-		brl_max2d_DrawRect(13.0000000f,20.0000000f,3.00000000f,10.0000000f);
-	}
-	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(2))!=0){
 		brl_max2d_DrawRect(0.000000000f,13.0000000f,10.0000000f,3.00000000f);
 	}
-	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(8))!=0){
+	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(2))!=0){
 		brl_max2d_DrawRect(20.0000000f,13.0000000f,10.0000000f,3.00000000f);
+	}
+	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(4))!=0){
+		brl_max2d_DrawRect(13.0000000f,0.000000000f,3.00000000f,13.0000000f);
+	}
+	if(((unsigned int)(o->__m_seltra_btemplate_bonds2 )&(unsigned int)(8))!=0){
+		brl_max2d_DrawRect(13.0000000f,20.0000000f,3.00000000f,13.0000000f);
 	}
 	brl_max2d_GrabImage((struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)_m_seltra_noi)],0,0,0);
 	_m_seltra_noi=(_m_seltra_noi+1);
 	return 0;
 }
-struct _m_seltra_bgroup_obj* __m_seltra_btemplate_createsingleblock_iiii(struct _m_seltra_btemplate_obj* o,BBINT bbt_x,BBINT bbt_y,BBINT bbt_xv,BBINT bbt_yv){
-	if(((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10))))!= &bbNullObject){
-		return (struct _m_seltra_bgroup_obj*)(&bbNullObject);
+BBLONG __m_seltra_btemplate_createsingleblock_iiiill(struct _m_seltra_btemplate_obj* o,BBINT bbt_x,BBINT bbt_y,BBINT bbt_xv,BBINT bbt_yv,BBLONG bbt_bonds,BBLONG bbt_btype){
+	BBLONG bbt_val=0LL;
+	bbt_val=((BBLONG)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10))));
+	if(((unsigned long long)(bbt_val)&(unsigned long long)(16LL))!=0){
+		return 0LL;
 	}
-	if(o->__m_seltra_btemplate_btype ==0){
-		_m_seltra_wallblock(bbt_x,bbt_y,o->__m_seltra_btemplate_id );
-		return (struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	}
-	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	bbt_bg->__m_seltra_bgroup_xv =bbt_xv;
-	bbt_bg->__m_seltra_bgroup_yv =bbt_yv;
-	_m_seltra_bgc=(_m_seltra_bgc+1);
-	(_m_seltra_garray)->clas->m_add_Tbgroup((struct _m_seltra_grouparray_obj*)_m_seltra_garray,(struct _m_seltra_bgroup_obj*)bbt_bg);
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
-	bbt_b->__m_seltra_block_x =bbt_x;
-	bbt_b->__m_seltra_block_y =bbt_y;
-	bbt_b->__m_seltra_block_btype =o->__m_seltra_btemplate_btype ;
-	bbt_b->__m_seltra_block_bt =o->__m_seltra_btemplate_id ;
-	bbt_b->__m_seltra_block_maxbonds =o->__m_seltra_btemplate_maxbonds ;
-	bbt_b->__m_seltra_block_bonds =o->__m_seltra_btemplate_maxbonds ;
-	bbt_b->__m_seltra_block_bonds2 =o->__m_seltra_btemplate_bonds2 ;
-	bbt_b->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)o->__m_seltra_btemplate_id )];
-	(bbt_bg)->clas->m_add_Tblock((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_block_obj*)bbt_b);
-	(_m_seltra_barray)->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_barray,(struct _m_seltra_block_obj*)bbt_b);
-	(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
-	return (struct _m_seltra_bgroup_obj*)bbt_bg;
+	BBLONG bbt_blockval=((unsigned long long)(((unsigned long long)(((unsigned long long)(16LL)|(unsigned long long)(((BBLONG)((bbt_x+(bbt_y<<10))<<8)))))|(unsigned long long)((bbt_bonds<<32LL))))|(unsigned long long)((bbt_btype<<40LL)));
+	BBLONG bbt_gbt=((unsigned long long)(bbt_blockval)&(unsigned long long)(7696581394432LL));
+	BBLONG bbt_db2=((BBLONG)(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)),((BBULONG)((unsigned long long)(bbt_val)|(unsigned long long)(bbt_blockval)))));
+	return bbt_db2;
 }
 BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj* o,BBINT bbt_x,BBINT bbt_y){
-	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct _m_seltra_block_obj* bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
-	if(bbt_b==&bbNullObject){
-		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_btemplate_obj*)o)->clas->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)o,bbt_x,bbt_y,0,0);
-	}else{
-		bbt_bg=(struct _m_seltra_bgroup_obj*)bbt_b->__m_seltra_block_group ;
-	}
-	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_bg->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[0U];
-	if(bbt_x>0){
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_x-1)+(bbt_y<<10)));
-	}
-	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_btype >0)) && ((bbt_b)->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
-		(bbt_bg)->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)bbt_b2->__m_seltra_block_group );
-		(bbt_b)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		(bbt_b2)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
-	}
-	if(bbt_y>0){
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+((bbt_y-1)<<10)));
-	}
-	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_btype >0)) && ((bbt_b)->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
-		(bbt_bg)->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)bbt_b2->__m_seltra_block_group );
-		(bbt_b)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		(bbt_b2)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
-	}
-	bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_x+1)+(bbt_y<<10)));
-	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_btype >0)) && ((bbt_b)->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
-		(bbt_bg)->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)bbt_b2->__m_seltra_block_group );
-		(bbt_b)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		(bbt_b2)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
-	}
-	bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+((bbt_y+1)<<10)));
-	if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_btype >0)) && ((bbt_b)->clas->m_checkchem2_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)bbt_b2)!=0)){
-		(bbt_bg)->clas->m_merge_Tbgroup((struct _m_seltra_bgroup_obj*)bbt_bg,(struct _m_seltra_bgroup_obj*)bbt_b2->__m_seltra_block_group );
-		(bbt_b)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b);
-		(bbt_b2)->clas->m_get_moli_chem((struct _m_seltra_block_obj*)bbt_b2);
-	}
 	return 0;
 }
 struct BBDebugScope_9 _m_seltra_btemplate_scope ={
@@ -354,15 +555,15 @@ struct BBDebugScope_9 _m_seltra_btemplate_scope ={
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
-			"create_block_image",
+			"createBlockImage",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_btemplate_create_block_image_i
+			.var_address=(void*)&__m_seltra_btemplate_createBlockImage_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"createsingleblock",
-			"(i,i,i,i):bgroup",
-			.var_address=(void*)&__m_seltra_btemplate_createsingleblock_iiii
+			"(i,i,i,i,l,l)l",
+			.var_address=(void*)&__m_seltra_btemplate_createsingleblock_iiiill
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
@@ -385,9 +586,11 @@ struct BBClass__m_seltra_btemplate _m_seltra_btemplate={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_btemplate_obj,__m_seltra_btemplate_bonds2) - sizeof(void*) + sizeof(BBINT)
-	,__m_seltra_btemplate_create_block_image_i
-	,__m_seltra_btemplate_createsingleblock_iiii
+	offsetof(struct _m_seltra_btemplate_obj,__m_seltra_btemplate_bonds2) - offsetof(struct _m_seltra_btemplate_obj,__m_seltra_btemplate_btype) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_btemplate_obj,__m_seltra_btemplate_btype)
+	,__m_seltra_btemplate_createBlockImage_i
+	,__m_seltra_btemplate_createsingleblock_iiiill
 	,__m_seltra_btemplate_setbindingblock_ii
 };
 
@@ -424,6 +627,104 @@ BBINT _m_seltra_camposy=0;
 BBINT _m_seltra_time=0;
 BBINT _m_seltra_gamespeedbrake=100;
 BBINT _m_seltra_gamespeedbrake_setting=2;
+void __m_seltra_cellArray_New(struct _m_seltra_cellArray_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_cellArray;
+	o->__m_seltra_cellarray_ca = bbArrayNew1D(":cell", 50);
+	o->__m_seltra_cellarray_le = 0;
+}
+BBINT __m_seltra_cellArray_add_ii(struct _m_seltra_cellArray_obj* o,BBINT bbt_x,BBINT bbt_y){
+	struct _m_seltra_cell_obj* bbt_c=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+	bbt_c->__m_seltra_cell_x =bbt_x;
+	bbt_c->__m_seltra_cell_y =bbt_y;
+	((struct _m_seltra_cell_obj**)BBARRAYDATA(o->__m_seltra_cellarray_ca ,1))[((BBUINT)o->__m_seltra_cellarray_le )]=(struct _m_seltra_cell_obj*)bbt_c;
+	o->__m_seltra_cellarray_le =(o->__m_seltra_cellarray_le +1);
+	return 0;
+}
+BBINT __m_seltra_cellArray_add_Tcell(struct _m_seltra_cellArray_obj* o,struct _m_seltra_cell_obj* bbt_c){
+	((struct _m_seltra_cell_obj**)BBARRAYDATA(o->__m_seltra_cellarray_ca ,1))[((BBUINT)o->__m_seltra_cellarray_le )]=(struct _m_seltra_cell_obj*)bbt_c;
+	o->__m_seltra_cellarray_le =(o->__m_seltra_cellarray_le +1);
+	return 0;
+}
+BBINT __m_seltra_cellArray_ordered_sort_ii(struct _m_seltra_cellArray_obj* o,BBINT bbt_n,BBINT bbt_i){
+	if(bbt_n==0){
+		bbt_n=o->__m_seltra_cellarray_le ;
+	}
+	BBINT bbt_j=bbt_i;
+	while(bbt_j<o->__m_seltra_cellarray_le ){
+		((struct _m_seltra_cell_obj**)BBARRAYDATA(o->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_i)]=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(o->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_j)];
+		if(((BBObject*)((struct _m_seltra_cell_obj**)BBARRAYDATA(o->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_i)])!= &bbNullObject){
+			bbt_i=(bbt_i+1);
+		}
+		bbt_j=(bbt_j+1);
+	}
+	o->__m_seltra_cellarray_le =bbt_i;
+	return 0;
+}
+struct BBDebugScope_6 _m_seltra_cellArray_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"cellArray",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"ca",
+			"[]:cell",
+			.field_offset=offsetof(struct _m_seltra_cellArray_obj,__m_seltra_cellarray_ca)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"le",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_cellArray_obj,__m_seltra_cellarray_le)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_cellArray_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"add",
+			"(i,i)i",
+			.var_address=(void*)&__m_seltra_cellArray_add_ii
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"add",
+			"(:cell)i",
+			.var_address=(void*)&__m_seltra_cellArray_add_Tcell
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"ordered_sort",
+			"(i,i)i",
+			.var_address=(void*)&__m_seltra_cellArray_ordered_sort_ii
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_cellArray _m_seltra_cellArray={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_cellArray_scope,
+	sizeof(struct _m_seltra_cellArray_obj),
+	(void (*)(BBOBJECT))__m_seltra_cellArray_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_cellArray_obj,__m_seltra_cellarray_le) - offsetof(struct _m_seltra_cellArray_obj,__m_seltra_cellarray_ca) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_cellArray_obj,__m_seltra_cellarray_ca)
+	,__m_seltra_cellArray_add_ii
+	,__m_seltra_cellArray_add_Tcell
+	,__m_seltra_cellArray_ordered_sort_ii
+};
+
+struct _m_seltra_cellArray_obj* _m_seltra_unAllocatedGenTiles=(struct _m_seltra_cellArray_obj*)(&bbNullObject);
 void __m_seltra_grouparray_New(struct _m_seltra_grouparray_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
 	o->clas = &_m_seltra_grouparray;
@@ -501,7 +802,9 @@ struct BBClass__m_seltra_grouparray _m_seltra_grouparray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_grouparray_obj,__m_seltra_grouparray_le) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_grouparray_obj,__m_seltra_grouparray_le) - offsetof(struct _m_seltra_grouparray_obj,__m_seltra_grouparray_ga) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_grouparray_obj,__m_seltra_grouparray_ga)
 	,__m_seltra_grouparray_add_Tbgroup
 	,__m_seltra_grouparray_ordered_sort_ii
 };
@@ -598,7 +901,9 @@ struct BBClass__m_seltra_blockarray _m_seltra_blockarray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_blockarray_obj,__m_seltra_blockarray_le) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_blockarray_obj,__m_seltra_blockarray_le) - offsetof(struct _m_seltra_blockarray_obj,__m_seltra_blockarray_ba) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_blockarray_obj,__m_seltra_blockarray_ba)
 	,__m_seltra_blockarray_add_Tblock
 	,__m_seltra_blockarray_putLast_i
 	,__m_seltra_blockarray_ordered_sort_ii
@@ -684,7 +989,9 @@ struct BBClass__m_seltra_subarray _m_seltra_subarray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_subarray_obj,__m_seltra_subarray_le) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_subarray_obj,__m_seltra_subarray_le) - offsetof(struct _m_seltra_subarray_obj,__m_seltra_subarray_sa) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_subarray_obj,__m_seltra_subarray_sa)
 	,__m_seltra_subarray_add_Tsubstrate
 	,__m_seltra_subarray_ordered_sort_ii
 };
@@ -767,7 +1074,9 @@ struct BBClass__m_seltra_subgrouparray _m_seltra_subgrouparray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_subgrouparray_obj,__m_seltra_subgrouparray_le) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_subgrouparray_obj,__m_seltra_subgrouparray_le) - offsetof(struct _m_seltra_subgrouparray_obj,__m_seltra_subgrouparray_sga) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_subgrouparray_obj,__m_seltra_subgrouparray_sga)
 	,__m_seltra_subgrouparray_add_Tsgroup
 	,__m_seltra_subgrouparray_ordered_sort_ii
 };
@@ -796,7 +1105,7 @@ void __m_seltra_block_New(struct _m_seltra_block_obj* o) {
 BBINT __m_seltra_block_Del(struct _m_seltra_block_obj* o){
 	(o->__m_seltra_block_group )->clas->m_remove_block_Tblock((struct _m_seltra_bgroup_obj*)o->__m_seltra_block_group ,(struct _m_seltra_block_obj*)o);
 	((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_barray->__m_seltra_blockarray_ba ,1))[((BBUINT)o->__m_seltra_block_id )]=(struct _m_seltra_block_obj*)&bbNullObject;
-	(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +(o->__m_seltra_block_y <<10)));
+	(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +(o->__m_seltra_block_y <<10)));
 	struct _m_seltra_redraw_obj* bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
 	bbt_re->__m_seltra_redraw_x =((BBINT*)BBARRAYDATA(o->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)];
 	bbt_re->__m_seltra_redraw_y =((BBINT*)BBARRAYDATA(o->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)];
@@ -830,7 +1139,7 @@ struct _m_seltra_block_obj* __m_seltra_block_spawn_ii(struct _m_seltra_block_obj
 	bbt_b->__m_seltra_block_x =(o->__m_seltra_block_x +bbt_xs);
 	bbt_b->__m_seltra_block_y =(o->__m_seltra_block_y +bbt_ys);
 	(_m_seltra_barray)->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_barray,(struct _m_seltra_block_obj*)bbt_b);
-	(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
+	(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
 	bbt_b->__m_seltra_block_id =_m_seltra_bc;
 	_m_seltra_bc=(_m_seltra_bc+1);
 	return (struct _m_seltra_block_obj*)bbt_b;
@@ -839,7 +1148,7 @@ BBINT __m_seltra_block_checkchem_Tblock(struct _m_seltra_block_obj* o,struct _m_
 	BBFLOAT bbt_d1=((BBFLOAT)_m_seltra_chem_dist(o->__m_seltra_block_ch ));
 	BBFLOAT bbt_d2=((BBFLOAT)_m_seltra_chem_dist(bbt_b2->__m_seltra_block_ch ));
 	BBFLOAT bbt_dc=((BBFLOAT)_m_seltra_chem_dist(o->__m_seltra_block_ch +bbt_b2->__m_seltra_block_ch ));
-	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromFloat(bbt_d1),&_s1),bbStringFromFloat(bbt_d2)),&_s1),bbStringFromFloat(bbt_dc)),&_s1),bbStringFromFloat((bbt_d1+bbt_d2)/2.0f)));
+	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromFloat(bbt_d1),&_s11),bbStringFromFloat(bbt_d2)),&_s11),bbStringFromFloat(bbt_dc)),&_s11),bbStringFromFloat((bbt_d1+bbt_d2)/2.0f)));
 	if(bbt_dc<(bbt_d1+bbt_d2)){
 		return 1;
 	}
@@ -849,22 +1158,22 @@ BBINT __m_seltra_block_get_moli_chem(struct _m_seltra_block_obj* o){
 	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
 	o->__m_seltra_block_mch =o->__m_seltra_block_ch ;
 	if(o->__m_seltra_block_x >0){
-		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
+		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
 	}
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_group ==o->__m_seltra_block_group )){
 		o->__m_seltra_block_mch =(o->__m_seltra_block_mch +bbt_b->__m_seltra_block_ch );
 	}
-	bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
+	bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_group ==o->__m_seltra_block_group )){
 		o->__m_seltra_block_mch =(o->__m_seltra_block_mch +bbt_b->__m_seltra_block_ch );
 	}
 	if(o->__m_seltra_block_y >0){
-		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
+		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
 	}
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_group ==o->__m_seltra_block_group )){
 		o->__m_seltra_block_mch =(o->__m_seltra_block_mch +bbt_b->__m_seltra_block_ch );
 	}
-	bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
+	bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_group ==o->__m_seltra_block_group )){
 		o->__m_seltra_block_mch =(o->__m_seltra_block_mch +bbt_b->__m_seltra_block_ch );
 	}
@@ -906,13 +1215,13 @@ BBARRAY __m_seltra_block_checkchem_detach_Tblock(struct _m_seltra_block_obj* o,s
 		return (&bbEmptyArray);
 	}
 	if(o->__m_seltra_block_x >0){
-		bbt_bw=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
+		bbt_bw=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
 	}
-	bbt_be=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
+	bbt_be=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
 	if(o->__m_seltra_block_y >0){
-		bbt_bn=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
+		bbt_bn=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
 	}
-	bbt_bs=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
+	bbt_bs=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (bbt_bw->__m_seltra_block_group !=o->__m_seltra_block_group )){
 		bbt_bw=(struct _m_seltra_block_obj*)&bbNullObject;
 	}
@@ -932,7 +1241,7 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 	BBINT bbt_mch2=0;
 	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
 	struct _m_seltra_block_obj* bbt_b3=(struct _m_seltra_block_obj*)(&bbNullObject);
-	BBARRAY volatile bbt_ba=bbArrayNew1D(":block", 5);
+	BBARRAY bbt_ba=bbArrayNew1D(":block", 5);
 	struct _m_seltra_block_obj* bbt_bw=(struct _m_seltra_block_obj*)(&bbNullObject);
 	struct _m_seltra_block_obj* bbt_be=(struct _m_seltra_block_obj*)(&bbNullObject);
 	struct _m_seltra_block_obj* bbt_bn=(struct _m_seltra_block_obj*)(&bbNullObject);
@@ -943,13 +1252,13 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 	}
 	BBINT bbt_ldsf=_m_seltra_chem_dist(bbt_mch2);
 	if(o->__m_seltra_block_x >0){
-		bbt_bw=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
+		bbt_bw=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
 	}
-	bbt_be=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
+	bbt_be=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
 	if(o->__m_seltra_block_y >0){
-		bbt_bn=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
+		bbt_bn=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
 	}
-	bbt_bs=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
+	bbt_bs=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
 	if((((BBObject*)bbt_bw)!= &bbNullObject) && (bbt_bw->__m_seltra_block_group !=o->__m_seltra_block_group )){
 		bbt_bw=(struct _m_seltra_block_obj*)&bbNullObject;
 	}
@@ -1091,7 +1400,7 @@ BBARRAY __m_seltra_block_checkchem3_Tblock(struct _m_seltra_block_obj* o,struct 
 BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,struct _m_seltra_block_obj* bbt_b){
 	BBINT bbt_i=0;
 	BBINT bbt_m=1;
-	BBARRAY volatile bbt_ba=bbArrayNew1D(":block", 100);
+	BBARRAY bbt_ba=bbArrayNew1D(":block", 100);
 	struct _m_seltra_block_obj* bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
 	((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[0U]=(struct _m_seltra_block_obj*)bbt_b;
 	if(!(bbt_b->__m_seltra_block_group ==o->__m_seltra_block_group )){
@@ -1099,7 +1408,7 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 	}
 	while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[((BBUINT)bbt_i)])!= &bbNullObject){
 		if(bbt_b->__m_seltra_block_x >0){
-			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x -1)+(bbt_b->__m_seltra_block_y <<10)));
+			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x -1)+(bbt_b->__m_seltra_block_y <<10)));
 			if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_group ==o->__m_seltra_block_group )) && (bbt_b2!=o)){
 				((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
 				struct _m_seltra_bgroup_obj* bbt_;
@@ -1107,7 +1416,7 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				bbt_m=(bbt_m+1);
 			}
 		}
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x +1)+(bbt_b->__m_seltra_block_y <<10)));
+		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x +1)+(bbt_b->__m_seltra_block_y <<10)));
 		if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_group ==o->__m_seltra_block_group )) && (bbt_b2!=o)){
 			((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
 			struct _m_seltra_bgroup_obj* bbt_2;
@@ -1115,7 +1424,7 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 			bbt_m=(bbt_m+1);
 		}
 		if(bbt_b->__m_seltra_block_y >0){
-			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y -1)<<10)));
+			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y -1)<<10)));
 			if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_group ==o->__m_seltra_block_group )) && (bbt_b2!=o)){
 				((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
 				struct _m_seltra_bgroup_obj* bbt_3;
@@ -1123,7 +1432,7 @@ BBINT __m_seltra_block_try_flood_split_Tblock(struct _m_seltra_block_obj* o,stru
 				bbt_m=(bbt_m+1);
 			}
 		}
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y +1)<<10)));
+		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y +1)<<10)));
 		if(((((BBObject*)bbt_b2)!= &bbNullObject) && (bbt_b2->__m_seltra_block_group ==o->__m_seltra_block_group )) && (bbt_b2!=o)){
 			((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_ba,1))[((BBUINT)bbt_m)]=(struct _m_seltra_block_obj*)bbt_b2;
 			struct _m_seltra_bgroup_obj* bbt_4;
@@ -1148,44 +1457,27 @@ BBINT __m_seltra_block_repblock(struct _m_seltra_block_obj* o){
 	struct _m_seltra_block_obj* bbt_b2=(struct _m_seltra_block_obj*)(&bbNullObject);
 	if(o->__m_seltra_block_group ->__m_seltra_bgroup_xv !=0){
 		if(o->__m_seltra_block_y >0){
-			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
+			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y -1)<<10)));
 			if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 				bbt_ok=1;
 			}
 		}
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
+		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(o->__m_seltra_block_x +((o->__m_seltra_block_y +1)<<10)));
 		if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 			bbt_ok=(bbt_ok+1);
 		}
 	}
 	if(o->__m_seltra_block_group ->__m_seltra_bgroup_yv !=0){
 		if(o->__m_seltra_block_x >0){
-			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
+			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x -1)+(o->__m_seltra_block_y <<10)));
 			if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 				bbt_ok=1;
 			}
 		}
-		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
+		bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((o->__m_seltra_block_x +1)+(o->__m_seltra_block_y <<10)));
 		if(!(((BBObject*)bbt_b2)!= &bbNullObject)){
 			bbt_ok=(bbt_ok+1);
 		}
-	}
-	if(bbt_ok==2){
-		if(((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)o->__m_seltra_block_bt )]->__m_seltra_btemplate_btype ==o->__m_seltra_block_btype ){
-			if(o->__m_seltra_block_group ->__m_seltra_bgroup_xv !=0){
-				struct _m_seltra_btemplate_obj* bbt_;
-				((bbt_ = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)o->__m_seltra_block_bt )])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_,o->__m_seltra_block_x ,(o->__m_seltra_block_y -1),0,-1);
-				struct _m_seltra_btemplate_obj* bbt_2;
-				((bbt_2 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)o->__m_seltra_block_bt )])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_2,o->__m_seltra_block_x ,(o->__m_seltra_block_y +1),0,1);
-			}
-			if(o->__m_seltra_block_group ->__m_seltra_bgroup_yv !=0){
-				struct _m_seltra_btemplate_obj* bbt_3;
-				((bbt_3 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)o->__m_seltra_block_bt )])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_3,(o->__m_seltra_block_x -1),o->__m_seltra_block_y ,-1,0);
-				struct _m_seltra_btemplate_obj* bbt_4;
-				((bbt_4 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)o->__m_seltra_block_bt )])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_4,(o->__m_seltra_block_x +1),o->__m_seltra_block_y ,1,0);
-			}
-		}
-		((struct _m_seltra_block_obj*)o)->clas->m_Del((struct _m_seltra_block_obj*)o);
 	}
 	return 0;
 }
@@ -1382,7 +1674,9 @@ struct BBClass__m_seltra_block _m_seltra_block={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_block_obj,__m_seltra_block_bonds2) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_block_obj,__m_seltra_block_bonds2) - offsetof(struct _m_seltra_block_obj,__m_seltra_block_btype) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_block_obj,__m_seltra_block_btype)
 	,__m_seltra_block_Del
 	,__m_seltra_block_draw
 	,__m_seltra_block_out_of_bounds
@@ -1489,7 +1783,9 @@ struct BBClass__m_seltra_redrawarray _m_seltra_redrawarray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_redrawarray_obj,__m_seltra_redrawarray_drawn) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_redrawarray_obj,__m_seltra_redrawarray_drawn) - offsetof(struct _m_seltra_redrawarray_obj,__m_seltra_redrawarray_ra) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_redrawarray_obj,__m_seltra_redrawarray_ra)
 	,__m_seltra_redrawarray_add_Tredraw
 	,__m_seltra_redrawarray_do_redraws
 };
@@ -1498,12 +1794,12 @@ struct _m_seltra_redrawarray_obj* _m_seltra_rarray=(struct _m_seltra_redrawarray
 void __m_seltra_generatorarray_New(struct _m_seltra_generatorarray_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
 	o->clas = &_m_seltra_generatorarray;
-	o->__m_seltra_generatorarray_ga = bbArrayNew1D(":gen", 3000);
+	o->__m_seltra_generatorarray_ga = bbArrayNew1D(":Ggroup", 3000);
 	o->__m_seltra_generatorarray_le = 0;
 }
-BBINT __m_seltra_generatorarray_add_Tgen(struct _m_seltra_generatorarray_obj* o,struct _m_seltra_gen_obj* bbt_g){
-	((struct _m_seltra_gen_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)o->__m_seltra_generatorarray_le )]=(struct _m_seltra_gen_obj*)bbt_g;
-	bbt_g->__m_seltra_gen_id =o->__m_seltra_generatorarray_le ;
+BBINT __m_seltra_generatorarray_add_TGgroup(struct _m_seltra_generatorarray_obj* o,struct _m_seltra_Ggroup_obj* bbt_g){
+	((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)o->__m_seltra_generatorarray_le )]=(struct _m_seltra_Ggroup_obj*)bbt_g;
+	bbt_g->__m_seltra_ggroup_id =o->__m_seltra_generatorarray_le ;
 	o->__m_seltra_generatorarray_le =(o->__m_seltra_generatorarray_le +1);
 	return 0;
 }
@@ -1513,9 +1809,9 @@ BBINT __m_seltra_generatorarray_ordered_sort_ii(struct _m_seltra_generatorarray_
 	}
 	BBINT bbt_j=bbt_i;
 	while(bbt_j<o->__m_seltra_generatorarray_le ){
-		((struct _m_seltra_gen_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)]=(struct _m_seltra_gen_obj*)((struct _m_seltra_gen_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)];
-		if(((BBObject*)((struct _m_seltra_gen_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)])!= &bbNullObject){
-			((struct _m_seltra_gen_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)]->__m_seltra_gen_id =bbt_i;
+		((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)]=(struct _m_seltra_Ggroup_obj*)((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)];
+		if(((BBObject*)((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)])!= &bbNullObject){
+			((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(o->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)]->__m_seltra_ggroup_id =bbt_i;
 			bbt_i=(bbt_i+1);
 		}
 		bbt_j=(bbt_j+1);
@@ -1530,7 +1826,7 @@ struct BBDebugScope_5 _m_seltra_generatorarray_scope ={
 		{
 			BBDEBUGDECL_FIELD,
 			"ga",
-			"[]:gen",
+			"[]:Ggroup",
 			.field_offset=offsetof(struct _m_seltra_generatorarray_obj,__m_seltra_generatorarray_ga)
 		},
 		{
@@ -1548,8 +1844,8 @@ struct BBDebugScope_5 _m_seltra_generatorarray_scope ={
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"add",
-			"(:gen)i",
-			.var_address=(void*)&__m_seltra_generatorarray_add_Tgen
+			"(:Ggroup)i",
+			.var_address=(void*)&__m_seltra_generatorarray_add_TGgroup
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
@@ -1572,30 +1868,32 @@ struct BBClass__m_seltra_generatorarray _m_seltra_generatorarray={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_generatorarray_obj,__m_seltra_generatorarray_le) - sizeof(void*) + sizeof(BBINT)
-	,__m_seltra_generatorarray_add_Tgen
+	offsetof(struct _m_seltra_generatorarray_obj,__m_seltra_generatorarray_le) - offsetof(struct _m_seltra_generatorarray_obj,__m_seltra_generatorarray_ga) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_generatorarray_obj,__m_seltra_generatorarray_ga)
+	,__m_seltra_generatorarray_add_TGgroup
 	,__m_seltra_generatorarray_ordered_sort_ii
 };
 
 struct _m_seltra_generatorarray_obj* _m_seltra_genarray=(struct _m_seltra_generatorarray_obj*)(&bbNullObject);
-void __m_seltra_fastblockmap_New(struct _m_seltra_fastblockmap_obj* o) {
+void __m_seltra_FastBlockMap_New(struct _m_seltra_FastBlockMap_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
-	o->clas = &_m_seltra_fastblockmap;
+	o->clas = &_m_seltra_FastBlockMap;
 	o->__m_seltra_fastblockmap_v = bbArrayNew1D(":block", 3000000);
 	o->__m_seltra_fastblockmap_k = bbArrayNew1D("i", 3000000);
 	o->__m_seltra_fastblockmap_le = 0;
 	o->__m_seltra_fastblockmap_rc = 0;
 }
-struct _m_seltra_block_obj* __m_seltra_fastblockmap_fetch_i(struct _m_seltra_fastblockmap_obj* o,BBINT bbt_key){
+struct _m_seltra_block_obj* __m_seltra_FastBlockMap_fetch_i(struct _m_seltra_FastBlockMap_obj* o,BBINT bbt_key){
 	return (struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)bbt_key)];
 }
-struct _m_seltra_block_obj* __m_seltra_fastblockmap_vfetch_i(struct _m_seltra_fastblockmap_obj* o,BBINT bbt_index){
+struct _m_seltra_block_obj* __m_seltra_FastBlockMap_vfetch_i(struct _m_seltra_FastBlockMap_obj* o,BBINT bbt_index){
 	return (struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastblockmap_k ,1))[((BBUINT)bbt_index)])];
 }
-BBINT __m_seltra_fastblockmap_kfetch_i(struct _m_seltra_fastblockmap_obj* o,BBINT bbt_index){
+BBINT __m_seltra_FastBlockMap_kfetch_i(struct _m_seltra_FastBlockMap_obj* o,BBINT bbt_index){
 	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastblockmap_k ,1))[((BBUINT)bbt_index)];
 }
-BBINT __m_seltra_fastblockmap_insert_iTblock(struct _m_seltra_fastblockmap_obj* o,BBINT bbt_key,struct _m_seltra_block_obj* bbt_b){
+BBINT __m_seltra_FastBlockMap_insert_iTblock(struct _m_seltra_FastBlockMap_obj* o,BBINT bbt_key,struct _m_seltra_block_obj* bbt_b){
 	if(((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)bbt_key)]==&bbNullObject){
 		((BBINT*)BBARRAYDATA(o->__m_seltra_fastblockmap_k ,1))[((BBUINT)o->__m_seltra_fastblockmap_le )]=bbt_key;
 		o->__m_seltra_fastblockmap_le =(o->__m_seltra_fastblockmap_le +1);
@@ -1603,12 +1901,12 @@ BBINT __m_seltra_fastblockmap_insert_iTblock(struct _m_seltra_fastblockmap_obj* 
 	((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)bbt_key)]=(struct _m_seltra_block_obj*)bbt_b;
 	return 0;
 }
-BBINT __m_seltra_fastblockmap_remove_i(struct _m_seltra_fastblockmap_obj* o,BBINT bbt_key){
+BBINT __m_seltra_FastBlockMap_remove_i(struct _m_seltra_FastBlockMap_obj* o,BBINT bbt_key){
 	((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)bbt_key)]=(struct _m_seltra_block_obj*)&bbNullObject;
 	o->__m_seltra_fastblockmap_rc =(o->__m_seltra_fastblockmap_rc +1);
 	return 0;
 }
-BBINT __m_seltra_fastblockmap_iter(struct _m_seltra_fastblockmap_obj* o){
+BBINT __m_seltra_FastBlockMap_iter(struct _m_seltra_FastBlockMap_obj* o){
 	BBINT bbt_i=0;
 	while(bbt_i<o->__m_seltra_fastblockmap_le ){
 		if(((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastblockmap_k ,1))[((BBUINT)bbt_i)])]==&bbNullObject){
@@ -1620,7 +1918,7 @@ BBINT __m_seltra_fastblockmap_iter(struct _m_seltra_fastblockmap_obj* o){
 	}
 	return 0;
 }
-BBINT __m_seltra_fastblockmap_fastsort(struct _m_seltra_fastblockmap_obj* o){
+BBINT __m_seltra_FastBlockMap_fastsort(struct _m_seltra_FastBlockMap_obj* o){
 	BBINT bbt_i=0;
 	while(bbt_i<o->__m_seltra_fastblockmap_le ){
 		if(((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_fastblockmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastblockmap_k ,1))[((BBUINT)bbt_i)])]==&bbNullObject){
@@ -1633,7 +1931,7 @@ BBINT __m_seltra_fastblockmap_fastsort(struct _m_seltra_fastblockmap_obj* o){
 	o->__m_seltra_fastblockmap_rc =0;
 	return 0;
 }
-BBINT __m_seltra_fastblockmap_orderedsort(struct _m_seltra_fastblockmap_obj* o){
+BBINT __m_seltra_FastBlockMap_orderedsort(struct _m_seltra_FastBlockMap_obj* o){
 	BBINT bbt_i=0;
 	BBINT bbt_j=0;
 	while(bbt_j<o->__m_seltra_fastblockmap_le ){
@@ -1649,309 +1947,346 @@ BBINT __m_seltra_fastblockmap_orderedsort(struct _m_seltra_fastblockmap_obj* o){
 	o->__m_seltra_fastblockmap_rc =0;
 	return 0;
 }
-struct BBDebugScope_13 _m_seltra_fastblockmap_scope ={
+struct BBDebugScope_13 _m_seltra_FastBlockMap_scope ={
 	BBDEBUGSCOPE_USERTYPE,
-	"fastblockmap",
+	"FastBlockMap",
 	{
 		{
 			BBDEBUGDECL_FIELD,
 			"v",
 			"[]:block",
-			.field_offset=offsetof(struct _m_seltra_fastblockmap_obj,__m_seltra_fastblockmap_v)
+			.field_offset=offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_v)
 		},
 		{
 			BBDEBUGDECL_FIELD,
 			"k",
 			"[]i",
-			.field_offset=offsetof(struct _m_seltra_fastblockmap_obj,__m_seltra_fastblockmap_k)
+			.field_offset=offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_k)
 		},
 		{
 			BBDEBUGDECL_FIELD,
 			"le",
 			"i",
-			.field_offset=offsetof(struct _m_seltra_fastblockmap_obj,__m_seltra_fastblockmap_le)
+			.field_offset=offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_le)
 		},
 		{
 			BBDEBUGDECL_FIELD,
 			"rc",
 			"i",
-			.field_offset=offsetof(struct _m_seltra_fastblockmap_obj,__m_seltra_fastblockmap_rc)
+			.field_offset=offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_rc)
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"New",
 			"()i",
-			.var_address=(void*)&__m_seltra_fastblockmap_New
+			.var_address=(void*)&__m_seltra_FastBlockMap_New
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"fetch",
 			"(i):block",
-			.var_address=(void*)&__m_seltra_fastblockmap_fetch_i
+			.var_address=(void*)&__m_seltra_FastBlockMap_fetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"vfetch",
 			"(i):block",
-			.var_address=(void*)&__m_seltra_fastblockmap_vfetch_i
+			.var_address=(void*)&__m_seltra_FastBlockMap_vfetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"kfetch",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_fastblockmap_kfetch_i
+			.var_address=(void*)&__m_seltra_FastBlockMap_kfetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"insert",
 			"(i,:block)i",
-			.var_address=(void*)&__m_seltra_fastblockmap_insert_iTblock
+			.var_address=(void*)&__m_seltra_FastBlockMap_insert_iTblock
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"remove",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_fastblockmap_remove_i
+			.var_address=(void*)&__m_seltra_FastBlockMap_remove_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"iter",
 			"()i",
-			.var_address=(void*)&__m_seltra_fastblockmap_iter
+			.var_address=(void*)&__m_seltra_FastBlockMap_iter
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"fastsort",
 			"()i",
-			.var_address=(void*)&__m_seltra_fastblockmap_fastsort
+			.var_address=(void*)&__m_seltra_FastBlockMap_fastsort
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"orderedsort",
 			"()i",
-			.var_address=(void*)&__m_seltra_fastblockmap_orderedsort
+			.var_address=(void*)&__m_seltra_FastBlockMap_orderedsort
 		},
 		BBDEBUGDECL_END
 	}
 };
-struct BBClass__m_seltra_fastblockmap _m_seltra_fastblockmap={
+struct BBClass__m_seltra_FastBlockMap _m_seltra_FastBlockMap={
 	&bbObjectClass,
 	bbObjectFree,
-	(BBDebugScope*)&_m_seltra_fastblockmap_scope,
-	sizeof(struct _m_seltra_fastblockmap_obj),
-	(void (*)(BBOBJECT))__m_seltra_fastblockmap_New,
+	(BBDebugScope*)&_m_seltra_FastBlockMap_scope,
+	sizeof(struct _m_seltra_FastBlockMap_obj),
+	(void (*)(BBOBJECT))__m_seltra_FastBlockMap_New,
 	bbObjectDtor,
 	bbObjectToString,
 	bbObjectCompare,
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_fastblockmap_obj,__m_seltra_fastblockmap_rc) - sizeof(void*) + sizeof(BBINT)
-	,__m_seltra_fastblockmap_fetch_i
-	,__m_seltra_fastblockmap_vfetch_i
-	,__m_seltra_fastblockmap_kfetch_i
-	,__m_seltra_fastblockmap_insert_iTblock
-	,__m_seltra_fastblockmap_remove_i
-	,__m_seltra_fastblockmap_iter
-	,__m_seltra_fastblockmap_fastsort
-	,__m_seltra_fastblockmap_orderedsort
+	offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_rc) - offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_v) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_FastBlockMap_obj,__m_seltra_fastblockmap_v)
+	,__m_seltra_FastBlockMap_fetch_i
+	,__m_seltra_FastBlockMap_vfetch_i
+	,__m_seltra_FastBlockMap_kfetch_i
+	,__m_seltra_FastBlockMap_insert_iTblock
+	,__m_seltra_FastBlockMap_remove_i
+	,__m_seltra_FastBlockMap_iter
+	,__m_seltra_FastBlockMap_fastsort
+	,__m_seltra_FastBlockMap_orderedsort
 };
 
-struct _m_seltra_fastblockmap_obj* _m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(&bbNullObject);
-void __m_seltra_fastintmap_New(struct _m_seltra_fastintmap_obj* o) {
+struct _m_seltra_FastBlockMap_obj* _m_seltra_bmap=(struct _m_seltra_FastBlockMap_obj*)(&bbNullObject);
+void __m_seltra_fastlongmap_New(struct _m_seltra_fastlongmap_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
-	o->clas = &_m_seltra_fastintmap;
-	o->__m_seltra_fastintmap_v = bbArrayNew1D("i", 3000000);
-	o->__m_seltra_fastintmap_k = bbArrayNew1D("i", 3000000);
-	o->__m_seltra_fastintmap_le = 0;
-	o->__m_seltra_fastintmap_nl = 0;
+	o->clas = &_m_seltra_fastlongmap;
+	o->__m_seltra_fastlongmap_k = bbArrayNew1D("i", 9999999);
+	o->__m_seltra_fastlongmap_v = bbArrayNew1D("y", 499999);
+	o->__m_seltra_fastlongmap_le = 0;
+	o->__m_seltra_fastlongmap_ze = 0;
+	o->__m_seltra_fastlongmap_nkv = 0;
 }
-BBINT __m_seltra_fastintmap_fetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key){
-	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)];
-}
-BBINT __m_seltra_fastintmap_vfetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_index){
-	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_index)])];
-}
-BBINT __m_seltra_fastintmap_kfetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_index){
-	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_index)];
-}
-BBINT __m_seltra_fastintmap_insert_ii(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key,BBINT bbt_val){
-	if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]==o->__m_seltra_fastintmap_nl ){
-		((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)o->__m_seltra_fastintmap_le )]=bbt_key;
-		o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le +1);
-	}
-	((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]=bbt_val;
-	return 0;
-}
-BBINT __m_seltra_fastintmap_remove_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key){
-	((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]=o->__m_seltra_fastintmap_nl ;
-	return 0;
-}
-BBINT __m_seltra_fastintmap_iter(struct _m_seltra_fastintmap_obj* o){
+BBINT __m_seltra_fastlongmap_initKeyMap(struct _m_seltra_fastlongmap_obj* o){
 	BBINT bbt_i=0;
-	while(bbt_i<o->__m_seltra_fastintmap_le ){
-		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])]==o->__m_seltra_fastintmap_nl ){
-			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)(o->__m_seltra_fastintmap_le -1))];
-			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
-		}else{
-			BBINT bbt_a=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])];
-			bbt_i=(bbt_i+1);
-		}
-	}
-	return 0;
-}
-BBINT __m_seltra_fastintmap_fastsort(struct _m_seltra_fastintmap_obj* o){
-	BBINT bbt_i=0;
-	while(bbt_i<o->__m_seltra_fastintmap_le ){
-		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])]==o->__m_seltra_fastintmap_nl ){
-			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)(o->__m_seltra_fastintmap_le -1))];
-			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
-		}else{
-			bbt_i=(bbt_i+1);
-		}
-	}
-	return 0;
-}
-BBINT __m_seltra_fastintmap_orderedsort(struct _m_seltra_fastintmap_obj* o){
-	BBINT bbt_i=0;
-	BBINT bbt_j=0;
-	while(bbt_j<o->__m_seltra_fastintmap_le ){
-		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_j)])]==o->__m_seltra_fastintmap_nl ){
-			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
-		}else{
-			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_j)];
-			bbt_i=(bbt_i+1);
-		}
-		bbt_j=(bbt_j+1);
-	}
-	o->__m_seltra_fastintmap_le =bbt_i;
-	return 0;
-}
-BBINT __m_seltra_fastintmap_set_null_value_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_n){
-	BBINT bbt_i=0;
-	o->__m_seltra_fastintmap_nl =bbt_n;
-	while(bbt_i<3000000){
-		((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_i)]=bbt_n;
+	while(bbt_i<9999999){
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_i)]=o->__m_seltra_fastlongmap_nkv ;
 		bbt_i=(bbt_i+1);
+		if((bbt_i % 1000000)==0){
+			brl_standardio_Print(bbStringConcat(bbStringConcat(&_s31,bbStringFromInt(bbt_i/1000000)),&_s32));
+		}
 	}
 	return 0;
 }
-struct BBDebugScope_14 _m_seltra_fastintmap_scope ={
+BBULONG __m_seltra_fastlongmap_fetch_i(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key){
+	return ((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])];
+}
+BBULONG __m_seltra_fastlongmap_vfetch_i(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key){
+	return ((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])];
+}
+BBINT __m_seltra_fastlongmap_ifetch_i(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key){
+	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)];
+}
+BBINT __m_seltra_fastlongmap_kfetch_i(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_i){
+	return ((struct _m_seltra_fastlongmap_obj*)o)->clas->m_getkey_y((struct _m_seltra_fastlongmap_obj*)o,((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)bbt_i)]);
+}
+BBINT __m_seltra_fastlongmap_getkey_y(struct _m_seltra_fastlongmap_obj* o,BBULONG bbt_val){
+	return ((BBINT)((bbt_val&4294967040ULL)>>8ULL));
+}
+BBINT __m_seltra_fastlongmap_fastput_iiy(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key,BBINT bbt_val,BBULONG bbt_index){
+	((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)bbt_index)]=((BBULONG)bbt_val);
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]=((BBINT)bbt_index);
+	return 0;
+}
+BBINT __m_seltra_fastlongmap_put_iy(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key,BBULONG bbt_val){
+	if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]==o->__m_seltra_fastlongmap_nkv ){
+		o->__m_seltra_fastlongmap_le =(o->__m_seltra_fastlongmap_le +1);
+		((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)o->__m_seltra_fastlongmap_le )]=bbt_val;
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]=o->__m_seltra_fastlongmap_le ;
+	}else{
+		((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])]=bbt_val;
+	}
+	return 0;
+}
+BBINT __m_seltra_fastlongmap_putq_iy(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key,BBULONG bbt_val){
+	((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)(499999-(1+o->__m_seltra_fastlongmap_ze )))]=bbt_val;
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]=(499999-(1+o->__m_seltra_fastlongmap_ze ));
+	o->__m_seltra_fastlongmap_ze =(o->__m_seltra_fastlongmap_ze +1);
+	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringFromInt(bbt_key),&_s16),bbStringFromInt(((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])));
+	brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(&_s33,bbStringFromInt(bbt_key)),&_s16),bbStringFromInt(((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])));
+	return 0;
+}
+BBINT __m_seltra_fastlongmap_put_iyi(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key,BBULONG bbt_val,BBINT bbt_ow){
+	if(((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)o->__m_seltra_fastlongmap_le )]==((BBULONG)o->__m_seltra_fastlongmap_nkv )){
+		o->__m_seltra_fastlongmap_le =(o->__m_seltra_fastlongmap_le +1);
+		((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)o->__m_seltra_fastlongmap_le )]=bbt_val;
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]=o->__m_seltra_fastlongmap_le ;
+	}else{
+		if(bbt_ow!=0){
+			((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])]=bbt_val;
+		}else{
+			return 0;
+		}
+	}
+	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)];
+}
+BBINT __m_seltra_fastlongmap_remove_i(struct _m_seltra_fastlongmap_obj* o,BBINT bbt_key){
+	((BBULONG*)BBARRAYDATA(o->__m_seltra_fastlongmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])]=0ULL;
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)]=0;
+	return 0;
+}
+struct BBDebugScope_19 _m_seltra_fastlongmap_scope ={
 	BBDEBUGSCOPE_USERTYPE,
-	"fastintmap",
+	"fastlongmap",
 	{
 		{
-			BBDEBUGDECL_FIELD,
-			"v",
-			"[]i",
-			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_v)
+			BBDEBUGDECL_CONST,
+			"mnk",
+			"i",
+			.const_value=&_s64
+		},
+		{
+			BBDEBUGDECL_CONST,
+			"mnv",
+			"i",
+			.const_value=&_s65
 		},
 		{
 			BBDEBUGDECL_FIELD,
 			"k",
 			"[]i",
-			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_k)
+			.field_offset=offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_k)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"v",
+			"[]y",
+			.field_offset=offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_v)
 		},
 		{
 			BBDEBUGDECL_FIELD,
 			"le",
 			"i",
-			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_le)
+			.field_offset=offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_le)
 		},
 		{
 			BBDEBUGDECL_FIELD,
-			"nl",
+			"ze",
 			"i",
-			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_nl)
+			.field_offset=offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_ze)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"nkv",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_nkv)
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"New",
 			"()i",
-			.var_address=(void*)&__m_seltra_fastintmap_New
+			.var_address=(void*)&__m_seltra_fastlongmap_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"initKeyMap",
+			"()i",
+			.var_address=(void*)&__m_seltra_fastlongmap_initKeyMap
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"fetch",
-			"(i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_fetch_i
+			"(i)y",
+			.var_address=(void*)&__m_seltra_fastlongmap_fetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"vfetch",
+			"(i)y",
+			.var_address=(void*)&__m_seltra_fastlongmap_vfetch_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"ifetch",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_vfetch_i
+			.var_address=(void*)&__m_seltra_fastlongmap_ifetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"kfetch",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_kfetch_i
+			.var_address=(void*)&__m_seltra_fastlongmap_kfetch_i
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
-			"insert",
-			"(i,i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_insert_ii
+			"getkey",
+			"(y)i",
+			.var_address=(void*)&__m_seltra_fastlongmap_getkey_y
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"fastput",
+			"(i,i,y)i",
+			.var_address=(void*)&__m_seltra_fastlongmap_fastput_iiy
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"put",
+			"(i,y)i",
+			.var_address=(void*)&__m_seltra_fastlongmap_put_iy
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"putq",
+			"(i,y)i",
+			.var_address=(void*)&__m_seltra_fastlongmap_putq_iy
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"put",
+			"(i,y,i)i",
+			.var_address=(void*)&__m_seltra_fastlongmap_put_iyi
 		},
 		{
 			BBDEBUGDECL_TYPEMETHOD,
 			"remove",
 			"(i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_remove_i
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"iter",
-			"()i",
-			.var_address=(void*)&__m_seltra_fastintmap_iter
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"fastsort",
-			"()i",
-			.var_address=(void*)&__m_seltra_fastintmap_fastsort
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"orderedsort",
-			"()i",
-			.var_address=(void*)&__m_seltra_fastintmap_orderedsort
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"set_null_value",
-			"(i)i",
-			.var_address=(void*)&__m_seltra_fastintmap_set_null_value_i
+			.var_address=(void*)&__m_seltra_fastlongmap_remove_i
 		},
 		BBDEBUGDECL_END
 	}
 };
-struct BBClass__m_seltra_fastintmap _m_seltra_fastintmap={
+struct BBClass__m_seltra_fastlongmap _m_seltra_fastlongmap={
 	&bbObjectClass,
 	bbObjectFree,
-	(BBDebugScope*)&_m_seltra_fastintmap_scope,
-	sizeof(struct _m_seltra_fastintmap_obj),
-	(void (*)(BBOBJECT))__m_seltra_fastintmap_New,
+	(BBDebugScope*)&_m_seltra_fastlongmap_scope,
+	sizeof(struct _m_seltra_fastlongmap_obj),
+	(void (*)(BBOBJECT))__m_seltra_fastlongmap_New,
 	bbObjectDtor,
 	bbObjectToString,
 	bbObjectCompare,
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_nl) - sizeof(void*) + sizeof(BBINT)
-	,__m_seltra_fastintmap_fetch_i
-	,__m_seltra_fastintmap_vfetch_i
-	,__m_seltra_fastintmap_kfetch_i
-	,__m_seltra_fastintmap_insert_ii
-	,__m_seltra_fastintmap_remove_i
-	,__m_seltra_fastintmap_iter
-	,__m_seltra_fastintmap_fastsort
-	,__m_seltra_fastintmap_orderedsort
-	,__m_seltra_fastintmap_set_null_value_i
+	offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_nkv) - offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_k) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_fastlongmap_obj,__m_seltra_fastlongmap_k)
+	,__m_seltra_fastlongmap_initKeyMap
+	,__m_seltra_fastlongmap_fetch_i
+	,__m_seltra_fastlongmap_vfetch_i
+	,__m_seltra_fastlongmap_ifetch_i
+	,__m_seltra_fastlongmap_kfetch_i
+	,__m_seltra_fastlongmap_getkey_y
+	,__m_seltra_fastlongmap_fastput_iiy
+	,__m_seltra_fastlongmap_put_iy
+	,__m_seltra_fastlongmap_putq_iy
+	,__m_seltra_fastlongmap_put_iyi
+	,__m_seltra_fastlongmap_remove_i
 };
 
-struct _m_seltra_fastintmap_obj* _m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(&bbNullObject);
+struct _m_seltra_fastlongmap_obj* _m_seltra_thingmap=(struct _m_seltra_fastlongmap_obj*)(&bbNullObject);
+BBARRAY _m_seltra_v=(&bbEmptyArray);
+BBARRAY _m_seltra_k=(&bbEmptyArray);
 void __m_seltra_substratemap_New(struct _m_seltra_substratemap_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
 	o->clas = &_m_seltra_substratemap;
@@ -2120,7 +2455,9 @@ struct BBClass__m_seltra_substratemap _m_seltra_substratemap={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_substratemap_obj,__m_seltra_substratemap_rc) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_substratemap_obj,__m_seltra_substratemap_rc) - offsetof(struct _m_seltra_substratemap_obj,__m_seltra_substratemap_v) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_substratemap_obj,__m_seltra_substratemap_v)
 	,__m_seltra_substratemap_fetch_i
 	,__m_seltra_substratemap_vfetch_i
 	,__m_seltra_substratemap_kfetch_i
@@ -2132,7 +2469,15 @@ struct BBClass__m_seltra_substratemap _m_seltra_substratemap={
 };
 
 struct _m_seltra_substratemap_obj* _m_seltra_smap=(struct _m_seltra_substratemap_obj*)(&bbNullObject);
+BBINT _m_seltra_dbflag=0;
 BBARRAY _m_seltra_chem=(&bbEmptyArray);
+struct brl_max2d_image_TImage_obj* _m_seltra_sub0=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
+struct brl_max2d_image_TImage_obj* _m_seltra_loadimage2(BBSTRING bbt_fn){
+	((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)_m_seltra_noi)]=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbt_fn),0,0,0),-1);
+	_m_seltra_noi=(_m_seltra_noi+1);
+	return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)(_m_seltra_noi-1))];
+}
+struct brl_max2d_image_TImage_obj* _m_seltra_subd=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
 BBINT _m_seltra_create_chem_numbers(){
 	((BBINT*)BBARRAYDATA(_m_seltra_chem,1))[0U]=4;
 	((BBINT*)BBARRAYDATA(_m_seltra_chem,1))[1U]=10;
@@ -2185,7 +2530,7 @@ BBINT _m_seltra_create_block_mix(){
 			((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)bbt_k)]=(struct _m_seltra_btemplate_obj*)bbt_bt;
 			bbt_bt->__m_seltra_btemplate_id =bbt_k;
 			bbt_bt->__m_seltra_btemplate_bonds2 =bbt_j;
-			(bbt_bt)->clas->m_create_block_image_i((struct _m_seltra_btemplate_obj*)bbt_bt,bbt_grey);
+			(bbt_bt)->clas->m_createBlockImage_i((struct _m_seltra_btemplate_obj*)bbt_bt,bbt_grey);
 			bbt_k=(bbt_k+1);
 			bbt_j=(bbt_j+1);
 			if(bbt_grey==1){
@@ -2207,115 +2552,232 @@ BBINT _m_seltra_remove_block_image_templates(){
 	_m_seltra_noi=bbt_i;
 	return 0;
 }
-struct brl_max2d_image_TImage_obj* _m_seltra_sub0=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-struct brl_max2d_image_TImage_obj* _m_seltra_loadimage2(BBSTRING bbt_fn){
-	((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)_m_seltra_noi)]=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)bbt_fn),0,0,0),-1);
-	_m_seltra_noi=(_m_seltra_noi+1);
-	return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)(_m_seltra_noi-1))];
-}
-struct brl_max2d_image_TImage_obj* _m_seltra_subd=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-struct brl_max2d_image_TImage_obj* _m_seltra_gene=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-BBINT _m_seltra_wallblock(BBINT bbt_x,BBINT bbt_y,BBINT bbt_u){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
-	bbt_b->__m_seltra_block_x =bbt_x;
-	bbt_b->__m_seltra_block_y =bbt_y;
-	bbt_b->__m_seltra_block_btype =0;
-	bbt_b->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[1U];
-	(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)),(struct _m_seltra_block_obj*)bbt_b);
-	(_m_seltra_wallgroup)->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_wallgroup,(struct _m_seltra_block_obj*)bbt_b);
-	return 0;
-}
-BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf,BBINT bbt_mx,BBINT bbt_my){
-	_m_seltra_wallgroup=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
-	_m_seltra_wallgroup->__m_seltra_blockarray_ba =bbArraySlice(":block",_m_seltra_wallgroup->__m_seltra_blockarray_ba ,0,999999);
-	_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-	_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
-	BBARRAY volatile bbt_m=bbArrayNew1D("b", (bbt_mx*bbt_my));
-	BBINT bbt_d=0;
-	BBINT bbt_ok=0;
-	BBBYTE bbt_k=0;
-	BBINT bbt_xv=0;
-	BBINT bbt_yv=0;
-	BBINT bbt_x=0;
-	BBINT bbt_y=0;
-	BBINT bbt_x2=0;
-	BBINT bbt_y2=0;
-	BBINT bbt_i=0;
-	BBINT bbt_j=0;
-	BBARRAY volatile bbt_xs2=bbArrayNew1D("i", 6);
-	BBARRAY volatile bbt_ys2=bbArrayNew1D("i", 6);
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[0U]=bbt_xs;
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[0U]=bbt_ys;
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[1U]=bbt_xf;
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[1U]=bbt_yf;
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[2U]=1;
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[2U]=1;
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[3U]=(bbt_mx-1);
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[3U]=1;
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[4U]=1;
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[4U]=(bbt_my-1);
-	((BBINT*)BBARRAYDATA(bbt_xs2,1))[5U]=(bbt_mx-1);
-	((BBINT*)BBARRAYDATA(bbt_ys2,1))[5U]=(bbt_my-1);
-	bbt_x=bbt_xs;
-	bbt_y=bbt_ys;
-	while(((BBINT)bbt_k)<6){
-		bbt_x=((BBINT*)BBARRAYDATA(bbt_xs2,1))[((BBUINT)bbt_k)];
-		bbt_y=((BBINT*)BBARRAYDATA(bbt_ys2,1))[((BBUINT)bbt_k)];
-		bbt_i=0;
-		bbt_j=0;
-		while(((bbt_i<100) || (bbt_ok==0)) && (bbt_j<1024)){
-			bbt_d=brl_random_Rand(0,3);
-			BBINT bbt_=bbt_d;
-			if(bbt_==0){
-				bbt_xv=1;
-				bbt_yv=0;
+BBINT _m_seltra_ThingBlockCheckArrows(){
+	BBINT bbt_i=1;
+	BBINT bbt_key=0;
+	BBLONG bbt_val=0LL;
+	while(bbt_i<=_m_seltra_thingmap->__m_seltra_fastlongmap_le ){
+		bbt_val=((BBLONG)((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]);
+		if(((unsigned long long)(bbt_val)&(unsigned long long)(16LL))!=0){
+			BBLONG bbt_=(bbt_val % 8LL);
+			if(bbt_==4LL){
+				((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)((unsigned long long)(((unsigned long long)(bbt_val)&(unsigned long long)(-225LL)))|(unsigned long long)(224LL)));
 			}else{
-				if(bbt_==1){
-					bbt_xv=-1;
-					bbt_yv=0;
+				if(bbt_==2LL){
+					((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)((unsigned long long)(((unsigned long long)(bbt_val)&(unsigned long long)(-225LL)))|(unsigned long long)(96LL)));
 				}else{
-					if(bbt_==2){
-						bbt_xv=0;
-						bbt_yv=1;
+					if(bbt_==3LL){
+						((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)((unsigned long long)(((unsigned long long)(bbt_val)&(unsigned long long)(-225LL)))|(unsigned long long)(160LL)));
 					}else{
-						if(bbt_==3){
-							bbt_xv=0;
-							bbt_yv=-1;
+						if(bbt_==1LL){
+							((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)((unsigned long long)(((unsigned long long)(bbt_val)&(unsigned long long)(-225LL)))|(unsigned long long)(32LL)));
 						}
 					}
 				}
 			}
-			while(1){
-				((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)(bbt_x+(bbt_y*bbt_mx)))]=1;
-				bbt_x2=(bbt_x+bbt_xv);
-				bbt_y2=(bbt_y+bbt_yv);
-				if((((bbt_x2>0) && (bbt_x2<(bbt_mx-1))) && (bbt_y2>0)) && (bbt_y2<(bbt_my-1))){
-					if((((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)((bbt_x2+bbt_xv)+((bbt_y2+bbt_yv)*bbt_mx)))])==0) || (((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)(bbt_x2+(bbt_y2*bbt_mx)))])==1)){
-						bbt_x=(bbt_x+bbt_xv);
-						bbt_y=(bbt_y+bbt_yv);
-					}
-				}else{
-					break;
-				}
-				if((bbt_x==bbt_xf) && (bbt_y==bbt_yf)){
-					bbt_ok=1;
-				}
-				bbt_i=(bbt_i+1);
-				if(brl_random_Rand(0,2)==1){
-					break;
-				}
-			}
-			bbt_j=(bbt_j+1);
 		}
-		bbt_k=((BBBYTE)(((BBINT)bbt_k)+1));
+		bbt_i=(bbt_i+1);
 	}
-	BBINT bbt_2=((bbt_mx*bbt_my)-1);
-	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
-		if(((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)bbt_i)])==0){
-			_m_seltra_wallblock((bbt_i % bbt_mx),(bbt_i/bbt_mx),0);
+	return 0;
+}
+BBINT _m_seltra_thingBlockCollisionManager(BBINT bbt_i,BBINT bbt_i2){
+	BBLONG bbt_val1=((BBLONG)((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]);
+	BBLONG bbt_val2=((BBLONG)((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]);
+	if((((unsigned long long)(bbt_val1)&(unsigned long long)(16LL))!=0) && (((unsigned long long)(bbt_val2)&(unsigned long long)(16LL))!=0)){
+		if((((BBULONG)((unsigned long long)(bbt_val1)&(unsigned long long)(4294967456LL)))==4294967456ULL) && (((unsigned long long)(bbt_val2)&(unsigned long long)(8589934592LL))!=0)){
+			bbt_val1=((unsigned long long)(bbt_val1)|(unsigned long long)(68719476736LL));
+			bbt_val2=((unsigned long long)(bbt_val2)|(unsigned long long)(137438953472LL));
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)bbt_val1);
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]=((BBULONG)bbt_val2);
+		}
+		if((((BBULONG)((unsigned long long)(bbt_val1)&(unsigned long long)(8589934624LL)))==8589934624ULL) && (((unsigned long long)(bbt_val2)&(unsigned long long)(4294967296LL))!=0)){
+			bbt_val1=((unsigned long long)(bbt_val1)|(unsigned long long)(137438953472LL));
+			bbt_val2=((unsigned long long)(bbt_val2)|(unsigned long long)(68719476736LL));
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)bbt_val1);
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]=((BBULONG)bbt_val2);
+		}
+		if((((BBULONG)((unsigned long long)(bbt_val1)&(unsigned long long)(17179869408LL)))==17179869408ULL) && (((unsigned long long)(bbt_val2)&(unsigned long long)(34359738368LL))!=0)){
+			bbt_val1=((unsigned long long)(bbt_val1)|(unsigned long long)(274877906944LL));
+			bbt_val2=((unsigned long long)(bbt_val2)|(unsigned long long)(549755813888LL));
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)bbt_val1);
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]=((BBULONG)bbt_val2);
+		}
+		if((((BBULONG)((unsigned long long)(bbt_val1)&(unsigned long long)(34359738464LL)))==34359738464ULL) && (((unsigned long long)(bbt_val2)&(unsigned long long)(17179869184LL))!=0)){
+			bbt_val1=((unsigned long long)(bbt_val1)|(unsigned long long)(549755813888LL));
+			bbt_val2=((unsigned long long)(bbt_val2)|(unsigned long long)(274877906944LL));
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)bbt_val1);
+			((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]=((BBULONG)bbt_val2);
 		}
 	}
 	return 0;
+}
+BBINT _m_seltra_thingblockRemove(BBINT bbt_key){
+	((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)((BBINT*)BBARRAYDATA(_m_seltra_thingmap->__m_seltra_fastlongmap_k ,1))[((BBUINT)bbt_key)])]=0ULL;
+	return 0;
+}
+BBINT _m_seltra_moveblock(BBINT bbt_key1,BBINT bbt_key2,BBINT bbt_i1,BBINT bbt_i2,BBLONG bbt_val1,BBLONG bbt_val2){
+	if(_m_seltra_dblog!=0){
+		brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s18,bbStringFromInt(bbt_i1)),&_s14),bbStringFromInt(bbt_key1)),&_s19),bbStringFromLong(bbt_val1)));
+	}
+	if(_m_seltra_dblog!=0){
+		brl_standardio_Print(bbStringConcat(&_s63,bbStringFromLong((unsigned long long)(bbt_val1)&(unsigned long long)(17587891077360LL))));
+	}
+	BBLONG bbt_dbg1=((unsigned long long)(bbt_val1)&(unsigned long long)(17587891077360LL));
+	BBLONG bbt_dbg2=((unsigned long long)(bbt_val1)&(unsigned long long)(-241LL));
+	BBLONG bbt_val2n=((unsigned long long)(((unsigned long long)(bbt_val1)&(unsigned long long)(17587891077360LL)))|(unsigned long long)(((BBLONG)(bbt_key2<<8))));
+	if(((unsigned long long)(bbt_val1)&(unsigned long long)(15LL))!=0){
+		if(bbt_val2==0LL){
+			(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key2,((BBULONG)bbt_val2n));
+			bbt_i2=(_m_seltra_thingmap)->clas->m_ifetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key2);
+			if(_m_seltra_dblog!=0){
+				brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(&_s22,bbStringFromLong(bbt_val2n)),&_s23),bbStringFromInt(bbt_key2)));
+			}
+			if(_m_seltra_dblog!=0){
+				brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s22,bbStringFromLong((unsigned long long)(bbt_val1)&(unsigned long long)(-241LL))),&_s23),bbStringFromInt(bbt_key1)),&_s11),bbStringFromULong(((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)((BBINT*)BBARRAYDATA(_m_seltra_k,1))[((BBUINT)bbt_key1)])])));
+			}
+		}
+	}else{
+		bbt_val1=0LL;
+	}
+	((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]=((BBULONG)((unsigned long long)(bbt_val1)&(unsigned long long)(-241LL)));
+	((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i1)]=((BBULONG)((unsigned long long)(bbt_val2)|(unsigned long long)(bbt_val2n)));
+	((BBINT*)BBARRAYDATA(_m_seltra_k,1))[((BBUINT)bbt_key2)]=bbt_i1;
+	((BBINT*)BBARRAYDATA(_m_seltra_k,1))[((BBUINT)bbt_key1)]=bbt_i2;
+	if(bbt_val1==0LL){
+		((BBINT*)BBARRAYDATA(_m_seltra_k,1))[((BBUINT)bbt_key1)]=0;
+	}
+	if(_m_seltra_dblog!=0){
+		brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s24,bbStringFromInt(bbt_i2)),&_s16),bbStringFromInt(bbt_key1)),&_s16),bbStringFromULong(((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)])),&_s25),bbStringFromInt(bbt_i1)),&_s16),bbStringFromInt(bbt_key2)),&_s16),bbStringFromULong(((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i1)])));
+	}
+	return 0;
+}
+BBULONG _m_seltra_clockRotation(BBULONG bbt_in){
+	BBULONG bbt_a=0ULL;
+	bbt_a=(bbt_in&224ULL);
+	BBULONG bbt_=(bbt_in&224ULL);
+	if(bbt_==32ULL){
+		bbt_a=96ULL;
+	}else{
+		if(bbt_==96ULL){
+			bbt_a=160ULL;
+		}else{
+			if(bbt_==160ULL){
+				bbt_a=224ULL;
+			}else{
+				if(bbt_==224ULL){
+					bbt_a=32ULL;
+				}
+			}
+		}
+	}
+	return ((bbt_in&-225ULL)|bbt_a);
+}
+BBULONG _m_seltra_antiCrotation(BBULONG bbt_in){
+	BBULONG bbt_a=0ULL;
+	BBULONG bbt_=(bbt_in&224ULL);
+	if(bbt_==32ULL){
+		bbt_a=224ULL;
+	}else{
+		if(bbt_==224ULL){
+			bbt_a=160ULL;
+		}else{
+			if(bbt_==160ULL){
+				bbt_a=96ULL;
+			}else{
+				if(bbt_==96ULL){
+					bbt_a=32ULL;
+				}
+			}
+		}
+	}
+	return ((bbt_in&-225ULL)|bbt_a);
+}
+BBINT _m_seltra_ThingBlockMove(){
+	BBINT bbt_i=1;
+	BBINT bbt_key=0;
+	BBINT bbt_key2=0;
+	BBLONG bbt_val=0LL;
+	BBLONG bbt_val2=0LL;
+	BBINT bbt_n=_m_seltra_thingmap->__m_seltra_fastlongmap_le ;
+	while(bbt_i<=bbt_n){
+		while(bbt_i<=bbt_n){
+			bbt_key2=-1;
+			bbt_val=((BBLONG)((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]);
+			bbt_key=(_m_seltra_thingmap)->clas->m_getkey_y((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,((BBULONG)bbt_val));
+			if(_m_seltra_dblog!=0){
+				brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s12,bbStringFromInt(bbt_i)),&_s13),bbStringFromLong(bbt_val)),&_s14),bbStringFromInt(bbt_key)));
+			}
+			BBLONG bbt_=((unsigned long long)(bbt_val)&(unsigned long long)(224LL));
+			if(bbt_==160LL){
+				bbt_key2=(bbt_key-1);
+			}else{
+				if(bbt_==32LL){
+					bbt_key2=(bbt_key+1);
+				}else{
+					if(bbt_==224LL){
+						bbt_key2=(bbt_key-1024);
+					}else{
+						if(bbt_==96LL){
+							bbt_key2=(bbt_key+1024);
+						}
+					}
+				}
+			}
+			if((bbt_key2<0) || (bbt_key2>1048575)){
+				break;
+			}
+			BBINT bbt_i2=(_m_seltra_thingmap)->clas->m_ifetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key2);
+			bbt_val2=((BBLONG)((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i2)]);
+			if(((unsigned long long)(bbt_val)&(unsigned long long)(32LL))!=0){
+				if(((unsigned long long)(bbt_val2)&(unsigned long long)(16LL))!=0){
+					brl_blitz_DebugStop();
+					_m_seltra_thingBlockCollisionManager(bbt_i,bbt_i2);
+				}
+				if((bbt_key2<0) || ((bbt_key % 1024)<0)){
+					_m_seltra_thingblockRemove(bbt_key);
+				}else{
+					if(((unsigned int)(8)&(unsigned int)(((BBINT)~bbt_val2)))!=0){
+						if(((unsigned int)(16)&(unsigned int)(((BBINT)~bbt_val2)))!=0){
+							if(_m_seltra_dblog!=0){
+								brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s15,bbStringFromInt(bbt_key)),&_s16),bbStringFromLong(bbt_val)),&_s17),bbStringFromInt(bbt_key2)));
+							}
+							_m_seltra_moveblock(bbt_key,bbt_key2,bbt_i,bbt_i2,bbt_val,bbt_val2);
+						}
+					}else{
+						BBLONG bbt_gbt=((unsigned long long)(((unsigned long long)(bbt_val)&(unsigned long long)(7696581394432LL)))>>(unsigned long long)(40LL));
+						BBLONG bbt_bte=brl_blitz_Sgn4((unsigned long long)(bbt_val)&(unsigned long long)(2199023255552LL));
+						BBLONG bbt_bf=((BBLONG)(128ULL*((BBULONG)brl_blitz_Sgn4((unsigned long long)(bbt_val)&(unsigned long long)(2199023255552LL)))));
+						BBLONG bbt_vbf=(bbt_val^((BBLONG)(128ULL*((BBULONG)brl_blitz_Sgn4((unsigned long long)(bbt_val)&(unsigned long long)(2199023255552LL))))));
+						((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=((BBULONG)(bbt_val^((BBLONG)(128ULL*((BBULONG)brl_blitz_Sgn4((unsigned long long)(bbt_val)&(unsigned long long)(2199023255552LL)))))));
+						if(((unsigned long long)(bbt_val)&(unsigned long long)(3298534883328LL))!=0){
+							((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=_m_seltra_clockRotation((BBULONG)bbt_val);
+						}
+						if(((unsigned long long)(bbt_val)&(unsigned long long)(4398046511104LL))!=0){
+							((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)]=_m_seltra_antiCrotation((BBULONG)bbt_val);
+						}
+						((BBULONG*)BBARRAYDATA(_m_seltra_thingmap->__m_seltra_fastlongmap_v ,1))[((BBUINT)bbt_key)]=((BBULONG*)BBARRAYDATA(_m_seltra_v,1))[((BBUINT)bbt_i)];
+					}
+				}
+			}
+			bbt_i=(bbt_i+1);
+		}
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
+BBINT _m_seltra_update_thingblocks(){
+	BBINT bbt_k=0;
+	_m_seltra_ThingBlockCheckArrows();
+	_m_seltra_ThingBlockMove();
+	return 0;
+}
+BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data){
+	if(_m_seltra_bmap->__m_seltra_fastblockmap_rc >1000){
+		(_m_seltra_bmap)->clas->m_orderedsort((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap);
+	}
+	_m_seltra_update_thingblocks();
+	_m_seltra_time=(_m_seltra_time+1);
+	return (BBOBJECT)&_s56;
 }
 void __m_seltra_sgroup_New(struct _m_seltra_sgroup_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
@@ -2336,22 +2798,20 @@ BBINT __m_seltra_sgroup_move(struct _m_seltra_sgroup_obj* o){
 	struct _m_seltra_substrate_obj* bbt_s2=(struct _m_seltra_substrate_obj*)&bbNullObject;
 	BBINT bbt_xt=0;
 	BBINT bbt_yt=0;
-	BBINT bbt_n=_m_seltra_thingmap->__m_seltra_fastintmap_le ;
+	BBINT bbt_n=_m_seltra_thingmap->__m_seltra_fastlongmap_le ;
 	BBINT bbt_i=0;
 	BBINT bbt_t=0;
 	BBINT bbt_t2=0;
-	BBINT bbt_ti=0;
 	struct _m_seltra_block_obj* bbt_bi=(struct _m_seltra_block_obj*)(&bbNullObject);
 	struct _m_seltra_substrate_obj* bbt_si=(struct _m_seltra_substrate_obj*)(&bbNullObject);
 	if((brl_blitz_Abs(o->__m_seltra_sgroup_xv )+brl_blitz_Abs(o->__m_seltra_sgroup_yv ))>1){
-		brl_blitz_RuntimeError(&_s4);
+		brl_blitz_RuntimeError(&_s28);
 	}
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		bbt_xt=(bbt_s->__m_seltra_substrate_x +o->__m_seltra_sgroup_xv );
 		bbt_yt=(bbt_s->__m_seltra_substrate_y +o->__m_seltra_sgroup_yv );
 		if((bbt_xt>=0) && (bbt_yt>=0)){
-			bbt_ti=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_xt+(bbt_yt<<10)));
-			bbt_bi=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
+			bbt_bi=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
 			bbt_si=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_xt+(bbt_yt<<10)));
 		}else{
 			((struct _m_seltra_sgroup_obj*)o)->clas->m_remove((struct _m_seltra_sgroup_obj*)o);
@@ -2434,20 +2894,20 @@ BBINT __m_seltra_sgroup_checkarrows(struct _m_seltra_sgroup_obj* o){
 	BBINT bbt_i=0;
 	while(((BBObject*)bbt_s)!= &bbNullObject){
 		if(bbt_s->__m_seltra_substrate_image ==_m_seltra_subd){
-			BBINT bbt_=((_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10))) % 8);
-			if(bbt_==1){
+			BBULONG bbt_=((_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10))) % 8ULL);
+			if(bbt_==1ULL){
 				o->__m_seltra_sgroup_xv =0;
 				o->__m_seltra_sgroup_yv =-1;
 			}else{
-				if(bbt_==2){
+				if(bbt_==2ULL){
 					o->__m_seltra_sgroup_xv =0;
 					o->__m_seltra_sgroup_yv =1;
 				}else{
-					if(bbt_==3){
+					if(bbt_==3ULL){
 						o->__m_seltra_sgroup_xv =-1;
 						o->__m_seltra_sgroup_yv =0;
 					}else{
-						if(bbt_==4){
+						if(bbt_==4ULL){
 							o->__m_seltra_sgroup_xv =1;
 							o->__m_seltra_sgroup_yv =0;
 						}
@@ -2563,7 +3023,9 @@ struct BBClass__m_seltra_sgroup _m_seltra_sgroup={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_sgroup_obj,__m_seltra_sgroup_id) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_sgroup_obj,__m_seltra_sgroup_id) - offsetof(struct _m_seltra_sgroup_obj,__m_seltra_sgroup_slist) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_sgroup_obj,__m_seltra_sgroup_slist)
 	,__m_seltra_sgroup_add_Tsubstrate
 	,__m_seltra_sgroup_move
 	,__m_seltra_sgroup_remove
@@ -2594,7 +3056,7 @@ void __m_seltra_substrate_New_iiTTImageTsgroup(struct _m_seltra_substrate_obj* o
 	(_m_seltra_sarray)->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)o);
 }
 struct _m_seltra_substrate_obj* __m_seltra_substrate_New_iiTTImageTsgroup_ObjectNew(BBClass * clas,BBINT bbt_xs,BBINT bbt_ys,struct brl_max2d_image_TImage_obj* bbt_im,struct _m_seltra_sgroup_obj* bbt_sg) {
-	struct _m_seltra_substrate_obj* o = bbObjectNewNC(clas);
+	struct _m_seltra_substrate_obj* o = (struct _m_seltra_substrate_obj*)bbObjectNewNC(clas);
 	__m_seltra_substrate_New_iiTTImageTsgroup(o, bbt_xs, bbt_ys, bbt_im, bbt_sg);
 	return o;
 }
@@ -2736,80 +3198,82 @@ struct BBClass__m_seltra_substrate _m_seltra_substrate={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_substrate_obj,__m_seltra_substrate_group) - sizeof(void*) + sizeof(struct _m_seltra_sgroup_obj*)
+	offsetof(struct _m_seltra_substrate_obj,__m_seltra_substrate_group) - offsetof(struct _m_seltra_substrate_obj,__m_seltra_substrate_image) + sizeof(struct _m_seltra_sgroup_obj*)
+	,0
+	,offsetof(struct _m_seltra_substrate_obj,__m_seltra_substrate_image)
 	,__m_seltra_substrate_out_of_bounds
 	,__m_seltra_substrate_draw
 	,__m_seltra_substrate_Del
 };
 
-void __m_seltra_redraw_New(struct _m_seltra_redraw_obj* o) {
-	bbObjectCtor((BBOBJECT)o);
-	o->clas = &_m_seltra_redraw;
-	o->__m_seltra_redraw_x = 0;
-	o->__m_seltra_redraw_y = 0;
-	o->__m_seltra_redraw_redraws = 0;
-}
-struct BBDebugScope_4 _m_seltra_redraw_scope ={
-	BBDEBUGSCOPE_USERTYPE,
-	"redraw",
-	{
-		{
-			BBDEBUGDECL_FIELD,
-			"x",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_x)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"y",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_y)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"redraws",
-			"b",
-			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_redraws)
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"New",
-			"()i",
-			.var_address=(void*)&__m_seltra_redraw_New
-		},
-		BBDEBUGDECL_END
+struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT bbt_y){
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
+	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
+	if(((BBObject*)bbt_b)!= &bbNullObject){
+		if(bbt_b->__m_seltra_block_btype ==0){
+			return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
+		}
 	}
-};
-struct BBClass__m_seltra_redraw _m_seltra_redraw={
-	&bbObjectClass,
-	bbObjectFree,
-	(BBDebugScope*)&_m_seltra_redraw_scope,
-	sizeof(struct _m_seltra_redraw_obj),
-	(void (*)(BBOBJECT))__m_seltra_redraw_New,
-	bbObjectDtor,
-	bbObjectToString,
-	bbObjectCompare,
-	bbObjectSendMessage,
-	0,
-	0,
-	offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_redraws) - sizeof(void*) + sizeof(BBBYTE)
-};
-
-BBINT _m_seltra_update_sgroups(){
+	if(((BBObject*)bbt_s)!= &bbNullObject){
+		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
+	}
+	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
+	_m_seltra_sgc=(_m_seltra_sgc+1);
+	bbt_s=(struct _m_seltra_substrate_obj*)__m_seltra_substrate_New_iiTTImageTsgroup_ObjectNew((struct _m_seltra_substrate_obj*)&_m_seltra_substrate,bbt_x,bbt_y,(struct brl_max2d_image_TImage_obj*)_m_seltra_sub0,(struct _m_seltra_sgroup_obj*)bbt_sg);
+	(bbt_sg)->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
+	(_m_seltra_sgarray)->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
+	(_m_seltra_sarray)->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
+	(_m_seltra_smap)->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
+	return (struct _m_seltra_sgroup_obj*)bbt_sg;
+}
+struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt_y){
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
+	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
+	if(((BBObject*)bbt_b)!= &bbNullObject){
+		if(bbt_b->__m_seltra_block_btype ==0){
+			return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
+		}
+	}
+	if(((BBObject*)bbt_s)!= &bbNullObject){
+		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
+	}
+	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
+	bbt_sg->__m_seltra_sgroup_slist ->__m_seltra_subarray_sa =bbArraySlice(":substrate",bbt_sg->__m_seltra_sgroup_slist ->__m_seltra_subarray_sa ,0,10);
+	_m_seltra_sgc=(_m_seltra_sgc+1);
+	bbt_s=(struct _m_seltra_substrate_obj*)(struct _m_seltra_substrate_obj*)bbObjectNew((BBClass *)&_m_seltra_substrate);
+	bbt_s->__m_seltra_substrate_x =bbt_x;
+	bbt_s->__m_seltra_substrate_y =bbt_y;
+	bbt_s->__m_seltra_substrate_image =(struct brl_max2d_image_TImage_obj*)_m_seltra_subd;
+	(bbt_sg)->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
+	(_m_seltra_sgarray)->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
+	(_m_seltra_sarray)->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
+	(_m_seltra_smap)->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
+	return (struct _m_seltra_sgroup_obj*)bbt_sg;
+}
+BBINT _m_seltra_wallblock(BBINT bbt_x,BBINT bbt_y,BBINT bbt_u){
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(struct _m_seltra_block_obj*)bbObjectNew((BBClass *)&_m_seltra_block);
+	bbt_b->__m_seltra_block_x =bbt_x;
+	bbt_b->__m_seltra_block_y =bbt_y;
+	bbt_b->__m_seltra_block_btype =0;
+	bbt_b->__m_seltra_block_image =(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[3U];
+	(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)),(struct _m_seltra_block_obj*)bbt_b);
+	(_m_seltra_wallgroup)->clas->m_add_Tblock((struct _m_seltra_blockarray_obj*)_m_seltra_wallgroup,(struct _m_seltra_block_obj*)bbt_b);
+	return 0;
+}
+BBINT _m_seltra_chem_dist(BBINT bbt_x){
+	BBINT bbt_d2=0;
 	BBINT bbt_i=0;
-	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(&bbNullObject);
-	while(bbt_i<_m_seltra_sgarray->__m_seltra_subgrouparray_le ){
-		bbt_sg=(struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj**)BBARRAYDATA(_m_seltra_sgarray->__m_seltra_subgrouparray_sga ,1))[((BBUINT)bbt_i)];
-		if(((BBObject*)bbt_sg)!= &bbNullObject){
-			(bbt_sg)->clas->m_checkarrows((struct _m_seltra_sgroup_obj*)bbt_sg);
-			(bbt_sg)->clas->m_move((struct _m_seltra_sgroup_obj*)bbt_sg);
-			if((bbt_sg)->clas->m_out_of_bounds_check((struct _m_seltra_sgroup_obj*)bbt_sg)!=0){
-				(bbt_sg)->clas->m_remove((struct _m_seltra_sgroup_obj*)bbt_sg);
-			}
+	BBINT bbt_d=0;
+	BBINT bbt_s=0;
+	bbt_d2=9999;
+	while(bbt_i<4){
+		bbt_d=brl_blitz_Abs(bbt_x-((BBINT*)BBARRAYDATA(_m_seltra_chem,1))[((BBUINT)bbt_i)]);
+		if(bbt_d<brl_blitz_Abs(bbt_d2)){
+			bbt_d2=bbt_d;
 		}
 		bbt_i=(bbt_i+1);
 	}
-	return 0;
+	return bbt_d2;
 }
 void __m_seltra_bgroup_New(struct _m_seltra_bgroup_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
@@ -2901,10 +3365,10 @@ BBINT __m_seltra_bgroup_collide_TblockTblock(struct _m_seltra_bgroup_obj* o,stru
 		}
 	}
 	if((brl_blitz_Abs(o->__m_seltra_bgroup_xv )+brl_blitz_Abs(o->__m_seltra_bgroup_yv ))>1){
-		brl_blitz_RuntimeError(&_s2);
+		brl_blitz_RuntimeError(&_s26);
 	}
 	if((brl_blitz_Abs(bbt_b2->__m_seltra_block_group ->__m_seltra_bgroup_xv )+brl_blitz_Abs(bbt_b2->__m_seltra_block_group ->__m_seltra_bgroup_yv ))>1){
-		brl_blitz_RuntimeError(&_s2);
+		brl_blitz_RuntimeError(&_s26);
 	}
 	return 0;
 }
@@ -2951,7 +3415,7 @@ struct _m_seltra_block_obj* __m_seltra_bgroup_check_collision_ii(struct _m_seltr
 		bbt_xt=(bbt_b->__m_seltra_block_x +bbt_xm);
 		bbt_yt=(bbt_b->__m_seltra_block_y +bbt_ym);
 		if((bbt_xt>=0) && (bbt_yt>=0)){
-			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
+			bbt_b2=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_xt+(bbt_yt<<10)));
 		}else{
 			return (struct _m_seltra_block_obj*)&bbNullObject;
 		}
@@ -2979,7 +3443,7 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 	BBINT bbt_xv2=0;
 	BBINT bbt_yv2=0;
 	if((brl_blitz_Abs(o->__m_seltra_bgroup_xv )+brl_blitz_Abs(o->__m_seltra_bgroup_yv ))>1){
-		brl_blitz_RuntimeError(&_s2);
+		brl_blitz_RuntimeError(&_s26);
 	}
 	if(o->__m_seltra_bgroup_lastmove ==_m_seltra_time){
 		return 0;
@@ -3020,12 +3484,12 @@ BBINT __m_seltra_bgroup_move_ii(struct _m_seltra_bgroup_obj* o,BBINT bbt_xm,BBIN
 	bbt_i=0;
 	bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[0U];
 	while(((BBObject*)bbt_b)!= &bbNullObject){
-		if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)))==bbt_b){
-			(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
+		if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)))==bbt_b){
+			(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
 		}
 		bbt_b->__m_seltra_block_x =(bbt_b->__m_seltra_block_x +bbt_xm);
 		bbt_b->__m_seltra_block_y =(bbt_b->__m_seltra_block_y +bbt_ym);
-		(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
+		(_m_seltra_bmap)->clas->m_insert_iTblock((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)),(struct _m_seltra_block_obj*)bbt_b);
 		bbt_i=(bbt_i+1);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
 	}
@@ -3052,7 +3516,7 @@ BBINT _m_seltra_bgroup_check_group_vel_i(){
 	while(bbt_i<_m_seltra_garray->__m_seltra_grouparray_le ){
 		bbt_g=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATA(_m_seltra_garray->__m_seltra_grouparray_ga ,1))[((BBUINT)bbt_i)];
 		if((brl_blitz_Abs(bbt_g->__m_seltra_bgroup_xv )+brl_blitz_Abs(bbt_g->__m_seltra_bgroup_yv ))>1){
-			brl_blitz_RuntimeError(&_s3);
+			brl_blitz_RuntimeError(&_s27);
 		}
 		bbt_i=(bbt_i+1);
 	}
@@ -3065,7 +3529,7 @@ BBINT __m_seltra_bgroup_check_substrates(struct _m_seltra_bgroup_obj* o){
 	BBINT bbt_ok=0;
 	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
 	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	BBARRAY volatile bbt_sl=bbArrayNew1D(":substrate", 10);
+	BBARRAY bbt_sl=bbArrayNew1D(":substrate", 10);
 	while(((BBObject*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)])!= &bbNullObject){
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
 		bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
@@ -3102,7 +3566,7 @@ BBINT __m_seltra_bgroup_remove(struct _m_seltra_bgroup_obj* o){
 	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[0U];
 	BBINT bbt_i=0;
 	while(((BBObject*)bbt_b)!= &bbNullObject){
-		(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
+		(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
 		struct _m_seltra_redraw_obj* bbt_re=(struct _m_seltra_redraw_obj*)(struct _m_seltra_redraw_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_redraw);
 		bbt_re->__m_seltra_redraw_x =((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)];
 		bbt_re->__m_seltra_redraw_y =((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)];
@@ -3157,26 +3621,6 @@ BBINT __m_seltra_bgroup_checkarrows(struct _m_seltra_bgroup_obj* o){
 	BBINT bbt_i=0;
 	while(((BBObject*)bbt_b)!= &bbNullObject){
 		if(bbt_b->__m_seltra_block_btype !=0){
-			BBINT bbt_=((_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10))) % 8);
-			if(bbt_==1){
-				o->__m_seltra_bgroup_xv =0;
-				o->__m_seltra_bgroup_yv =-1;
-			}else{
-				if(bbt_==2){
-					o->__m_seltra_bgroup_xv =0;
-					o->__m_seltra_bgroup_yv =1;
-				}else{
-					if(bbt_==3){
-						o->__m_seltra_bgroup_xv =-1;
-						o->__m_seltra_bgroup_yv =0;
-					}else{
-						if(bbt_==4){
-							o->__m_seltra_bgroup_xv =1;
-							o->__m_seltra_bgroup_yv =0;
-						}
-					}
-				}
-			}
 		}
 		bbt_i=(bbt_i+1);
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(o->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
@@ -3413,7 +3857,9 @@ struct BBClass__m_seltra_bgroup _m_seltra_bgroup={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_bgroup_obj,__m_seltra_bgroup_n) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_bgroup_obj,__m_seltra_bgroup_n) - offsetof(struct _m_seltra_bgroup_obj,__m_seltra_bgroup_blist) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_bgroup_obj,__m_seltra_bgroup_blist)
 	,__m_seltra_bgroup_add_Tblock
 	,__m_seltra_bgroup_addNewBlock_ii
 	,__m_seltra_bgroup_collide_TblockTblock
@@ -3435,311 +3881,8 @@ struct BBClass__m_seltra_bgroup _m_seltra_bgroup={
 	,__m_seltra_bgroup_merge_Tbgroup
 };
 
-BBINT _m_seltra_update_bgroups(){
-	BBINT bbt_i=0;
-	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	bbt_i=0;
-	while(bbt_i<_m_seltra_garray->__m_seltra_grouparray_le ){
-		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATA(_m_seltra_garray->__m_seltra_grouparray_ga ,1))[((BBUINT)bbt_i)];
-		if(((BBObject*)bbt_bg)!= &bbNullObject){
-			(bbt_bg)->clas->m_checkarrows((struct _m_seltra_bgroup_obj*)bbt_bg);
-			(bbt_bg)->clas->m_check_substrates((struct _m_seltra_bgroup_obj*)bbt_bg);
-			(bbt_bg)->clas->m_move((struct _m_seltra_bgroup_obj*)bbt_bg);
-			if((bbt_bg)->clas->m_out_of_bounds((struct _m_seltra_bgroup_obj*)bbt_bg)!=0){
-				(bbt_bg)->clas->m_remove((struct _m_seltra_bgroup_obj*)bbt_bg);
-			}
-		}
-		bbt_i=(bbt_i+1);
-	}
-	return 0;
-}
-void __m_seltra_gen_New(struct _m_seltra_gen_obj* o) {
-	bbObjectCtor((BBOBJECT)o);
-	o->clas = &_m_seltra_gen;
-	o->__m_seltra_gen_x = 0;
-	o->__m_seltra_gen_y = 0;
-	o->__m_seltra_gen_bglist = bbArrayNew1D(":bgroup", 100);
-	o->__m_seltra_gen_le = 0;
-	o->__m_seltra_gen_rate = 0;
-	o->__m_seltra_gen_t = 0;
-	o->__m_seltra_gen_bitflags = 0;
-	o->__m_seltra_gen_n = 0;
-	o->__m_seltra_gen_id = 0;
-	o->__m_seltra_gen_clist = bbArrayNew1D(":cell", 25);
-}
-struct _m_seltra_bgroup_obj* __m_seltra_gen_genIsolatedBlock(struct _m_seltra_gen_obj* o){
-	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
-	struct _m_seltra_bgroup_obj* bbt_bg2=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
-	BBINT bbt_r=0;
-	BBINT bbt_xv=0;
-	BBINT bbt_yv=0;
-	BBINT bbt_tm=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(o->__m_seltra_gen_x +(o->__m_seltra_gen_y <<10)));
-	if((bbt_tm<10) && (bbt_tm>0)){
-		BBINT bbt_=(bbt_tm % 8);
-		if(bbt_==1){
-			bbt_yv=-1;
-		}else{
-			if(bbt_==2){
-				bbt_yv=1;
-			}else{
-				if(bbt_==3){
-					bbt_xv=-1;
-				}else{
-					if(bbt_==4){
-						bbt_xv=1;
-					}
-				}
-			}
-		}
-		if((o->__m_seltra_gen_bitflags !=0) && 1){
-			bbt_bg2=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATA(o->__m_seltra_gen_bglist ,1))[((BBUINT)brl_random_Rand(0,o->__m_seltra_gen_le ))];
-		}
-	}
-	o->__m_seltra_gen_n =(o->__m_seltra_gen_n -1);
-	return (struct _m_seltra_bgroup_obj*)bbt_bg;
-}
-BBINT __m_seltra_gen_addRandomBlock_Tbgroup(struct _m_seltra_gen_obj* o,struct _m_seltra_bgroup_obj* bbt_bg){
-	BBINT bbt_r=brl_random_Rand(bbt_bg->__m_seltra_bgroup_n ,1);
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_bg->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_r)];
-	BBINT bbt_=brl_random_Rand(4,1);
-	if(bbt_==0){
-		if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x +1)+(bbt_b->__m_seltra_block_y <<10)))==&bbNullObject){
-			(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,(o->__m_seltra_gen_x +1),o->__m_seltra_gen_y );
-		}
-	}else{
-		if(bbt_==1){
-			if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x -1)+(bbt_b->__m_seltra_block_y <<10)))==&bbNullObject){
-				(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,(o->__m_seltra_gen_x -1),o->__m_seltra_gen_y );
-			}
-		}else{
-			if(bbt_==2){
-				if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y +1)<<10)))==&bbNullObject){
-					(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,o->__m_seltra_gen_x ,(o->__m_seltra_gen_y +1));
-				}
-			}else{
-				if(bbt_==3){
-					if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y -1)<<10)))==&bbNullObject){
-						(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,o->__m_seltra_gen_x ,(o->__m_seltra_gen_y -1));
-					}
-				}
-			}
-		}
-	}
-	return 0;
-}
-BBINT __m_seltra_gen_genRandomBlockGroup_i(struct _m_seltra_gen_obj* o,BBINT bbt_n){
-	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_gen_obj*)o)->clas->m_genIsolatedBlock((struct _m_seltra_gen_obj*)o);
-	return 0;
-}
-BBINT __m_seltra_gen_update(struct _m_seltra_gen_obj* o){
-	if((_m_seltra_time % o->__m_seltra_gen_rate )==o->__m_seltra_gen_t ){
-		((struct _m_seltra_gen_obj*)o)->clas->m_genIsolatedBlock((struct _m_seltra_gen_obj*)o);
-	}
-	return 0;
-}
-struct BBDebugScope_15 _m_seltra_gen_scope ={
-	BBDEBUGSCOPE_USERTYPE,
-	"gen",
-	{
-		{
-			BBDEBUGDECL_FIELD,
-			"x",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_x)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"y",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_y)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"bglist",
-			"[]:bgroup",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_bglist)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"le",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_le)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"rate",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_rate)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"t",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_t)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"bitflags",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_bitflags)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"n",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_n)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"id",
-			"i",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_id)
-		},
-		{
-			BBDEBUGDECL_FIELD,
-			"clist",
-			"[]:cell",
-			.field_offset=offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_clist)
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"New",
-			"()i",
-			.var_address=(void*)&__m_seltra_gen_New
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"genIsolatedBlock",
-			"():bgroup",
-			.var_address=(void*)&__m_seltra_gen_genIsolatedBlock
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"addRandomBlock",
-			"(:bgroup)i",
-			.var_address=(void*)&__m_seltra_gen_addRandomBlock_Tbgroup
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"genRandomBlockGroup",
-			"(i)i",
-			.var_address=(void*)&__m_seltra_gen_genRandomBlockGroup_i
-		},
-		{
-			BBDEBUGDECL_TYPEMETHOD,
-			"update",
-			"()i",
-			.var_address=(void*)&__m_seltra_gen_update
-		},
-		BBDEBUGDECL_END
-	}
-};
-struct BBClass__m_seltra_gen _m_seltra_gen={
-	&bbObjectClass,
-	bbObjectFree,
-	(BBDebugScope*)&_m_seltra_gen_scope,
-	sizeof(struct _m_seltra_gen_obj),
-	(void (*)(BBOBJECT))__m_seltra_gen_New,
-	bbObjectDtor,
-	bbObjectToString,
-	bbObjectCompare,
-	bbObjectSendMessage,
-	0,
-	0,
-	offsetof(struct _m_seltra_gen_obj,__m_seltra_gen_clist) - sizeof(void*) + sizeof(BBARRAY)
-	,__m_seltra_gen_genIsolatedBlock
-	,__m_seltra_gen_addRandomBlock_Tbgroup
-	,__m_seltra_gen_genRandomBlockGroup_i
-	,__m_seltra_gen_update
-};
-
-BBINT _m_seltra_update_gens(){
-	BBINT bbt_i=0;
-	while(bbt_i<_m_seltra_genarray->__m_seltra_generatorarray_le ){
-		struct _m_seltra_gen_obj* bbt_;
-		((bbt_ = ((struct _m_seltra_gen_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)])->clas)->m_update((struct _m_seltra_gen_obj*)bbt_);
-		bbt_i=(bbt_i+1);
-	}
-	return 0;
-}
-BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data){
-	if(_m_seltra_bmap->__m_seltra_fastblockmap_rc >1000){
-		(_m_seltra_bmap)->clas->m_orderedsort((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap);
-	}
-	_m_seltra_update_sgroups();
-	_m_seltra_update_bgroups();
-	_m_seltra_update_gens();
-	_m_seltra_time=(_m_seltra_time+1);
-	return (BBOBJECT)&_s24;
-}
-struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT bbt_y){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	if(((BBObject*)bbt_b)!= &bbNullObject){
-		if(bbt_b->__m_seltra_block_btype ==0){
-			return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
-		}
-	}
-	if(((BBObject*)bbt_s)!= &bbNullObject){
-		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
-	}
-	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
-	_m_seltra_sgc=(_m_seltra_sgc+1);
-	bbt_s=(struct _m_seltra_substrate_obj*)__m_seltra_substrate_New_iiTTImageTsgroup_ObjectNew((struct _m_seltra_substrate_obj*)&_m_seltra_substrate,bbt_x,bbt_y,(struct brl_max2d_image_TImage_obj*)_m_seltra_sub0,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	(bbt_sg)->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
-	(_m_seltra_sgarray)->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	(_m_seltra_sarray)->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
-	(_m_seltra_smap)->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-	return (struct _m_seltra_sgroup_obj*)bbt_sg;
-}
-struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt_y){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	if(((BBObject*)bbt_b)!= &bbNullObject){
-		if(bbt_b->__m_seltra_block_btype ==0){
-			return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
-		}
-	}
-	if(((BBObject*)bbt_s)!= &bbNullObject){
-		return (struct _m_seltra_sgroup_obj*)(&bbNullObject);
-	}
-	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(struct _m_seltra_sgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_sgroup);
-	bbt_sg->__m_seltra_sgroup_slist ->__m_seltra_subarray_sa =bbArraySlice(":substrate",bbt_sg->__m_seltra_sgroup_slist ->__m_seltra_subarray_sa ,0,10);
-	_m_seltra_sgc=(_m_seltra_sgc+1);
-	bbt_s=(struct _m_seltra_substrate_obj*)(struct _m_seltra_substrate_obj*)bbObjectNew((BBClass *)&_m_seltra_substrate);
-	bbt_s->__m_seltra_substrate_x =bbt_x;
-	bbt_s->__m_seltra_substrate_y =bbt_y;
-	bbt_s->__m_seltra_substrate_image =(struct brl_max2d_image_TImage_obj*)_m_seltra_subd;
-	(bbt_sg)->clas->m_add_Tsubstrate((struct _m_seltra_sgroup_obj*)bbt_sg,(struct _m_seltra_substrate_obj*)bbt_s);
-	(_m_seltra_sgarray)->clas->m_add_Tsgroup((struct _m_seltra_subgrouparray_obj*)_m_seltra_sgarray,(struct _m_seltra_sgroup_obj*)bbt_sg);
-	(_m_seltra_sarray)->clas->m_add_Tsubstrate((struct _m_seltra_subarray_obj*)_m_seltra_sarray,(struct _m_seltra_substrate_obj*)bbt_s);
-	(_m_seltra_smap)->clas->m_insert_iTsubstrate((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_s->__m_seltra_substrate_x +(bbt_s->__m_seltra_substrate_y <<10)),(struct _m_seltra_substrate_obj*)bbt_s);
-	return (struct _m_seltra_sgroup_obj*)bbt_sg;
-}
-BBINT _m_seltra_placegene(BBINT bbt_x,BBINT bbt_y){
-	BBINT bbt_tm=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
-	if((bbt_tm>0) && (bbt_tm<5)){
-		(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)),(1 || (bbt_tm!=0)));
-	}
-	return 0;
-}
-BBINT _m_seltra_chem_dist(BBINT bbt_x){
-	BBINT bbt_d2=0;
-	BBINT bbt_i=0;
-	BBINT bbt_d=0;
-	BBINT bbt_s=0;
-	bbt_d2=9999;
-	while(bbt_i<4){
-		bbt_d=brl_blitz_Abs(bbt_x-((BBINT*)BBARRAYDATA(_m_seltra_chem,1))[((BBUINT)bbt_i)]);
-		if(bbt_d<brl_blitz_Abs(bbt_d2)){
-			bbt_d2=bbt_d;
-		}
-		bbt_i=(bbt_i+1);
-	}
-	return bbt_d2;
-}
 BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_image_TImage_obj* bbt_image){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
 	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
 	struct _m_seltra_substrate_obj* bbt_s2=(struct _m_seltra_substrate_obj*)(&bbNullObject);
 	if(((BBObject*)bbt_b)!= &bbNullObject){
@@ -3801,6 +3944,7 @@ BBINT _m_seltra_mouse_input_map(){
 	BBINT bbt_prox=0;
 	_m_seltra_moxc=((BBINT)((((BBFLOAT)_m_seltra_mox)/_m_seltra_zoom)+((BBFLOAT)_m_seltra_camposx)));
 	_m_seltra_moyc=((BBINT)((((BBFLOAT)_m_seltra_moy)/_m_seltra_zoom)+((BBFLOAT)_m_seltra_camposy)));
+	BBINT bbt_key=(_m_seltra_moxc+(_m_seltra_moyc<<10));
 	bbt_mozd=(_m_seltra_moz-_m_seltra_mozo);
 	if((_m_seltra_mozu+((BBFLOAT)bbt_mozd))<-9.00000000f){
 		bbt_mozn=-9.00000000f;
@@ -3823,47 +3967,46 @@ BBINT _m_seltra_mouse_input_map(){
 		_m_seltra_moyc=0;
 	}
 	if(brl_polledinput_MouseHit(1)!=0){
-		if(_m_seltra_smt<=55){
-			bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-			if(!(((BBObject*)bbt_b)!= &bbNullObject)){
-				if(_m_seltra_smi==_m_seltra_sub0){
-					_m_seltra_createsingleSubstrate(_m_seltra_moxc,_m_seltra_moyc);
-					return 0;
-				}
-				if(_m_seltra_smi==_m_seltra_subd){
-					_m_seltra_placeSubstrateGuide(_m_seltra_moxc,_m_seltra_moyc);
-					return 0;
-				}
-				if(_m_seltra_smi==_m_seltra_gene){
-					brl_blitz_DebugStop();
-					_m_seltra_placegene(_m_seltra_moxc,_m_seltra_moyc);
-					return 0;
-				}
-				struct _m_seltra_btemplate_obj* bbt_;
-				((bbt_ = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)_m_seltra_smt)])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_,_m_seltra_moxc,_m_seltra_moyc,0,0);
-			}else{
-				(bbt_b)->clas->m_checkchem3_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)&bbNullObject);
+		if(_m_seltra_smt<=90){
+			if(_m_seltra_smt==3){
+				(_m_seltra_thingmap)->clas->m_putq_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key,8ULL);
+				return 0;
 			}
+			if(_m_seltra_smi==_m_seltra_sub0){
+				_m_seltra_createsingleSubstrate(_m_seltra_moxc,_m_seltra_moyc);
+				return 0;
+			}
+			if(_m_seltra_smi==_m_seltra_subd){
+				_m_seltra_placeSubstrateGuide(_m_seltra_moxc,_m_seltra_moyc);
+				return 0;
+			}
+			if(_m_seltra_smi==_m_seltra_gencell){
+				return 0;
+			}
+			BBULONG bbt_bonds=((BBULONG)((_m_seltra_smt-4) % 16));
+			BBULONG bbt_btype=((BBULONG)((unsigned int)((_m_seltra_smt-4))>>(unsigned int)(4)));
+			struct _m_seltra_btemplate_obj* bbt_;
+			((bbt_ = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)_m_seltra_smt)])->clas)->m_createsingleblock_iiiill((struct _m_seltra_btemplate_obj*)bbt_,_m_seltra_moxc,_m_seltra_moyc,0,0,((BBLONG)bbt_bonds),((BBLONG)bbt_btype));
 		}
 	}
 	if(brl_polledinput_MouseHit(2)!=0){
-		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
+		bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
 		if(!(((BBObject*)bbt_b)!= &bbNullObject)){
 			if(_m_seltra_smt<=3){
 				_m_seltra_wallblock(_m_seltra_moxc,_m_seltra_moyc,0);
 				return 0;
 			}
-			bbt_prox=((((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,((-1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject));
-			bbt_prox=(((bbt_prox!=0) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+((_m_seltra_moyc+1)<<10))))!= &bbNullObject)) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(+_m_seltra_moxc+((_m_seltra_moyc-1)<<10))))!= &bbNullObject));
+			bbt_prox=((((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((-1+_m_seltra_moxc)+(_m_seltra_moyc<<10))))!= &bbNullObject));
+			bbt_prox=(((bbt_prox!=0) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(_m_seltra_moxc+((_m_seltra_moyc+1)<<10))))!= &bbNullObject)) || (((BBObject*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(+_m_seltra_moxc+((_m_seltra_moyc-1)<<10))))!= &bbNullObject));
 			if((bbt_prox!=0) && (_m_seltra_smt<=30)){
 				struct _m_seltra_btemplate_obj* bbt_2;
 				((bbt_2 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)_m_seltra_smt)])->clas)->m_setbindingblock_ii((struct _m_seltra_btemplate_obj*)bbt_2,_m_seltra_moxc,_m_seltra_moyc);
 			}else{
 				if(_m_seltra_smt<=31){
-					bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
+					bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
 					if(!(((BBObject*)bbt_b)!= &bbNullObject)){
 						struct _m_seltra_btemplate_obj* bbt_3;
-						((bbt_3 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)_m_seltra_smt)])->clas)->m_createsingleblock_iiii((struct _m_seltra_btemplate_obj*)bbt_3,_m_seltra_moxc,_m_seltra_moyc,0,0);
+						((bbt_3 = ((struct _m_seltra_btemplate_obj**)BBARRAYDATA(_m_seltra_btarray,1))[((BBUINT)_m_seltra_smt)])->clas)->m_createsingleblock_iiiill((struct _m_seltra_btemplate_obj*)bbt_3,_m_seltra_moxc,_m_seltra_moyc,0,0,10LL,0LL);
 					}else{
 						(bbt_b)->clas->m_checkchem3_Tblock((struct _m_seltra_block_obj*)bbt_b,(struct _m_seltra_block_obj*)&bbNullObject);
 					}
@@ -3921,10 +4064,10 @@ BBINT _m_seltra_get_mouse_input(){
 	return 0;
 }
 BBINT _m_seltra_save_map(){
-	struct brl_stream_TStream_obj* bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s26);
+	struct brl_stream_TStream_obj* bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s58);
 	if(!(((BBObject*)bbt_out)!= &bbNullObject)){
-		brl_filesystem_CreateFile(&_s26);
-		bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s26);
+		brl_filesystem_CreateFile(&_s58);
+		bbt_out=(struct brl_stream_TStream_obj*)brl_filesystem_WriteFile((BBOBJECT)&_s58);
 	}
 	BBINT bbt_i=0;
 	brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,_m_seltra_wallgroup->__m_seltra_blockarray_le );
@@ -3933,11 +4076,9 @@ BBINT _m_seltra_save_map(){
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_wallgroup->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)]->__m_seltra_block_x );
 		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_wallgroup->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)]->__m_seltra_block_y );
 	}
-	brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,_m_seltra_thingmap->__m_seltra_fastintmap_le );
-	BBINT bbt_2=_m_seltra_thingmap->__m_seltra_fastintmap_le ;
+	brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,_m_seltra_thingmap->__m_seltra_fastlongmap_le );
+	BBINT bbt_2=_m_seltra_thingmap->__m_seltra_fastlongmap_le ;
 	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
-		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,(_m_seltra_thingmap)->clas->m_kfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i));
-		brl_stream_WriteInt((struct brl_stream_TStream_obj*)bbt_out,(_m_seltra_thingmap)->clas->m_vfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i));
 	}
 	brl_filesystem_CloseFile((struct brl_stream_TStream_obj*)bbt_out);
 	return 0;
@@ -3945,9 +4086,9 @@ BBINT _m_seltra_save_map(){
 BBINT _m_seltra_load_map(){
 	_m_seltra_wallgroup=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
 	_m_seltra_wallgroup->__m_seltra_blockarray_ba =bbArraySlice(":block",_m_seltra_wallgroup->__m_seltra_blockarray_ba ,0,999999);
-	_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-	_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
-	struct brl_stream_TStream_obj* bbt_in=(struct brl_stream_TStream_obj*)brl_filesystem_ReadFile((BBOBJECT)&_s26);
+	_m_seltra_bmap=(struct _m_seltra_FastBlockMap_obj*)(struct _m_seltra_FastBlockMap_obj*)bbObjectNew((BBClass *)&_m_seltra_FastBlockMap);
+	_m_seltra_thingmap=(struct _m_seltra_fastlongmap_obj*)(struct _m_seltra_fastlongmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastlongmap);
+	struct brl_stream_TStream_obj* bbt_in=(struct brl_stream_TStream_obj*)brl_filesystem_ReadFile((BBOBJECT)&_s58);
 	if(!(((BBObject*)bbt_in)!= &bbNullObject)){
 		return 0;
 	}
@@ -3963,23 +4104,169 @@ BBINT _m_seltra_load_map(){
 	}
 	bbt_n=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
 	BBINT bbt_k=0;
-	BBINT bbt_v=0;
+	BBULONG bbt_v=0ULL;
 	BBINT bbt_2=(bbt_n-1);
 	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
-		bbt_k=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		bbt_v=brl_stream_ReadInt((struct brl_stream_TStream_obj*)bbt_in);
-		if(bbt_v!=0){
-			(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_k,bbt_v);
-		}
+		bbt_k=((BBINT)brl_stream_ReadLong((struct brl_stream_TStream_obj*)bbt_in));
+		bbt_v=((BBULONG)brl_stream_ReadLong((struct brl_stream_TStream_obj*)bbt_in));
 	}
 	brl_filesystem_CloseFile((struct brl_stream_TStream_obj*)bbt_in);
 	return 0;
 }
+BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf,BBINT bbt_mx,BBINT bbt_my){
+	_m_seltra_wallgroup=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
+	_m_seltra_wallgroup->__m_seltra_blockarray_ba =bbArraySlice(":block",_m_seltra_wallgroup->__m_seltra_blockarray_ba ,0,999999);
+	_m_seltra_bmap=(struct _m_seltra_FastBlockMap_obj*)(struct _m_seltra_FastBlockMap_obj*)bbObjectNew((BBClass *)&_m_seltra_FastBlockMap);
+	_m_seltra_thingmap=(struct _m_seltra_fastlongmap_obj*)(struct _m_seltra_fastlongmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastlongmap);
+	BBARRAY bbt_m=bbArrayNew1D("b", (bbt_mx*bbt_my));
+	BBINT bbt_d=0;
+	BBINT bbt_ok=0;
+	BBBYTE bbt_k=0;
+	BBINT bbt_xv=0;
+	BBINT bbt_yv=0;
+	BBINT bbt_x=0;
+	BBINT bbt_y=0;
+	BBINT bbt_x2=0;
+	BBINT bbt_y2=0;
+	BBINT bbt_i=0;
+	BBINT bbt_j=0;
+	BBARRAY bbt_xs2=bbArrayNew1D("i", 6);
+	BBARRAY bbt_ys2=bbArrayNew1D("i", 6);
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[0U]=bbt_xs;
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[0U]=bbt_ys;
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[1U]=bbt_xf;
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[1U]=bbt_yf;
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[2U]=1;
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[2U]=1;
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[3U]=(bbt_mx-1);
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[3U]=1;
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[4U]=1;
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[4U]=(bbt_my-1);
+	((BBINT*)BBARRAYDATA(bbt_xs2,1))[5U]=(bbt_mx-1);
+	((BBINT*)BBARRAYDATA(bbt_ys2,1))[5U]=(bbt_my-1);
+	bbt_x=bbt_xs;
+	bbt_y=bbt_ys;
+	while(((BBINT)bbt_k)<6){
+		bbt_x=((BBINT*)BBARRAYDATA(bbt_xs2,1))[((BBUINT)bbt_k)];
+		bbt_y=((BBINT*)BBARRAYDATA(bbt_ys2,1))[((BBUINT)bbt_k)];
+		bbt_i=0;
+		bbt_j=0;
+		while(((bbt_i<100) || (bbt_ok==0)) && (bbt_j<1024)){
+			bbt_d=brl_random_Rand(0,3);
+			BBINT bbt_=bbt_d;
+			if(bbt_==0){
+				bbt_xv=1;
+				bbt_yv=0;
+			}else{
+				if(bbt_==1){
+					bbt_xv=-1;
+					bbt_yv=0;
+				}else{
+					if(bbt_==2){
+						bbt_xv=0;
+						bbt_yv=1;
+					}else{
+						if(bbt_==3){
+							bbt_xv=0;
+							bbt_yv=-1;
+						}
+					}
+				}
+			}
+			while(1){
+				((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)(bbt_x+(bbt_y*bbt_mx)))]=1;
+				bbt_x2=(bbt_x+bbt_xv);
+				bbt_y2=(bbt_y+bbt_yv);
+				if((((bbt_x2>0) && (bbt_x2<(bbt_mx-1))) && (bbt_y2>0)) && (bbt_y2<(bbt_my-1))){
+					if((((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)((bbt_x2+bbt_xv)+((bbt_y2+bbt_yv)*bbt_mx)))])==0) || (((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)(bbt_x2+(bbt_y2*bbt_mx)))])==1)){
+						bbt_x=(bbt_x+bbt_xv);
+						bbt_y=(bbt_y+bbt_yv);
+					}
+				}else{
+					break;
+				}
+				if((bbt_x==bbt_xf) && (bbt_y==bbt_yf)){
+					bbt_ok=1;
+				}
+				bbt_i=(bbt_i+1);
+				if(brl_random_Rand(0,2)==1){
+					break;
+				}
+			}
+			bbt_j=(bbt_j+1);
+		}
+		bbt_k=((BBBYTE)(((BBINT)bbt_k)+1));
+	}
+	BBINT bbt_2=((bbt_mx*bbt_my)-1);
+	for(bbt_i=0;(bbt_i<=bbt_2);bbt_i=(bbt_i+1)){
+		if(((BBINT)((BBBYTE*)BBARRAYDATA(bbt_m,1))[((BBUINT)bbt_i)])==0){
+			_m_seltra_wallblock((bbt_i % bbt_mx),(bbt_i/bbt_mx),0);
+		}
+	}
+	return 0;
+}
+void __m_seltra_redraw_New(struct _m_seltra_redraw_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_redraw;
+	o->__m_seltra_redraw_x = 0;
+	o->__m_seltra_redraw_y = 0;
+	o->__m_seltra_redraw_redraws = 0;
+}
+struct BBDebugScope_4 _m_seltra_redraw_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"redraw",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"x",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_x)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"y",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_y)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"redraws",
+			"b",
+			.field_offset=offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_redraws)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_redraw_New
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_redraw _m_seltra_redraw={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_redraw_scope,
+	sizeof(struct _m_seltra_redraw_obj),
+	(void (*)(BBOBJECT))__m_seltra_redraw_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_redraws) - offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_x) + sizeof(BBBYTE)
+	,0
+	,offsetof(struct _m_seltra_redraw_obj,__m_seltra_redraw_x)
+};
+
 BBINT _m_seltra_get_user_input(){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
 	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	BBINT bbt_t=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
 	BBINT bbt_p=0;
+	BBINT bbt_key=0;
+	BBULONG bbt_val=0ULL;
+	bbt_key=(_m_seltra_moxc+(_m_seltra_moyc<<10));
+	bbt_val=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key);
 	if(brl_polledinput_KeyHit(112)!=0){
 		_m_seltra_save_map();
 	}
@@ -3989,32 +4276,25 @@ BBINT _m_seltra_get_user_input(){
 	if(brl_polledinput_KeyHit(114)!=0){
 		_m_seltra_gen_maze_map(1,1,40,1,40,40);
 	}
-	if(!(((BBObject*)bbt_b)!= &bbNullObject) || ((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_btype !=0))){
-		bbt_p=(bbt_t-(bbt_t % 8));
-		if(brl_polledinput_KeyHit(87)!=0){
-			(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(1)));
-		}
-		if(brl_polledinput_KeyHit(83)!=0){
-			(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(2)));
-		}
-		if(brl_polledinput_KeyHit(65)!=0){
-			(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(3)));
-		}
-		if(brl_polledinput_KeyHit(68)!=0){
-			(_m_seltra_thingmap)->clas->m_insert_ii((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)),((unsigned int)(bbt_p)|(unsigned int)(4)));
-		}
+	if(brl_polledinput_KeyHit(87)!=0){
+		(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key,((bbt_val&-8ULL)|4ULL));
+	}
+	if(brl_polledinput_KeyHit(83)!=0){
+		(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key,((bbt_val&-8ULL)|2ULL));
+	}
+	if(brl_polledinput_KeyHit(65)!=0){
+		(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key,((bbt_val&-8ULL)|3ULL));
+	}
+	if(brl_polledinput_KeyHit(68)!=0){
+		(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key,((bbt_val&-8ULL)|1ULL));
 	}
 	if(brl_polledinput_KeyHit(32)!=0){
-		if((bbt_t>=5) && (bbt_t<=9)){
-		}
-		(_m_seltra_thingmap)->clas->m_remove_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-		if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_btype !=0)){
-			struct _m_seltra_bgroup_obj* bbt_;
-			(((struct _m_seltra_bgroup_obj*)(bbt_ = bbt_b->__m_seltra_block_group ))->clas)->m_remove((struct _m_seltra_bgroup_obj*)bbt_);
-		}
-		if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_image ==((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[1U])){
-			((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_wallgroup->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_b->__m_seltra_block_id )]=(struct _m_seltra_block_obj*)&bbNullObject;
-			(_m_seltra_bmap)->clas->m_remove_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +(bbt_b->__m_seltra_block_y <<10)));
+		if(((_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key)&16ULL)!=0){
+			_m_seltra_thingblockRemove(bbt_key);
+		}else{
+			if((_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key)!=0){
+				(_m_seltra_thingmap)->clas->m_remove_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key);
+			}
 		}
 		if(((BBObject*)bbt_s)!= &bbNullObject){
 			(bbt_s)->clas->m_Del((struct _m_seltra_substrate_obj*)bbt_s);
@@ -4023,24 +4303,24 @@ BBINT _m_seltra_get_user_input(){
 	BBINT bbt_old_gamespeedbrake_setting=_m_seltra_gamespeedbrake_setting;
 	_m_seltra_gamespeedbrake_setting=((_m_seltra_gamespeedbrake_setting+brl_polledinput_KeyHit(219))-brl_polledinput_KeyHit(221));
 	if(_m_seltra_gamespeedbrake_setting!=bbt_old_gamespeedbrake_setting){
-		BBINT bbt_2=_m_seltra_gamespeedbrake_setting;
-		if(bbt_2==-1){
+		BBINT bbt_=_m_seltra_gamespeedbrake_setting;
+		if(bbt_==-1){
 			_m_seltra_gamespeedbrake_setting=0;
 		}else{
-			if(bbt_2==0){
+			if(bbt_==0){
 			}else{
-				if(bbt_2==1){
+				if(bbt_==1){
 					_m_seltra_gamespeedbrake=500;
 				}else{
-					if(bbt_2==2){
+					if(bbt_==2){
 						_m_seltra_gamespeedbrake=100;
 					}else{
-						if(bbt_2==3){
+						if(bbt_==3){
 							_m_seltra_gamespeedbrake=20;
 						}else{
-							if(bbt_2==4){
+							if(bbt_==4){
 							}else{
-								if(bbt_2==5){
+								if(bbt_==5){
 									_m_seltra_gamespeedbrake_setting=4;
 								}
 							}
@@ -4056,43 +4336,103 @@ BBINT _m_seltra_get_user_input(){
 	brl_polledinput_FlushKeys(1);
 	return 0;
 }
-BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(bbt_x+(bbt_y<<10)));
-	BBINT bbt_v=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
-	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(bbt_x+(bbt_y<<10)));
-	struct brl_max2d_image_TImage_obj* bbt_im=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	if(((BBObject*)bbt_b)!= &bbNullObject){
-		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_b->__m_seltra_block_image ,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
-		return 0;
+struct brl_max2d_image_TImage_obj* _m_seltra_thingtoImage(BBULONG bbt_t){
+	if((bbt_t&8ULL)!=0){
+		return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[3U];
 	}
-	if(!(bbt_v!=0)){
+	if((bbt_t&16ULL)!=0){
+		BBINT bbt_bonds=((BBINT)((bbt_t&64424509440ULL)>>32ULL));
+		BBULONG bbt_btype=(bbt_t&7696581394432ULL);
+		BBULONG bbt_btf=7696581394432ULL;
+		bbt_btype=(bbt_t&bbt_btf);
+		bbt_btype=(bbt_btype>>40ULL);
+		if(_m_seltra_dblog!=0){
+			brl_standardio_Print(bbStringConcat(&_s55,bbStringFromULong(((BBULONG)(4+bbt_bonds))+(16ULL*bbt_btype))));
+		}
+		return (struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)(((BBULONG)(4+bbt_bonds))+(16ULL*bbt_btype)))];
+	}
+	BBULONG bbt_=(bbt_t % 8ULL);
+	if(bbt_==3ULL){
+		return (struct brl_max2d_image_TImage_obj*)_m_seltra_arroww;
+	}else{
+		if(bbt_==1ULL){
+			return (struct brl_max2d_image_TImage_obj*)_m_seltra_arrowe;
+		}else{
+			if(bbt_==4ULL){
+				return (struct brl_max2d_image_TImage_obj*)_m_seltra_arrown;
+			}else{
+				if(bbt_==2ULL){
+					return (struct brl_max2d_image_TImage_obj*)_m_seltra_arrows;
+				}
+			}
+		}
+	}
+	return (struct brl_max2d_image_TImage_obj*)(&bbNullObject);
+}
+BBINT _m_seltra_draw_map(){
+	BBINT bbt_x=0;
+	BBINT bbt_y=0;
+	BBINT bbt_xd=0;
+	BBINT bbt_yd=-1;
+	BBINT bbt_cd=0;
+	bbt_x=((BBINT)(((BBFLOAT)_m_seltra_camposx)+(((BBFLOAT)(_m_seltra_gw-_m_seltra_editbarwidth))/(2.00000000f*_m_seltra_zoom))));
+	bbt_y=((BBINT)(((BBFLOAT)_m_seltra_camposy)+(((BBFLOAT)_m_seltra_gh)/(2.00000000f*_m_seltra_zoom))));
+	BBINT bbt_k=0;
+	BBINT bbt_wmax=1;
+	BBINT bbt_w=0;
+	BBULONG bbt_t=0ULL;
+	while(1){
+		bbt_w=0;
+		while(bbt_w<bbt_wmax){
+			if((bbt_x>=0) && (bbt_y>=0)){
+				bbt_t=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
+				if(bbt_t!=0){
+					brl_blitz_DebugStop();
+					BBINT bbt_key=(_m_seltra_thingmap)->clas->m_getkey_y((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_t);
+					BBINT bbt_kx=(bbt_key % 1024);
+					BBINT bbt_ky=((unsigned int)(bbt_key)>>(unsigned int)(10));
+					if(_m_seltra_dblog!=0){
+						brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(&_s50,bbStringFromInt(bbt_x)),&_s16),bbStringFromInt(bbt_y)),&_s51),bbStringFromInt(bbt_kx)),&_s16),bbStringFromInt(bbt_ky)));
+					}
+					if(_m_seltra_dblog!=0){
+						if((bbt_t&17587891077360ULL)!=0){
+							brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(&_s52,bbStringFromULong(bbt_t)),&_s53),bbStringFromULong(bbt_t % 8ULL)));
+						}
+					}
+					if(_m_seltra_dblog!=0){
+						if(!((bbt_t&17587891077360ULL)!=0)){
+							brl_standardio_Print(bbStringConcat(bbStringConcat(bbStringConcat(&_s54,bbStringFromULong(bbt_t)),&_s53),bbStringFromULong(bbt_t % 8ULL)));
+						}
+					}
+					struct brl_max2d_image_TImage_obj* bbt_tti=(struct brl_max2d_image_TImage_obj*)_m_seltra_thingtoImage(bbt_t);
+					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_tti,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
+				}
+			}
+			bbt_x=(bbt_x+bbt_xd);
+			bbt_y=(bbt_y+bbt_yd);
+			bbt_w=(bbt_w+1);
+			if((bbt_x-_m_seltra_camposx)<0){
+				return 0;
+			}
+		}
+		bbt_cd=bbt_xd;
+		bbt_xd=-bbt_yd;
+		bbt_yd=bbt_cd;
+		bbt_k=(bbt_k+1);
+		if(bbt_k==2){
+			bbt_k=0;
+			bbt_wmax=(bbt_wmax+1);
+		}
+	}
+}
+BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y){
+	BBULONG bbt_v=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10)));
+	struct brl_max2d_image_TImage_obj* bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_thingtoImage(bbt_v);
+	if(bbt_im==&bbNullObject){
 		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_blank,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
 		return 0;
 	}
-	if(bbt_v!=0){
-		if((bbt_v % 8)!=0){
-			BBINT bbt_=(bbt_v % 8);
-			if(bbt_==1){
-				bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrown;
-			}else{
-				if(bbt_==2){
-					bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrows;
-				}else{
-					if(bbt_==3){
-						bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arroww;
-					}else{
-						if(bbt_==4){
-							bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrowe;
-						}
-					}
-				}
-			}
-			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_im,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
-		}
-	}
-	if(((BBObject*)bbt_s)!= &bbNullObject){
-		brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_s->__m_seltra_substrate_image ,(_m_seltra_zoom*((BBFLOAT)(bbt_x-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(bbt_y-_m_seltra_camposy))),0);
-	}
+	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_im,(((BBFLOAT)(bbt_x-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_y-_m_seltra_camposy))*_m_seltra_zoom),0);
 	return 0;
 }
 BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y){
@@ -4111,88 +4451,12 @@ BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y){
 	}
 	return 0;
 }
-BBINT _m_seltra_draw_things(){
-	BBINT bbt_m=0;
-	BBINT bbt_v=0;
-	BBINT bbt_i=0;
-	struct brl_max2d_image_TImage_obj* bbt_im=(struct brl_max2d_image_TImage_obj*)(&bbNullObject);
-	BBINT bbt_n=_m_seltra_thingmap->__m_seltra_fastintmap_le ;
-	while(bbt_i<bbt_n){
-		bbt_m=(_m_seltra_thingmap)->clas->m_kfetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_i);
-		bbt_v=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,bbt_m);
-		if(bbt_v!=0){
-			if((bbt_v % 8)!=0){
-				BBINT bbt_=(bbt_v % 8);
-				if(bbt_==1){
-					bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrown;
-				}else{
-					if(bbt_==2){
-						bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrows;
-					}else{
-						if(bbt_==3){
-							bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arroww;
-						}else{
-							if(bbt_==4){
-								bbt_im=(struct brl_max2d_image_TImage_obj*)_m_seltra_arrowe;
-							}
-						}
-					}
-				}
-				brl_max2d_SetMaskColor(255,255,230);
-				if((bbt_v % 8)!=0){
-					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_im,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
-				}
-				if(bbt_v==5){
-					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_gene,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
-				}
-			}
-			if(((unsigned int)(bbt_v)&(unsigned int)(136))==136){
-				brl_max2d_SetMaskColor(0,0,0);
-				brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_subd,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
-			}else{
-				if(((unsigned int)(bbt_v)&(unsigned int)(128))!=0){
-					brl_max2d_SetMaskColor(0,0,0);
-					brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_sub0,(_m_seltra_zoom*((BBFLOAT)((bbt_m % 1024)-_m_seltra_camposx))),(_m_seltra_zoom*((BBFLOAT)(((unsigned int)(bbt_m)>>(unsigned int)(10))-_m_seltra_camposy))),0);
-				}
-			}
-		}
-		bbt_i=(bbt_i+1);
-	}
-	return 0;
-}
-BBINT _m_seltra_draw_sarray(){
-	BBINT bbt_i=0;
-	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(&bbNullObject);
-	while(bbt_i<_m_seltra_sarray->__m_seltra_subarray_le ){
-		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATA(_m_seltra_sarray->__m_seltra_subarray_sa ,1))[((BBUINT)bbt_i)];
-		if(((BBObject*)bbt_s)!= &bbNullObject){
-			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldx ,1))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldy ,1))[((BBUINT)_m_seltra_frame)]);
-			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_s->__m_seltra_substrate_image ,(((BBFLOAT)(bbt_s->__m_seltra_substrate_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_s->__m_seltra_substrate_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-			((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldx ,1))[((BBUINT)_m_seltra_frame)]=bbt_s->__m_seltra_substrate_x ;
-			((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldy ,1))[((BBUINT)_m_seltra_frame)]=bbt_s->__m_seltra_substrate_y ;
-		}
-		bbt_i=(bbt_i+1);
-	}
-	return 0;
-}
-BBINT _m_seltra_draw_barray(){
-	BBINT bbt_i=0;
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
-	while(bbt_i<_m_seltra_barray->__m_seltra_blockarray_le ){
-		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_barray->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
-		if(((BBObject*)bbt_b)!= &bbNullObject){
-			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)]);
-			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_b->__m_seltra_block_image ,(((BBFLOAT)(bbt_b->__m_seltra_block_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_b->__m_seltra_block_y -_m_seltra_camposy))*_m_seltra_zoom),0);
-			((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)]=bbt_b->__m_seltra_block_x ;
-			((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)]=bbt_b->__m_seltra_block_y ;
-		}
-		bbt_i=(bbt_i+1);
-	}
-	return 0;
-}
 BBINT _m_seltra_draw_walls(){
 	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
 	BBINT bbt_i=0;
+	if(_m_seltra_wallgroup==&bbNullObject){
+		return 0;
+	}
 	while(bbt_i<_m_seltra_wallgroup->__m_seltra_blockarray_le ){
 		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_wallgroup->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
 		if(((BBObject*)bbt_b)!= &bbNullObject){
@@ -4216,24 +4480,26 @@ BBINT _m_seltra_draw_editbar(){
 	brl_max2d_SetColor(222,222,222);
 	brl_max2d_SetScale(1.0f,1.0f);
 	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(_m_seltra_smap)->clas->m_fetch_i((struct _m_seltra_substratemap_obj*)_m_seltra_smap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
-	BBINT bbt_t=(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastintmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
+	BBINT bbt_t=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(_m_seltra_moxc+(_m_seltra_moyc<<10))));
 	brl_max2d_DrawLine(((BBFLOAT)(_m_seltra_gw-100)),0.000000000f,((BBFLOAT)(_m_seltra_gw-100)),((BBFLOAT)_m_seltra_gh),1);
 	brl_max2d_SetColor(0,0,0);
-	brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-70)),100.000000f,20.0000000f);
+	brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-90)),100.000000f,80.0000000f);
 	brl_max2d_SetColor(222,222,222);
-	brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(_m_seltra_moxc),&_s23),bbStringFromInt(_m_seltra_moyc)),&_s23),bbStringFromInt(bbt_t)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-65)));
-	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_fastblockmap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
+	brl_max2d_DrawText(bbStringFromInt(bbt_t),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-40)));
+	brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(_m_seltra_moxc),&_s16),bbStringFromInt(_m_seltra_moyc)),&_s16),bbStringFromInt(_m_seltra_thingmap->__m_seltra_fastlongmap_le )),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-65)));
+	brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringFromInt(_m_seltra_camposx),&_s16),bbStringFromInt(_m_seltra_camposy)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-90)));
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(_m_seltra_moxc+(_m_seltra_moyc<<10)));
 	if((((BBObject*)bbt_b)!= &bbNullObject) && (bbt_b->__m_seltra_block_btype !=0)){
 		brl_max2d_SetColor(0,0,0);
 		brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-45)),100.000000f,40.0000000f);
 		brl_max2d_SetColor(222,222,222);
-		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(bbt_b->__m_seltra_block_btype ),&_s23),bbStringFromInt(bbt_b->__m_seltra_block_id )),&_s23),bbStringFromInt(bbt_b->__m_seltra_block_group ->__m_seltra_bgroup_id )),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-45)));
+		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringConcat(bbStringConcat(bbStringFromInt(bbt_b->__m_seltra_block_btype ),&_s16),bbStringFromInt(bbt_b->__m_seltra_block_id )),&_s16),bbStringFromInt(bbt_b->__m_seltra_block_group ->__m_seltra_bgroup_id )),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-45)));
 	}
 	brl_max2d_SetColor(0,0,0);
 	brl_max2d_DrawRect(((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-20)),100.000000f,20.0000000f);
 	if(((BBObject*)bbt_s)!= &bbNullObject){
 		brl_max2d_SetColor(222,222,222);
-		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringFromInt(bbt_s->__m_seltra_substrate_id +1),&_s23),bbStringFromInt(bbt_t)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-20)));
+		brl_max2d_DrawText(bbStringConcat(bbStringConcat(bbStringFromInt(bbt_s->__m_seltra_substrate_id +1),&_s16),bbStringFromInt(bbt_t)),((BBFLOAT)(_m_seltra_gw-90)),((BBFLOAT)(_m_seltra_gh-20)));
 	}
 	brl_max2d_SetColor(222,222,222);
 	brl_max2d_SetScale(0.67f,0.67f);
@@ -4252,15 +4518,11 @@ BBINT _m_seltra_update_display(){
 	brl_max2d_DrawRect(((BBFLOAT)((BBINT*)BBARRAYDATA(_m_seltra_moxo,1))[((BBUINT)_m_seltra_frame)]),((BBFLOAT)((BBINT*)BBARRAYDATA(_m_seltra_moyo,1))[((BBUINT)_m_seltra_frame)]),50.0000000f,50.0000000f);
 	brl_max2d_SetColor(255,255,255);
 	brl_max2d_SetViewport(0,0,(_m_seltra_gw-100),_m_seltra_gh);
+	brl_max2d_Cls();
+	_m_seltra_draw_map();
 	if(_m_seltra_mox<(_m_seltra_gw-100)){
 		_m_seltra_redraw3x3(((BBINT*)BBARRAYDATA(_m_seltra_moxco,1))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATA(_m_seltra_moyco,1))[((BBUINT)_m_seltra_frame)]);
 	}
-	if(_m_seltra_redraw_map>0){
-		brl_max2d_Cls();
-	}
-	_m_seltra_draw_things();
-	_m_seltra_draw_sarray();
-	_m_seltra_draw_barray();
 	brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)_m_seltra_mousec,(((BBFLOAT)(_m_seltra_moxc-_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(_m_seltra_moyc-_m_seltra_camposy))*_m_seltra_zoom),0);
 	if(_m_seltra_redraw_map>0){
 		_m_seltra_draw_walls();
@@ -4286,6 +4548,557 @@ BBINT _m_seltra_update_display(){
 	_m_seltra_frame=((BBBYTE)(1-((BBINT)_m_seltra_frame)));
 	return 0;
 }
+void __m_seltra_fastintmap_New(struct _m_seltra_fastintmap_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_fastintmap;
+	o->__m_seltra_fastintmap_v = bbArrayNew1D("i", 3000000);
+	o->__m_seltra_fastintmap_k = bbArrayNew1D("i", 3000000);
+	o->__m_seltra_fastintmap_le = 0;
+	o->__m_seltra_fastintmap_nl = 0;
+}
+BBINT __m_seltra_fastintmap_fetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key){
+	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)];
+}
+BBINT __m_seltra_fastintmap_vfetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_index){
+	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_index)])];
+}
+BBINT __m_seltra_fastintmap_kfetch_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_index){
+	return ((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_index)];
+}
+BBINT __m_seltra_fastintmap_insert_ii(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key,BBINT bbt_val){
+	if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]==o->__m_seltra_fastintmap_nl ){
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)o->__m_seltra_fastintmap_le )]=bbt_key;
+		o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le +1);
+	}
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]=bbt_val;
+	return 0;
+}
+BBINT __m_seltra_fastintmap_remove_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key){
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]=o->__m_seltra_fastintmap_nl ;
+	return 0;
+}
+BBINT __m_seltra_fastintmap_bump_ii(struct _m_seltra_fastintmap_obj* o,BBINT bbt_key,BBINT bbt_val){
+	if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]==o->__m_seltra_fastintmap_nl ){
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)o->__m_seltra_fastintmap_le )]=bbt_key;
+		o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le +1);
+	}
+	((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]=(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_key)]+bbt_val);
+	return 0;
+}
+BBINT __m_seltra_fastintmap_iter(struct _m_seltra_fastintmap_obj* o){
+	BBINT bbt_i=0;
+	while(bbt_i<o->__m_seltra_fastintmap_le ){
+		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])]==o->__m_seltra_fastintmap_nl ){
+			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)(o->__m_seltra_fastintmap_le -1))];
+			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
+		}else{
+			BBINT bbt_a=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])];
+			bbt_i=(bbt_i+1);
+		}
+	}
+	return 0;
+}
+BBINT __m_seltra_fastintmap_fastsort(struct _m_seltra_fastintmap_obj* o){
+	BBINT bbt_i=0;
+	while(bbt_i<o->__m_seltra_fastintmap_le ){
+		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)])]==o->__m_seltra_fastintmap_nl ){
+			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)(o->__m_seltra_fastintmap_le -1))];
+			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
+		}else{
+			bbt_i=(bbt_i+1);
+		}
+	}
+	return 0;
+}
+BBINT __m_seltra_fastintmap_orderedsort(struct _m_seltra_fastintmap_obj* o){
+	BBINT bbt_i=0;
+	BBINT bbt_j=0;
+	while(bbt_j<o->__m_seltra_fastintmap_le ){
+		if(((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_j)])]==o->__m_seltra_fastintmap_nl ){
+			o->__m_seltra_fastintmap_le =(o->__m_seltra_fastintmap_le -1);
+		}else{
+			((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_k ,1))[((BBUINT)bbt_j)];
+			bbt_i=(bbt_i+1);
+		}
+		bbt_j=(bbt_j+1);
+	}
+	o->__m_seltra_fastintmap_le =bbt_i;
+	return 0;
+}
+BBINT __m_seltra_fastintmap_set_null_value_i(struct _m_seltra_fastintmap_obj* o,BBINT bbt_n){
+	BBINT bbt_i=0;
+	o->__m_seltra_fastintmap_nl =bbt_n;
+	while(bbt_i<3000000){
+		((BBINT*)BBARRAYDATA(o->__m_seltra_fastintmap_v ,1))[((BBUINT)bbt_i)]=bbt_n;
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
+struct BBDebugScope_15 _m_seltra_fastintmap_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"fastintmap",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"v",
+			"[]i",
+			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_v)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"k",
+			"[]i",
+			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_k)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"le",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_le)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"nl",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_nl)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_fastintmap_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"fetch",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_fetch_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"vfetch",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_vfetch_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"kfetch",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_kfetch_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"insert",
+			"(i,i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_insert_ii
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"remove",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_remove_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"bump",
+			"(i,i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_bump_ii
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"iter",
+			"()i",
+			.var_address=(void*)&__m_seltra_fastintmap_iter
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"fastsort",
+			"()i",
+			.var_address=(void*)&__m_seltra_fastintmap_fastsort
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"orderedsort",
+			"()i",
+			.var_address=(void*)&__m_seltra_fastintmap_orderedsort
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"set_null_value",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_fastintmap_set_null_value_i
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_fastintmap _m_seltra_fastintmap={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_fastintmap_scope,
+	sizeof(struct _m_seltra_fastintmap_obj),
+	(void (*)(BBOBJECT))__m_seltra_fastintmap_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_nl) - offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_v) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_fastintmap_obj,__m_seltra_fastintmap_v)
+	,__m_seltra_fastintmap_fetch_i
+	,__m_seltra_fastintmap_vfetch_i
+	,__m_seltra_fastintmap_kfetch_i
+	,__m_seltra_fastintmap_insert_ii
+	,__m_seltra_fastintmap_remove_i
+	,__m_seltra_fastintmap_bump_ii
+	,__m_seltra_fastintmap_iter
+	,__m_seltra_fastintmap_fastsort
+	,__m_seltra_fastintmap_orderedsort
+	,__m_seltra_fastintmap_set_null_value_i
+};
+
+void __m_seltra_longArray_New(struct _m_seltra_longArray_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_longArray;
+	o->__m_seltra_longarray_la = bbArrayNew1D("i", 300000);
+	o->__m_seltra_longarray_le = 0;
+}
+BBINT __m_seltra_longArray_add_i(struct _m_seltra_longArray_obj* o,BBINT bbt_key){
+	((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)o->__m_seltra_longarray_le )]=bbt_key;
+	o->__m_seltra_longarray_le =(o->__m_seltra_longarray_le +1);
+	return 0;
+}
+BBINT __m_seltra_longArray_putLast_i(struct _m_seltra_longArray_obj* o,BBINT bbt_i){
+	((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)o->__m_seltra_longarray_le )]=((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)bbt_i)];
+	((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)bbt_i)]=0;
+	o->__m_seltra_longarray_le =(o->__m_seltra_longarray_le +1);
+	return 0;
+}
+BBINT __m_seltra_longArray_ordered_sort_ii(struct _m_seltra_longArray_obj* o,BBINT bbt_n,BBINT bbt_i){
+	if(bbt_n==0){
+		bbt_n=o->__m_seltra_longarray_le ;
+	}
+	BBINT bbt_j=bbt_i;
+	while(bbt_j<o->__m_seltra_longarray_le ){
+		((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)bbt_i)]=((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)bbt_j)];
+		if(((BBINT*)BBARRAYDATA(o->__m_seltra_longarray_la ,1))[((BBUINT)bbt_i)]>0){
+			bbt_i=(bbt_i+1);
+		}
+		bbt_j=(bbt_j+1);
+	}
+	o->__m_seltra_longarray_le =bbt_i;
+	return 0;
+}
+struct BBDebugScope_6 _m_seltra_longArray_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"longArray",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"la",
+			"[]i",
+			.field_offset=offsetof(struct _m_seltra_longArray_obj,__m_seltra_longarray_la)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"le",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_longArray_obj,__m_seltra_longarray_le)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_longArray_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"add",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_longArray_add_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"putLast",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_longArray_putLast_i
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"ordered_sort",
+			"(i,i)i",
+			.var_address=(void*)&__m_seltra_longArray_ordered_sort_ii
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_longArray _m_seltra_longArray={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_longArray_scope,
+	sizeof(struct _m_seltra_longArray_obj),
+	(void (*)(BBOBJECT))__m_seltra_longArray_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_longArray_obj,__m_seltra_longarray_le) - offsetof(struct _m_seltra_longArray_obj,__m_seltra_longarray_la) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_longArray_obj,__m_seltra_longarray_la)
+	,__m_seltra_longArray_add_i
+	,__m_seltra_longArray_putLast_i
+	,__m_seltra_longArray_ordered_sort_ii
+};
+
+void __m_seltra_genTile_New(struct _m_seltra_genTile_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_genTile;
+	o->__m_seltra_gentile_x = 0;
+	o->__m_seltra_gentile_y = 0;
+	o->__m_seltra_gentile_ggroup = 0;
+}
+BBINT __m_seltra_genTile_addRandomBlock_Tbgroup(struct _m_seltra_genTile_obj* o,struct _m_seltra_bgroup_obj* bbt_bg){
+	BBINT bbt_r=brl_random_Rand(bbt_bg->__m_seltra_bgroup_n ,1);
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(bbt_bg->__m_seltra_bgroup_blist ->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_r)];
+	BBINT bbt_=brl_random_Rand(4,1);
+	if(bbt_==0){
+		if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x +1)+(bbt_b->__m_seltra_block_y <<10)))==&bbNullObject){
+			(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,(o->__m_seltra_gentile_x +1),o->__m_seltra_gentile_y );
+		}
+	}else{
+		if(bbt_==1){
+			if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,((bbt_b->__m_seltra_block_x -1)+(bbt_b->__m_seltra_block_y <<10)))==&bbNullObject){
+				(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,(o->__m_seltra_gentile_x -1),o->__m_seltra_gentile_y );
+			}
+		}else{
+			if(bbt_==2){
+				if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y +1)<<10)))==&bbNullObject){
+					(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,o->__m_seltra_gentile_x ,(o->__m_seltra_gentile_y +1));
+				}
+			}else{
+				if(bbt_==3){
+					if((_m_seltra_bmap)->clas->m_fetch_i((struct _m_seltra_FastBlockMap_obj*)_m_seltra_bmap,(bbt_b->__m_seltra_block_x +((bbt_b->__m_seltra_block_y -1)<<10)))==&bbNullObject){
+						(bbt_bg)->clas->m_addNewBlock_ii((struct _m_seltra_bgroup_obj*)bbt_bg,o->__m_seltra_gentile_x ,(o->__m_seltra_gentile_y -1));
+					}
+				}
+			}
+		}
+	}
+	return 0;
+}
+BBINT __m_seltra_genTile_genRandomBlockGroup_i(struct _m_seltra_genTile_obj* o,BBINT bbt_n){
+	return 0;
+}
+struct BBDebugScope_6 _m_seltra_genTile_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"genTile",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"x",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_x)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"y",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_y)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"ggroup",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_ggroup)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_genTile_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"addRandomBlock",
+			"(:bgroup)i",
+			.var_address=(void*)&__m_seltra_genTile_addRandomBlock_Tbgroup
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"genRandomBlockGroup",
+			"(i)i",
+			.var_address=(void*)&__m_seltra_genTile_genRandomBlockGroup_i
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_genTile _m_seltra_genTile={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_genTile_scope,
+	sizeof(struct _m_seltra_genTile_obj),
+	(void (*)(BBOBJECT))__m_seltra_genTile_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_ggroup) - offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_x) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_genTile_obj,__m_seltra_gentile_x)
+	,__m_seltra_genTile_addRandomBlock_Tbgroup
+	,__m_seltra_genTile_genRandomBlockGroup_i
+};
+
+void __m_seltra_Ggroup_New(struct _m_seltra_Ggroup_obj* o) {
+	bbObjectCtor((BBOBJECT)o);
+	o->clas = &_m_seltra_Ggroup;
+	o->__m_seltra_ggroup_bglist = bbArrayNew1D(":bgroup", 100);
+	o->__m_seltra_ggroup_le = 0;
+	o->__m_seltra_ggroup_rate = 0;
+	o->__m_seltra_ggroup_t = 0;
+	o->__m_seltra_ggroup_bitflags = 0;
+	o->__m_seltra_ggroup_n = 0;
+	o->__m_seltra_ggroup_id = 0;
+	o->__m_seltra_ggroup_clist = bbArrayNew1D(":cell", 25);
+	o->__m_seltra_ggroup_time = 0;
+}
+BBINT __m_seltra_Ggroup_update(struct _m_seltra_Ggroup_obj* o){
+	return 0;
+}
+struct _m_seltra_bgroup_obj* __m_seltra_Ggroup_genIsolatedBlock_ii(struct _m_seltra_Ggroup_obj* o,BBINT bbt_x,BBINT bbt_y){
+	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(struct _m_seltra_bgroup_obj*)bbObjectNew((BBClass *)&_m_seltra_bgroup);
+	struct _m_seltra_bgroup_obj* bbt_bg2=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
+	BBINT bbt_r=0;
+	BBINT bbt_xv=0;
+	BBINT bbt_yv=0;
+	BBINT bbt_tm=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_x+(bbt_y<<10))));
+	if((bbt_tm<10) && (bbt_tm>0)){
+		BBINT bbt_=(bbt_tm % 8);
+		if(bbt_==1){
+			bbt_yv=-1;
+		}else{
+			if(bbt_==2){
+				bbt_yv=1;
+			}else{
+				if(bbt_==3){
+					bbt_xv=-1;
+				}else{
+					if(bbt_==4){
+						bbt_xv=1;
+					}
+				}
+			}
+		}
+		if((o->__m_seltra_ggroup_bitflags !=0) && 1){
+			bbt_bg2=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATA(o->__m_seltra_ggroup_bglist ,1))[((BBUINT)brl_random_Rand(0,o->__m_seltra_ggroup_le ))];
+		}
+	}
+	o->__m_seltra_ggroup_n =(o->__m_seltra_ggroup_n -1);
+	return (struct _m_seltra_bgroup_obj*)bbt_bg;
+}
+struct BBDebugScope_12 _m_seltra_Ggroup_scope ={
+	BBDEBUGSCOPE_USERTYPE,
+	"Ggroup",
+	{
+		{
+			BBDEBUGDECL_FIELD,
+			"bglist",
+			"[]:bgroup",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_bglist)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"le",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_le)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"rate",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_rate)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"t",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_t)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"bitflags",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_bitflags)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"n",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_n)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"id",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_id)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"clist",
+			"[]:cell",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_clist)
+		},
+		{
+			BBDEBUGDECL_FIELD,
+			"time",
+			"i",
+			.field_offset=offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_time)
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"New",
+			"()i",
+			.var_address=(void*)&__m_seltra_Ggroup_New
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"update",
+			"()i",
+			.var_address=(void*)&__m_seltra_Ggroup_update
+		},
+		{
+			BBDEBUGDECL_TYPEMETHOD,
+			"genIsolatedBlock",
+			"(i,i):bgroup",
+			.var_address=(void*)&__m_seltra_Ggroup_genIsolatedBlock_ii
+		},
+		BBDEBUGDECL_END
+	}
+};
+struct BBClass__m_seltra_Ggroup _m_seltra_Ggroup={
+	&bbObjectClass,
+	bbObjectFree,
+	(BBDebugScope*)&_m_seltra_Ggroup_scope,
+	sizeof(struct _m_seltra_Ggroup_obj),
+	(void (*)(BBOBJECT))__m_seltra_Ggroup_New,
+	bbObjectDtor,
+	bbObjectToString,
+	bbObjectCompare,
+	bbObjectSendMessage,
+	0,
+	0,
+	offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_time) - offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_bglist) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_Ggroup_obj,__m_seltra_ggroup_bglist)
+	,__m_seltra_Ggroup_update
+	,__m_seltra_Ggroup_genIsolatedBlock_ii
+};
+
 void __m_seltra_cell_New(struct _m_seltra_cell_obj* o) {
 	bbObjectCtor((BBOBJECT)o);
 	o->clas = &_m_seltra_cell;
@@ -4329,9 +5142,102 @@ struct BBClass__m_seltra_cell _m_seltra_cell={
 	bbObjectSendMessage,
 	0,
 	0,
-	offsetof(struct _m_seltra_cell_obj,__m_seltra_cell_y) - sizeof(void*) + sizeof(BBINT)
+	offsetof(struct _m_seltra_cell_obj,__m_seltra_cell_y) - offsetof(struct _m_seltra_cell_obj,__m_seltra_cell_x) + sizeof(BBINT)
+	,0
+	,offsetof(struct _m_seltra_cell_obj,__m_seltra_cell_x)
 };
 
+BBINT _m_seltra_thingBlockDeleteCheck(){
+	BBINT bbt_i=0;
+	return 0;
+}
+BBLONG _m_seltra_ThingBlockCheckCollision(BBINT bbt_key){
+	if((bbt_key>=0) && ((bbt_key % 1024)>=0)){
+		BBLONG bbt_val=((BBLONG)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_key));
+		if(((unsigned long long)(bbt_val)&(unsigned long long)(16LL))!=0){
+			return bbt_val;
+		}
+		if(((unsigned long long)(bbt_val)&(unsigned long long)(8LL))!=0){
+			return bbt_val;
+		}
+	}else{
+		return 0LL;
+	}
+	return 1LL;
+}
+BBINT _m_seltra_mergeBlocks(BBINT bbt_key1,BBINT bbt_key2){
+	return 0;
+}
+BBINT _m_seltra_update_sgroups(){
+	BBINT bbt_i=0;
+	struct _m_seltra_sgroup_obj* bbt_sg=(struct _m_seltra_sgroup_obj*)(&bbNullObject);
+	while(bbt_i<_m_seltra_sgarray->__m_seltra_subgrouparray_le ){
+		bbt_sg=(struct _m_seltra_sgroup_obj*)((struct _m_seltra_sgroup_obj**)BBARRAYDATA(_m_seltra_sgarray->__m_seltra_subgrouparray_sga ,1))[((BBUINT)bbt_i)];
+		if(((BBObject*)bbt_sg)!= &bbNullObject){
+			(bbt_sg)->clas->m_checkarrows((struct _m_seltra_sgroup_obj*)bbt_sg);
+			(bbt_sg)->clas->m_move((struct _m_seltra_sgroup_obj*)bbt_sg);
+			if((bbt_sg)->clas->m_out_of_bounds_check((struct _m_seltra_sgroup_obj*)bbt_sg)!=0){
+				(bbt_sg)->clas->m_remove((struct _m_seltra_sgroup_obj*)bbt_sg);
+			}
+		}
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
+BBINT _m_seltra_draw_things(){
+	return 0;
+}
+BBINT _m_seltra_draw_everything(){
+	return 0;
+}
+BBINT _m_seltra_update_bgroups(){
+	BBINT bbt_i=0;
+	struct _m_seltra_bgroup_obj* bbt_bg=(struct _m_seltra_bgroup_obj*)(&bbNullObject);
+	bbt_i=0;
+	while(bbt_i<_m_seltra_garray->__m_seltra_grouparray_le ){
+		bbt_bg=(struct _m_seltra_bgroup_obj*)((struct _m_seltra_bgroup_obj**)BBARRAYDATA(_m_seltra_garray->__m_seltra_grouparray_ga ,1))[((BBUINT)bbt_i)];
+		if(((BBObject*)bbt_bg)!= &bbNullObject){
+			(bbt_bg)->clas->m_checkarrows((struct _m_seltra_bgroup_obj*)bbt_bg);
+			(bbt_bg)->clas->m_check_substrates((struct _m_seltra_bgroup_obj*)bbt_bg);
+			(bbt_bg)->clas->m_move((struct _m_seltra_bgroup_obj*)bbt_bg);
+			if((bbt_bg)->clas->m_out_of_bounds((struct _m_seltra_bgroup_obj*)bbt_bg)!=0){
+				(bbt_bg)->clas->m_remove((struct _m_seltra_bgroup_obj*)bbt_bg);
+			}
+		}
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
+BBINT _m_seltra_draw_barray(){
+	BBINT bbt_i=0;
+	struct _m_seltra_block_obj* bbt_b=(struct _m_seltra_block_obj*)(&bbNullObject);
+	while(bbt_i<_m_seltra_barray->__m_seltra_blockarray_le ){
+		bbt_b=(struct _m_seltra_block_obj*)((struct _m_seltra_block_obj**)BBARRAYDATA(_m_seltra_barray->__m_seltra_blockarray_ba ,1))[((BBUINT)bbt_i)];
+		if(((BBObject*)bbt_b)!= &bbNullObject){
+			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)]);
+			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_b->__m_seltra_block_image ,(((BBFLOAT)(bbt_b->__m_seltra_block_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_b->__m_seltra_block_y -_m_seltra_camposy))*_m_seltra_zoom),0);
+			((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldx ,1))[((BBUINT)_m_seltra_frame)]=bbt_b->__m_seltra_block_x ;
+			((BBINT*)BBARRAYDATA(bbt_b->__m_seltra_block_oldy ,1))[((BBUINT)_m_seltra_frame)]=bbt_b->__m_seltra_block_y ;
+		}
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
+BBINT _m_seltra_draw_sarray(){
+	BBINT bbt_i=0;
+	struct _m_seltra_substrate_obj* bbt_s=(struct _m_seltra_substrate_obj*)(&bbNullObject);
+	while(bbt_i<_m_seltra_sarray->__m_seltra_subarray_le ){
+		bbt_s=(struct _m_seltra_substrate_obj*)((struct _m_seltra_substrate_obj**)BBARRAYDATA(_m_seltra_sarray->__m_seltra_subarray_sa ,1))[((BBUINT)bbt_i)];
+		if(((BBObject*)bbt_s)!= &bbNullObject){
+			_m_seltra_redraw_cell(((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldx ,1))[((BBUINT)_m_seltra_frame)],((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldy ,1))[((BBUINT)_m_seltra_frame)]);
+			brl_max2d_DrawImage((struct brl_max2d_image_TImage_obj*)bbt_s->__m_seltra_substrate_image ,(((BBFLOAT)(bbt_s->__m_seltra_substrate_x -_m_seltra_camposx))*_m_seltra_zoom),(((BBFLOAT)(bbt_s->__m_seltra_substrate_y -_m_seltra_camposy))*_m_seltra_zoom),0);
+			((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldx ,1))[((BBUINT)_m_seltra_frame)]=bbt_s->__m_seltra_substrate_x ;
+			((BBINT*)BBARRAYDATA(bbt_s->__m_seltra_substrate_oldy ,1))[((BBUINT)_m_seltra_frame)]=bbt_s->__m_seltra_substrate_y ;
+		}
+		bbt_i=(bbt_i+1);
+	}
+	return 0;
+}
 BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT bbt_y2){
 	BBINT bbt_x=0;
 	BBINT bbt_y=0;
@@ -4341,6 +5247,25 @@ BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT b
 		BBINT bbt_2=bbt_x2;
 		for(bbt_x=bbt_x1;(bbt_x<=bbt_2);bbt_x=(bbt_x+1)){
 		}
+	}
+	return 0;
+}
+BBINT _m_seltra_placeGenTile(BBINT bbt_x,BBINT bbt_y){
+	BBINT bbt_p=(bbt_x+(bbt_y<<10));
+	BBINT bbt_tm=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_p));
+	if((bbt_tm>=0) && (bbt_tm<=4)){
+		(_m_seltra_thingmap)->clas->m_put_iy((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_p,(5ULL|((BBULONG)bbt_tm)));
+	}
+	BBINT bbt_db=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,bbt_p));
+	(_m_seltra_unAllocatedGenTiles)->clas->m_add_ii((struct _m_seltra_cellArray_obj*)_m_seltra_unAllocatedGenTiles,bbt_x,bbt_y);
+	return 0;
+}
+BBINT _m_seltra_update_gens(){
+	BBINT bbt_i=0;
+	while(bbt_i<_m_seltra_genarray->__m_seltra_generatorarray_le ){
+		struct _m_seltra_Ggroup_obj* bbt_;
+		((bbt_ = ((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)])->clas)->m_update((struct _m_seltra_Ggroup_obj*)bbt_);
+		bbt_i=(bbt_i+1);
 	}
 	return 0;
 }
@@ -4388,13 +5313,95 @@ BBOBJECT _m_seltra_io_and_display_thread(BBOBJECT bbt_data){
 		_m_seltra_get_user_input();
 		_m_seltra_update_display();
 	}
-	return (BBOBJECT)&_s25;
+	return (BBOBJECT)&_s57;
+}
+BBINT _m_seltra_reForgeGenerators(){
+	BBINT bbt_h=0;
+	BBINT bbt_i=0;
+	BBINT bbt_j=0;
+	BBINT bbt_k=0;
+	BBINT bbt_p=0;
+	BBINT bbt_q=0;
+	BBARRAY bbt_ff=bbArrayNew1D(":cell", 50);
+	struct _m_seltra_cell_obj* bbt_c=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(_m_seltra_unAllocatedGenTiles->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_i)];
+	do{
+		if(bbt_c==&bbNullObject){
+			break;
+		}
+		bbt_p=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_c->__m_seltra_cell_x +(bbt_c->__m_seltra_cell_y <<10))));
+		if((bbt_p>=5) && (bbt_p<=9)){
+			if(bbt_k==0){
+				((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)]=(struct _m_seltra_Ggroup_obj*)(struct _m_seltra_Ggroup_obj*)bbObjectNew((BBClass *)&_m_seltra_Ggroup);
+			}
+			((struct _m_seltra_cell_obj**)BBARRAYDATA(((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)]->__m_seltra_ggroup_clist ,1))[((BBUINT)bbt_k)]=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+			((struct _m_seltra_cell_obj**)BBARRAYDATA(((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)]->__m_seltra_ggroup_clist ,1))[((BBUINT)bbt_k)]->__m_seltra_cell_x =bbt_c->__m_seltra_cell_x ;
+			((struct _m_seltra_cell_obj**)BBARRAYDATA(((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_j)]->__m_seltra_ggroup_clist ,1))[((BBUINT)bbt_k)]->__m_seltra_cell_y =bbt_c->__m_seltra_cell_y ;
+			bbt_k=(bbt_k+1);
+			bbt_p=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,((bbt_c->__m_seltra_cell_x +1)+(bbt_c->__m_seltra_cell_y <<10))));
+			if((bbt_p>=5) && (bbt_p<=8)){
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_x =(bbt_c->__m_seltra_cell_x +1);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_y =bbt_c->__m_seltra_cell_y ;
+				bbt_q=(bbt_q+1);
+			}
+			bbt_p=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,((bbt_c->__m_seltra_cell_x -1)+(bbt_c->__m_seltra_cell_y <<10))));
+			if((bbt_p>=5) && (bbt_p<=8)){
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_x =(bbt_c->__m_seltra_cell_x -1);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_y =bbt_c->__m_seltra_cell_y ;
+				bbt_q=(bbt_q+1);
+			}
+			if((bbt_p>=5) && (bbt_p<=8)){
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_x =bbt_c->__m_seltra_cell_x ;
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_y =(bbt_c->__m_seltra_cell_y +1);
+				bbt_q=(bbt_q+1);
+			}
+			if((bbt_p>=5) && (bbt_p<=8)){
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]=(struct _m_seltra_cell_obj*)(struct _m_seltra_cell_obj*)bbObjectAtomicNew((BBClass *)&_m_seltra_cell);
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_x =bbt_c->__m_seltra_cell_x ;
+				((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_q)]->__m_seltra_cell_y =(bbt_c->__m_seltra_cell_y -1);
+				bbt_q=(bbt_q+1);
+			}
+			((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_h)]=(struct _m_seltra_cell_obj*)&bbNullObject;
+			bbt_h=(bbt_h+1);
+			bbt_c=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_ff,1))[((BBUINT)bbt_h)];
+			if(bbt_c==&bbNullObject){
+				bbt_i=(bbt_i+1);
+				bbt_c=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(_m_seltra_unAllocatedGenTiles->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_i)];
+				bbt_h=0;
+			}
+		}else{
+			bbt_i=(bbt_i+1);
+			bbt_c=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(_m_seltra_unAllocatedGenTiles->__m_seltra_cellarray_ca ,1))[((BBUINT)bbt_i)];
+			bbt_j=(bbt_j+1);
+			bbt_k=0;
+		}
+	}while(!(0));
+	bbt_i=0;
+	do{
+		struct _m_seltra_Ggroup_obj* bbt_g=(struct _m_seltra_Ggroup_obj*)((struct _m_seltra_Ggroup_obj**)BBARRAYDATA(_m_seltra_genarray->__m_seltra_generatorarray_ga ,1))[((BBUINT)bbt_i)];
+		if(bbt_g==&bbNullObject){
+			break;
+		}
+		bbt_j=0;
+		do{
+			bbt_c=(struct _m_seltra_cell_obj*)((struct _m_seltra_cell_obj**)BBARRAYDATA(bbt_g->__m_seltra_ggroup_clist ,1))[((BBUINT)bbt_j)];
+			if(bbt_c==&bbNullObject){
+				break;
+			}
+			bbt_p=((BBINT)(_m_seltra_thingmap)->clas->m_fetch_i((struct _m_seltra_fastlongmap_obj*)_m_seltra_thingmap,(bbt_c->__m_seltra_cell_x +(bbt_c->__m_seltra_cell_y <<10))));
+			bbt_j=(bbt_j+1);
+		}while(!(0));
+		bbt_i=(bbt_i+1);
+	}while(!(0));
+	return 0;
 }
 static int _bb_main_inited = 0;
 int _bb_main(){
 	if (!_bb_main_inited) {
 		_bb_main_inited = 1;
-		GC_add_roots(&_m_seltra_gw, &_m_seltra_gene + 1);
+		GC_add_roots(&_m_seltra_dblog, &_m_seltra_subd + 1);
 		__bb_brl_blitz_blitz();
 		__bb_brl_appstub_appstub();
 		__bb_brl_audio_audio();
@@ -4403,12 +5410,11 @@ int _bb_main(){
 		__bb_brl_base64_base64();
 		__bb_brl_basic_basic();
 		__bb_brl_bmploader_bmploader();
+		__bb_brl_bytebuffer_bytebuffer();
 		__bb_brl_clipboard_clipboard();
 		__bb_brl_collections_collections();
-		__bb_brl_crypto_crypto();
 		__bb_brl_d3d7max2d_d3d7max2d();
 		__bb_brl_d3d9max2d_d3d9max2d();
-		__bb_brl_data_data();
 		__bb_brl_directsoundaudio_directsoundaudio();
 		__bb_brl_eventqueue_eventqueue();
 		__bb_brl_freeaudioaudio_freeaudioaudio();
@@ -4417,32 +5423,37 @@ int _bb_main(){
 		__bb_brl_glmax2d_glmax2d();
 		__bb_brl_gnet_gnet();
 		__bb_brl_jpgloader_jpgloader();
-		__bb_brl_json_json();
 		__bb_brl_map_map();
 		__bb_brl_matrix_matrix();
 		__bb_brl_maxlua_maxlua();
+		__bb_brl_maxunit_maxunit();
 		__bb_brl_maxutil_maxutil();
+		__bb_brl_objectlist_objectlist();
 		__bb_brl_oggloader_oggloader();
 		__bb_brl_openalaudio_openalaudio();
+		__bb_brl_platform_platform();
 		__bb_brl_pngloader_pngloader();
 		__bb_brl_quaternion_quaternion();
+		__bb_brl_randomdefault_randomdefault();
 		__bb_brl_retro_retro();
 		__bb_brl_tgaloader_tgaloader();
 		__bb_brl_threadpool_threadpool();
 		__bb_brl_timer_timer();
 		__bb_brl_timerdefault_timerdefault();
+		__bb_brl_uuid_uuid();
 		__bb_brl_volumes_volumes();
 		__bb_brl_wavloader_wavloader();
-		__bb_brl_xml_xml();
 		__bb_pub_freejoy_freejoy();
 		__bb_pub_freeprocess_freeprocess();
 		__bb_pub_glad_glad();
-		__bb_pub_macos_macos();
+		__bb_pub_nfd_nfd();
 		__bb_pub_nx_nx();
 		__bb_pub_opengles_opengles();
+		__bb_pub_opengles3_opengles3();
 		__bb_pub_vulkan_vulkan();
 		__bb_pub_xmmintrin_xmmintrin();
 		bbObjectRegisterType((BBCLASS)&_m_seltra_btemplate);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_cellArray);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_grouparray);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_blockarray);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_subarray);
@@ -4450,47 +5461,51 @@ int _bb_main(){
 		bbObjectRegisterType((BBCLASS)&_m_seltra_block);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_redrawarray);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_generatorarray);
-		bbObjectRegisterType((BBCLASS)&_m_seltra_fastblockmap);
-		bbObjectRegisterType((BBCLASS)&_m_seltra_fastintmap);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_FastBlockMap);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_fastlongmap);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_substratemap);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_sgroup);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_substrate);
-		bbObjectRegisterType((BBCLASS)&_m_seltra_redraw);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_bgroup);
-		bbObjectRegisterType((BBCLASS)&_m_seltra_gen);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_redraw);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_fastintmap);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_longArray);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_genTile);
+		bbObjectRegisterType((BBCLASS)&_m_seltra_Ggroup);
 		bbObjectRegisterType((BBCLASS)&_m_seltra_cell);
-		brl_graphics_Graphics(1024,768,0,60,0);
+		brl_graphics_Graphics(1024,768,0,60,0,-1,-1);
 		_m_seltra_gw=brl_graphics_GraphicsWidth();
 		_m_seltra_gh=brl_graphics_GraphicsHeight();
 		_m_seltra_imagelist=bbArrayNew1D(":TImage", 200);
 		brl_max2d_SetMaskColor(0,0,0);
 		_m_seltra_blockart=bbArrayNew1D(":TImage", 10);
 		brl_max2d_SetMaskColor(255,255,255);
-		_m_seltra_blockw=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s7);
-		_m_seltra_blocko=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s8);
-		_m_seltra_blockc=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s9);
-		_m_seltra_blocks=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s10);
-		_m_seltra_blockq=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s11);
-		_m_seltra_blockx=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s12);
-		_m_seltra_blockd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s13);
-		_m_seltra_blockb=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s14);
-		_m_seltra_gencell=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s15);
+		_m_seltra_blockw=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s34);
+		_m_seltra_blocko=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s35);
+		_m_seltra_blockc=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s36);
+		_m_seltra_blocks=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s37);
+		_m_seltra_blockq=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s38);
+		_m_seltra_blockx=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s39);
+		_m_seltra_blockd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s40);
+		_m_seltra_blockb=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s41);
+		_m_seltra_gencell=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage3(&_s42);
 		_m_seltra_btarray=bbArrayNew1D(":btemplate", 100);
 		brl_max2d_SetMaskColor(0,0,0);
-		_m_seltra_mousep=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s16),0,0,0),-1);
-		_m_seltra_mousec=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s17),0,0,0),-1);
+		_m_seltra_mousep=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s43),0,0,0),-1);
+		_m_seltra_mousec=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)brl_pixmap_MaskPixmap((struct brl_pixmap_TPixmap_obj*)brl_pixmap_LoadPixmap((BBOBJECT)&_s44),0,0,0),-1);
 		brl_max2d_SetMaskColor(150,150,46);
-		_m_seltra_blank=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s18,-1);
-		_m_seltra_arroww=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s19,-1);
-		_m_seltra_arrowe=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s20,-1);
-		_m_seltra_arrown=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s21,-1);
-		_m_seltra_arrows=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s22,-1);
+		_m_seltra_blank=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s45,-1);
+		_m_seltra_arroww=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s46,-1);
+		_m_seltra_arrowe=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s47,-1);
+		_m_seltra_arrown=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s48,-1);
+		_m_seltra_arrows=(struct brl_max2d_image_TImage_obj*)brl_max2d_LoadImage((BBOBJECT)&_s49,-1);
 		brl_random_SeedRnd(1);
 		_m_seltra_moxo=bbArrayNew1D("i", 2);
 		_m_seltra_moyo=bbArrayNew1D("i", 2);
 		_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[0U];
 		_m_seltra_moxco=bbArrayNew1D("i", 2);
 		_m_seltra_moyco=bbArrayNew1D("i", 2);
+		_m_seltra_unAllocatedGenTiles=(struct _m_seltra_cellArray_obj*)(struct _m_seltra_cellArray_obj*)bbObjectNew((BBClass *)&_m_seltra_cellArray);
 		_m_seltra_garray=(struct _m_seltra_grouparray_obj*)(struct _m_seltra_grouparray_obj*)bbObjectNew((BBClass *)&_m_seltra_grouparray);
 		_m_seltra_barray=(struct _m_seltra_blockarray_obj*)(struct _m_seltra_blockarray_obj*)bbObjectNew((BBClass *)&_m_seltra_blockarray);
 		_m_seltra_sarray=(struct _m_seltra_subarray_obj*)(struct _m_seltra_subarray_obj*)bbObjectNew((BBClass *)&_m_seltra_subarray);
@@ -4498,18 +5513,17 @@ int _bb_main(){
 		_m_seltra_barray->__m_seltra_blockarray_ba =bbArraySlice(":block",_m_seltra_barray->__m_seltra_blockarray_ba ,0,999999);
 		_m_seltra_rarray=(struct _m_seltra_redrawarray_obj*)(struct _m_seltra_redrawarray_obj*)bbObjectNew((BBClass *)&_m_seltra_redrawarray);
 		_m_seltra_genarray=(struct _m_seltra_generatorarray_obj*)(struct _m_seltra_generatorarray_obj*)bbObjectNew((BBClass *)&_m_seltra_generatorarray);
-		_m_seltra_bmap=(struct _m_seltra_fastblockmap_obj*)(struct _m_seltra_fastblockmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastblockmap);
-		_m_seltra_thingmap=(struct _m_seltra_fastintmap_obj*)(struct _m_seltra_fastintmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastintmap);
+		_m_seltra_bmap=(struct _m_seltra_FastBlockMap_obj*)(struct _m_seltra_FastBlockMap_obj*)bbObjectNew((BBClass *)&_m_seltra_FastBlockMap);
+		_m_seltra_thingmap=(struct _m_seltra_fastlongmap_obj*)(struct _m_seltra_fastlongmap_obj*)bbObjectNew((BBClass *)&_m_seltra_fastlongmap);
+		_m_seltra_v=_m_seltra_thingmap->__m_seltra_fastlongmap_v ;
+		_m_seltra_k=_m_seltra_thingmap->__m_seltra_fastlongmap_k ;
 		_m_seltra_smap=(struct _m_seltra_substratemap_obj*)(struct _m_seltra_substratemap_obj*)bbObjectNew((BBClass *)&_m_seltra_substratemap);
 		_m_seltra_chem=bbArrayNew1D("i", 4);
+		_m_seltra_sub0=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s59);
+		_m_seltra_subd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s60);
 		_m_seltra_create_chem_numbers();
 		_m_seltra_create_block_mix();
 		_m_seltra_remove_block_image_templates();
-		brl_blitz_DebugStop();
-		_m_seltra_sub0=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s27);
-		_m_seltra_subd=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s28);
-		_m_seltra_gene=(struct brl_max2d_image_TImage_obj*)_m_seltra_loadimage2(&_s15);
-		_m_seltra_gen_maze_map(1,1,40,1,40,40);
 		_m_seltra_smi=(struct brl_max2d_image_TImage_obj*)((struct brl_max2d_image_TImage_obj**)BBARRAYDATA(_m_seltra_imagelist,1))[((BBUINT)_m_seltra_smt)];
 		while(!(brl_polledinput_KeyDown(27)!=0)){
 			if(_m_seltra_gamespeedbrake_setting>0){

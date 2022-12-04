@@ -1,5 +1,4 @@
 
-
 Type block ' ********************* type block ****************************
 Field btype 
 ' 0 = wall , 1 = force block 2 = ? 
@@ -7,7 +6,7 @@ Field btype
 Field image:TImage
 Field x,y,bit_tags,id ' bit_tags 1 = prototype for generators  ' %10 for right angle double bonder ( double bonder w/o tag = straight bonder )
 Field oldx[2],oldy[2]
-Field group:bgroup ' super class
+Field group:bgroup ' parent class
 Field ch, mch ' atomic chemistry number, molicule chemestry number
 Field bt ' block template id
 Field bonds
@@ -320,25 +319,249 @@ If group.yv
  If Not b2 Then ok=ok+1
 EndIf
 
-If ok=2
- ' create 2 new blocks
- If btarray[bt].btype=btype 
-  If group.xv
-   btarray[bt].createsingleblock(x,y-1,0,-1)
-   btarray[bt].createsingleblock(x,y+1,0,1)
-  EndIf
-  If group.yv
-   btarray[bt].createsingleblock(x-1,y,-1,0)
-   btarray[bt].createsingleblock(x+1,y,1,0)
-  EndIf
- EndIf
+'If ok=2
+' ' create 2 new blocks
+' If btarray[bt].btype=btype 
+'  If group.xv
+'   btarray[bt].createsingleblock(x,y-1,0,-1,10:long,btype)
+'   btarray[bt].createsingleblock(x,y+1,0,1,10:long,btype)
+ ' EndIf
+'  If group.yv
+'   btarray[bt].createsingleblock(x-1,y,-1,0,10:long,btype)
+'   btarray[bt].createsingleblock(x+1,y,1,0,10:long,btype)
+ ' EndIf
+' EndIf
 
- del() ' delete block
-EndIf
+' del() ' delete block
+'EndIf
 
 End Method
 
 
 End Type
+
+
+
+Function thingBlockDeleteCheck()
+
+Local i
+
+End Function
+
+
+Function ThingBlockCheckArrows()
+
+Local i=1,key
+Local val:Long
+
+While i=<thingmap.le
+
+ val=v[i]
+
+ ' this method is primitve, for blockgroups with one block only
+ ' later for multi block groups will need direction setter management for multiple arrow inputs
+ If val & isBlock ' if block ' is block may be redundant as we expand arrays in th thingmap
+  'DebugStop
+  Select val Mod 8
+   Case upArrow    ;   v[i]=(val &~ directionFlags) | movingUp
+   Case downArrow  ;   v[i]=(val &~ directionFlags) | movingDown
+   Case leftArrow  ;   v[i]=(val &~ directionFlags) | movingLeft
+   Case rightArrow ;   v[i]=(val &~ directionFlags) | movingRight
+  End Select
+ EndIf
+
+ i=i+1
+Wend ' this will have to be redone for multi blocks, which use a separate array
+
+End Function
+
+
+
+Function thingblockRemove(key)
+
+v[thingmap.k[key]]=0
+' key doesn't die, in case there's other stuff
+
+End Function
+
+
+
+Function ThingBlockMove()
+
+Local i=1,key,key2
+Local val:Long
+Local val2:Long
+Local n=thingmap.le
+
+While i<=n
+While i<=n
+
+ key2=-1
+ val = v[i]
+ key = thingmap.getkey(val)
+
+  If dblog Then Print "thingmoveblock: starting with block index:"+i+" value:"+val+" key:"+key
+
+ Select (val & directionFlags)
+  Case movingLeft ; key2 = key-1
+  Case movingRight; key2 = key+1
+  Case movingUp   ; key2 = key-(1 Shl 10)
+  Case movingDown ; key2 = key+(1 Shl 10)
+ End Select
+
+ ' cheap check if outside pay area, will need to improve sometime
+ If key2<0 Or key2>(1023 Shl 10) + 1023 Then Exit
+ ' this causes skewed wrap around east-west, and stoppage at the north south limits
+
+ Local i2= thingmap.ifetch(key2)
+ val2:Long = v[i2]
+
+ If val & isMovingBlock
+  If val2 & isBlock Then DebugStop; thingBlockCollisionManager(i,i2)
+
+  If key2<0 Or (key Mod 1024)<0
+   thingblockRemove(key)
+  Else
+ 
+   If isWall &~ val2 ' this isthe actual move, which is a problem because its adding a element to he list everytime
+    If isBlock &~ val2 ' not a block
+     If dblog Then Print " thingmoveblock: move approved for "+key+" "+val+" block to "+key2
+     moveblock(key,key2,i,i2,val,val2)     
+    EndIf
+   Else ' hit wall
+    Local gbt:Long = (val & getBlockType) Shr btypeSh
+    Local bte:Long = Sgn(val & blocktypeElastic)
+    Local bf:Long = bounce*Sgn(val & blocktypeElastic)
+    Local vbf:Long = val ~ bounce*Sgn(val & blocktypeElastic)
+    v[i]= val ~ bounce*Sgn(val & blocktypeElastic)
+  '  v[i]= val + val &  clockrotate*Sgn( val & blocktypeMagClock )
+    If val & blocktypeMagClock Then  v[i] = clockRotation(val)
+    If val & blocktypeMagAntiC Then  v[i] = antiCRotation(val)
+    thingmap.v[key] = v[i]' XOR with bounceflag flips the direction
+   EndIf
+
+  EndIf
+
+ EndIf 
+
+ i=i+1
+Wend
+i=i+1
+Wend
+
+End Function
+
+
+
+Function moveblock(key1,key2,i1,i2,val1:Long,val2:Long)
+' assumes there's nothing blocking the move
+
+If dblog Then Print "moveblock: starting with block "+i1+" key:"+key1+" val1:"+val1
+If dblog Then Print "moveblock: blockflags:"+blockflags+"input block with blockflags "+(val1 & blockflags)
+
+Local dbg1:Long  = val1 & blockflags
+Local dbg2:Long  = val1 &~ (blockflags | keyrefflags)
+Local val1b:Long = (val1 & blockflags) | (key2 Shl keyrfSh) 
+' extracting the block and keymap data, leaving behind arrow data
+
+If val1 &~ (blockflags | keyrefflags) ' something else is there, so need to split, and create new index
+  ' no need for new index
+  ' switch is always necessary, because block must retain order amongst themselves
+  ' 'switch' is this a switch when the index is passed on?
+ If val2=0
+  thingmap.put(key2,val1b)
+  i2=thingmap.ifetch(key2)
+ 
+  If dblog Then Print "moveblock: "+val1b+" has been put in key "+key2
+  If dblog Then Print "moveblock: "+(val1 &~ blockflags)+" has been put in key "+key1+"  "+v[k[key1]]
+ EndIf 
+Else
+ val1=0
+EndIf
+
+' pass on the index
+
+v[i2]=val1 &~ blockflags
+v[i1]= val2 | val1b ' notice here that the indices have swaped. We wish to keep the active thing at the same index
+k[key2]=i1
+k[key1]=i2
+
+If val1=0 Then k[key1]=0
+
+If dblog Then Print "moveblock: init i,k,v "+i2+" "+key1+" "+v[i2]+"  dest: "+i1+" "+key2+" "+v[i1]
+
+
+End Function
+
+
+
+Function ThingBlockCheckCollision:Long(key) ' nope cos we need to check for arrows too
+' 0 means no collision
+' 1 means block has moved out of play area
+
+If key>=0 And (key Mod 1024)>=0
+ Local val:Long = thingmap.fetch(key)
+ If val & isBlock Then Return val ' return key for collision block
+ If val & isWall  Then Return val
+Else
+ Return 0
+EndIf
+
+Return 1
+
+End Function
+
+
+
+Function thingBlockCollisionManager(i,i2)
+' at this point, we know blocks have collided, so we don't need to check keys anymore
+
+Local val1:Long=v[i]
+Local val2:Long=v[i2]
+' taking the indices is faster
+' why do we have 4 inputs?
+' are keys checked here to make sure they are adjacent and moving accordingly?
+'	 no. that is done in the check manager. if we get here its means collision is confirmed
+'DebugStop
+
+'check for block join
+If (val1 & isBlock) And (val2 & isBlock) 
+ If ((val1 & (bondpWestflag | movingLeft )) = bondpWestflag | movingLeft ) And (val2 & bondpEastFlag )
+  val1=val1 | bondaWestFlag
+  val2=val2 | bondaEastFlag
+  v[i]=val1
+  v[i2]=val2  
+ EndIf
+ If ((val1 & (bondpEastflag  | movingRight)) = bondpEastflag  | movingRight) And (val2 & bondpWestFlag )
+  val1=val1 | bondaEastFlag
+  val2=val2 | bondaWestFlag
+  v[i]=val1
+  v[i2]=val2
+ EndIf
+ If ((val1 & (bondpNorthflag | movingUp   )) = bondpNorthflag | movingUp)   And (val2 & bondpSouthFlag)
+  val1=val1 | bondaNorthFlag
+  val2=val2 | bondaSouthFlag
+  v[i]=val1
+  v[i2]=val2
+ EndIf
+ If ((val1 & (bondpSouthflag | movingDown )) = bondpSouthflag | movingDown) And (val2 & bondpNorthFlag)  
+  val1=val1 | bondaSouthFlag
+  val2=val2 | bondaNorthFlag
+  v[i]=val1
+  v[i2]=val2
+ EndIf
+EndIf
+
+
+
+
+' after join, a block needs to become master or slave
+End Function
+
+
+
+Function mergeBlocks(key1,key2)
+
+End Function
 
 

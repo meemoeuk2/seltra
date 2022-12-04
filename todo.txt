@@ -1,10 +1,7 @@
 currently the code is configged towards 'lego bricks' rather than 'chemical bricks'
  not sure this is best, but really we could use both
 
-
 try move code towards that falling trash game we had in blitzplus
-
- get a handle on the paintbox
 
  mouse select of paintbox is currently using  blind constant to guess where
   paintbox items end. 
@@ -48,14 +45,66 @@ we are using an map type that is remembering all its keys and values
     - a reference to the index can be in the value or key
      -  of course index cannot reference many values
 
-
- thingblocks shouldn't use new map index if they are moving to an empty block
  thing value needs a 'hasmoved this frame' flag
-
- jumping problem with  'grave' cells
-  because index list array entry is not being deleted, so when a foreign block enters the grave cell
-   its updated by the ghost of the dead block
-    
-   adding the index to the key will allow deletion of indexed blocks from selected cells
-    ok do it, key long is highly redundant
  
+ generators and substrates should not be infront of blocks in the paintbox
+  can do this later
+
+ bond actual flags are correctly working
+  now need to effect block groups
+   the index array is a list of blockgroups
+    master blocks are listed
+    slave blocks are not, and must be accessed thru the master : by key-map :
+ 
+ when a block moves between key-listed cells, its index must remain the same : for index priority ordering 
+
+
+simul block moves will require a chain dependancy solver
+ blocks need a pointer to the lynchpin block
+ should be built in one cycle
+n 
+
+walls should not be listed as things to process in the list
+
+mental discordance
+ what is better?
+  1. a list to things such that a list of map locations points to the list of things?
+  2. or a list of map locations with each map location containing the thing?
+
+  if 2 then we'd always have to access the useful list via another list, 
+    slowing the process
+
+ the reason we abandoned the 'each map cell has its own memory'
+  was because it would require pointing to a large object
+   but now its just a Ulong.
+   what are we saving by having a map of ints pointing to a list of Ulongs?
+    why not just have a map of Ulongs?
+
+  the vlist could be fast way of accessing all the active cells in the keymap
+   with the keymap containing the useful info
+
+  currently the vlist contains all the useful info
+   with the keymap contain vlist index
+   
+ 
+indices are +1 than expected
+ looks like arrows are counted
+ consider removing arrows from active list
+  ok done, but movement doesn't work
+   is the arrow still there when block is placed?
+
+  we don't have to have merged arrow block in one thing element. 
+   they can be block in active sublist and arrow in passive sublist   
+
+  keys are ints, can point to 2 8x8s
+   doing layering within longs/ints is a bit dodgy
+    we will want to add more layers later
+    but then in principle should be ok
+   make the choice shift keys to ulongs, or key maps to 8x8 instead of 10x10 bits
+    made : keymap is now ulong
+     next step is to make keymaps hold 2~3 indices
+      with half a million indices, can hold 3 indices per key ( 18bit )
+       this can in theory go to slightly over 2 million ( 21bit )
+       good. one layer for actives, 1 layer for inactives, 1 layer for special
+
+       

@@ -9,12 +9,11 @@
 #include <brl.mod/base64.mod/.bmx/base64.bmx.debug.win32.x64.h>
 #include <brl.mod/basic.mod/.bmx/basic.bmx.debug.win32.x64.h>
 #include <brl.mod/bmploader.mod/.bmx/bmploader.bmx.debug.win32.x64.h>
+#include <brl.mod/bytebuffer.mod/.bmx/bytebuffer.bmx.debug.win32.x64.h>
 #include <brl.mod/clipboard.mod/.bmx/clipboard.bmx.debug.win32.x64.h>
 #include <brl.mod/collections.mod/.bmx/collections.bmx.debug.win32.x64.h>
-#include <brl.mod/crypto.mod/.bmx/crypto.bmx.debug.win32.x64.h>
 #include <brl.mod/d3d7max2d.mod/.bmx/d3d7max2d.bmx.debug.win32.x64.h>
 #include <brl.mod/d3d9max2d.mod/.bmx/d3d9max2d.bmx.debug.win32.x64.h>
-#include <brl.mod/data.mod/.bmx/data.bmx.debug.win32.x64.h>
 #include <brl.mod/directsoundaudio.mod/.bmx/directsoundaudio.bmx.debug.win32.x64.h>
 #include <brl.mod/eventqueue.mod/.bmx/eventqueue.bmx.debug.win32.x64.h>
 #include <brl.mod/freeaudioaudio.mod/.bmx/freeaudioaudio.bmx.debug.win32.x64.h>
@@ -23,33 +22,38 @@
 #include <brl.mod/glmax2d.mod/.bmx/glmax2d.bmx.debug.win32.x64.h>
 #include <brl.mod/gnet.mod/.bmx/gnet.bmx.debug.win32.x64.h>
 #include <brl.mod/jpgloader.mod/.bmx/jpgloader.bmx.debug.win32.x64.h>
-#include <brl.mod/json.mod/.bmx/json.bmx.debug.win32.x64.h>
 #include <brl.mod/map.mod/.bmx/map.bmx.debug.win32.x64.h>
 #include <brl.mod/matrix.mod/.bmx/matrix.bmx.debug.win32.x64.h>
 #include <brl.mod/maxlua.mod/.bmx/maxlua.bmx.debug.win32.x64.h>
+#include <brl.mod/maxunit.mod/.bmx/maxunit.bmx.debug.win32.x64.h>
 #include <brl.mod/maxutil.mod/.bmx/maxutil.bmx.debug.win32.x64.h>
+#include <brl.mod/objectlist.mod/.bmx/objectlist.bmx.debug.win32.x64.h>
 #include <brl.mod/oggloader.mod/.bmx/oggloader.bmx.debug.win32.x64.h>
 #include <brl.mod/openalaudio.mod/.bmx/openalaudio.bmx.debug.win32.x64.h>
+#include <brl.mod/platform.mod/.bmx/platform.bmx.debug.win32.x64.h>
 #include <brl.mod/pngloader.mod/.bmx/pngloader.bmx.debug.win32.x64.h>
 #include <brl.mod/quaternion.mod/.bmx/quaternion.bmx.debug.win32.x64.h>
+#include <brl.mod/randomdefault.mod/.bmx/randomdefault.bmx.debug.win32.x64.h>
 #include <brl.mod/retro.mod/.bmx/retro.bmx.debug.win32.x64.h>
 #include <brl.mod/tgaloader.mod/.bmx/tgaloader.bmx.debug.win32.x64.h>
 #include <brl.mod/threadpool.mod/.bmx/threadpool.bmx.debug.win32.x64.h>
 #include <brl.mod/timer.mod/.bmx/timer.bmx.debug.win32.x64.h>
 #include <brl.mod/timerdefault.mod/.bmx/timerdefault.bmx.debug.win32.x64.h>
+#include <brl.mod/uuid.mod/.bmx/uuid.bmx.debug.win32.x64.h>
 #include <brl.mod/volumes.mod/.bmx/volumes.bmx.debug.win32.x64.h>
 #include <brl.mod/wavloader.mod/.bmx/wavloader.bmx.debug.win32.x64.h>
-#include <brl.mod/xml.mod/.bmx/xml.bmx.debug.win32.x64.h>
 #include <pub.mod/freejoy.mod/.bmx/freejoy.bmx.debug.win32.x64.h>
 #include <pub.mod/freeprocess.mod/.bmx/freeprocess.bmx.debug.win32.x64.h>
 #include <pub.mod/glad.mod/.bmx/glad.bmx.debug.win32.x64.h>
-#include <pub.mod/macos.mod/.bmx/macos.bmx.debug.win32.x64.h>
+#include <pub.mod/nfd.mod/.bmx/nfd.bmx.debug.win32.x64.h>
 #include <pub.mod/nx.mod/.bmx/nx.bmx.debug.win32.x64.h>
 #include <pub.mod/opengles.mod/.bmx/opengles.bmx.debug.win32.x64.h>
+#include <pub.mod/opengles3.mod/.bmx/opengles3.bmx.debug.win32.x64.h>
 #include <pub.mod/vulkan.mod/.bmx/vulkan.bmx.debug.win32.x64.h>
 #include <pub.mod/xmmintrin.mod/.bmx/xmmintrin.bmx.debug.win32.x64.h>
 int _bb_main();
 struct _m_seltra_btemplate_obj;
+struct _m_seltra_cellArray_obj;
 struct _m_seltra_grouparray_obj;
 struct _m_seltra_blockarray_obj;
 struct _m_seltra_subarray_obj;
@@ -58,16 +62,22 @@ struct _m_seltra_block_obj;
 struct _m_seltra_redrawarray_obj;
 struct _m_seltra_generatorarray_obj;
 struct _m_seltra_FastBlockMap_obj;
-struct _m_seltra_fastintmap_obj;
+struct _m_seltra_fastlongmap_obj;
 struct _m_seltra_substratemap_obj;
 struct _m_seltra_sgroup_obj;
 struct _m_seltra_substrate_obj;
-struct _m_seltra_redraw_obj;
 struct _m_seltra_bgroup_obj;
-struct _m_seltra_gen_obj;
+struct _m_seltra_redraw_obj;
+struct _m_seltra_fastintmap_obj;
+struct _m_seltra_longArray_obj;
+struct _m_seltra_genTile_obj;
+struct _m_seltra_Ggroup_obj;
 struct _m_seltra_cell_obj;
+extern BBINT _m_seltra_dblog;
+extern BBULONG _m_seltra_blockflags;
 extern BBINT _m_seltra_gw;
 extern BBINT _m_seltra_gh;
+extern BBINT _m_seltra_editbarwidth;
 extern BBARRAY _m_seltra_imagelist;
 extern BBARRAY _m_seltra_blockart;
 extern struct brl_max2d_image_TImage_obj* _m_seltra_blockw;
@@ -82,10 +92,10 @@ extern struct brl_max2d_image_TImage_obj* _m_seltra_blockd;
 extern struct brl_max2d_image_TImage_obj* _m_seltra_blockb;
 extern struct brl_max2d_image_TImage_obj* _m_seltra_gencell;
 void __m_seltra_btemplate_New(struct _m_seltra_btemplate_obj* o);
-typedef BBINT (*_m_seltra_btemplate_create_block_image_i_m)(struct _m_seltra_btemplate_obj*,BBINT);
-BBINT __m_seltra_btemplate_create_block_image_i(struct _m_seltra_btemplate_obj*,BBINT);
-typedef struct _m_seltra_bgroup_obj* (*_m_seltra_btemplate_createsingleblock_iiii_m)(struct _m_seltra_btemplate_obj*,BBINT,BBINT,BBINT,BBINT);
-struct _m_seltra_bgroup_obj* __m_seltra_btemplate_createsingleblock_iiii(struct _m_seltra_btemplate_obj*,BBINT,BBINT,BBINT,BBINT);
+typedef BBINT (*_m_seltra_btemplate_createBlockImage_i_m)(struct _m_seltra_btemplate_obj*,BBINT);
+BBINT __m_seltra_btemplate_createBlockImage_i(struct _m_seltra_btemplate_obj*,BBINT);
+typedef BBLONG (*_m_seltra_btemplate_createsingleblock_iiiill_m)(struct _m_seltra_btemplate_obj*,BBINT,BBINT,BBINT,BBINT,BBLONG,BBLONG);
+BBLONG __m_seltra_btemplate_createsingleblock_iiiill(struct _m_seltra_btemplate_obj*,BBINT,BBINT,BBINT,BBINT,BBLONG,BBLONG);
 typedef BBINT (*_m_seltra_btemplate_setbindingblock_ii_m)(struct _m_seltra_btemplate_obj*,BBINT,BBINT);
 BBINT __m_seltra_btemplate_setbindingblock_ii(struct _m_seltra_btemplate_obj*,BBINT,BBINT);
 struct BBClass__m_seltra_btemplate {
@@ -101,8 +111,10 @@ struct BBClass__m_seltra_btemplate {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
-	_m_seltra_btemplate_create_block_image_i_m m_create_block_image_i;
-	_m_seltra_btemplate_createsingleblock_iiii_m m_createsingleblock_iiii;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_btemplate_createBlockImage_i_m m_createBlockImage_i;
+	_m_seltra_btemplate_createsingleblock_iiiill_m m_createsingleblock_iiiill;
 	_m_seltra_btemplate_setbindingblock_ii_m m_setbindingblock_ii;
 };
 
@@ -148,6 +160,40 @@ extern BBINT _m_seltra_camposy;
 extern BBINT _m_seltra_time;
 extern BBINT _m_seltra_gamespeedbrake;
 extern BBINT _m_seltra_gamespeedbrake_setting;
+void __m_seltra_cellArray_New(struct _m_seltra_cellArray_obj* o);
+typedef BBINT (*_m_seltra_cellArray_add_ii_m)(struct _m_seltra_cellArray_obj*,BBINT,BBINT);
+BBINT __m_seltra_cellArray_add_ii(struct _m_seltra_cellArray_obj*,BBINT,BBINT);
+typedef BBINT (*_m_seltra_cellArray_add_Tcell_m)(struct _m_seltra_cellArray_obj*,struct _m_seltra_cell_obj*);
+BBINT __m_seltra_cellArray_add_Tcell(struct _m_seltra_cellArray_obj*,struct _m_seltra_cell_obj*);
+typedef BBINT (*_m_seltra_cellArray_ordered_sort_ii_m)(struct _m_seltra_cellArray_obj*,BBINT,BBINT);
+BBINT __m_seltra_cellArray_ordered_sort_ii(struct _m_seltra_cellArray_obj*,BBINT,BBINT);
+struct BBClass__m_seltra_cellArray {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_cellArray_add_ii_m m_add_ii;
+	_m_seltra_cellArray_add_Tcell_m m_add_Tcell;
+	_m_seltra_cellArray_ordered_sort_ii_m m_ordered_sort_ii;
+};
+
+struct _m_seltra_cellArray_obj {
+	struct BBClass__m_seltra_cellArray* clas;
+	BBARRAY __m_seltra_cellarray_ca;
+	BBINT __m_seltra_cellarray_le;
+};
+extern struct BBClass__m_seltra_cellArray _m_seltra_cellArray;
+extern struct _m_seltra_cellArray_obj* _m_seltra_unAllocatedGenTiles;
 void __m_seltra_grouparray_New(struct _m_seltra_grouparray_obj* o);
 typedef BBINT (*_m_seltra_grouparray_add_Tbgroup_m)(struct _m_seltra_grouparray_obj*,struct _m_seltra_bgroup_obj*);
 BBINT __m_seltra_grouparray_add_Tbgroup(struct _m_seltra_grouparray_obj*,struct _m_seltra_bgroup_obj*);
@@ -166,6 +212,8 @@ struct BBClass__m_seltra_grouparray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_grouparray_add_Tbgroup_m m_add_Tbgroup;
 	_m_seltra_grouparray_ordered_sort_ii_m m_ordered_sort_ii;
 };
@@ -197,6 +245,8 @@ struct BBClass__m_seltra_blockarray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_blockarray_add_Tblock_m m_add_Tblock;
 	_m_seltra_blockarray_putLast_i_m m_putLast_i;
 	_m_seltra_blockarray_ordered_sort_ii_m m_ordered_sort_ii;
@@ -227,6 +277,8 @@ struct BBClass__m_seltra_subarray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_subarray_add_Tsubstrate_m m_add_Tsubstrate;
 	_m_seltra_subarray_ordered_sort_ii_m m_ordered_sort_ii;
 };
@@ -256,6 +308,8 @@ struct BBClass__m_seltra_subgrouparray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_subgrouparray_add_Tsgroup_m m_add_Tsgroup;
 	_m_seltra_subgrouparray_ordered_sort_ii_m m_ordered_sort_ii;
 };
@@ -305,6 +359,8 @@ struct BBClass__m_seltra_block {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_block_Del_m m_Del;
 	_m_seltra_block_draw_m m_draw;
 	_m_seltra_block_out_of_bounds_m m_out_of_bounds;
@@ -358,6 +414,8 @@ struct BBClass__m_seltra_redrawarray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_redrawarray_add_Tredraw_m m_add_Tredraw;
 	_m_seltra_redrawarray_do_redraws_m m_do_redraws;
 };
@@ -371,8 +429,8 @@ struct _m_seltra_redrawarray_obj {
 extern struct BBClass__m_seltra_redrawarray _m_seltra_redrawarray;
 extern struct _m_seltra_redrawarray_obj* _m_seltra_rarray;
 void __m_seltra_generatorarray_New(struct _m_seltra_generatorarray_obj* o);
-typedef BBINT (*_m_seltra_generatorarray_add_Tgen_m)(struct _m_seltra_generatorarray_obj*,struct _m_seltra_gen_obj*);
-BBINT __m_seltra_generatorarray_add_Tgen(struct _m_seltra_generatorarray_obj*,struct _m_seltra_gen_obj*);
+typedef BBINT (*_m_seltra_generatorarray_add_TGgroup_m)(struct _m_seltra_generatorarray_obj*,struct _m_seltra_Ggroup_obj*);
+BBINT __m_seltra_generatorarray_add_TGgroup(struct _m_seltra_generatorarray_obj*,struct _m_seltra_Ggroup_obj*);
 typedef BBINT (*_m_seltra_generatorarray_ordered_sort_ii_m)(struct _m_seltra_generatorarray_obj*,BBINT,BBINT);
 BBINT __m_seltra_generatorarray_ordered_sort_ii(struct _m_seltra_generatorarray_obj*,BBINT,BBINT);
 struct BBClass__m_seltra_generatorarray {
@@ -388,7 +446,9 @@ struct BBClass__m_seltra_generatorarray {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
-	_m_seltra_generatorarray_add_Tgen_m m_add_Tgen;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_generatorarray_add_TGgroup_m m_add_TGgroup;
 	_m_seltra_generatorarray_ordered_sort_ii_m m_ordered_sort_ii;
 };
 
@@ -429,6 +489,8 @@ struct BBClass__m_seltra_FastBlockMap {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_FastBlockMap_fetch_i_m m_fetch_i;
 	_m_seltra_FastBlockMap_vfetch_i_m m_vfetch_i;
 	_m_seltra_FastBlockMap_kfetch_i_m m_kfetch_i;
@@ -448,26 +510,32 @@ struct _m_seltra_FastBlockMap_obj {
 };
 extern struct BBClass__m_seltra_FastBlockMap _m_seltra_FastBlockMap;
 extern struct _m_seltra_FastBlockMap_obj* _m_seltra_bmap;
-void __m_seltra_fastintmap_New(struct _m_seltra_fastintmap_obj* o);
-typedef BBINT (*_m_seltra_fastintmap_fetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
-BBINT __m_seltra_fastintmap_fetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
-typedef BBINT (*_m_seltra_fastintmap_vfetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
-BBINT __m_seltra_fastintmap_vfetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
-typedef BBINT (*_m_seltra_fastintmap_kfetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
-BBINT __m_seltra_fastintmap_kfetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
-typedef BBINT (*_m_seltra_fastintmap_insert_ii_m)(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
-BBINT __m_seltra_fastintmap_insert_ii(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
-typedef BBINT (*_m_seltra_fastintmap_remove_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
-BBINT __m_seltra_fastintmap_remove_i(struct _m_seltra_fastintmap_obj*,BBINT);
-typedef BBINT (*_m_seltra_fastintmap_iter_m)(struct _m_seltra_fastintmap_obj*);
-BBINT __m_seltra_fastintmap_iter(struct _m_seltra_fastintmap_obj*);
-typedef BBINT (*_m_seltra_fastintmap_fastsort_m)(struct _m_seltra_fastintmap_obj*);
-BBINT __m_seltra_fastintmap_fastsort(struct _m_seltra_fastintmap_obj*);
-typedef BBINT (*_m_seltra_fastintmap_orderedsort_m)(struct _m_seltra_fastintmap_obj*);
-BBINT __m_seltra_fastintmap_orderedsort(struct _m_seltra_fastintmap_obj*);
-typedef BBINT (*_m_seltra_fastintmap_set_null_value_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
-BBINT __m_seltra_fastintmap_set_null_value_i(struct _m_seltra_fastintmap_obj*,BBINT);
-struct BBClass__m_seltra_fastintmap {
+void __m_seltra_fastlongmap_New(struct _m_seltra_fastlongmap_obj* o);
+typedef BBINT (*_m_seltra_fastlongmap_initKeyMap_m)(struct _m_seltra_fastlongmap_obj*);
+BBINT __m_seltra_fastlongmap_initKeyMap(struct _m_seltra_fastlongmap_obj*);
+typedef BBULONG (*_m_seltra_fastlongmap_fetch_y_m)(struct _m_seltra_fastlongmap_obj*,BBULONG);
+BBULONG __m_seltra_fastlongmap_fetch_y(struct _m_seltra_fastlongmap_obj*,BBULONG);
+typedef BBULONG (*_m_seltra_fastlongmap_fetch2_i_m)(struct _m_seltra_fastlongmap_obj*,BBINT);
+BBULONG __m_seltra_fastlongmap_fetch2_i(struct _m_seltra_fastlongmap_obj*,BBINT);
+typedef BBULONG (*_m_seltra_fastlongmap_fetchAK_i_m)(struct _m_seltra_fastlongmap_obj*,BBINT);
+BBULONG __m_seltra_fastlongmap_fetchAK_i(struct _m_seltra_fastlongmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastlongmap_ifetch_i_m)(struct _m_seltra_fastlongmap_obj*,BBINT);
+BBINT __m_seltra_fastlongmap_ifetch_i(struct _m_seltra_fastlongmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastlongmap_kfetch_i_m)(struct _m_seltra_fastlongmap_obj*,BBINT);
+BBINT __m_seltra_fastlongmap_kfetch_i(struct _m_seltra_fastlongmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastlongmap_getkey_y_m)(struct _m_seltra_fastlongmap_obj*,BBULONG);
+BBINT __m_seltra_fastlongmap_getkey_y(struct _m_seltra_fastlongmap_obj*,BBULONG);
+typedef BBINT (*_m_seltra_fastlongmap_fastput_iyi_m)(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG,BBINT);
+BBINT __m_seltra_fastlongmap_fastput_iyi(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG,BBINT);
+typedef BBINT (*_m_seltra_fastlongmap_put_iy_m)(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG);
+BBINT __m_seltra_fastlongmap_put_iy(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG);
+typedef BBINT (*_m_seltra_fastlongmap_putq_iy_m)(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG);
+BBINT __m_seltra_fastlongmap_putq_iy(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG);
+typedef BBINT (*_m_seltra_fastlongmap_put_iyi_m)(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG,BBINT);
+BBINT __m_seltra_fastlongmap_put_iyi(struct _m_seltra_fastlongmap_obj*,BBINT,BBULONG,BBINT);
+typedef BBINT (*_m_seltra_fastlongmap_remove_i_m)(struct _m_seltra_fastlongmap_obj*,BBINT);
+BBINT __m_seltra_fastlongmap_remove_i(struct _m_seltra_fastlongmap_obj*,BBINT);
+struct BBClass__m_seltra_fastlongmap {
 	BBClass*  super;
 	void      (*free)( BBObject *o );
 	BBDebugScope* debug_scope;
@@ -480,26 +548,36 @@ struct BBClass__m_seltra_fastintmap {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
-	_m_seltra_fastintmap_fetch_i_m m_fetch_i;
-	_m_seltra_fastintmap_vfetch_i_m m_vfetch_i;
-	_m_seltra_fastintmap_kfetch_i_m m_kfetch_i;
-	_m_seltra_fastintmap_insert_ii_m m_insert_ii;
-	_m_seltra_fastintmap_remove_i_m m_remove_i;
-	_m_seltra_fastintmap_iter_m m_iter;
-	_m_seltra_fastintmap_fastsort_m m_fastsort;
-	_m_seltra_fastintmap_orderedsort_m m_orderedsort;
-	_m_seltra_fastintmap_set_null_value_i_m m_set_null_value_i;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_fastlongmap_initKeyMap_m m_initKeyMap;
+	_m_seltra_fastlongmap_fetch_y_m m_fetch_y;
+	_m_seltra_fastlongmap_fetch2_i_m m_fetch2_i;
+	_m_seltra_fastlongmap_fetchAK_i_m m_fetchAK_i;
+	_m_seltra_fastlongmap_ifetch_i_m m_ifetch_i;
+	_m_seltra_fastlongmap_kfetch_i_m m_kfetch_i;
+	_m_seltra_fastlongmap_getkey_y_m m_getkey_y;
+	_m_seltra_fastlongmap_fastput_iyi_m m_fastput_iyi;
+	_m_seltra_fastlongmap_put_iy_m m_put_iy;
+	_m_seltra_fastlongmap_putq_iy_m m_putq_iy;
+	_m_seltra_fastlongmap_put_iyi_m m_put_iyi;
+	_m_seltra_fastlongmap_remove_i_m m_remove_i;
 };
 
-struct _m_seltra_fastintmap_obj {
-	struct BBClass__m_seltra_fastintmap* clas;
-	BBARRAY __m_seltra_fastintmap_v;
-	BBARRAY __m_seltra_fastintmap_k;
-	BBINT __m_seltra_fastintmap_le;
-	BBINT __m_seltra_fastintmap_nl;
+struct _m_seltra_fastlongmap_obj {
+	struct BBClass__m_seltra_fastlongmap* clas;
+	BBULONG __m_seltra_fastlongmap_mnk;
+	BBULONG __m_seltra_fastlongmap_mnv;
+	BBARRAY __m_seltra_fastlongmap_k;
+	BBARRAY __m_seltra_fastlongmap_v;
+	BBINT __m_seltra_fastlongmap_le;
+	BBINT __m_seltra_fastlongmap_ze;
+	BBINT __m_seltra_fastlongmap_nkv;
 };
-extern struct BBClass__m_seltra_fastintmap _m_seltra_fastintmap;
-extern struct _m_seltra_fastintmap_obj* _m_seltra_thingmap;
+extern struct BBClass__m_seltra_fastlongmap _m_seltra_fastlongmap;
+extern struct _m_seltra_fastlongmap_obj* _m_seltra_thingmap;
+extern BBARRAY _m_seltra_v;
+extern BBARRAY _m_seltra_k;
 void __m_seltra_substratemap_New(struct _m_seltra_substratemap_obj* o);
 typedef struct _m_seltra_substrate_obj* (*_m_seltra_substratemap_fetch_i_m)(struct _m_seltra_substratemap_obj*,BBINT);
 struct _m_seltra_substrate_obj* __m_seltra_substratemap_fetch_i(struct _m_seltra_substratemap_obj*,BBINT);
@@ -530,6 +608,8 @@ struct BBClass__m_seltra_substratemap {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_substratemap_fetch_i_m m_fetch_i;
 	_m_seltra_substratemap_vfetch_i_m m_vfetch_i;
 	_m_seltra_substratemap_kfetch_i_m m_kfetch_i;
@@ -558,8 +638,15 @@ BBINT _m_seltra_create_chem_numbers();
 BBFLOAT _m_seltra_colfunc(BBFLOAT bbt_x);
 BBINT _m_seltra_create_block_mix();
 BBINT _m_seltra_remove_block_image_templates();
-BBINT _m_seltra_wallblock(BBINT bbt_x,BBINT bbt_y,BBINT bbt_u);
-BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf,BBINT bbt_mx,BBINT bbt_my);
+BBINT _m_seltra_ThingBlockCheckArrows();
+BBINT _m_seltra_thingBlockCollisionManager(BBINT bbt_i,BBINT bbt_i2);
+BBINT _m_seltra_thingblockRemove(BBINT bbt_key);
+BBINT _m_seltra_moveblock(BBINT bbt_key1,BBINT bbt_key2,BBINT bbt_i1,BBINT bbt_i2,BBLONG bbt_val1,BBLONG bbt_val2);
+BBULONG _m_seltra_clockRotation(BBULONG bbt_in);
+BBULONG _m_seltra_antiCrotation(BBULONG bbt_in);
+BBINT _m_seltra_ThingBlockMove();
+BBINT _m_seltra_update_thingblocks();
+BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data);
 void __m_seltra_sgroup_New(struct _m_seltra_sgroup_obj* o);
 typedef BBINT (*_m_seltra_sgroup_add_Tsubstrate_m)(struct _m_seltra_sgroup_obj*,struct _m_seltra_substrate_obj*);
 BBINT __m_seltra_sgroup_add_Tsubstrate(struct _m_seltra_sgroup_obj*,struct _m_seltra_substrate_obj*);
@@ -586,6 +673,8 @@ struct BBClass__m_seltra_sgroup {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_sgroup_add_Tsubstrate_m m_add_Tsubstrate;
 	_m_seltra_sgroup_move_m m_move;
 	_m_seltra_sgroup_remove_m m_remove;
@@ -625,6 +714,8 @@ struct BBClass__m_seltra_substrate {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_substrate_out_of_bounds_m m_out_of_bounds;
 	_m_seltra_substrate_draw_m m_draw;
 	_m_seltra_substrate_Del_m m_Del;
@@ -642,30 +733,10 @@ struct _m_seltra_substrate_obj {
 	struct _m_seltra_sgroup_obj* __m_seltra_substrate_group;
 };
 extern struct BBClass__m_seltra_substrate _m_seltra_substrate;
-void __m_seltra_redraw_New(struct _m_seltra_redraw_obj* o);
-struct BBClass__m_seltra_redraw {
-	BBClass*  super;
-	void      (*free)( BBObject *o );
-	BBDebugScope* debug_scope;
-	unsigned int instance_size;
-	void      (*ctor)( BBOBJECT o );
-	void      (*dtor)( BBOBJECT o );
-	BBSTRING  (*ToString)( BBOBJECT x );
-	int       (*Compare)( BBOBJECT x,BBOBJECT y );
-	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
-	BBINTERFACETABLE itable;
-	void*     extra;
-	unsigned int obj_size;
-};
-
-struct _m_seltra_redraw_obj {
-	struct BBClass__m_seltra_redraw* clas;
-	BBINT __m_seltra_redraw_x;
-	BBINT __m_seltra_redraw_y;
-	BBBYTE __m_seltra_redraw_redraws;
-};
-extern struct BBClass__m_seltra_redraw _m_seltra_redraw;
-BBINT _m_seltra_update_sgroups();
+struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT bbt_y);
+struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt_y);
+BBINT _m_seltra_wallblock(BBINT bbt_x,BBINT bbt_y,BBINT bbt_u);
+BBINT _m_seltra_chem_dist(BBINT bbt_x);
 void __m_seltra_bgroup_New(struct _m_seltra_bgroup_obj* o);
 typedef BBINT (*_m_seltra_bgroup_add_Tblock_m)(struct _m_seltra_bgroup_obj*,struct _m_seltra_block_obj*);
 BBINT __m_seltra_bgroup_add_Tblock(struct _m_seltra_bgroup_obj*,struct _m_seltra_block_obj*);
@@ -718,6 +789,8 @@ struct BBClass__m_seltra_bgroup {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 	_m_seltra_bgroup_add_Tblock_m m_add_Tblock;
 	_m_seltra_bgroup_addNewBlock_ii_m m_addNewBlock_ii;
 	_m_seltra_bgroup_collide_TblockTblock_m m_collide_TblockTblock;
@@ -751,17 +824,15 @@ struct _m_seltra_bgroup_obj {
 	BBINT __m_seltra_bgroup_n;
 };
 extern struct BBClass__m_seltra_bgroup _m_seltra_bgroup;
-BBINT _m_seltra_update_bgroups();
-void __m_seltra_gen_New(struct _m_seltra_gen_obj* o);
-typedef struct _m_seltra_bgroup_obj* (*_m_seltra_gen_genIsolatedBlock_m)(struct _m_seltra_gen_obj*);
-struct _m_seltra_bgroup_obj* __m_seltra_gen_genIsolatedBlock(struct _m_seltra_gen_obj*);
-typedef BBINT (*_m_seltra_gen_addRandomBlock_Tbgroup_m)(struct _m_seltra_gen_obj*,struct _m_seltra_bgroup_obj*);
-BBINT __m_seltra_gen_addRandomBlock_Tbgroup(struct _m_seltra_gen_obj*,struct _m_seltra_bgroup_obj*);
-typedef BBINT (*_m_seltra_gen_genRandomBlockGroup_i_m)(struct _m_seltra_gen_obj*,BBINT);
-BBINT __m_seltra_gen_genRandomBlockGroup_i(struct _m_seltra_gen_obj*,BBINT);
-typedef BBINT (*_m_seltra_gen_update_m)(struct _m_seltra_gen_obj*);
-BBINT __m_seltra_gen_update(struct _m_seltra_gen_obj*);
-struct BBClass__m_seltra_gen {
+BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_image_TImage_obj* bbt_image);
+BBINT _m_seltra_mouse_input_map();
+BBINT _m_seltra_mouse_input_editbar();
+BBINT _m_seltra_get_mouse_input();
+BBINT _m_seltra_save_map();
+BBINT _m_seltra_load_map();
+BBINT _m_seltra_gen_maze_map(BBINT bbt_xs,BBINT bbt_ys,BBINT bbt_xf,BBINT bbt_yf,BBINT bbt_mx,BBINT bbt_my);
+void __m_seltra_redraw_New(struct _m_seltra_redraw_obj* o);
+struct BBClass__m_seltra_redraw {
 	BBClass*  super;
 	void      (*free)( BBObject *o );
 	BBDebugScope* debug_scope;
@@ -774,47 +845,182 @@ struct BBClass__m_seltra_gen {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
-	_m_seltra_gen_genIsolatedBlock_m m_genIsolatedBlock;
-	_m_seltra_gen_addRandomBlock_Tbgroup_m m_addRandomBlock_Tbgroup;
-	_m_seltra_gen_genRandomBlockGroup_i_m m_genRandomBlockGroup_i;
-	_m_seltra_gen_update_m m_update;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 };
 
-struct _m_seltra_gen_obj {
-	struct BBClass__m_seltra_gen* clas;
-	BBINT __m_seltra_gen_x;
-	BBINT __m_seltra_gen_y;
-	BBARRAY __m_seltra_gen_bglist;
-	BBINT __m_seltra_gen_le;
-	BBINT __m_seltra_gen_rate;
-	BBINT __m_seltra_gen_t;
-	BBINT __m_seltra_gen_bitflags;
-	BBINT __m_seltra_gen_n;
-	BBINT __m_seltra_gen_id;
-	BBARRAY __m_seltra_gen_clist;
+struct _m_seltra_redraw_obj {
+	struct BBClass__m_seltra_redraw* clas;
+	BBINT __m_seltra_redraw_x;
+	BBINT __m_seltra_redraw_y;
+	BBBYTE __m_seltra_redraw_redraws;
 };
-extern struct BBClass__m_seltra_gen _m_seltra_gen;
-BBINT _m_seltra_update_gens();
-BBOBJECT _m_seltra_core_engine_thread(BBOBJECT bbt_data);
-struct _m_seltra_sgroup_obj* _m_seltra_createsingleSubstrate(BBINT bbt_x,BBINT bbt_y);
-struct _m_seltra_sgroup_obj* _m_seltra_placeSubstrateGuide(BBINT bbt_x,BBINT bbt_y);
-BBINT _m_seltra_placegene(BBINT bbt_x,BBINT bbt_y);
-BBINT _m_seltra_chem_dist(BBINT bbt_x);
-BBINT _m_seltra_mergeSingleSubstrate(BBINT bbt_x,BBINT bbt_y,struct brl_max2d_image_TImage_obj* bbt_image);
-BBINT _m_seltra_mouse_input_map();
-BBINT _m_seltra_mouse_input_editbar();
-BBINT _m_seltra_get_mouse_input();
-BBINT _m_seltra_save_map();
-BBINT _m_seltra_load_map();
+extern struct BBClass__m_seltra_redraw _m_seltra_redraw;
 BBINT _m_seltra_get_user_input();
+struct brl_max2d_image_TImage_obj* _m_seltra_thingtoImage(BBULONG bbt_t);
+BBINT _m_seltra_draw_map();
 BBINT _m_seltra_redraw_cell(BBINT bbt_x,BBINT bbt_y);
 BBINT _m_seltra_redraw3x3(BBINT bbt_x,BBINT bbt_y);
-BBINT _m_seltra_draw_things();
-BBINT _m_seltra_draw_sarray();
-BBINT _m_seltra_draw_barray();
 BBINT _m_seltra_draw_walls();
 BBINT _m_seltra_draw_editbar();
 BBINT _m_seltra_update_display();
+void __m_seltra_fastintmap_New(struct _m_seltra_fastintmap_obj* o);
+typedef BBINT (*_m_seltra_fastintmap_fetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
+BBINT __m_seltra_fastintmap_fetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_vfetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
+BBINT __m_seltra_fastintmap_vfetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_kfetch_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
+BBINT __m_seltra_fastintmap_kfetch_i(struct _m_seltra_fastintmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_insert_ii_m)(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
+BBINT __m_seltra_fastintmap_insert_ii(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_remove_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
+BBINT __m_seltra_fastintmap_remove_i(struct _m_seltra_fastintmap_obj*,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_bump_ii_m)(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
+BBINT __m_seltra_fastintmap_bump_ii(struct _m_seltra_fastintmap_obj*,BBINT,BBINT);
+typedef BBINT (*_m_seltra_fastintmap_iter_m)(struct _m_seltra_fastintmap_obj*);
+BBINT __m_seltra_fastintmap_iter(struct _m_seltra_fastintmap_obj*);
+typedef BBINT (*_m_seltra_fastintmap_fastsort_m)(struct _m_seltra_fastintmap_obj*);
+BBINT __m_seltra_fastintmap_fastsort(struct _m_seltra_fastintmap_obj*);
+typedef BBINT (*_m_seltra_fastintmap_orderedsort_m)(struct _m_seltra_fastintmap_obj*);
+BBINT __m_seltra_fastintmap_orderedsort(struct _m_seltra_fastintmap_obj*);
+typedef BBINT (*_m_seltra_fastintmap_set_null_value_i_m)(struct _m_seltra_fastintmap_obj*,BBINT);
+BBINT __m_seltra_fastintmap_set_null_value_i(struct _m_seltra_fastintmap_obj*,BBINT);
+struct BBClass__m_seltra_fastintmap {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_fastintmap_fetch_i_m m_fetch_i;
+	_m_seltra_fastintmap_vfetch_i_m m_vfetch_i;
+	_m_seltra_fastintmap_kfetch_i_m m_kfetch_i;
+	_m_seltra_fastintmap_insert_ii_m m_insert_ii;
+	_m_seltra_fastintmap_remove_i_m m_remove_i;
+	_m_seltra_fastintmap_bump_ii_m m_bump_ii;
+	_m_seltra_fastintmap_iter_m m_iter;
+	_m_seltra_fastintmap_fastsort_m m_fastsort;
+	_m_seltra_fastintmap_orderedsort_m m_orderedsort;
+	_m_seltra_fastintmap_set_null_value_i_m m_set_null_value_i;
+};
+
+struct _m_seltra_fastintmap_obj {
+	struct BBClass__m_seltra_fastintmap* clas;
+	BBARRAY __m_seltra_fastintmap_v;
+	BBARRAY __m_seltra_fastintmap_k;
+	BBINT __m_seltra_fastintmap_le;
+	BBINT __m_seltra_fastintmap_nl;
+};
+extern struct BBClass__m_seltra_fastintmap _m_seltra_fastintmap;
+void __m_seltra_longArray_New(struct _m_seltra_longArray_obj* o);
+typedef BBINT (*_m_seltra_longArray_add_i_m)(struct _m_seltra_longArray_obj*,BBINT);
+BBINT __m_seltra_longArray_add_i(struct _m_seltra_longArray_obj*,BBINT);
+typedef BBINT (*_m_seltra_longArray_putLast_i_m)(struct _m_seltra_longArray_obj*,BBINT);
+BBINT __m_seltra_longArray_putLast_i(struct _m_seltra_longArray_obj*,BBINT);
+typedef BBINT (*_m_seltra_longArray_ordered_sort_ii_m)(struct _m_seltra_longArray_obj*,BBINT,BBINT);
+BBINT __m_seltra_longArray_ordered_sort_ii(struct _m_seltra_longArray_obj*,BBINT,BBINT);
+struct BBClass__m_seltra_longArray {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_longArray_add_i_m m_add_i;
+	_m_seltra_longArray_putLast_i_m m_putLast_i;
+	_m_seltra_longArray_ordered_sort_ii_m m_ordered_sort_ii;
+};
+
+struct _m_seltra_longArray_obj {
+	struct BBClass__m_seltra_longArray* clas;
+	BBARRAY __m_seltra_longarray_la;
+	BBINT __m_seltra_longarray_le;
+};
+extern struct BBClass__m_seltra_longArray _m_seltra_longArray;
+void __m_seltra_genTile_New(struct _m_seltra_genTile_obj* o);
+typedef BBINT (*_m_seltra_genTile_addRandomBlock_Tbgroup_m)(struct _m_seltra_genTile_obj*,struct _m_seltra_bgroup_obj*);
+BBINT __m_seltra_genTile_addRandomBlock_Tbgroup(struct _m_seltra_genTile_obj*,struct _m_seltra_bgroup_obj*);
+typedef BBINT (*_m_seltra_genTile_genRandomBlockGroup_i_m)(struct _m_seltra_genTile_obj*,BBINT);
+BBINT __m_seltra_genTile_genRandomBlockGroup_i(struct _m_seltra_genTile_obj*,BBINT);
+struct BBClass__m_seltra_genTile {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_genTile_addRandomBlock_Tbgroup_m m_addRandomBlock_Tbgroup;
+	_m_seltra_genTile_genRandomBlockGroup_i_m m_genRandomBlockGroup_i;
+};
+
+struct _m_seltra_genTile_obj {
+	struct BBClass__m_seltra_genTile* clas;
+	BBINT __m_seltra_gentile_x;
+	BBINT __m_seltra_gentile_y;
+	BBINT __m_seltra_gentile_ggroup;
+};
+extern struct BBClass__m_seltra_genTile _m_seltra_genTile;
+void __m_seltra_Ggroup_New(struct _m_seltra_Ggroup_obj* o);
+typedef BBINT (*_m_seltra_Ggroup_update_m)(struct _m_seltra_Ggroup_obj*);
+BBINT __m_seltra_Ggroup_update(struct _m_seltra_Ggroup_obj*);
+typedef struct _m_seltra_bgroup_obj* (*_m_seltra_Ggroup_genIsolatedBlock_ii_m)(struct _m_seltra_Ggroup_obj*,BBINT,BBINT);
+struct _m_seltra_bgroup_obj* __m_seltra_Ggroup_genIsolatedBlock_ii(struct _m_seltra_Ggroup_obj*,BBINT,BBINT);
+struct BBClass__m_seltra_Ggroup {
+	BBClass*  super;
+	void      (*free)( BBObject *o );
+	BBDebugScope* debug_scope;
+	unsigned int instance_size;
+	void      (*ctor)( BBOBJECT o );
+	void      (*dtor)( BBOBJECT o );
+	BBSTRING  (*ToString)( BBOBJECT x );
+	int       (*Compare)( BBOBJECT x,BBOBJECT y );
+	BBOBJECT  (*SendMessage)( BBOBJECT o,BBOBJECT m,BBOBJECT s );
+	BBINTERFACETABLE itable;
+	void*     extra;
+	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
+	_m_seltra_Ggroup_update_m m_update;
+	_m_seltra_Ggroup_genIsolatedBlock_ii_m m_genIsolatedBlock_ii;
+};
+
+struct _m_seltra_Ggroup_obj {
+	struct BBClass__m_seltra_Ggroup* clas;
+	BBARRAY __m_seltra_ggroup_bglist;
+	BBINT __m_seltra_ggroup_le;
+	BBINT __m_seltra_ggroup_rate;
+	BBINT __m_seltra_ggroup_t;
+	BBINT __m_seltra_ggroup_bitflags;
+	BBINT __m_seltra_ggroup_n;
+	BBINT __m_seltra_ggroup_id;
+	BBARRAY __m_seltra_ggroup_clist;
+	BBINT __m_seltra_ggroup_time;
+};
+extern struct BBClass__m_seltra_Ggroup _m_seltra_Ggroup;
 void __m_seltra_cell_New(struct _m_seltra_cell_obj* o);
 struct BBClass__m_seltra_cell {
 	BBClass*  super;
@@ -829,6 +1035,8 @@ struct BBClass__m_seltra_cell {
 	BBINTERFACETABLE itable;
 	void*     extra;
 	unsigned int obj_size;
+	unsigned int instance_count;
+	unsigned int fields_offset;
 };
 
 struct _m_seltra_cell_obj {
@@ -837,9 +1045,21 @@ struct _m_seltra_cell_obj {
 	BBINT __m_seltra_cell_y;
 };
 extern struct BBClass__m_seltra_cell _m_seltra_cell;
+BBINT _m_seltra_thingBlockDeleteCheck();
+BBLONG _m_seltra_ThingBlockCheckCollision(BBINT bbt_key);
+BBINT _m_seltra_mergeBlocks(BBINT bbt_key1,BBINT bbt_key2);
+BBINT _m_seltra_update_sgroups();
+BBINT _m_seltra_draw_things();
+BBINT _m_seltra_draw_everything();
+BBINT _m_seltra_update_bgroups();
+BBINT _m_seltra_draw_barray();
+BBINT _m_seltra_draw_sarray();
 BBINT _m_seltra_placeBigSubstrate(BBINT bbt_x1,BBINT bbt_y1,BBINT bbt_x2,BBINT bbt_y2);
+BBINT _m_seltra_placeGenTile(BBINT bbt_x,BBINT bbt_y);
+BBINT _m_seltra_update_gens();
 BBFLOAT _m_seltra_colfuncx(BBFLOAT bbt_x);
 BBINT _m_seltra_demo_color_spread();
 BBOBJECT _m_seltra_io_and_display_thread(BBOBJECT bbt_data);
+BBINT _m_seltra_reForgeGenerators();
 
 #endif

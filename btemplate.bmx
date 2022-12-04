@@ -3,7 +3,7 @@ Type btemplate
 Field btype,ch,id,maxbonds
 Field bonds2  ' bit bank for potential bonds and actual bonds %aaaapppp
 
-Method create_block_image(grey)
+Method createBlockImage(grey)
 
  Local bred,bgre,bblu
  Local blockart:TImage
@@ -59,7 +59,7 @@ val = thingmap.fetch(x+y Shl 10)
 If val & isBlock Then Return  ' this needs noting when we do substrates and generators
 
 Local blockval:Long = 0:Long | isBlock | ((x+y Shl 10) Shl keyrfSh ) | (bonds Shl bondpSh) | (btype Shl btypeSh)
-
+Local gbt:Long = blockval & getblocktype
 'Local bg:bgroup=New bgroup
 'bg.xv=xv
 'bg.yv=yv
@@ -85,7 +85,7 @@ Local blockval:Long = 0:Long | isBlock | ((x+y Shl 10) Shl keyrfSh ) | (bonds Sh
 '  , And once the value is in, the display functions need to convert the value to the image
 Local db2:Long =  thingmap.put(x + y Shl 10, val | blockval )
 
-'DebugStop
+DebugStop
 
 Return db2
 

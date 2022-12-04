@@ -24,7 +24,7 @@ Method putq(key,val:ULong) ' quiet put, a key index is not added, and the length
  v[key]=val
 End Method
 
-Method putq:ULong(index,key,val:ULong)
+Method putq(index,key,val:ULong)
  k[index]=key
  v[key]=val
 End Method

@@ -9,3 +9,11 @@ consider upgrading blockmap should be upgraded to a OBjectMap
  
  * maybe not necessary, do we need map access to generator?
    - generators can function subjectively ( as daemons ) , since objects do not talk to them
+
+
+
+boards.4chan.org##[id^=p]:has(.flag-il)
+boards.4chan.org##[id^=p]:has(.countryFlag)
+
+
+my nhs number : 4109456762
